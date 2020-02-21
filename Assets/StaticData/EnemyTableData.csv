@@ -1,0 +1,13 @@
+int,string,string,string,string,int,int,int,int,int,int,float,float,float,int,int,int,int,int,int,string
+ID,名字,描述,图标,英雄预制体,初始血量,初始物理攻击力,初始防御,魔法攻击,是否可以走动,武器类型限制,攻击敌人的搜索半径,攻击频率,移动速度,自带技能,是否徒手攻击,左手武器,右手武器,背部装备,是不是boss,boss特效
+id,name,des,icon,enemyPrefab,hp,attack,defene,magic,isCanMove,equipType,searchRadius,attackSpeed,moveSpeed,skillid,isUnarmed,leftWeapon,rightWeapon,backWeapon,isBoss,bossEffect
+10001,僵尸1,僵尸1,daiweisi,SimpleZombies_01_Blue,100,10,10,5,1,0,20,1,0.05,0,0,0,1,0,0,0
+10002,僵尸2,僵尸2,akali,SimpleZombies_02_Blue,80,30,5,0,1,0,20,1,0.05,0,0,0,2,0,0,0
+10003,僵尸3,僵尸3,delong,SimpleZombies_03_Blue,150,20,20,0,1,0,20,1,0.05,0,0,0,3,0,0,0
+10004,僵尸4,僵尸4,ajin,SimpleZombies_BeachBabe_Green,100,10,10,10,1,0,20,1,0.05,0,0,0,4,0,0,0
+10005,僵尸5,僵尸5,huonan,SimpleZombies_BusinessMan_Blue,90,0,10,20,1,0,20,1,0.05,0,0,0,5,0,0,0
+10006,僵尸6,僵尸6,bingmeiren,SimpleZombies_Nazi_Blue,100,0,10,20,1,0,20,1,0.05,0,0,6,6,0,0,0
+10007,僵尸7,僵尸7,bingmeiren,SimpleZombies_Police_Green,100,0,10,20,1,0,20,1,0.05,0,0,3,8,0,1,0
+10008,僵尸8,僵尸8,bingmeiren,SimpleZombies_Punk_Grey,100,0,10,20,1,0,20,1,0.05,0,0,7,8,0,1,0
+10009,僵尸9,僵尸9,bingmeiren,SimpleZombies_RiotCop_Green,100,0,10,20,1,0,20,1,0.05,0,0,0,9,0,0,0
+10010,僵尸10,僵尸10,bingmeiren,SimpleZombies_Sherif_Grey,100,0,10,20,1,0,20,1,0.05,0,0,0,1,0,0,0

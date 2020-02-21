@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 3681161152
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 3e71cdc1550c0e334a5cd3f875f09a57
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+Assets:
+- Assets/StaticData/ItemTableData.csv
+- Assets/StaticData/EnemyTableData.csv
+- Assets/StaticData/DefaultItemTableData.csv
+- Assets/StaticData/HeroTableData.csv
+Dependencies: []
