@@ -74,7 +74,7 @@ public class ChangeEquipPanel : MonoBehaviour
                     ItemIcon equip = gameObject.GetComponent<ItemIcon>();
                     if (equip != null)
                     {
-                        equip.InitData(item.Value);
+                        equip.InitData(item.Value,ItemIconType.ChangeEquipPanel);
                     }
                     Equips.Add(gameObject);
                 }

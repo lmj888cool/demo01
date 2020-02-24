@@ -20,6 +20,8 @@ public class HeroScene : MonoBehaviour
     public ChangeEquipPanel ChangeEquipPanel;
     public int HeroIndex = 78;
     public ScrollRect HeroHeadScrollView;
+    public Button[] EquipsSlot;//装备槽
+    private List<ItemIcon> Equips = new List<ItemIcon>();//装备图标
     void Start()
     {
         //LCustomizedCharacterSamples = DataManager.GetInstance().GetGameObjectsByPath("Prefabs/Customized Character Samples", ".prefab");
@@ -88,19 +90,62 @@ public class HeroScene : MonoBehaviour
                 CurrentHero.transform.SetParent(null, false);
                 CurrentHero.gameObject.SetActive(false);
             }
-            if (HeroChair != null)
+            Hero hero = heroes[HeroIndex];
+            if (HeroChair != null && hero != null)
             {
-                HeroTableData data = DataManager.GetInstance().GetHeroTableDataByHeroId(heroes[HeroIndex].heroId);
-                GameObject hero = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", data.heroPrefab);
-                if (hero != null)
+                HeroTableData data = DataManager.GetInstance().GetHeroTableDataByHeroId(hero.heroId);
+                GameObject heroPrefab = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", data.heroPrefab);
+                if (heroPrefab != null)
                 {
-                    CurrentHero = hero.GetComponent<Enity>();
+                    CurrentHero = heroPrefab.GetComponent<Enity>();
                     CurrentHero.transform.SetParent(HeroChair.transform, false);
-                    CurrentHero.InitEnityByHero(heroes[HeroIndex]);
+                    CurrentHero.InitEnityByHero(hero);
+
+                    UpdateEquipShow();
+
                 }
 
             }
         }
+    }
+    //显示佣兵装备
+    public void UpdateEquipShow()
+    {
+        for (int i = 0; i < Equips.Count; i++)
+        {
+            Destroy(Equips[i].gameObject);
+        }
+        Equips.Clear();
+        foreach (KeyValuePair<DummyProp, int> dummyPropPair in CurrentHero.hero.dummyPropDic)
+        {
+            int equipid = dummyPropPair.Value;
+            int equipindex = (int)dummyPropPair.Key;
+            if (equipid > 0 && EquipsSlot.Length > equipindex)
+            {
+                Item item = DataManager.GetInstance().GetGameData().GetItemById(equipid);
+                Button equipKuang = EquipsSlot[equipindex];
+                if (item != null && equipKuang != null)
+                {
+                    GameObject gameObject = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", "ItemIcon");
+                    if (gameObject != null)
+                    {
+                        gameObject.transform.SetParent(equipKuang.transform,false);
+                        gameObject.transform.localScale = gameObject.transform.localScale * 0.7f;
+                        ItemIcon equip = gameObject.GetComponent<ItemIcon>();
+                        if (equip != null)
+                        {
+                            equip.InitData(item,ItemIconType.HeroPanel_EquipsSlot);
+                        }
+                        Equips.Add(equip);
+                    }
+                }
+            }
+            else
+            {
+
+            }
+        }
+        
     }
     public void ChangeCurrentHero(int heroindex)
     {
@@ -122,6 +167,7 @@ public class HeroScene : MonoBehaviour
     public void ChangeEquip(Item equipdata)
     {
         CurrentHero.ChangeEquip(equipdata.id);
+        UpdateEquipShow();
     }
     public void OnPlayAnimation(string animationname)
     {

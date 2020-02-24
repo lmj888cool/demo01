@@ -73,6 +73,7 @@ public class ItemTableData
     public string hitParticle;         //击中特效
     public float bombMoveSpeed;//子弹移动速度
     public int bombCount;//一次攻击几发子弹
+    public int quality;//资质
 
 };
 
@@ -88,6 +89,16 @@ public enum TableDataName
     ItemTableData,
     HeroTableData,
     EnemyTableData
+}
+public enum ItemQuality
+{
+    Black = 1,
+    Green,
+    Blue,
+    Purple,
+    Yellow,
+    Red
+
 }
 public class DataManager
 {
@@ -106,6 +117,7 @@ public class DataManager
     }
     public DataManager()
     {
+        //CreateItemTableData();
         assetBundlePrefabs = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/prefab");
         assetBundleStatic = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/staticdata");
         assetBundleUI = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/ui");
@@ -114,7 +126,7 @@ public class DataManager
         InitEnemyTableData();
 
         
-        //CreateItemTableData();
+        
         //初始化英雄，可以读取本地数据，或者服务器发来的数据
         LoadByBin();
         if (GD == null)//说明第一次启动，需要读取初始的英雄信息，最好配置表
@@ -217,7 +229,7 @@ public class DataManager
             byte[] myByte2 = System.Text.Encoding.UTF8.GetBytes(msg2);
             fsWrite.Write(myByte2, 0, myByte2.Length);
 
-            string msg3 = "id,name,des,itemPrefab,icon,group,groupName,damaged,defene,attackRadius,attackSpeed,isBomb,pointParticle,moveParticle,hitParticle,bombMoveSpeed,bombCount\n";
+            string msg3 = "id,name,des,itemPrefab,icon,group,groupName,damaged,defene,attackRadius,attackSpeed,isBomb,pointParticle,moveParticle,hitParticle,bombMoveSpeed,bombCount,quality\n";
             byte[] myByte3 = System.Text.Encoding.UTF8.GetBytes(msg3);
             fsWrite.Write(myByte3, 0, myByte3.Length);
             int id = 1;
@@ -229,7 +241,7 @@ public class DataManager
                     string msg = id.ToString() + "," + sub.Value[i] + ",这是" + sub.Value[i] + "," + sub.Value[i] + "," + sub.Value[i] +
                         "," + group.ToString() +
                         "," + sub.Key.ToString() +
-                        ",15,0,25,0.5,1,0,0,0,1,1\n";
+                        ",15,0,25,0.5,1,0,0,0,1,1," + GetQuality(sub.Value[i]).ToString()+"\n";
                     //if (sub.Value.Count-1 != i)
                     //{
                     //    msg += "\n";
@@ -243,6 +255,31 @@ public class DataManager
 
         };
 
+    }
+    public int GetQuality(String itemname)
+    {
+        ItemQuality quality = ItemQuality.Black;
+        if (itemname.Contains("Green"))
+        {
+            quality = ItemQuality.Green;
+        }
+        if (itemname.Contains("Bule"))
+        {
+            quality = ItemQuality.Blue;
+        }
+        if (itemname.Contains("Purple"))
+        {
+            quality = ItemQuality.Purple;
+        }
+        if (itemname.Contains("Yellow"))
+        {
+            quality = ItemQuality.Yellow;
+        }
+        if (itemname.Contains("Red"))
+        {
+            quality = ItemQuality.Red;
+        }
+        return (int)quality;
     }
     private void InitItemTableData()
     {
@@ -270,7 +307,8 @@ public class DataManager
                 moveParticle = arr[13],
                 hitParticle = arr[14],
                 bombMoveSpeed = float.Parse(arr[15]),
-                bombCount = int.Parse(arr[16])
+                bombCount = int.Parse(arr[16]),
+                quality = int.Parse(arr[17])
             };
             ItemTableDataDic[id] = itemTableData;
         }
