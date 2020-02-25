@@ -15,7 +15,14 @@ public enum AnimatorParameters
     CrossbowShootAttack = 17,
     TakeDamage =25,
     Die,
-    Victory=55
+    FlyIdle=33,
+    FlyForward,
+    FlyMeleeRightAttack01,
+    FlyMeleeRightAttack02,
+    FlyMeleeRightAttack03,
+    FlyTakeDamage = 46,
+    FlyDie = 47,
+    Victory =55
 }
 
 public enum ActionParamtersType

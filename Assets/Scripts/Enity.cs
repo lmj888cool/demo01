@@ -26,8 +26,8 @@ public class Enity : MonoBehaviour
     public HeroTableData heroTableData;
     public Hero hero;
     public EnityType enityType;
-    private Animator animator;
-
+    private List<Animator> animatorList = new List<Animator>();
+    private bool isFly = false;
     void Start()
     {
         //dummyProp_Enity = new Dictionary<DummyProp, GameObject>();
@@ -65,8 +65,16 @@ public class Enity : MonoBehaviour
         this.hero = hero;
         heroTableData = DataManager.GetInstance().GetHeroTableDataByHero(hero);
         enityType = heroTableData.id < 10000 ? EnityType.Hero : EnityType.Enemy;
+        Animator animator = gameObject.GetComponent<Animator>();
+        if(animator != null)
+        {
+            animatorList.Add(animator);
+        }
         UpdateHeroEquips();
-        animator = gameObject.GetComponent<Animator>();
+
+        OnPlayAnimation("idle");
+
+
     }
     public Item GetEnityEquip()
     {
@@ -132,6 +140,21 @@ public class Enity : MonoBehaviour
                 dummyProp_Enity[dummyProp] = equip;
                 equip.transform.SetParent(dummyProp_Parent[(int)dummyProp], false);
             }
+            if (dummyProp == DummyProp.Chest)// 如果是护甲，获取护甲的动作类，需要一同播放
+            {
+                Animator animatorChest = equip.GetComponent<Animator>();
+                if (animatorChest!= null && !animatorList.Contains(animatorChest))
+                {
+                    animatorList.Add(animatorChest);
+                }
+
+            }
+            if (dummyProp == DummyProp.Back)//如果是翅膀，改成飞行状态
+            {
+                isFly = true;
+                //OnPlayAnimation(AnimatorParameters.FlyIdle, ActionParamtersType.Bool);
+            }
+
             if (isupdate)//刷新装备
             {
                 //Hero hero = DataManager.GetInstance().GetGameData().GetHeroById(heroId);
@@ -187,40 +210,88 @@ public class Enity : MonoBehaviour
         AddEquipsByDummyProp(itemid,true);
         DataManager.GetInstance().SaveByBin();
     }
+    public void OnPlayAnimation(AnimatorParameters _actionType, ActionParamtersType _ActionParamtersType, int _intValue = 1, float _floatValue = 0.0f)//播放或停止动作
+    {
+        for (int i = 0; i < animatorList.Count; i++)
+        {
+            Animator animator = animatorList[i];
+            if (animator != null && animator.parameterCount > (int)_actionType)
+            {
+                string _animatorParameterName = animator.GetParameter((int)_actionType).name;
+                switch (_ActionParamtersType)
+                {
+                    case ActionParamtersType.Float:
+                        if (animator.GetFloat(_animatorParameterName) != _floatValue)
+                            animator.SetFloat(_animatorParameterName, _floatValue);
+                        break;
+                    case ActionParamtersType.Int:
+                        if (animator.GetInteger(_animatorParameterName) != _intValue)
+                            animator.SetInteger(_animatorParameterName, _intValue);
+                        break;
+                    case ActionParamtersType.Bool:
+                        if (animator.GetBool(_animatorParameterName) != _intValue > 0)
+                            animator.SetBool(_animatorParameterName, _intValue > 0);
+                        break;
+                    case ActionParamtersType.Trigger:
+                        animator.SetTrigger(_animatorParameterName);
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+      
+    }
     public void OnPlayAnimation(string animationname)
     {
-        if (animator != null)
+        //if (animator != null)
         {
             
             switch (animationname)
             {
                 case "idle":
-                    if(animator.parameterCount > (int)AnimatorParameters.Idle)
+                    if (isFly)
                     {
-                        string _animatorParameterName = animator.GetParameter((int)AnimatorParameters.Idle).name;
-                        animator.SetBool(_animatorParameterName,true);
-                    }             
+                        OnPlayAnimation(AnimatorParameters.FlyIdle, ActionParamtersType.Bool, 1);
+                    }
+                    else
+                    {
+                        OnPlayAnimation(AnimatorParameters.Idle, ActionParamtersType.Bool, 1);
+                    }
+                               
                 break;
                 case "run":
-                    if (animator.parameterCount > (int)AnimatorParameters.Run)
+                    if (isFly)
                     {
-                        string _animatorParameterName = animator.GetParameter((int)AnimatorParameters.Run).name;
-                        animator.SetBool(_animatorParameterName, true);
+                        OnPlayAnimation(AnimatorParameters.FlyForward, ActionParamtersType.Bool, 1);
                     }
+                    else
+                    {
+                        OnPlayAnimation(AnimatorParameters.Run, ActionParamtersType.Bool, 1);
+                    }
+                   
                     break;
                 case "attack":
-                    if (animator.parameterCount > (int)AnimatorParameters.MeleeRightAttack01)
+                    if (isFly)
                     {
-                        string _animatorParameterName = animator.GetParameter((int)AnimatorParameters.MeleeRightAttack01).name;
-                        animator.SetTrigger(_animatorParameterName);
+                        OnPlayAnimation(AnimatorParameters.FlyMeleeRightAttack03, ActionParamtersType.Trigger, 1);
                     }
+                    else
+                    {
+                        OnPlayAnimation(AnimatorParameters.MeleeRightAttack03, ActionParamtersType.Trigger, 1);
+                    }
+                    
                     break;
                 case "dead":
-                    if (animator.parameterCount > (int)AnimatorParameters.Die)
+                    if (isFly)
                     {
-                        string _animatorParameterName = animator.GetParameter((int)AnimatorParameters.Die).name;
-                        animator.SetBool(_animatorParameterName, true);
+                        OnPlayAnimation(AnimatorParameters.FlyDie, ActionParamtersType.Bool, 1);
                     }
+                    else
+                    {
+                        OnPlayAnimation(AnimatorParameters.Die, ActionParamtersType.Bool, 1);
+                    }
+                    
                     break;
                 default:
                     break;

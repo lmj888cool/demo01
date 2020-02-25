@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\EnityManager.cs" />
     <Compile Include="Assets\Scripts\FightScene.cs" />
     <Compile Include="Assets\Scripts\GameData.cs" />
+    <Compile Include="Assets\Scripts\GetFBXAnimation.cs" />
     <Compile Include="Assets\Scripts\Hero.cs" />
     <Compile Include="Assets\Scripts\HeroIcon.cs" />
     <Compile Include="Assets\Scripts\HeroManager.cs" />
