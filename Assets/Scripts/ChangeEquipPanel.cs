@@ -13,11 +13,16 @@ public class ChangeEquipPanel : MonoBehaviour
     private GameObject ItemShow3D;
     private Item CurrentItem;
     private List<GameObject> Equips = new List<GameObject>();
+    private Enity enity;
+    private DummyProp dummyProp;
+    public Button changeButton;
+    public Button removeButton;
+    private ItemIcon currentSelectItemIcon;
     // Start is called before the first frame update
     void Start()
     {
-        
-        
+
+
     }
 
     // Update is called once per frame
@@ -50,6 +55,14 @@ public class ChangeEquipPanel : MonoBehaviour
         }
         ItemName.text = itemTableData.name;
         ItemInfo.text = itemTableData.des;
+        bool isSelfEquip = false;
+        if(this.enity != null && this.enity.hero.dummyPropDic.ContainsKey(this.dummyProp) && this.enity.hero.dummyPropDic[this.dummyProp] == item.id)
+        {
+            isSelfEquip = true;
+        }
+
+        removeButton.gameObject.SetActive(isSelfEquip);
+        changeButton.gameObject.SetActive(!isSelfEquip);
     }
     public void Clear()
     {
@@ -59,25 +72,32 @@ public class ChangeEquipPanel : MonoBehaviour
             ItemShow3D = null;
         }
     }
-    public void InitData(DummyProp dummyProp)
+    public void InitData(DummyProp dummyProp,Enity enity)
     {
+        this.enity = enity;
+        this.dummyProp = dummyProp;
         bool isSetDefault = false;
+        int enityitemid = 0;
+        if (this.enity != null)
+        {
+            if (this.enity.hero.dummyPropDic.ContainsKey(dummyProp))
+            {
+                enityitemid = this.enity.hero.dummyPropDic[dummyProp];
+                if (DataManager.GetInstance().GetGameData().Items.ContainsKey(enityitemid))
+                {
+                    Item item = DataManager.GetInstance().GetGameData().Items[enityitemid];
+                    AddEquipToItemsView(item);
+                    UpdateSelectItem(item);
+                    isSetDefault = true;
+                }
+            }
+        }
         foreach (KeyValuePair<int,Item> item in DataManager.GetInstance().GetGameData().Items)
         {
             ItemTableData itemTableData = DataManager.GetInstance().GetItemTableDataByItemId(item.Value.itemId);
-            if(itemTableData.group == (int)dummyProp)
+            if(itemTableData.group == (int)dummyProp && enityitemid != item.Key)
             {
-                GameObject gameObject = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", "ItemIcon");
-                if (gameObject != null)
-                {
-                    gameObject.transform.SetParent(ItemsView.content, false);
-                    ItemIcon equip = gameObject.GetComponent<ItemIcon>();
-                    if (equip != null)
-                    {
-                        equip.InitData(item.Value,ItemIconType.ChangeEquipPanel);
-                    }
-                    Equips.Add(gameObject);
-                }
+                AddEquipToItemsView(item.Value);
                 if (!isSetDefault)
                 {
                     UpdateSelectItem(item.Value);
@@ -85,6 +105,20 @@ public class ChangeEquipPanel : MonoBehaviour
                 }
                 
             }
+        }
+    }
+    public void AddEquipToItemsView(Item item)
+    {
+        GameObject gameObject = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", "ItemIcon");
+        if (gameObject != null)
+        {
+            gameObject.transform.SetParent(ItemsView.content, false);
+            ItemIcon equip = gameObject.GetComponent<ItemIcon>();
+            if (equip != null)
+            {
+                equip.InitData(item, ItemIconType.ChangeEquipPanel);
+            }
+            Equips.Add(gameObject);
         }
     }
     public void OnReturn()
@@ -101,5 +135,10 @@ public class ChangeEquipPanel : MonoBehaviour
     {
         OnReturn();
         GameObject.Find("HeroScene").SendMessage("ChangeEquip", CurrentItem);
+    }
+    public void RemoveEquip()
+    {
+        OnReturn();
+        GameObject.Find("HeroScene").SendMessage("RemoveEquip", CurrentItem);
     }
 }

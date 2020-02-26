@@ -2,27 +2,92 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//动作枚举
-public enum AnimatorParameters
+
+public enum AnimatorAction
 {
     Idle,
     Walk,
     Run,
-    MeleeRightAttack01=7,//近战攻击
+    Attack,
+    Hit,
+    Stunned,
+    Die,
+    Victory
+}
+//动作枚举
+public enum AnimatorParameters
+{
+    Relax,
+    Walk,
+    Run,
+    Dash,
+    StrafeLeft,
+    StrafeRight,
+    Jump,
+    MeleeRightAttack01,
     MeleeRightAttack02,
     MeleeRightAttack03,
-    ProjectileRightAttack01=14,
-    CrossbowShootAttack = 17,
-    TakeDamage =25,
+    MeleeLeftAttack01,
+    JumpRightAttack01,
+    RightPunchAttack,
+    LeftPunchAttack,
+    ProjectileRightAttack01,
+    CrossbowAim,
+    CrossbowReload,
+    CrossbowShootAttack,
+    CrossbowRightAim,
+    CrossRightReload,
+    CrossbowRightShootAttack,
+    CastSpell,
+    CastSpell02,
+    SpinAttack,
+    Defend,
+    TakeDamage,
     Die,
-    FlyIdle=33,
+    NodHead,
+    ShakeHead,
+    WaveHand,
+    Stunned,
+    PickUp,
+    DrinkPotion,
+    FlyIdle,
     FlyForward,
     FlyMeleeRightAttack01,
     FlyMeleeRightAttack02,
     FlyMeleeRightAttack03,
-    FlyTakeDamage = 46,
-    FlyDie = 47,
-    Victory =55
+    FlyMeleeLeftAttack01,
+    FlyRightPunchAttack,
+    FlyLeftPunchAttack,
+    FlyCrossbowShootAttack,
+    FlyProjectileRightAttack01,
+    FlyCastSpell01,
+    FlyCastSpell02,
+    FlyDefend,
+    FlyTakeDamage,
+    FlyDie,
+    ChopTree,
+    Digging,
+    Talking,
+    Sitting,
+    LayGround,
+    Crying,
+    Clapping,
+    Victory,
+    SpearIdle,
+    SpearWalk,
+    SpearRun,
+    SpearDash,
+    SpearJump,
+    SpearMeleeAttack01,
+    SpearMeleeAttack02,
+    SpearStrafeLeft,
+    SpearStrafeRight,
+    SpearCastSpell,
+    SpearRelax,
+    SpearDefend,
+    SpearTakeDamage,
+    SpearDie,
+    NULL
 }
 
 public enum ActionParamtersType
@@ -75,8 +140,8 @@ public class AIBase : MonoBehaviour
     [Header("死亡特效")]
     public GameObject dieParticle;
 
-    public AnimatorParameters attackAnimatorType = AnimatorParameters.MeleeRightAttack02;
-    public AnimatorParameters moveAnimatorType = AnimatorParameters.Run;
+    public AnimatorAction attackAnimatorType = AnimatorAction.Attack;
+    public AnimatorAction moveAnimatorType = AnimatorAction.Run;
 
 
 
@@ -149,12 +214,14 @@ public class AIBase : MonoBehaviour
                         ///////////////////好，攻击目标开始！//////////////////////////////
                         if(animator.parameterCount > (int)attackAnimatorType)
                         {
-                            DoAction(moveAnimatorType, ActionParamtersType.Bool, 0);//如果在跑动，先停止跑动
+                            //DoAction(moveAnimatorType, ActionParamtersType.Bool, 0);//如果在跑动，先停止跑动
+                            this.enity.OnPlayAnimation(moveAnimatorType,0);
                             if (aiWeapon.timeCumulative > aiWeapon.attackSpeed)
                             {
                                 aiWeapon.timeCumulative = 0.0f;
                                 aiWeapon.isCanAttack = true;
-                                DoAction(attackAnimatorType, ActionParamtersType.Trigger);
+                                this.enity.OnPlayAnimation(attackAnimatorType);
+                                //DoAction(attackAnimatorType, ActionParamtersType.Trigger);
                                 
                             }
                             //AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
@@ -193,10 +260,12 @@ public class AIBase : MonoBehaviour
                     {
                         if (isCanMove)//先判断是否可以跑动
                         {
-                            DoAction(moveAnimatorType, ActionParamtersType.Bool);//播放跑动动画
+                            this.enity.OnPlayAnimation(moveAnimatorType);
+                            //DoAction(moveAnimatorType, ActionParamtersType.Bool);//播放跑动动画
                             //transform.rotation = Quaternion.LookRotation(lockTarget.transform.position - transform.position);//先调整方向，朝向目标
                             transform.LookAt(lockTarget.transform.position);
-                            if (animator.parameterCount > (int)moveAnimatorType && _animatorStateInfo.IsName(animator.GetParameter((int)moveAnimatorType).name))//判断在运动状态再移动，不然会出现还在攻击状态下漂移的情况
+                            //if (animator.parameterCount > (int)moveAnimatorType && _animatorStateInfo.IsName(animator.GetParameter((int)moveAnimatorType).name))//判断在运动状态再移动，不然会出现还在攻击状态下漂移的情况
+                            if(this.enity.animatorAction == AnimatorAction.Run)
                             {
                                 //////////////开始移动////////////////////////
                                 //transform.position = transform.position + transform.forward.normalized * 0.1f;
@@ -216,8 +285,9 @@ public class AIBase : MonoBehaviour
             {
                 if(selfType.ToString() == EnityType.Hero.ToString())
                 {
-                    DoAction(moveAnimatorType, ActionParamtersType.Bool, 1);
-                    if (animator.parameterCount > (int)moveAnimatorType && _animatorStateInfo.IsName(animator.GetParameter((int)moveAnimatorType).name))//判断在运动状态再移动，不然会出现还在攻击状态下漂移的情况
+                    this.enity.OnPlayAnimation(moveAnimatorType);
+                    //DoAction(moveAnimatorType, ActionParamtersType.Bool, 1);
+                    if (this.enity.animatorAction == AnimatorAction.Run)//判断在运动状态再移动，不然会出现还在攻击状态下漂移的情况
                     {
                         transform.rotation = initRotation;
                         GetComponent<Rigidbody>().MovePosition(transform.position + transform.forward.normalized * moveSpeed);
@@ -237,7 +307,7 @@ public class AIBase : MonoBehaviour
         isCanMove = enity.heroTableData.isCanMove == 1;
         searchRadius = enity.heroTableData.searchRadius;
         moveSpeed = enity.heroTableData.moveSpeed;
-        moveAnimatorType = AnimatorParameters.Run;
+        moveAnimatorType = AnimatorAction.Run;
         animator = enity.gameObject.GetComponent<Animator>();
         //////////////////////////判断是否装备武器///////////////////////////////////
         Item equip = enity.GetEnityEquip();
@@ -248,32 +318,33 @@ public class AIBase : MonoBehaviour
         }
         isInit = true;
     }
-    void DoAction(AnimatorParameters _actionType, ActionParamtersType _ActionParamtersType,int _intValue =1,float _floatValue = 0.0f)//播放或停止动作
+    void DoAction(AnimatorAction _actionType, ActionParamtersType _ActionParamtersType,int _intValue =1,float _floatValue = 0.0f)//播放或停止动作
     {
-        if (animator != null && animator.parameterCount > (int)_actionType)
-        {
-            string _animatorParameterName = animator.GetParameter((int)_actionType).name;
-            switch (_ActionParamtersType)
-            {
-                case ActionParamtersType.Float:
-                    if (animator.GetFloat(_animatorParameterName) != _floatValue)
-                        animator.SetFloat(_animatorParameterName, _floatValue);
-                    break;
-                case ActionParamtersType.Int:
-                    if (animator.GetInteger(_animatorParameterName) != _intValue)
-                        animator.SetInteger(_animatorParameterName, _intValue);
-                    break;
-                case ActionParamtersType.Bool:
-                    if (animator.GetBool(_animatorParameterName) != _intValue > 0)
-                        animator.SetBool(_animatorParameterName, _intValue >0);
-                    break;
-                case ActionParamtersType.Trigger:
-                    animator.SetTrigger(_animatorParameterName);
-                    break;
-                default:
-                    break;
-            }
-        }
+        this.enity.OnPlayAnimation(_actionType, _intValue, _floatValue);
+        //if (animator != null && animator.parameterCount > (int)_actionType)
+        //{
+        //    string _animatorParameterName = animator.GetParameter((int)_actionType).name;
+        //    switch (_ActionParamtersType)
+        //    {
+        //        case ActionParamtersType.Float:
+        //            if (animator.GetFloat(_animatorParameterName) != _floatValue)
+        //                animator.SetFloat(_animatorParameterName, _floatValue);
+        //            break;
+        //        case ActionParamtersType.Int:
+        //            if (animator.GetInteger(_animatorParameterName) != _intValue)
+        //                animator.SetInteger(_animatorParameterName, _intValue);
+        //            break;
+        //        case ActionParamtersType.Bool:
+        //            if (animator.GetBool(_animatorParameterName) != _intValue > 0)
+        //                animator.SetBool(_animatorParameterName, _intValue >0);
+        //            break;
+        //        case ActionParamtersType.Trigger:
+        //            animator.SetTrigger(_animatorParameterName);
+        //            break;
+        //        default:
+        //            break;
+        //    }
+        //}
     }
     List<GameObject> GetGameObjectsByAttackTargetType(EnityType _attackType)
     {
@@ -366,7 +437,8 @@ public class AIBase : MonoBehaviour
         }else{
             if(animator != null && animator.parameterCount > (int)AnimatorParameters.TakeDamage)
             {
-                DoAction(AnimatorParameters.TakeDamage, ActionParamtersType.Trigger);
+                this.enity.OnPlayAnimation(AnimatorAction.Hit);
+                //DoAction(AnimatorParameters.TakeDamage, ActionParamtersType.Trigger);
             }
             
         }
@@ -383,7 +455,8 @@ public class AIBase : MonoBehaviour
         }
         if (animator != null && animator.parameterCount > (int)AnimatorParameters.Die)
         {
-            DoAction(AnimatorParameters.Die, ActionParamtersType.Bool,1);
+            this.enity.OnPlayAnimation(AnimatorAction.Die);
+            //DoAction(AnimatorParameters.Die, ActionParamtersType.Bool,1);
             Destroy(gameObject,3.0f);
         }
         else

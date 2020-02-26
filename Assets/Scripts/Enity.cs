@@ -27,35 +27,14 @@ public class Enity : MonoBehaviour
     public Hero hero;
     public EnityType enityType;
     private List<Animator> animatorList = new List<Animator>();
-    private bool isFly = false;
+    private bool isFly = false;//是否是飞行状态
+    private bool isSpear = false;//是否拿着长矛
+    private AnimationTableData animationTableData;
+    public AnimatorAction animatorAction;//当前的动作状态
     void Start()
     {
-        //dummyProp_Enity = new Dictionary<DummyProp, GameObject>();
-        //1、资源加载的第一种方式，直接在面板拖拽，通常不使用
-        //if (_LoadObj_Pre != null)
-        //{
-        //    //实例化预设物体
-        //    GameObject obj = Instantiate(_LoadObj_Pre);
-        //    //修改加载物体的名称
-        //    obj.name = "第一种拖拽资源加载方式";
-        //}
-
-        //2、资源加载的第二种方式，使用Resources.Load加载资源
-        //（注意预设需要放置在Resources目录下面，这个目录有限制，
-        //最大只能加载2G的资源内容,一般不建议使用）
-        //GameObject loadObj = Instantiate(Resources.Load("Prefabs/cube")) as GameObject;
-        //loadObj.name = "第二种Resources资源加载方式";
-
-        //3、资源加载的第三种方式，使用AssetBundle加载的方式加载(常用方式)
-        //AssetBundle assetBundleObj = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/cube");
-        //GameObject abObj = Instantiate(assetBundleObj.LoadAsset<GameObject>("cube"));
-       //abObj.name = "第三种AB资源加载方式";
-
-        //4、资源加载的第四种方式，使用AssetDatabase.LoadAssetAtPath加载资源(编辑器框架开发使用)
-        //GameObject DBobj = Instantiate(UnityEditor.AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Little Heroes Mega Pack/Prefabs/Customized Character Samples/Adventurer Male 01.prefab"));
-        //DBobj.name = "第四种DB资源加载方式";
+        animatorAction = AnimatorAction.Idle;
     }
-    // Update is called once per frame
     void Update()
     {
 
@@ -66,40 +45,48 @@ public class Enity : MonoBehaviour
         heroTableData = DataManager.GetInstance().GetHeroTableDataByHero(hero);
         enityType = heroTableData.id < 10000 ? EnityType.Hero : EnityType.Enemy;
         Animator animator = gameObject.GetComponent<Animator>();
+        //string str = "";
+        //for (int i = 0; i < animator.parameterCount; i++)
+        //{
+        //    string parametername = animator.GetParameter(i).name;
+        //    str += parametername + ",\n";
+        //}
+        //print(str);
         if(animator != null)
         {
             animatorList.Add(animator);
         }
         UpdateHeroEquips();
 
-        OnPlayAnimation("idle");
+        OnPlayAnimation(animatorAction);
 
 
     }
     public Item GetEnityEquip()
     {
         if(hero != null)
-        {
+        { 
             ///////先判断右手是否有武器，左手一般是防御武器////////////
             if (hero.dummyPropDic.ContainsKey(DummyProp.Right))
             {
                 int itemid = hero.dummyPropDic[DummyProp.Right];
 
                 return DataManager.GetInstance().GetGameData().GetItemById(itemid);
-            }else if (hero.dummyPropDic.ContainsKey(DummyProp.Left))
-            {
-                int itemid = hero.dummyPropDic[DummyProp.Left];
-                Item item = DataManager.GetInstance().GetGameData().GetItemById(itemid);
-                if(item != null)
-                {
-                    ItemTableData itemTableData = DataManager.GetInstance().GetItemTableDataByItem(item);
-                    if(itemTableData.damaged > 0)//判断左手的武器是否有伤害
-                    {
-                        return item;
-                    }
-
-                }
             }
+            //else if (hero.dummyPropDic.ContainsKey(DummyProp.Left))
+            //{
+            //    int itemid = hero.dummyPropDic[DummyProp.Left];
+            //    Item item = DataManager.GetInstance().GetGameData().GetItemById(itemid);
+            //    if(item != null)
+            //    {
+            //        ItemTableData itemTableData = DataManager.GetInstance().GetItemTableDataByItem(item);
+            //        if(itemTableData.damaged > 0)//判断左手的武器是否有伤害
+            //        {
+            //            return item;
+            //        }
+
+            //    }
+            //}
         }
         return null;
     }
@@ -114,13 +101,17 @@ public class Enity : MonoBehaviour
                 int itemid = item.Value;
                 if (items.ContainsKey(itemid))
                 {
-                     AddEquipsByDummyProp(itemid);
+                    UpdateEquipsByDummyProp(itemid);
                 }
+            }
         }
+        if (animationTableData == null)
+        {
+            animationTableData = DataManager.GetInstance().GetAnimationTableDataById(1);
         }
        
     }
-    public void AddEquipsByDummyProp(int itemid,bool isupdate = false)
+    public void UpdateEquipsByDummyProp(int itemid,bool isAdd = true,bool isupdate = false)
     {
         Item item = DataManager.GetInstance().GetGameData().GetItemById(itemid);
 
@@ -134,26 +125,30 @@ public class Enity : MonoBehaviour
                 dummyProp_Enity.Remove(dummyProp);
                 Destroy(obj);
             }
-            GameObject equip = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", equipdata.itemPrefab);
-            if (equip != null && dummyProp_Parent.Count > (int)dummyProp)
+            if (isAdd)
             {
-                dummyProp_Enity[dummyProp] = equip;
-                equip.transform.SetParent(dummyProp_Parent[(int)dummyProp], false);
-            }
-            if (dummyProp == DummyProp.Chest)// 如果是护甲，获取护甲的动作类，需要一同播放
-            {
-                Animator animatorChest = equip.GetComponent<Animator>();
-                if (animatorChest!= null && !animatorList.Contains(animatorChest))
+                GameObject equip = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", equipdata.itemPrefab);
+                if (equip != null && dummyProp_Parent.Count > (int)dummyProp)
                 {
-                    animatorList.Add(animatorChest);
+                    dummyProp_Enity[dummyProp] = equip;
+                    equip.transform.SetParent(dummyProp_Parent[(int)dummyProp], false);
                 }
+                if (dummyProp == DummyProp.Chest)// 如果是护甲，获取护甲的动作类，需要一同播放
+                {
+                    Animator animatorChest = equip.GetComponent<Animator>();
+                    if (animatorChest != null && !animatorList.Contains(animatorChest))
+                    {
+                        animatorList.Add(animatorChest);
+                    }
 
+                }
+                if (dummyProp == DummyProp.Back)//如果是翅膀，改成飞行状态
+                {
+                    //isFly = true;
+                    //OnPlayAnimation(AnimatorParameters.FlyIdle, ActionParamtersType.Bool);
+                }
             }
-            if (dummyProp == DummyProp.Back)//如果是翅膀，改成飞行状态
-            {
-                isFly = true;
-                //OnPlayAnimation(AnimatorParameters.FlyIdle, ActionParamtersType.Bool);
-            }
+           
 
             if (isupdate)//刷新装备
             {
@@ -169,18 +164,24 @@ public class Enity : MonoBehaviour
                         olditem = DataManager.GetInstance().GetGameData().GetItemById(olditemid);
                         //olditem.masterId = 0;
                     }
-                    hero.dummyPropDic[dummyProp] = itemid;
-                    if(item.masterId > 0)//之前有穿戴者，需要卸下来
+                    if (isAdd)
                     {
-                        oldmaster = DataManager.GetInstance().GetGameData().GetHeroById(item.masterId);
-                        //if(oldmaster != null)
-                        //{
-                        //    oldmaster.dummyPropDic.Remove(dummyProp);
-                        //}
+                        hero.dummyPropDic[dummyProp] = itemid;
+                        if (item.masterId > 0)//之前有穿戴者，需要卸下来
+                        {
+                            oldmaster = DataManager.GetInstance().GetGameData().GetHeroById(item.masterId);
+                            //if(oldmaster != null)
+                            //{
+                            //    oldmaster.dummyPropDic.Remove(dummyProp);
+                            //}
+                        }
+                        item.masterId = hero.id;
                     }
+                    
                     if(olditem != null)
                     {
-                        olditem.masterId = oldmaster != null ? oldmaster.id : 0;                       
+                        olditem.masterId = oldmaster != null ? oldmaster.id : 0;
+                        hero.dummyPropDic.Remove(dummyProp);
                     }
                     if (oldmaster != null)
                     {
@@ -193,12 +194,26 @@ public class Enity : MonoBehaviour
                             oldmaster.dummyPropDic.Remove(dummyProp);
                         }
                     }
-                    item.masterId = hero.id;
+                   
 
                     if(hero.teamPosition >=0)//如果再阵容需要更新战斗场景
                     {
                         //GameObject.Find("FightScene").SendMessage("InitFightingHero",null);
                     }
+                }
+            }
+
+            if(dummyProp == DummyProp.Left || dummyProp == DummyProp.Right)//更新动作
+            {
+                Item itemEquip = GetEnityEquip();
+                if(itemEquip != null)
+                {
+                    ItemTableData itemTableData = DataManager.GetInstance().GetItemTableDataByItem(itemEquip);
+                    if(itemTableData != null)
+                    {
+                        animationTableData = DataManager.GetInstance().GetAnimationTableDataById(itemTableData.animationId);
+                    }
+                   
                 }
             }
             
@@ -207,7 +222,14 @@ public class Enity : MonoBehaviour
     }
     public void ChangeEquip(int itemid)
     {
-        AddEquipsByDummyProp(itemid,true);
+        UpdateEquipsByDummyProp(itemid,true,true);
+        OnPlayAnimation(animatorAction);
+        DataManager.GetInstance().SaveByBin();
+    }
+    public void RemoveEquip(int itemid)
+    {
+        UpdateEquipsByDummyProp(itemid,false, true);
+        OnPlayAnimation(animatorAction);
         DataManager.GetInstance().SaveByBin();
     }
     public void OnPlayAnimation(AnimatorParameters _actionType, ActionParamtersType _ActionParamtersType, int _intValue = 1, float _floatValue = 0.0f)//播放或停止动作
@@ -215,87 +237,86 @@ public class Enity : MonoBehaviour
         for (int i = 0; i < animatorList.Count; i++)
         {
             Animator animator = animatorList[i];
-            if (animator != null && animator.parameterCount > (int)_actionType)
+            if (animator != null)
             {
-                string _animatorParameterName = animator.GetParameter((int)_actionType).name;
-                switch (_ActionParamtersType)
+                if(animator.parameterCount > (int)_actionType)
                 {
-                    case ActionParamtersType.Float:
-                        if (animator.GetFloat(_animatorParameterName) != _floatValue)
-                            animator.SetFloat(_animatorParameterName, _floatValue);
-                        break;
-                    case ActionParamtersType.Int:
-                        if (animator.GetInteger(_animatorParameterName) != _intValue)
-                            animator.SetInteger(_animatorParameterName, _intValue);
-                        break;
-                    case ActionParamtersType.Bool:
-                        if (animator.GetBool(_animatorParameterName) != _intValue > 0)
-                            animator.SetBool(_animatorParameterName, _intValue > 0);
-                        break;
-                    case ActionParamtersType.Trigger:
-                        animator.SetTrigger(_animatorParameterName);
-                        break;
-                    default:
-                        break;
+                    string _animatorParameterName = animator.GetParameter((int)_actionType).name;
+                    switch (_ActionParamtersType)
+                    {
+                        case ActionParamtersType.Float:
+                            if (animator.GetFloat(_animatorParameterName) != _floatValue)
+                                animator.SetFloat(_animatorParameterName, _floatValue);
+                            break;
+                        case ActionParamtersType.Int:
+                            if (animator.GetInteger(_animatorParameterName) != _intValue)
+                                animator.SetInteger(_animatorParameterName, _intValue);
+                            break;
+                        case ActionParamtersType.Bool:
+                            if (animator.GetBool(_animatorParameterName) != _intValue > 0)
+                                animator.SetBool(_animatorParameterName, _intValue > 0);
+                            break;
+                        case ActionParamtersType.Trigger:
+                            animator.SetTrigger(_animatorParameterName);
+                            break;
+                        default:
+                            break;
+                    }
                 }
+                else
+                {
+                    animator.Play("Idle");
+                }
+
             }
+            
         }
       
     }
-    public void OnPlayAnimation(string animationname)
+    public AnimatorParameters GetAnimatorParametersByName(string name)
     {
-        //if (animator != null)
+        AnimatorParameters animatorParameters = AnimatorParameters.NULL;
+        foreach (AnimatorParameters i in Enum.GetValues(typeof(AnimatorParameters)))
         {
-            
-            switch (animationname)
+            if (i.ToString() == name)
             {
-                case "idle":
-                    if (isFly)
-                    {
-                        OnPlayAnimation(AnimatorParameters.FlyIdle, ActionParamtersType.Bool, 1);
-                    }
-                    else
-                    {
-                        OnPlayAnimation(AnimatorParameters.Idle, ActionParamtersType.Bool, 1);
-                    }
-                               
-                break;
-                case "run":
-                    if (isFly)
-                    {
-                        OnPlayAnimation(AnimatorParameters.FlyForward, ActionParamtersType.Bool, 1);
-                    }
-                    else
-                    {
-                        OnPlayAnimation(AnimatorParameters.Run, ActionParamtersType.Bool, 1);
-                    }
-                   
-                    break;
-                case "attack":
-                    if (isFly)
-                    {
-                        OnPlayAnimation(AnimatorParameters.FlyMeleeRightAttack03, ActionParamtersType.Trigger, 1);
-                    }
-                    else
-                    {
-                        OnPlayAnimation(AnimatorParameters.MeleeRightAttack03, ActionParamtersType.Trigger, 1);
-                    }
-                    
-                    break;
-                case "dead":
-                    if (isFly)
-                    {
-                        OnPlayAnimation(AnimatorParameters.FlyDie, ActionParamtersType.Bool, 1);
-                    }
-                    else
-                    {
-                        OnPlayAnimation(AnimatorParameters.Die, ActionParamtersType.Bool, 1);
-                    }
-                    
-                    break;
-                default:
-                    break;
+                animatorParameters = i;
             }
+        }
+        return animatorParameters;
+    }
+    public void OnPlayAnimation(AnimatorAction _actionType, int _intValue = 1, float _floatValue = 0.0f)
+    {
+        animatorAction = _actionType;
+        OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Idle), ActionParamtersType.Bool, _intValue);
+        switch (_actionType)
+        {
+            case AnimatorAction.Idle:
+                    OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Idle), ActionParamtersType.Bool, _intValue);
+                break;
+            case AnimatorAction.Walk:
+                OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Walk), ActionParamtersType.Bool, _intValue);
+                break;
+            case AnimatorAction.Run:
+                    OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Run), ActionParamtersType.Bool, _intValue);
+                break;
+            case AnimatorAction.Attack:
+                    OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Attack), ActionParamtersType.Trigger, _intValue);
+                break;
+            case AnimatorAction.Die:
+                    OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Die), ActionParamtersType.Bool, _intValue);
+                break;
+            case AnimatorAction.Hit:
+                OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Hit), ActionParamtersType.Trigger, _intValue);
+                break;
+            case AnimatorAction.Stunned:
+                OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Stunned), ActionParamtersType.Bool, _intValue);
+                break;
+            case AnimatorAction.Victory:
+                OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Victory), ActionParamtersType.Bool, _intValue);
+                break;
+            default:
+                break;
         }
     }
 }

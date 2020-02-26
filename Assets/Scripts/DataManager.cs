@@ -74,7 +74,20 @@ public class ItemTableData
     public float bombMoveSpeed;//子弹移动速度
     public int bombCount;//一次攻击几发子弹
     public int quality;//资质
+    public int animationId;//装备对应动作ID（如果是武器的话）
 
+};
+public class AnimationTableData
+{
+    public int id;                         // 不可重置（归零再加），只能增长
+    public string Idle;                    // 待机动作
+    public string Walk;                    // 跑动动作
+    public string Run;                 // 跑动动作
+    public string Attack;                  // 普攻动作
+    public string Hit;                 // 被击打动作
+    public string Die;                 // 死亡动作
+    public string Stunned;                 // 被晕住动作
+    public string Victory;					// 待机动作
 };
 
 public class ConfigTableData
@@ -88,7 +101,8 @@ public enum TableDataName
     DefaultItemTableData,
     ItemTableData,
     HeroTableData,
-    EnemyTableData
+    EnemyTableData,
+    AnimationTableData
 }
 public enum ItemQuality
 {
@@ -106,6 +120,7 @@ public class DataManager
     public Dictionary<int, HeroTableData> HeroTableDataDic = new Dictionary<int, HeroTableData>();
     public Dictionary<int, EnemyTableData> EnemyTableDataDic = new Dictionary<int, EnemyTableData>();
     public Dictionary<int, DefaultItemTableData> DefaultItemTableDataDic = new Dictionary<int, DefaultItemTableData>();
+    public Dictionary<int, AnimationTableData> AnimationTableDataDic = new Dictionary<int, AnimationTableData>();
     public AssetBundle assetBundlePrefabs;
     public AssetBundle assetBundleStatic;
     public AssetBundle assetBundleUI;
@@ -117,16 +132,17 @@ public class DataManager
     }
     public DataManager()
     {
-        //CreateItemTableData();
+        CreateItemTableData();
         assetBundlePrefabs = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/prefab");
         assetBundleStatic = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/staticdata");
         assetBundleUI = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/ui");
         InitItemTableData();
         InitHeroTableData();
         InitEnemyTableData();
+        InitAnimationTableData();
 
-        
-        
+
+
         //初始化英雄，可以读取本地数据，或者服务器发来的数据
         LoadByBin();
         if (GD == null)//说明第一次启动，需要读取初始的英雄信息，最好配置表
@@ -229,7 +245,7 @@ public class DataManager
             byte[] myByte2 = System.Text.Encoding.UTF8.GetBytes(msg2);
             fsWrite.Write(myByte2, 0, myByte2.Length);
 
-            string msg3 = "id,name,des,itemPrefab,icon,group,groupName,damaged,defene,attackRadius,attackSpeed,isBomb,pointParticle,moveParticle,hitParticle,bombMoveSpeed,bombCount,quality\n";
+            string msg3 = "id,name,des,itemPrefab,icon,group,groupName,damaged,defene,attackRadius,attackSpeed,isBomb,pointParticle,moveParticle,hitParticle,bombMoveSpeed,bombCount,quality,animationId\n";
             byte[] myByte3 = System.Text.Encoding.UTF8.GetBytes(msg3);
             fsWrite.Write(myByte3, 0, myByte3.Length);
             int id = 1;
@@ -241,7 +257,7 @@ public class DataManager
                     string msg = id.ToString() + "," + sub.Value[i] + ",这是" + sub.Value[i] + "," + sub.Value[i] + "," + sub.Value[i] +
                         "," + group.ToString() +
                         "," + sub.Key.ToString() +
-                        ",15,0,25,0.5,1,0,0,0,1,1," + GetQuality(sub.Value[i]).ToString()+"\n";
+                        ",15,0,25,0.5,1,0,0,0,1,1," + GetQuality(sub.Value[i]).ToString()+ "," + GetAnimationId(sub.Value[i]).ToString() + "\n";
                     //if (sub.Value.Count-1 != i)
                     //{
                     //    msg += "\n";
@@ -281,6 +297,27 @@ public class DataManager
         }
         return (int)quality;
     }
+    public int GetAnimationId(String itemname)
+    {
+        int animationId =1;
+        if (itemname.Contains("Wand"))
+        {
+            animationId = 5;
+        }
+        if (itemname.Contains("Sword"))
+        {
+            animationId = 4;
+        }
+        if (itemname.Contains("Axe") || itemname.Contains("Mace") || itemname.Contains("Scythe"))
+        {
+            animationId = 3;
+        }
+        if (itemname.Contains("Spear"))
+        {
+            animationId = 2;
+        }
+        return animationId;
+    }
     private void InitItemTableData()
     {
         string[][] arrAll = GetData(TableDataName.ItemTableData.ToString());
@@ -308,7 +345,8 @@ public class DataManager
                 hitParticle = arr[14],
                 bombMoveSpeed = float.Parse(arr[15]),
                 bombCount = int.Parse(arr[16]),
-                quality = int.Parse(arr[17])
+                quality = int.Parse(arr[17]),
+                animationId = int.Parse(arr[18])
             };
             ItemTableDataDic[id] = itemTableData;
         }
@@ -390,6 +428,28 @@ public class DataManager
             EnemyTableDataDic[id] = tableData;
         }
     }
+    public void InitAnimationTableData()
+    {
+        string[][] arrAll = GetData(TableDataName.AnimationTableData.ToString());
+        for (int i = 0; i < arrAll.Length; i++)
+        {
+            string[] arr = arrAll[i];
+            int id = int.Parse(arr[0]);
+            AnimationTableData tableData = new AnimationTableData
+            {
+                id = id,
+                Idle = arr[1],
+                Walk = arr[2],
+                Run = arr[3],
+                Attack = arr[4],
+                Hit = arr[5],
+                Die = arr[6],
+                Stunned = arr[7],
+                Victory = arr[8]
+            };
+            AnimationTableDataDic[id] = tableData;
+        }
+    }
     public HeroTableData GetHeroTableDataByHeroId(int heroid)
     {
         if (HeroTableDataDic.ContainsKey(heroid))
@@ -430,6 +490,14 @@ public class DataManager
         if (ItemTableDataDic.ContainsKey(item.itemId))
         {
             return ItemTableDataDic[item.itemId];
+        }
+        return null;
+    }
+    public AnimationTableData GetAnimationTableDataById(int id)
+    {
+        if (AnimationTableDataDic.ContainsKey(id))
+        {
+            return AnimationTableDataDic[id];
         }
         return null;
     }

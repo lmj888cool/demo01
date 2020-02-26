@@ -64,7 +64,7 @@ public class EnityManager
         AIScript.searchRadius = 25.0f;
         AIScript.attackRadius = 1.0f;
         AIScript.moveSpeed = 0.05f;
-        AIScript.moveAnimatorType = AnimatorParameters.Walk;
+        AIScript.moveAnimatorType = AnimatorAction.Walk;
         AIScript.animator = obj.GetComponent<Animator>();
         AI.name = enityName + createEnityIndex;
         createEnityIndex++;

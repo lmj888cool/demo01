@@ -1,0 +1,8 @@
+int,string,string,string,string,string,string,string,string,string
+不可重置（归零再加），只能增长,待机动作,跑动动作,跑动动作,普攻动作,被击打动作,死亡动作,被晕住动作,待机动作,说明
+id,Idle,Walk,Run,Attack,Hit,Die,Stunned,Victory,Info
+1,Idle,Walk,Run,NULL,TakeDamage,Die,Stunned,Victory,未佩戴装备的动作
+2,SpearIdle,SpearWalk,SpearRun,SpearMeleeAttack01,SpearTakeDamage,SpearDie,Stunned,Victory,佩戴长毛的动作
+3,Idle,Walk,Dash,JumpRightAttack01,TakeDamage,Die,Stunned,Victory,佩戴斧头的动作
+4,Idle,Walk,Run,MeleeRightAttack02,TakeDamage,Die,Stunned,Victory,佩戴剑的动作
+5,Idle,Walk,Run,MeleeRightAttack01,TakeDamage,Die,Stunned,Victory,佩戴法杖的动作

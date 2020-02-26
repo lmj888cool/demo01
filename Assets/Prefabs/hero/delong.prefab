@@ -183,6 +183,7 @@ MonoBehaviour:
     teamPosition: 0
     heroLevel: 0
   enityType: 0
+  animatorAction: 0
 --- !u!1 &1817142342774962845
 GameObject:
   m_ObjectHideFlags: 0
