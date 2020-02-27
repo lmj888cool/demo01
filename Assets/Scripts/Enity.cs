@@ -45,14 +45,14 @@ public class Enity : MonoBehaviour
         heroTableData = DataManager.GetInstance().GetHeroTableDataByHero(hero);
         enityType = heroTableData.id < 10000 ? EnityType.Hero : EnityType.Enemy;
         Animator animator = gameObject.GetComponent<Animator>();
-        //string str = "";
-        //for (int i = 0; i < animator.parameterCount; i++)
-        //{
-        //    string parametername = animator.GetParameter(i).name;
-        //    str += parametername + ",\n";
-        //}
-        //print(str);
-        if(animator != null)
+        string str = "";
+        for (int i = 0; i < animator.parameterCount; i++)
+        {
+            string parametername = animator.GetParameter(i).name;
+            str += parametername + ",\n";
+        }
+        print(str);
+        if (animator != null)
         {
             animatorList.Add(animator);
         }
@@ -162,8 +162,10 @@ public class Enity : MonoBehaviour
                     {
                         int olditemid = hero.dummyPropDic[dummyProp];
                         olditem = DataManager.GetInstance().GetGameData().GetItemById(olditemid);
+                        hero.dummyPropDic.Remove(dummyProp);
                         //olditem.masterId = 0;
                     }
+                    
                     if (isAdd)
                     {
                         hero.dummyPropDic[dummyProp] = itemid;
@@ -177,12 +179,12 @@ public class Enity : MonoBehaviour
                         }
                         item.masterId = hero.id;
                     }
-                    
-                    if(olditem != null)
+                    if (olditem != null)
                     {
                         olditem.masterId = oldmaster != null ? oldmaster.id : 0;
-                        hero.dummyPropDic.Remove(dummyProp);
+                        
                     }
+
                     if (oldmaster != null)
                     {
                         if(olditem != null)

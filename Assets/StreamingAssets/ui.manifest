@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2095775531
+CRC: 1303506681
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e659cf6dd187ff2697523cfa91319f7e
+    Hash: fc118767080306ccf6a4c9feefd2f6fa
   TypeTreeHash:
     serializedVersion: 2
     Hash: ea5a42e0fd8ea905efa7aa926a3b8944
@@ -16,6 +16,8 @@ ClassTypes:
 Assets:
 - Assets/UI/itemicon/Shield 04 Blue.png
 - Assets/UI/itemicon/Crown 01 Sorceress Red.png
+- Assets/UI/itemicon/TH Sword 02 Magenta.png
+- Assets/UI/itemicon/Guitar 01 Purple.png
 - Assets/UI/itemicon/Shield 07 Green.png
 - Assets/UI/itemicon/Hat 05 Elf.png
 - Assets/UI/itemicon/Quiver 01 Green Arrow Blue.png
@@ -33,6 +35,7 @@ Assets:
 - Assets/UI/itemicon/Wings 03 Bone Purple.png
 - Assets/UI/itemicon/Hat 02 Peasant Black White.png
 - Assets/UI/itemicon/Claw 01 Blue Blue.png
+- Assets/UI/itemicon/TH Sword 02 Blue.png
 - Assets/UI/itemicon/FX Spinning Sparks.png
 - Assets/UI/itemicon/Hat 04 Black.png
 - Assets/UI/itemicon/Mace 02 Ice.png
@@ -41,13 +44,17 @@ Assets:
 - Assets/UI/itemicon/Scythe 03 Purple.png
 - Assets/UI/itemicon/Claw 02 Green.png
 - Assets/UI/itemicon/Club 03 Purple.png
+- Assets/UI/itemicon/TH Sword 01 Yellow.png
+- Assets/UI/itemicon/TH Sword 03 Magenta.png
 - Assets/UI/itemicon/Wand 01 Stick Purple.png
 - Assets/UI/itemicon/Wand 02 Red.png
+- Assets/UI/itemicon/Longbow 02 Red.png
 - Assets/UI/itemicon/Sword 07 Purple.png
 - Assets/UI/itemicon/Wings 08 Black.png
 - Assets/UI/itemicon/Shield 09 Purple.png
 - Assets/UI/itemicon/Horn 03 Green.png
 - Assets/UI/itemicon/Basket 01 Green Vege.png
+- Assets/UI/itemicon/TH Axe 02 Red.png
 - Assets/UI/itemicon/Shield 07 Black.png
 - Assets/UI/itemicon/Mace 02 Black.png
 - Assets/UI/itemicon/Quiver 01 Green Arrow Purple.png
@@ -55,6 +62,7 @@ Assets:
 - Assets/UI/itemicon/Crown 03 Gold.png
 - Assets/UI/itemicon/Wings 06 Leaves Blue.png
 - Assets/UI/itemicon/Helmet 09 Magenta.png
+- Assets/UI/itemicon/TH Axe 02 Purple.png
 - Assets/UI/itemicon/Crossbow 02 Yellow.png
 - Assets/UI/itemicon/Headband 01 Black Purple.png
 - Assets/UI/itemicon/Beard 03 Red.png
@@ -62,6 +70,7 @@ Assets:
 - Assets/UI/itemicon/Knuckles 02 Red.png
 - Assets/UI/itemicon/Headband 07 Red.png
 - Assets/UI/itemicon/Wings 03 Bone Black.png
+- Assets/UI/itemicon/Beard 04 Black.png
 - Assets/UI/itemicon/Wings 09 Green.png
 - Assets/UI/itemicon/Sword 05 Poison.png
 - Assets/UI/itemicon/Dagger 03 Purple.png
@@ -75,6 +84,7 @@ Assets:
 - Assets/UI/itemicon/Hat 05 Santa.png
 - Assets/UI/itemicon/Scythe 01 Blue.png
 - Assets/UI/itemicon/Wand 08 Red.png
+- Assets/UI/itemicon/TH Axe 03 Black.png
 - Assets/UI/itemicon/Wand 09 Green.png
 - Assets/UI/itemicon/Jaw 01 Red.png
 - Assets/UI/itemicon/Headband 03 Yellow.png
@@ -102,6 +112,7 @@ Assets:
 - Assets/UI/itemicon/Wings 07 Love Purple.png
 - Assets/UI/itemicon/Helmet 07 Black.png
 - Assets/UI/itemicon/Beard 02 Purple.png
+- Assets/UI/itemicon/Beard 04 Brown.png
 - Assets/UI/itemicon/Sword 10 Green Gold.png
 - Assets/UI/itemicon/Back Prop 01 Red.png
 - Assets/UI/itemicon/Bunny Ears Strips Brown.png
@@ -114,16 +125,20 @@ Assets:
 - Assets/UI/itemicon/Crossbow 02 No Arrow White.png
 - Assets/UI/itemicon/Claw 02 Purple.png
 - Assets/UI/itemicon/Hat 02 Peasant White Black.png
+- Assets/UI/itemicon/Longbow 02 White.png
 - Assets/UI/itemicon/Crown 04 Black.png
 - Assets/UI/itemicon/Wand 02 Purple.png
 - Assets/UI/itemicon/Crown 02 Purple.png
 - Assets/UI/itemicon/Wand 10 White.png
 - Assets/UI/itemicon/Shield 01 White.png
+- Assets/UI/itemicon/TH Axe 01 White.png
 - Assets/UI/itemicon/Cat Ears White Yellow.png
 - Assets/UI/itemicon/Horn 02 Side Black Orange.png
 - Assets/UI/itemicon/Quiver 01 Purple Arrow Purple.png
 - Assets/UI/itemicon/Sword 03 Gold.png
 - Assets/UI/itemicon/Wings 09 Red.png
+- Assets/UI/itemicon/TH Sword 01 Blue.png
+- Assets/UI/itemicon/TH Axe 03 Magenta.png
 - Assets/UI/itemicon/Wings 08 Purple.png
 - Assets/UI/itemicon/Headband 06 Magenta.png
 - Assets/UI/itemicon/Spear 03 Black.png
@@ -134,9 +149,12 @@ Assets:
 - Assets/UI/itemicon/Sword 04 Green.png
 - Assets/UI/itemicon/Scepter 01 Blue.png
 - Assets/UI/itemicon/Wings 02 Dragon Red.png
+- Assets/UI/itemicon/TH Sword 01 Black.png
+- Assets/UI/itemicon/TH Sword 01 Magenta.png
 - Assets/UI/itemicon/Bunny Ears White Purple.png
 - Assets/UI/itemicon/Wings 05 Butterfly Orange.png
 - Assets/UI/itemicon/Sword 04 Brown.png
+- Assets/UI/itemicon/Longbow 03 Black.png
 - Assets/UI/itemicon/Mace 02 Yellow.png
 - Assets/UI/itemicon/Wings 06 Leaves Mint.png
 - Assets/UI/herohead/bingmeiren.png
@@ -150,10 +168,12 @@ Assets:
 - Assets/UI/itemicon/Crossbow 01 No Arrow Green.png
 - Assets/UI/itemicon/Sword 04 Purple.png
 - Assets/UI/itemicon/Crossbow 01 Blue.png
+- Assets/UI/itemicon/TH Sword 03 Purple.png
 - Assets/UI/itemicon/Wings 10 White Blue.png
 - Assets/UI/itemicon/Wand 04 Red.png
 - Assets/UI/itemicon/Wings 08 White.png
 - Assets/UI/itemicon/Sword 08 Blue.png
+- Assets/UI/itemicon/Longbow 01 Blue.png
 - Assets/UI/itemicon/Crossbow 02 Blue.png
 - Assets/UI/itemicon/Helmet 02 Barbarian Purple.png
 - Assets/UI/itemicon/Shield 03 Brown.png
@@ -161,6 +181,7 @@ Assets:
 - Assets/UI/itemicon/Headband 04 Green.png
 - Assets/UI/itemicon/Basket 01 Purple Water.png
 - Assets/UI/itemicon/Quiver 01 Purple Arrow Green.png
+- Assets/UI/itemicon/Longbow 03 Yellow.png
 - Assets/UI/itemicon/Scythe 01 Magenta.png
 - Assets/UI/itemicon/Helmet 10 Magenta.png
 - Assets/UI/itemicon/Hat 02 Peasant Blue Cyan.png
@@ -177,6 +198,7 @@ Assets:
 - Assets/UI/itemicon/Hammer 01 Green.png
 - Assets/UI/itemicon/Spear 01 Green.png
 - Assets/UI/itemicon/Helmet 07 Magenta.png
+- Assets/UI/itemicon/Longbow 03 White.png
 - Assets/UI/itemicon/Wand 05 Purple.png
 - Assets/UI/itemicon/Hat 02 Peasant Yellow Green.png
 - Assets/UI/itemicon/Crossbow 02 No Arrow Orange.png
@@ -184,19 +206,25 @@ Assets:
 - Assets/UI/itemicon/Helmet 07 Red.png
 - Assets/UI/itemicon/Axe 03 Green.png
 - Assets/UI/itemicon/Scythe 03 Magenta.png
+- Assets/UI/itemicon/Beard 04 Blue.png
 - Assets/UI/itemicon/Crown 04 Magenta.png
 - Assets/UI/itemicon/Sack 01 Magenta.png
 - Assets/UI/itemicon/Wings 09 Black Red.png
 - Assets/UI/itemicon/Hat 02 Peasant Yellow Red.png
 - Assets/UI/itemicon/Sword 05 Lightning.png
 - Assets/UI/itemicon/Headband 04 Red.png
+- Assets/UI/itemicon/TH Sword 02 Green.png
 - Assets/UI/itemicon/Spear 01 Red.png
 - Assets/UI/itemicon/Headband 07 Black.png
 - Assets/UI/itemicon/Sword 05 Fire Ice.png
+- Assets/UI/itemicon/TH Axe 03 White.png
 - Assets/UI/itemicon/Wand 10 Red.png
 - Assets/UI/itemicon/Shield 08 Red.png
 - Assets/UI/herohead/daiweisi.png
+- Assets/UI/itemicon/Longbow 03 Magenta.png
+- Assets/UI/itemicon/TH Axe 01 Blue.png
 - Assets/UI/itemicon/Wings 11 Green.png
+- Assets/UI/itemicon/Longbow 01 Magenta.png
 - Assets/UI/itemicon/Mask 03 Green.png
 - Assets/UI/itemicon/Horn 02 Side Black Blue.png
 - Assets/UI/itemicon/Headband 05 Red.png
@@ -226,6 +254,7 @@ Assets:
 - Assets/UI/itemicon/Beard 02 Red.png
 - Assets/UI/itemicon/Scythe 02 Blue.png
 - Assets/UI/itemicon/Hat 02 Peasant Yellow Blue.png
+- Assets/UI/itemicon/Guitar 01 Brown.png
 - Assets/UI/itemicon/Crown 04 Red.png
 - Assets/UI/itemicon/Sword 01 Red.png
 - Assets/UI/itemicon/Knuckles 03 Magenta.png
@@ -233,6 +262,7 @@ Assets:
 - Assets/UI/itemicon/Crown 01 Sorceress Blue.png
 - Assets/UI/itemicon/Wand 07 White.png
 - Assets/UI/itemicon/Sack 01 Blue.png
+- Assets/UI/itemicon/TH Sword 03 Blue.png
 - Assets/UI/itemicon/Crossbow 02 No Arrow Green.png
 - Assets/UI/itemicon/Cat Ears White Blue.png
 - Assets/UI/itemicon/Wand 04 Yellow.png
@@ -244,6 +274,7 @@ Assets:
 - Assets/UI/itemicon/Cat Ears Black Green.png
 - Assets/UI/itemicon/Helmet 02 Barbarian Blue.png
 - Assets/UI/itemicon/Knuckles 01 Grey Yellow.png
+- Assets/UI/itemicon/TH Sword 01 Red.png
 - Assets/UI/itemicon/Basket 01 Green Water.png
 - Assets/UI/itemicon/Quiver 01 Blue Arrow Purple.png
 - Assets/UI/itemicon/Claw 03 Black.png
@@ -283,6 +314,7 @@ Assets:
 - Assets/UI/itemicon/Headband 01 Black Green.png
 - Assets/UI/itemicon/Headband 06 Purple.png
 - Assets/UI/itemicon/Headband 07 Green.png
+- Assets/UI/itemicon/Longbow 01 Red.png
 - Assets/UI/itemicon/Jacket 01 Magenta.png
 - Assets/UI/itemicon/Shield 10 Black.png
 - Assets/UI/itemicon/Quiver 01 Green Arrow Black.png
@@ -295,6 +327,7 @@ Assets:
 - Assets/UI/itemicon/Horn 03 Purple.png
 - Assets/UI/itemicon/Wand 07 Yellow.png
 - Assets/UI/itemicon/Knuckles 02 Magenta.png
+- Assets/UI/itemicon/TH Axe 02 Yellow.png
 - Assets/UI/itemicon/Wand 02 Green.png
 - Assets/UI/itemicon/Wings 04 Dragonfly Purple.png
 - Assets/UI/itemicon/Wand 06 Broom Blue.png
@@ -315,10 +348,14 @@ Assets:
 - Assets/UI/itemicon/Scepter 01 White.png
 - Assets/UI/itemicon/Crossbow 02 No Arrow Blue.png
 - Assets/UI/itemicon/Wings 04 Dragonfly White.png
+- Assets/UI/itemicon/TH Axe 02 Magenta.png
 - Assets/UI/itemicon/Shield 07 Red.png
 - Assets/UI/itemicon/Jaw 01 Purple.png
+- Assets/UI/itemicon/TH Sword 02 Yellow.png
+- Assets/UI/itemicon/TH Axe 02 Green.png
 - Assets/UI/itemicon/Wings 09 Purple.png
 - Assets/UI/itemicon/Mask 01 Purple.png
+- Assets/UI/itemicon/Headband 09 Magenta.png
 - Assets/UI/itemicon/Scepter 01 Yellow.png
 - Assets/UI/itemicon/Jaw 01 Green.png
 - Assets/UI/itemicon/Basket 01 Green Tomato.png
@@ -327,12 +364,16 @@ Assets:
 - Assets/UI/itemicon/Horn 01 Front Black.png
 - Assets/UI/itemicon/Wand 04 Purple.png
 - Assets/UI/itemicon/Shield 07 Yellow.png
+- Assets/UI/itemicon/Pickaxe 01.png
 - Assets/UI/itemicon/Scythe 01 Yellow.png
+- Assets/UI/itemicon/Longbow 03 Green.png
 - Assets/UI/itemicon/Claw 03 White.png
+- Assets/UI/itemicon/Beard 04 Red.png
 - Assets/UI/itemicon/Quiver 01 Blue Arrow Blue.png
 - Assets/UI/itemicon/Hat 04 Green.png
 - Assets/UI/itemicon/Sword 08 Purple.png
 - Assets/UI/itemicon/Claw 03 Green.png
+- Assets/UI/itemicon/Longbow 03 Red.png
 - Assets/UI/itemicon/Shield 09 Red.png
 - Assets/UI/itemicon/Wand 09 Blue.png
 - Assets/UI/itemicon/Wings 10 White Black.png
@@ -342,6 +383,7 @@ Assets:
 - Assets/UI/itemicon/Mask 02 Blue.png
 - Assets/UI/itemicon/Shield 07 Purple.png
 - Assets/UI/itemicon/Hammer 02 Green.png
+- Assets/UI/itemicon/TH Axe 02 Blue.png
 - Assets/UI/itemicon/Beard 01 Brown.png
 - Assets/UI/itemicon/Hood 01 Green.png
 - Assets/UI/itemicon/Jacket 01 Black.png
@@ -349,10 +391,12 @@ Assets:
 - Assets/UI/itemicon/Hood 01 White.png
 - Assets/UI/itemicon/Bunny Ears Black Purple.png
 - Assets/UI/itemicon/Knuckles 03 White.png
+- Assets/UI/itemicon/TH Sword 03 White.png
 - Assets/UI/itemicon/Helmet 03 Blue.png
 - Assets/UI/itemicon/Sword 07 Green.png
 - Assets/UI/itemicon/Dagger 03 Blue.png
 - Assets/UI/itemicon/Hat 02 Peasant Grey Blue.png
+- Assets/UI/itemicon/Headband 09 Purple.png
 - Assets/UI/itemicon/Sack 01 White.png
 - Assets/UI/itemicon/Claw 03 Red.png
 - Assets/UI/itemicon/Back Prop 01 Yellow.png
@@ -368,8 +412,10 @@ Assets:
 - Assets/UI/itemicon/Wings 02 Dragon Green.png
 - Assets/UI/itemicon/Helmet 08 Purple.png
 - Assets/UI/itemicon/Headband 05 Purple.png
+- Assets/UI/itemicon/Longbow 02 Purple.png
 - Assets/UI/itemicon/Sword 02 Poison.png
 - Assets/UI/itemicon/Claw 01 Grey White.png
+- Assets/UI/itemicon/Longbow 03 Purple.png
 - Assets/UI/itemicon/Hat 03 Red.png
 - Assets/UI/itemicon/Wand 09 Pink.png
 - Assets/UI/itemicon/Hammer 03 Yellow.png
@@ -395,6 +441,7 @@ Assets:
 - Assets/UI/itemicon/Quiver 01 Green Arrow White.png
 - Assets/UI/itemicon/Helmet 09 Green.png
 - Assets/UI/itemicon/Club 03 Green.png
+- Assets/UI/itemicon/Longbow 02 Blue.png
 - Assets/UI/itemicon/Headband 01 Black Blue.png
 - Assets/UI/itemicon/Hat 01 Wizard White.png
 - Assets/UI/itemicon/Mask 03 Yellow.png
@@ -419,11 +466,15 @@ Assets:
 - Assets/UI/itemicon/Wings 11 Red.png
 - Assets/UI/itemicon/Bunny Ears Black Blue.png
 - Assets/UI/itemicon/Basket 01 Brown Water.png
+- Assets/UI/itemicon/Longbow 01 White.png
 - Assets/UI/itemicon/Horn 02 Side Green Green.png
 - Assets/UI/itemicon/Wings 06 Leaves Purple.png
 - Assets/UI/itemicon/Shield 10 Blue.png
+- Assets/UI/itemicon/TH Sword 02 Black.png
+- Assets/UI/itemicon/Longbow 01 Black.png
 - Assets/UI/itemicon/Jacket 01 Purple.png
 - Assets/UI/itemicon/Jaw 01 Blue.png
+- Assets/UI/itemicon/Headband 09 Blue.png
 - Assets/UI/itemicon/Club 02 Green.png
 - Assets/UI/itemicon/Mask 02 Red.png
 - Assets/UI/itemicon/Beard 03 Black.png
@@ -446,6 +497,7 @@ Assets:
 - Assets/UI/itemicon/Headband 08 White.png
 - Assets/UI/itemicon/Mask 01 Brown.png
 - Assets/UI/itemicon/Headband 07 Blue.png
+- Assets/UI/itemicon/TH Axe 03 Green.png
 - Assets/UI/itemicon/Crossbow 01 Yellow.png
 - Assets/UI/itemicon/Wings 10 Purple Magenta.png
 - Assets/UI/itemicon/Hood 01 Black.png
@@ -455,11 +507,14 @@ Assets:
 - Assets/UI/itemicon/Wings 11 Yellow.png
 - Assets/UI/itemicon/Wand 01 Stick Orange.png
 - Assets/UI/itemicon/Back Prop 02 Green.png
+- Assets/UI/itemicon/Headband 09 Red.png
 - Assets/UI/herohead/delong.png
 - Assets/UI/itemicon/Antlers Light.png
 - Assets/UI/itemicon/Back Prop 02 Blue.png
 - Assets/UI/itemicon/Spear 02 Yellow.png
 - Assets/UI/itemicon/Headband 08 Black.png
+- Assets/UI/itemicon/Longbow 01 Yellow.png
+- Assets/UI/itemicon/Elf Ears White 01.png
 - Assets/UI/itemicon/Crown 04 White.png
 - Assets/UI/itemicon/Wings 01 Gold.png
 - Assets/UI/itemicon/Helmet 09 Brown.png
@@ -470,6 +525,8 @@ Assets:
 - Assets/UI/itemicon/Sword 06 Blue.png
 - Assets/UI/itemicon/Sword 08 Red.png
 - Assets/UI/itemicon/Shield 10 Purple.png
+- Assets/UI/itemicon/TH Sword 03 Red.png
+- Assets/UI/itemicon/Longbow 01 Purple.png
 - Assets/UI/itemicon/Scythe 03 White.png
 - Assets/UI/itemicon/Headband 03 Purple.png
 - Assets/UI/itemicon/Club 02 Red.png
@@ -479,15 +536,19 @@ Assets:
 - Assets/UI/itemicon/Crossbow 01 No Arrow Blue.png
 - Assets/UI/itemicon/Wings 09 White.png
 - Assets/UI/itemicon/Hammer 03 White.png
+- Assets/UI/itemicon/TH Axe 02 White.png
+- Assets/UI/itemicon/Headband 09 Green.png
 - Assets/UI/itemicon/Sword 09 Yellow.png
 - Assets/UI/itemicon/Wings 11 Purple.png
 - Assets/UI/itemicon/Headband 01 Black Yellow.png
+- Assets/UI/itemicon/TH Axe 03 Red.png
 - Assets/UI/itemicon/Hammer 02 Red.png
 - Assets/UI/itemicon/Sack 01 Black.png
 - Assets/UI/itemicon/Wings 08 Green.png
 - Assets/UI/itemicon/Scythe 02 Yellow.png
 - Assets/UI/itemicon/Hat 02 Peasant Grey Red.png
 - Assets/UI/itemicon/Wings 04 Dragonfly Blue.png
+- Assets/UI/itemicon/TH Axe 01 Magenta.png
 - Assets/UI/itemicon/Hammer 02 Yellow.png
 - Assets/UI/itemicon/Back Prop 01 Green.png
 - Assets/UI/itemicon/Dagger 03 Yellow.png
@@ -504,20 +565,26 @@ Assets:
 - Assets/UI/itemicon/Helmet 03 Brown.png
 - Assets/UI/itemicon/Knuckles 03 Red.png
 - Assets/UI/itemicon/Shield 02 Blue.png
+- Assets/UI/itemicon/Guitar 01 Green.png
 - Assets/UI/itemicon/Hat 04 Red.png
 - Assets/UI/itemicon/Axe 01.png
+- Assets/UI/itemicon/Longbow 02 Black.png
 - Assets/UI/itemicon/Sword 01 Purple.png
 - Assets/UI/itemicon/Crown 02 Blue.png
 - Assets/UI/itemicon/Shield 10 White.png
 - Assets/UI/itemicon/Headband 01 Gold.png
 - Assets/UI/itemicon/Shield 10 Brown.png
+- Assets/UI/itemicon/Elf Ears Brown 01.png
 - Assets/UI/itemicon/Wings 08 Magenta.png
 - Assets/UI/itemicon/Helmet 07 Blue.png
 - Assets/UI/itemicon/Wand 08 White.png
 - Assets/UI/itemicon/Wand 10 Black.png
 - Assets/UI/itemicon/Wand 11 Santa.png
 - Assets/UI/itemicon/Horn 03 Blue.png
+- Assets/UI/itemicon/Longbow 02 Green.png
+- Assets/UI/itemicon/TH Sword 03 Green.png
 - Assets/UI/itemicon/Knuckles 03 Green.png
+- Assets/UI/itemicon/Beard 04 White.png
 - Assets/UI/itemicon/Knuckles 03 Black.png
 - Assets/UI/itemicon/Antlers Dark.png
 - Assets/UI/itemicon/Wings 05 Butterfly Yellow.png
@@ -525,6 +592,7 @@ Assets:
 - Assets/UI/itemicon/Quiver 01 Red Arrow Red.png
 - Assets/UI/itemicon/Crown 04 Yellow.png
 - Assets/UI/itemicon/Helmet 05 Blue.png
+- Assets/UI/itemicon/TH Sword 02 Purple.png
 - Assets/UI/itemicon/Jacket 01 White.png
 - Assets/UI/itemicon/Horn 02 Side Black Green.png
 - Assets/UI/itemicon/Mask 03 Red.png
@@ -549,10 +617,12 @@ Assets:
 - Assets/UI/itemicon/Claw 02 Red.png
 - Assets/UI/itemicon/Wings 07 Love Green.png
 - Assets/UI/itemicon/Knuckles 01 Gold Yellow.png
+- Assets/UI/itemicon/Elf Ears Black 01.png
 - Assets/UI/itemicon/Shield 09 Green.png
 - Assets/UI/itemicon/Bag 01 Red.png
 - Assets/UI/itemicon/Headband 08 Magenta.png
 - Assets/UI/itemicon/Shield 05 Green.png
+- Assets/UI/itemicon/TH Axe 01 Purple.png
 - Assets/UI/itemicon/Antlers Green.png
 - Assets/UI/itemicon/Shield 01 Green.png
 - Assets/UI/itemicon/Dagger 02 Green.png
@@ -569,12 +639,15 @@ Assets:
 - Assets/UI/itemicon/Knuckles 02 White.png
 - Assets/UI/itemicon/Claw 01 Black Red.png
 - Assets/UI/itemicon/Wand 07 Purple.png
+- Assets/UI/itemicon/TH Sword 03 Yellow.png
+- Assets/UI/itemicon/TH Sword 01 White.png
 - Assets/UI/itemicon/Shield 08 Black.png
 - Assets/UI/itemicon/Back Prop 01 White.png
 - Assets/UI/itemicon/Sword 04 Blue.png
 - Assets/UI/itemicon/Quiver 01 Green Arrow Red.png
 - Assets/UI/itemicon/Spear 01 Black.png
 - Assets/UI/itemicon/Jacket 01 Red.png
+- Assets/UI/itemicon/TH Sword 01 Purple.png
 - Assets/UI/itemicon/Shield 08 Purple.png
 - Assets/UI/itemicon/Crossbow 03 Red.png
 - Assets/UI/itemicon/FX Spinning Snowflakes.png
@@ -588,11 +661,14 @@ Assets:
 - Assets/UI/itemicon/Helmet 07 Brown.png
 - Assets/UI/itemicon/Helmet 05 Black.png
 - Assets/UI/itemicon/Helmet 08 Magenta.png
+- Assets/UI/itemicon/TH Axe 01 Green.png
 - Assets/UI/itemicon/Sword 09 Green.png
 - Assets/UI/itemicon/Helmet 06 Green.png
 - Assets/UI/itemicon/Wand 02 White.png
 - Assets/UI/itemicon/Helmet 08 Black.png
+- Assets/UI/itemicon/Longbow 01 Green.png
 - Assets/UI/itemicon/Sword 07 Grey.png
+- Assets/UI/itemicon/TH Sword 02 White.png
 - Assets/UI/itemicon/Claw 01 Gold White.png
 - Assets/UI/itemicon/Wings 01 White.png
 - Assets/UI/itemicon/Knuckles 03 Brown.png
@@ -600,6 +676,7 @@ Assets:
 - Assets/UI/itemicon/Horn 02 Side Black Purple.png
 - Assets/UI/itemicon/Shield 05 Blue.png
 - Assets/UI/itemicon/Helmet 02 Barbarian Green.png
+- Assets/UI/itemicon/Guitar 01 Blue.png
 - Assets/UI/itemicon/Beard 02 Black.png
 - Assets/UI/itemicon/Sack 01 Red.png
 - Assets/UI/itemicon/Shield 03 Green.png
@@ -609,6 +686,8 @@ Assets:
 - Assets/UI/itemicon/Beard 01 Black.png
 - Assets/UI/itemicon/Beard 01 Cyan.png
 - Assets/UI/itemicon/Shield 08 Green.png
+- Assets/UI/itemicon/Headband 09 Yellow.png
+- Assets/UI/itemicon/Longbow 03 Blue.png
 - Assets/UI/itemicon/Crossbow 03 Purple.png
 - Assets/UI/itemicon/Beard 01 Grey.png
 - Assets/UI/itemicon/Crossbow 02 Orange.png
@@ -624,6 +703,7 @@ Assets:
 - Assets/UI/itemicon/Wings 09 Blue.png
 - Assets/UI/itemicon/Hammer 03 Green.png
 - Assets/UI/itemicon/Wand 08 Yellow.png
+- Assets/UI/itemicon/TH Sword 01 Green.png
 - Assets/UI/itemicon/Hood 01 Blue.png
 - Assets/UI/itemicon/Wings 05 Butterfly Purple.png
 - Assets/UI/itemicon/Wand 01 Stick White.png
@@ -636,7 +716,9 @@ Assets:
 - Assets/UI/itemicon/Wings 10 Red Yellow.png
 - Assets/UI/itemicon/Dagger 02 Purple.png
 - Assets/UI/itemicon/Shield 08 Orange.png
+- Assets/UI/itemicon/TH Axe 01 Red.png
 - Assets/UI/itemicon/Helmet 04 Pumpkin.png
+- Assets/UI/itemicon/TH Axe 03 Blue.png
 - Assets/UI/itemicon/Antlers Red.png
 - Assets/UI/itemicon/Sack 01 Green.png
 - Assets/UI/itemicon/Jacket 01 Yellow.png
@@ -658,6 +740,7 @@ Assets:
 - Assets/UI/itemicon/Halo 01.png
 - Assets/UI/itemicon/Sword 01 Black.png
 - Assets/UI/itemicon/Spear 02 Green.png
+- Assets/UI/itemicon/Beard 04 Blonde.png
 - Assets/UI/itemicon/Axe 03 Blue.png
 - Assets/UI/herohead/huonan.png
 - Assets/UI/itemicon/Helmet 06 Brown.png
@@ -674,6 +757,7 @@ Assets:
 - Assets/UI/itemicon/Quiver 01 Red Arrow Green.png
 - Assets/UI/itemicon/Hat 02 Peasant Yellow Purple.png
 - Assets/UI/itemicon/Claw 02 White.png
+- Assets/UI/itemicon/TH Axe 03 Purple.png
 - Assets/UI/itemicon/Mask 03 Blue.png
 - Assets/UI/itemicon/Cat Ears Black Red.png
 - Assets/UI/itemicon/Helmet 07 Purple.png
@@ -688,6 +772,7 @@ Assets:
 - Assets/UI/itemicon/Beard 02 Cyan.png
 - Assets/UI/itemicon/Mace 01 Green.png
 - Assets/UI/itemicon/Quiver 01 Red Arrow White.png
+- Assets/UI/itemicon/Longbow 02 Yellow.png
 - Assets/UI/itemicon/Helmet 06 White.png
 - Assets/UI/itemicon/Hand Aura 01 Purple.png
 - Assets/UI/itemicon/Basket 01 Blue Tomato.png
@@ -707,8 +792,10 @@ Assets:
 - Assets/UI/itemicon/Quiver 01 Purple Arrow Black.png
 - Assets/UI/itemicon/Headband 06 Yellow.png
 - Assets/UI/itemicon/Quiver 01 Purple Arrow Red.png
+- Assets/UI/itemicon/TH Axe 01 Black.png
 - Assets/UI/itemicon/Shield 01 Red.png
 - Assets/UI/itemicon/Wand 07 Red.png
+- Assets/UI/itemicon/Longbow 02 Magenta.png
 - Assets/UI/itemicon/Horn 02 Side White.png
 - Assets/UI/itemicon/Wand 06 Broom Black.png
 - Assets/UI/itemicon/Wings 07 Love Yellow.png
@@ -724,6 +811,7 @@ Assets:
 - Assets/UI/itemicon/Mask 02 Yellow.png
 - Assets/UI/itemicon/Headband 03 Green.png
 - Assets/UI/itemicon/Shield 02 Brown.png
+- Assets/UI/itemicon/Beard 04 Purple.png
 - Assets/UI/itemicon/Wand 06 Broom White.png
 - Assets/UI/itemicon/Wand 08 Blue.png
 - Assets/UI/itemicon/Horn 02 Side Yellow.png
@@ -734,6 +822,7 @@ Assets:
 - Assets/UI/itemicon/Shield 09 Blue.png
 - Assets/UI/itemicon/Cat Ears White Purple.png
 - Assets/UI/itemicon/Axe 03 Red.png
+- Assets/UI/itemicon/TH Sword 03 Black.png
 - Assets/UI/itemicon/Helmet 01 Knight Red.png
 - Assets/UI/itemicon/Crossbow 01 Black.png
 - Assets/UI/itemicon/Sword 07 Blue.png
@@ -774,7 +863,9 @@ Assets:
 - Assets/UI/itemicon/Wings 05 Butterfly Blue.png
 - Assets/UI/itemicon/Wings 02 Dragon White.png
 - Assets/UI/itemicon/Spear 02 Blue.png
+- Assets/UI/itemicon/TH Axe 01 Yellow.png
 - Assets/UI/itemicon/FX Spinning Leaves.png
+- Assets/UI/itemicon/TH Axe 03 Yellow.png
 - Assets/UI/itemicon/Shield 06 Black.png
 - Assets/UI/itemicon/Headband 04 Purple.png
 - Assets/UI/itemicon/Sword 08 Green.png
@@ -783,7 +874,9 @@ Assets:
 - Assets/UI/itemicon/Mace 02 Red.png
 - Assets/UI/itemicon/Scythe 01 Red.png
 - Assets/UI/itemicon/Shield 05 Yellow.png
+- Assets/UI/itemicon/TH Axe 02 Black.png
 - Assets/UI/itemicon/Crossbow 01 No Arrow Black.png
+- Assets/UI/itemicon/TH Sword 02 Red.png
 - Assets/UI/itemicon/Sword 10 Blue Gold.png
 - Assets/UI/itemicon/Sword 02 Ice.png
 - Assets/UI/itemicon/Hat 01 Wizard Red.png

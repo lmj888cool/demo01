@@ -114,7 +114,7 @@ public class ScreenTool
         RenderTexture.active = null;//关闭RenderTexture的激活状态
         Object.Destroy(render);//删除RenderTexture对象
         byte[] bytes = tex.EncodeToPNG();//将纹理数据，转化成一个png图片
-        System.IO.File.WriteAllBytes(fileName, bytes);//写入数据
+        System.IO.File.WriteAllBytes("png/" + fileName, bytes);//写入数据
         Debug.Log(string.Format("截取了一张图片: {0}", fileName));
 
 #if UNITY_EDITOR

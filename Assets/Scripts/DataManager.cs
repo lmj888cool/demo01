@@ -102,7 +102,8 @@ public enum TableDataName
     ItemTableData,
     HeroTableData,
     EnemyTableData,
-    AnimationTableData
+    AnimationTableData,
+    ItemTableDataOld
 }
 public enum ItemQuality
 {
@@ -121,6 +122,7 @@ public class DataManager
     public Dictionary<int, EnemyTableData> EnemyTableDataDic = new Dictionary<int, EnemyTableData>();
     public Dictionary<int, DefaultItemTableData> DefaultItemTableDataDic = new Dictionary<int, DefaultItemTableData>();
     public Dictionary<int, AnimationTableData> AnimationTableDataDic = new Dictionary<int, AnimationTableData>();
+    public Dictionary<int, ItemTableData> ItemTableDataOldDic = new Dictionary<int, ItemTableData>();
     public AssetBundle assetBundlePrefabs;
     public AssetBundle assetBundleStatic;
     public AssetBundle assetBundleUI;
@@ -132,10 +134,11 @@ public class DataManager
     }
     public DataManager()
     {
-        CreateItemTableData();
+        //CreateItemTableData();
         assetBundlePrefabs = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/prefab");
         assetBundleStatic = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/staticdata");
         assetBundleUI = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/ui");
+        InitItemTableDataOld();
         InitItemTableData();
         InitHeroTableData();
         InitEnemyTableData();
@@ -318,6 +321,39 @@ public class DataManager
         }
         return animationId;
     }
+    private void InitItemTableDataOld()
+    {
+        string[][] arrAll = GetData(TableDataName.ItemTableDataOld.ToString());
+        for (int i = 0; i < arrAll.Length; i++)
+        {
+            string[] arr = arrAll[i];
+            int id = int.Parse(arr[0]);
+
+            ItemTableData itemTableData = new ItemTableData
+            {
+                id = id,
+                name = arr[1],
+                des = arr[2],
+                itemPrefab = arr[3],
+                icon = arr[4],
+                group = int.Parse(arr[5]),
+                groupName = arr[6],
+                damaged = int.Parse(arr[7]),
+                defene = int.Parse(arr[8]),
+                attackRadius = float.Parse(arr[9]),
+                attackSpeed = float.Parse(arr[10]),
+                isBomb = int.Parse(arr[11]),
+                pointParticle = arr[12],
+                moveParticle = arr[13],
+                hitParticle = arr[14],
+                bombMoveSpeed = float.Parse(arr[15]),
+                bombCount = int.Parse(arr[16]),
+                quality = int.Parse(arr[17]),
+                animationId = int.Parse(arr[18])
+            };
+            ItemTableDataOldDic[id] = itemTableData;
+        }
+    }
     private void InitItemTableData()
     {
         string[][] arrAll = GetData(TableDataName.ItemTableData.ToString());
@@ -465,6 +501,19 @@ public class DataManager
             return ItemTableDataDic[itemid];
         }
         return null;
+    }
+    public ItemTableData GetItemTableDataByItemName(string name)
+    {
+        ItemTableData itemTableData = null;
+        foreach (KeyValuePair<int,ItemTableData> item in ItemTableDataOldDic)
+        {
+            if(item.Value.name == name)
+            {
+                itemTableData = item.Value;
+                break;
+            }
+        }
+        return itemTableData;
     }
     public HeroTableData GetHeroTableDataByHero(Hero hero)
     {

@@ -1,5 +1,5 @@
-int,string,string,string,string,int,string,int,int,float,float,int,string,string,string,float,int
-ID,名字,描述,预制体,图标,分组,组名称,初始伤害值,初始防御值,攻击距离,攻击频率,是否有子弹,攻击口特效,移动特效,击中特效,子弹移动速度,一次攻击几发子弹
+int,string,string,string,string,int,string,int,int,float,float,int,string,string,string,float,int,,
+ID,名字,描述,预制体,图标,分组,组名称,初始伤害值,初始防御值,攻击距离,攻击频率,是否有子弹,攻击口特效,移动特效,击中特效,子弹移动速度,一次攻击几发子弹,,
 id,name,des,itemPrefab,icon,group,groupName,damaged,defene,attackRadius,attackSpeed,isBomb,pointParticle,moveParticle,hitParticle,bombMoveSpeed,bombCount,quality,animationId
 1,Back Prop 01 Black,这是Back Prop 01 Black,Back Prop 01 Black,Back Prop 01 Black,1,Back,15,0,25,0.5,1,0,0,0,1,1,1,1
 2,Back Prop 01 Blue,这是Back Prop 01 Blue,Back Prop 01 Blue,Back Prop 01 Blue,1,Back,15,0,25,0.5,1,0,0,0,1,1,1,1
@@ -162,646 +162,739 @@ id,name,des,itemPrefab,icon,group,groupName,damaged,defene,attackRadius,attackSp
 159,Beard 03 Grey,这是Beard 03 Grey,Beard 03 Grey,Beard 03 Grey,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
 160,Beard 03 Purple,这是Beard 03 Purple,Beard 03 Purple,Beard 03 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
 161,Beard 03 Red,这是Beard 03 Red,Beard 03 Red,Beard 03 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-162,Crown 01 Sorceress Blue,这是Crown 01 Sorceress Blue,Crown 01 Sorceress Blue,Crown 01 Sorceress Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-163,Crown 01 Sorceress Green,这是Crown 01 Sorceress Green,Crown 01 Sorceress Green,Crown 01 Sorceress Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-164,Crown 01 Sorceress Red,这是Crown 01 Sorceress Red,Crown 01 Sorceress Red,Crown 01 Sorceress Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-165,Crown 01 Sorceress White,这是Crown 01 Sorceress White,Crown 01 Sorceress White,Crown 01 Sorceress White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-166,Crown 02 Blue,这是Crown 02 Blue,Crown 02 Blue,Crown 02 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-167,Crown 02 Cyan,这是Crown 02 Cyan,Crown 02 Cyan,Crown 02 Cyan,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-168,Crown 02 Green,这是Crown 02 Green,Crown 02 Green,Crown 02 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-169,Crown 02 Purple,这是Crown 02 Purple,Crown 02 Purple,Crown 02 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-170,Crown 02 Red,这是Crown 02 Red,Crown 02 Red,Crown 02 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-171,Crown 02 White,这是Crown 02 White,Crown 02 White,Crown 02 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-172,Crown 03 Gold,这是Crown 03 Gold,Crown 03 Gold,Crown 03 Gold,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-173,Crown 04 Black,这是Crown 04 Black,Crown 04 Black,Crown 04 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-174,Crown 04 Blue,这是Crown 04 Blue,Crown 04 Blue,Crown 04 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-175,Crown 04 Green,这是Crown 04 Green,Crown 04 Green,Crown 04 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-176,Crown 04 Magenta,这是Crown 04 Magenta,Crown 04 Magenta,Crown 04 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-177,Crown 04 Purple,这是Crown 04 Purple,Crown 04 Purple,Crown 04 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-178,Crown 04 Red,这是Crown 04 Red,Crown 04 Red,Crown 04 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-179,Crown 04 White,这是Crown 04 White,Crown 04 White,Crown 04 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-180,Crown 04 Yellow,这是Crown 04 Yellow,Crown 04 Yellow,Crown 04 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-181,Bunny Ears Black Blue,这是Bunny Ears Black Blue,Bunny Ears Black Blue,Bunny Ears Black Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-182,Bunny Ears Black Pink,这是Bunny Ears Black Pink,Bunny Ears Black Pink,Bunny Ears Black Pink,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-183,Bunny Ears Black Purple,这是Bunny Ears Black Purple,Bunny Ears Black Purple,Bunny Ears Black Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-184,Bunny Ears Strips Black,这是Bunny Ears Strips Black,Bunny Ears Strips Black,Bunny Ears Strips Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-185,Bunny Ears Strips Blue,这是Bunny Ears Strips Blue,Bunny Ears Strips Blue,Bunny Ears Strips Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-186,Bunny Ears Strips Brown,这是Bunny Ears Strips Brown,Bunny Ears Strips Brown,Bunny Ears Strips Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-187,Bunny Ears Strips Purple,这是Bunny Ears Strips Purple,Bunny Ears Strips Purple,Bunny Ears Strips Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-188,Bunny Ears White Pink,这是Bunny Ears White Pink,Bunny Ears White Pink,Bunny Ears White Pink,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-189,Bunny Ears White Purple,这是Bunny Ears White Purple,Bunny Ears White Purple,Bunny Ears White Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-190,Cat Ears Black Blue,这是Cat Ears Black Blue,Cat Ears Black Blue,Cat Ears Black Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-191,Cat Ears Black Green,这是Cat Ears Black Green,Cat Ears Black Green,Cat Ears Black Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-192,Cat Ears Black Pink,这是Cat Ears Black Pink,Cat Ears Black Pink,Cat Ears Black Pink,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-193,Cat Ears Black Purple,这是Cat Ears Black Purple,Cat Ears Black Purple,Cat Ears Black Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-194,Cat Ears Black Red,这是Cat Ears Black Red,Cat Ears Black Red,Cat Ears Black Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-195,Cat Ears Black Yellow,这是Cat Ears Black Yellow,Cat Ears Black Yellow,Cat Ears Black Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-196,Cat Ears White Blue,这是Cat Ears White Blue,Cat Ears White Blue,Cat Ears White Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-197,Cat Ears White Purple,这是Cat Ears White Purple,Cat Ears White Purple,Cat Ears White Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-198,Cat Ears White Red,这是Cat Ears White Red,Cat Ears White Red,Cat Ears White Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-199,Cat Ears White Yellow,这是Cat Ears White Yellow,Cat Ears White Yellow,Cat Ears White Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-200,Coif 01 White,这是Coif 01 White,Coif 01 White,Coif 01 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-201,Hat 01 Wizard Black,这是Hat 01 Wizard Black,Hat 01 Wizard Black,Hat 01 Wizard Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-202,Hat 01 Wizard Blue,这是Hat 01 Wizard Blue,Hat 01 Wizard Blue,Hat 01 Wizard Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-203,Hat 01 Wizard Green,这是Hat 01 Wizard Green,Hat 01 Wizard Green,Hat 01 Wizard Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-204,Hat 01 Wizard Purple,这是Hat 01 Wizard Purple,Hat 01 Wizard Purple,Hat 01 Wizard Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-205,Hat 01 Wizard Red,这是Hat 01 Wizard Red,Hat 01 Wizard Red,Hat 01 Wizard Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-206,Hat 01 Wizard White,这是Hat 01 Wizard White,Hat 01 Wizard White,Hat 01 Wizard White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-207,Hat 02 Peasant Black White,这是Hat 02 Peasant Black White,Hat 02 Peasant Black White,Hat 02 Peasant Black White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-208,Hat 02 Peasant Blue Cyan,这是Hat 02 Peasant Blue Cyan,Hat 02 Peasant Blue Cyan,Hat 02 Peasant Blue Cyan,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-209,Hat 02 Peasant Green Yellow,这是Hat 02 Peasant Green Yellow,Hat 02 Peasant Green Yellow,Hat 02 Peasant Green Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-210,Hat 02 Peasant Grey Blue,这是Hat 02 Peasant Grey Blue,Hat 02 Peasant Grey Blue,Hat 02 Peasant Grey Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-211,Hat 02 Peasant Grey Brown,这是Hat 02 Peasant Grey Brown,Hat 02 Peasant Grey Brown,Hat 02 Peasant Grey Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-212,Hat 02 Peasant Grey Green,这是Hat 02 Peasant Grey Green,Hat 02 Peasant Grey Green,Hat 02 Peasant Grey Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-213,Hat 02 Peasant Grey Red,这是Hat 02 Peasant Grey Red,Hat 02 Peasant Grey Red,Hat 02 Peasant Grey Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-214,Hat 02 Peasant Purple Pink,这是Hat 02 Peasant Purple Pink,Hat 02 Peasant Purple Pink,Hat 02 Peasant Purple Pink,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-215,Hat 02 Peasant Red Yellow,这是Hat 02 Peasant Red Yellow,Hat 02 Peasant Red Yellow,Hat 02 Peasant Red Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-216,Hat 02 Peasant White Black,这是Hat 02 Peasant White Black,Hat 02 Peasant White Black,Hat 02 Peasant White Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-217,Hat 02 Peasant Yellow Blue,这是Hat 02 Peasant Yellow Blue,Hat 02 Peasant Yellow Blue,Hat 02 Peasant Yellow Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-218,Hat 02 Peasant Yellow Green,这是Hat 02 Peasant Yellow Green,Hat 02 Peasant Yellow Green,Hat 02 Peasant Yellow Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-219,Hat 02 Peasant Yellow Purple,这是Hat 02 Peasant Yellow Purple,Hat 02 Peasant Yellow Purple,Hat 02 Peasant Yellow Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-220,Hat 02 Peasant Yellow Red,这是Hat 02 Peasant Yellow Red,Hat 02 Peasant Yellow Red,Hat 02 Peasant Yellow Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-221,Hat 03 Black,这是Hat 03 Black,Hat 03 Black,Hat 03 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-222,Hat 03 Blue,这是Hat 03 Blue,Hat 03 Blue,Hat 03 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-223,Hat 03 Green,这是Hat 03 Green,Hat 03 Green,Hat 03 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-224,Hat 03 Purple,这是Hat 03 Purple,Hat 03 Purple,Hat 03 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-225,Hat 03 Red,这是Hat 03 Red,Hat 03 Red,Hat 03 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-226,Hat 03 Yellow,这是Hat 03 Yellow,Hat 03 Yellow,Hat 03 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-227,Hat 04 Black,这是Hat 04 Black,Hat 04 Black,Hat 04 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-228,Hat 04 Blue,这是Hat 04 Blue,Hat 04 Blue,Hat 04 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-229,Hat 04 Green,这是Hat 04 Green,Hat 04 Green,Hat 04 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-230,Hat 04 Purple,这是Hat 04 Purple,Hat 04 Purple,Hat 04 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-231,Hat 04 Red,这是Hat 04 Red,Hat 04 Red,Hat 04 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-232,Hat 04 Yellow,这是Hat 04 Yellow,Hat 04 Yellow,Hat 04 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-233,Hat 05 Elf,这是Hat 05 Elf,Hat 05 Elf,Hat 05 Elf,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-234,Hat 05 Santa,这是Hat 05 Santa,Hat 05 Santa,Hat 05 Santa,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-235,Headband 01 Black Blue,这是Headband 01 Black Blue,Headband 01 Black Blue,Headband 01 Black Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-236,Headband 01 Black Green,这是Headband 01 Black Green,Headband 01 Black Green,Headband 01 Black Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-237,Headband 01 Black Purple,这是Headband 01 Black Purple,Headband 01 Black Purple,Headband 01 Black Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-238,Headband 01 Black Red,这是Headband 01 Black Red,Headband 01 Black Red,Headband 01 Black Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-239,Headband 01 Black White,这是Headband 01 Black White,Headband 01 Black White,Headband 01 Black White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-240,Headband 01 Black Yellow,这是Headband 01 Black Yellow,Headband 01 Black Yellow,Headband 01 Black Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-241,Headband 01 Gold,这是Headband 01 Gold,Headband 01 Gold,Headband 01 Gold,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-242,Headband 02 Blue,这是Headband 02 Blue,Headband 02 Blue,Headband 02 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-243,Headband 02 Green,这是Headband 02 Green,Headband 02 Green,Headband 02 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-244,Headband 02 Purple,这是Headband 02 Purple,Headband 02 Purple,Headband 02 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-245,Headband 02 Red,这是Headband 02 Red,Headband 02 Red,Headband 02 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-246,Headband 02 White,这是Headband 02 White,Headband 02 White,Headband 02 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-247,Headband 02 Yellow,这是Headband 02 Yellow,Headband 02 Yellow,Headband 02 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-248,Headband 03 Blue,这是Headband 03 Blue,Headband 03 Blue,Headband 03 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-249,Headband 03 Green,这是Headband 03 Green,Headband 03 Green,Headband 03 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-250,Headband 03 Purple,这是Headband 03 Purple,Headband 03 Purple,Headband 03 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-251,Headband 03 Red,这是Headband 03 Red,Headband 03 Red,Headband 03 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-252,Headband 03 Yellow,这是Headband 03 Yellow,Headband 03 Yellow,Headband 03 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-253,Headband 04 Blue,这是Headband 04 Blue,Headband 04 Blue,Headband 04 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-254,Headband 04 Green,这是Headband 04 Green,Headband 04 Green,Headband 04 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-255,Headband 04 Purple,这是Headband 04 Purple,Headband 04 Purple,Headband 04 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-256,Headband 04 Red,这是Headband 04 Red,Headband 04 Red,Headband 04 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-257,Headband 05 Black,这是Headband 05 Black,Headband 05 Black,Headband 05 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-258,Headband 05 Blue,这是Headband 05 Blue,Headband 05 Blue,Headband 05 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-259,Headband 05 Green,这是Headband 05 Green,Headband 05 Green,Headband 05 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-260,Headband 05 Purple,这是Headband 05 Purple,Headband 05 Purple,Headband 05 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-261,Headband 05 Red,这是Headband 05 Red,Headband 05 Red,Headband 05 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-262,Headband 05 White,这是Headband 05 White,Headband 05 White,Headband 05 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-263,Headband 06 Blue,这是Headband 06 Blue,Headband 06 Blue,Headband 06 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-264,Headband 06 Green,这是Headband 06 Green,Headband 06 Green,Headband 06 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-265,Headband 06 Magenta,这是Headband 06 Magenta,Headband 06 Magenta,Headband 06 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-266,Headband 06 Purple,这是Headband 06 Purple,Headband 06 Purple,Headband 06 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-267,Headband 06 Red,这是Headband 06 Red,Headband 06 Red,Headband 06 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-268,Headband 06 White,这是Headband 06 White,Headband 06 White,Headband 06 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-269,Headband 06 Yellow,这是Headband 06 Yellow,Headband 06 Yellow,Headband 06 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-270,Headband 07 Black,这是Headband 07 Black,Headband 07 Black,Headband 07 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-271,Headband 07 Blue,这是Headband 07 Blue,Headband 07 Blue,Headband 07 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-272,Headband 07 Green,这是Headband 07 Green,Headband 07 Green,Headband 07 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-273,Headband 07 Magenta,这是Headband 07 Magenta,Headband 07 Magenta,Headband 07 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-274,Headband 07 Purple,这是Headband 07 Purple,Headband 07 Purple,Headband 07 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-275,Headband 07 Red,这是Headband 07 Red,Headband 07 Red,Headband 07 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-276,Headband 07 Yellow,这是Headband 07 Yellow,Headband 07 Yellow,Headband 07 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-277,Headband 08 Black,这是Headband 08 Black,Headband 08 Black,Headband 08 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-278,Headband 08 Blue,这是Headband 08 Blue,Headband 08 Blue,Headband 08 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-279,Headband 08 Green,这是Headband 08 Green,Headband 08 Green,Headband 08 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-280,Headband 08 Magenta,这是Headband 08 Magenta,Headband 08 Magenta,Headband 08 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-281,Headband 08 Purple,这是Headband 08 Purple,Headband 08 Purple,Headband 08 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-282,Headband 08 Red,这是Headband 08 Red,Headband 08 Red,Headband 08 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-283,Headband 08 White,这是Headband 08 White,Headband 08 White,Headband 08 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-284,Headband 08 Yellow,这是Headband 08 Yellow,Headband 08 Yellow,Headband 08 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-285,Helmet 01 Knight Black,这是Helmet 01 Knight Black,Helmet 01 Knight Black,Helmet 01 Knight Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-286,Helmet 01 Knight Blue,这是Helmet 01 Knight Blue,Helmet 01 Knight Blue,Helmet 01 Knight Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-287,Helmet 01 Knight Red,这是Helmet 01 Knight Red,Helmet 01 Knight Red,Helmet 01 Knight Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-288,Helmet 01 Knight White,这是Helmet 01 Knight White,Helmet 01 Knight White,Helmet 01 Knight White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-289,Helmet 02 Barbarian Black,这是Helmet 02 Barbarian Black,Helmet 02 Barbarian Black,Helmet 02 Barbarian Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-290,Helmet 02 Barbarian Blue,这是Helmet 02 Barbarian Blue,Helmet 02 Barbarian Blue,Helmet 02 Barbarian Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-291,Helmet 02 Barbarian Brown,这是Helmet 02 Barbarian Brown,Helmet 02 Barbarian Brown,Helmet 02 Barbarian Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-292,Helmet 02 Barbarian Green,这是Helmet 02 Barbarian Green,Helmet 02 Barbarian Green,Helmet 02 Barbarian Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-293,Helmet 02 Barbarian Purple,这是Helmet 02 Barbarian Purple,Helmet 02 Barbarian Purple,Helmet 02 Barbarian Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-294,Helmet 03 Black,这是Helmet 03 Black,Helmet 03 Black,Helmet 03 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-295,Helmet 03 Blue,这是Helmet 03 Blue,Helmet 03 Blue,Helmet 03 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-296,Helmet 03 Brown,这是Helmet 03 Brown,Helmet 03 Brown,Helmet 03 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-297,Helmet 03 Green,这是Helmet 03 Green,Helmet 03 Green,Helmet 03 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-298,Helmet 03 Purple,这是Helmet 03 Purple,Helmet 03 Purple,Helmet 03 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-299,Helmet 04 Pumpkin,这是Helmet 04 Pumpkin,Helmet 04 Pumpkin,Helmet 04 Pumpkin,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-300,Helmet 05 Black,这是Helmet 05 Black,Helmet 05 Black,Helmet 05 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-301,Helmet 05 Blue,这是Helmet 05 Blue,Helmet 05 Blue,Helmet 05 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-302,Helmet 05 Brown,这是Helmet 05 Brown,Helmet 05 Brown,Helmet 05 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-303,Helmet 05 Cyan,这是Helmet 05 Cyan,Helmet 05 Cyan,Helmet 05 Cyan,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-304,Helmet 05 Green,这是Helmet 05 Green,Helmet 05 Green,Helmet 05 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-305,Helmet 05 Purple,这是Helmet 05 Purple,Helmet 05 Purple,Helmet 05 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-306,Helmet 05 Red,这是Helmet 05 Red,Helmet 05 Red,Helmet 05 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-307,Helmet 05 White,这是Helmet 05 White,Helmet 05 White,Helmet 05 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-308,Helmet 06 Black,这是Helmet 06 Black,Helmet 06 Black,Helmet 06 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-309,Helmet 06 Blue,这是Helmet 06 Blue,Helmet 06 Blue,Helmet 06 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-310,Helmet 06 Brown,这是Helmet 06 Brown,Helmet 06 Brown,Helmet 06 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-311,Helmet 06 Green,这是Helmet 06 Green,Helmet 06 Green,Helmet 06 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-312,Helmet 06 Magenta,这是Helmet 06 Magenta,Helmet 06 Magenta,Helmet 06 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-313,Helmet 06 Purple,这是Helmet 06 Purple,Helmet 06 Purple,Helmet 06 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-314,Helmet 06 Red,这是Helmet 06 Red,Helmet 06 Red,Helmet 06 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-315,Helmet 06 White,这是Helmet 06 White,Helmet 06 White,Helmet 06 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-316,Helmet 07 Black,这是Helmet 07 Black,Helmet 07 Black,Helmet 07 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-317,Helmet 07 Blue,这是Helmet 07 Blue,Helmet 07 Blue,Helmet 07 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-318,Helmet 07 Brown,这是Helmet 07 Brown,Helmet 07 Brown,Helmet 07 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-319,Helmet 07 Green,这是Helmet 07 Green,Helmet 07 Green,Helmet 07 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-320,Helmet 07 Magenta,这是Helmet 07 Magenta,Helmet 07 Magenta,Helmet 07 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-321,Helmet 07 Purple,这是Helmet 07 Purple,Helmet 07 Purple,Helmet 07 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-322,Helmet 07 Red,这是Helmet 07 Red,Helmet 07 Red,Helmet 07 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-323,Helmet 07 White,这是Helmet 07 White,Helmet 07 White,Helmet 07 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-324,Helmet 08 Black,这是Helmet 08 Black,Helmet 08 Black,Helmet 08 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-325,Helmet 08 Blue,这是Helmet 08 Blue,Helmet 08 Blue,Helmet 08 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-326,Helmet 08 Brown,这是Helmet 08 Brown,Helmet 08 Brown,Helmet 08 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-327,Helmet 08 Green,这是Helmet 08 Green,Helmet 08 Green,Helmet 08 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-328,Helmet 08 Magenta,这是Helmet 08 Magenta,Helmet 08 Magenta,Helmet 08 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-329,Helmet 08 Purple,这是Helmet 08 Purple,Helmet 08 Purple,Helmet 08 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-330,Helmet 08 Red,这是Helmet 08 Red,Helmet 08 Red,Helmet 08 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-331,Helmet 08 White,这是Helmet 08 White,Helmet 08 White,Helmet 08 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-332,Helmet 09 Black,这是Helmet 09 Black,Helmet 09 Black,Helmet 09 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-333,Helmet 09 Blue,这是Helmet 09 Blue,Helmet 09 Blue,Helmet 09 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-334,Helmet 09 Brown,这是Helmet 09 Brown,Helmet 09 Brown,Helmet 09 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-335,Helmet 09 Green,这是Helmet 09 Green,Helmet 09 Green,Helmet 09 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-336,Helmet 09 Magenta,这是Helmet 09 Magenta,Helmet 09 Magenta,Helmet 09 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-337,Helmet 09 Purple,这是Helmet 09 Purple,Helmet 09 Purple,Helmet 09 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-338,Helmet 09 Red,这是Helmet 09 Red,Helmet 09 Red,Helmet 09 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-339,Helmet 09 White,这是Helmet 09 White,Helmet 09 White,Helmet 09 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-340,Helmet 10 Black,这是Helmet 10 Black,Helmet 10 Black,Helmet 10 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-341,Helmet 10 Blue,这是Helmet 10 Blue,Helmet 10 Blue,Helmet 10 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-342,Helmet 10 Brown,这是Helmet 10 Brown,Helmet 10 Brown,Helmet 10 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-343,Helmet 10 Green,这是Helmet 10 Green,Helmet 10 Green,Helmet 10 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-344,Helmet 10 Magenta,这是Helmet 10 Magenta,Helmet 10 Magenta,Helmet 10 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-345,Helmet 10 Purple,这是Helmet 10 Purple,Helmet 10 Purple,Helmet 10 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-346,Helmet 10 Red,这是Helmet 10 Red,Helmet 10 Red,Helmet 10 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-347,Helmet 10 White,这是Helmet 10 White,Helmet 10 White,Helmet 10 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-348,Horn 01 Front Black,这是Horn 01 Front Black,Horn 01 Front Black,Horn 01 Front Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-349,Horn 01 Front Red,这是Horn 01 Front Red,Horn 01 Front Red,Horn 01 Front Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-350,Horn 01 Front White,这是Horn 01 Front White,Horn 01 Front White,Horn 01 Front White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-351,Horn 02 Side Black Blue,这是Horn 02 Side Black Blue,Horn 02 Side Black Blue,Horn 02 Side Black Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-352,Horn 02 Side Black Green,这是Horn 02 Side Black Green,Horn 02 Side Black Green,Horn 02 Side Black Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-353,Horn 02 Side Black Orange,这是Horn 02 Side Black Orange,Horn 02 Side Black Orange,Horn 02 Side Black Orange,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-354,Horn 02 Side Black Purple,这是Horn 02 Side Black Purple,Horn 02 Side Black Purple,Horn 02 Side Black Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-355,Horn 02 Side Black Red,这是Horn 02 Side Black Red,Horn 02 Side Black Red,Horn 02 Side Black Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-356,Horn 02 Side Green Green,这是Horn 02 Side Green Green,Horn 02 Side Green Green,Horn 02 Side Green Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-357,Horn 02 Side Red Yellow,这是Horn 02 Side Red Yellow,Horn 02 Side Red Yellow,Horn 02 Side Red Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-358,Horn 02 Side White,这是Horn 02 Side White,Horn 02 Side White,Horn 02 Side White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-359,Horn 02 Side Yellow,这是Horn 02 Side Yellow,Horn 02 Side Yellow,Horn 02 Side Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-360,Horn 03 Blue,这是Horn 03 Blue,Horn 03 Blue,Horn 03 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-361,Horn 03 Green,这是Horn 03 Green,Horn 03 Green,Horn 03 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-362,Horn 03 Purple,这是Horn 03 Purple,Horn 03 Purple,Horn 03 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-363,Horn 03 Red,这是Horn 03 Red,Horn 03 Red,Horn 03 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-364,Horn 03 Yellow,这是Horn 03 Yellow,Horn 03 Yellow,Horn 03 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-365,Mask 01 Blue,这是Mask 01 Blue,Mask 01 Blue,Mask 01 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-366,Mask 01 Brown,这是Mask 01 Brown,Mask 01 Brown,Mask 01 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-367,Mask 01 Green,这是Mask 01 Green,Mask 01 Green,Mask 01 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-368,Mask 01 Purple,这是Mask 01 Purple,Mask 01 Purple,Mask 01 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-369,Mask 01 Red,这是Mask 01 Red,Mask 01 Red,Mask 01 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-370,Mask 02 Blue,这是Mask 02 Blue,Mask 02 Blue,Mask 02 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-371,Mask 02 Purple,这是Mask 02 Purple,Mask 02 Purple,Mask 02 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-372,Mask 02 Red,这是Mask 02 Red,Mask 02 Red,Mask 02 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-373,Mask 02 Yellow,这是Mask 02 Yellow,Mask 02 Yellow,Mask 02 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-374,Mask 03 Blue,这是Mask 03 Blue,Mask 03 Blue,Mask 03 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-375,Mask 03 Green,这是Mask 03 Green,Mask 03 Green,Mask 03 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-376,Mask 03 Purple,这是Mask 03 Purple,Mask 03 Purple,Mask 03 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-377,Mask 03 Red,这是Mask 03 Red,Mask 03 Red,Mask 03 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-378,Mask 03 Yellow,这是Mask 03 Yellow,Mask 03 Yellow,Mask 03 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
-379,Antlers Blue,这是Antlers Blue,Antlers Blue,Antlers Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-380,Antlers Dark,这是Antlers Dark,Antlers Dark,Antlers Dark,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-381,Antlers Green,这是Antlers Green,Antlers Green,Antlers Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-382,Antlers Light,这是Antlers Light,Antlers Light,Antlers Light,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-383,Antlers Purple,这是Antlers Purple,Antlers Purple,Antlers Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-384,Antlers Red,这是Antlers Red,Antlers Red,Antlers Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-385,Halo 01,这是Halo 01,Halo 01,Halo 01,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-386,Hood 01 Black,这是Hood 01 Black,Hood 01 Black,Hood 01 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-387,Hood 01 Blue,这是Hood 01 Blue,Hood 01 Blue,Hood 01 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-388,Hood 01 Brown,这是Hood 01 Brown,Hood 01 Brown,Hood 01 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-389,Hood 01 Green,这是Hood 01 Green,Hood 01 Green,Hood 01 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-390,Hood 01 Magenta,这是Hood 01 Magenta,Hood 01 Magenta,Hood 01 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-391,Hood 01 Purple,这是Hood 01 Purple,Hood 01 Purple,Hood 01 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-392,Hood 01 Red,这是Hood 01 Red,Hood 01 Red,Hood 01 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-393,Hood 01 White,这是Hood 01 White,Hood 01 White,Hood 01 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-394,Jaw 01 Black,这是Jaw 01 Black,Jaw 01 Black,Jaw 01 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-395,Jaw 01 Blue,这是Jaw 01 Blue,Jaw 01 Blue,Jaw 01 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
-396,Jaw 01 Green,这是Jaw 01 Green,Jaw 01 Green,Jaw 01 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
-397,Jaw 01 Purple,这是Jaw 01 Purple,Jaw 01 Purple,Jaw 01 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
-398,Jaw 01 Red,这是Jaw 01 Red,Jaw 01 Red,Jaw 01 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
-399,Jacket 01 Black,这是Jacket 01 Black,Jacket 01 Black,Jacket 01 Black,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
-400,Jacket 01 Blue,这是Jacket 01 Blue,Jacket 01 Blue,Jacket 01 Blue,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
-401,Jacket 01 Green,这是Jacket 01 Green,Jacket 01 Green,Jacket 01 Green,2,Chest,15,0,25,0.5,1,0,0,0,1,1,2,1
-402,Jacket 01 Magenta,这是Jacket 01 Magenta,Jacket 01 Magenta,Jacket 01 Magenta,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
-403,Jacket 01 Purple,这是Jacket 01 Purple,Jacket 01 Purple,Jacket 01 Purple,2,Chest,15,0,25,0.5,1,0,0,0,1,1,4,1
-404,Jacket 01 Red,这是Jacket 01 Red,Jacket 01 Red,Jacket 01 Red,2,Chest,15,0,25,0.5,1,0,0,0,1,1,6,1
-405,Jacket 01 White,这是Jacket 01 White,Jacket 01 White,Jacket 01 White,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
-406,Jacket 01 Yellow,这是Jacket 01 Yellow,Jacket 01 Yellow,Jacket 01 Yellow,2,Chest,15,0,25,0.5,1,0,0,0,1,1,5,1
-407,FX Flies,这是FX Flies,FX Flies,FX Flies,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
-408,FX Spinning Leaves,这是FX Spinning Leaves,FX Spinning Leaves,FX Spinning Leaves,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
-409,FX Spinning Petals,这是FX Spinning Petals,FX Spinning Petals,FX Spinning Petals,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
-410,FX Spinning Snowflakes,这是FX Spinning Snowflakes,FX Spinning Snowflakes,FX Spinning Snowflakes,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
-411,FX Spinning Sparks,这是FX Spinning Sparks,FX Spinning Sparks,FX Spinning Sparks,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
-412,Axe 01,这是Axe 01,Axe 01,Axe 01,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-413,Axe 02 Blue,这是Axe 02 Blue,Axe 02 Blue,Axe 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-414,Axe 02 Green,这是Axe 02 Green,Axe 02 Green,Axe 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
-415,Axe 02 Purple,这是Axe 02 Purple,Axe 02 Purple,Axe 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
-416,Axe 02 Red,这是Axe 02 Red,Axe 02 Red,Axe 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
-417,Axe 03 Blue,这是Axe 03 Blue,Axe 03 Blue,Axe 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-418,Axe 03 Green,这是Axe 03 Green,Axe 03 Green,Axe 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
-419,Axe 03 Purple,这是Axe 03 Purple,Axe 03 Purple,Axe 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
-420,Axe 03 Red,这是Axe 03 Red,Axe 03 Red,Axe 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
-421,Club 01,这是Club 01,Club 01,Club 01,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-422,Club 02 Blue,这是Club 02 Blue,Club 02 Blue,Club 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-423,Club 02 Green,这是Club 02 Green,Club 02 Green,Club 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
-424,Club 02 Purple,这是Club 02 Purple,Club 02 Purple,Club 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
-425,Club 02 Red,这是Club 02 Red,Club 02 Red,Club 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
-426,Club 03 Blue,这是Club 03 Blue,Club 03 Blue,Club 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-427,Club 03 Green,这是Club 03 Green,Club 03 Green,Club 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
-428,Club 03 Purple,这是Club 03 Purple,Club 03 Purple,Club 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
-429,Club 03 Red,这是Club 03 Red,Club 03 Red,Club 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
-430,Club 03 White,这是Club 03 White,Club 03 White,Club 03 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-431,Dagger 01 Blue,这是Dagger 01 Blue,Dagger 01 Blue,Dagger 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-432,Dagger 01 Green,这是Dagger 01 Green,Dagger 01 Green,Dagger 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
-433,Dagger 01 Purple,这是Dagger 01 Purple,Dagger 01 Purple,Dagger 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
-434,Dagger 01 Red,这是Dagger 01 Red,Dagger 01 Red,Dagger 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
-435,Dagger 02 Blue,这是Dagger 02 Blue,Dagger 02 Blue,Dagger 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-436,Dagger 02 Green,这是Dagger 02 Green,Dagger 02 Green,Dagger 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
-437,Dagger 02 Purple,这是Dagger 02 Purple,Dagger 02 Purple,Dagger 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
-438,Dagger 02 Red,这是Dagger 02 Red,Dagger 02 Red,Dagger 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
-439,Dagger 03 Black,这是Dagger 03 Black,Dagger 03 Black,Dagger 03 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-440,Dagger 03 Blue,这是Dagger 03 Blue,Dagger 03 Blue,Dagger 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-441,Dagger 03 Green,这是Dagger 03 Green,Dagger 03 Green,Dagger 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
-442,Dagger 03 Magenta,这是Dagger 03 Magenta,Dagger 03 Magenta,Dagger 03 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-443,Dagger 03 Purple,这是Dagger 03 Purple,Dagger 03 Purple,Dagger 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
-444,Dagger 03 Red,这是Dagger 03 Red,Dagger 03 Red,Dagger 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
-445,Dagger 03 White,这是Dagger 03 White,Dagger 03 White,Dagger 03 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-446,Dagger 03 Yellow,这是Dagger 03 Yellow,Dagger 03 Yellow,Dagger 03 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,1
-447,Hammer 01 Black,这是Hammer 01 Black,Hammer 01 Black,Hammer 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-448,Hammer 01 Blue,这是Hammer 01 Blue,Hammer 01 Blue,Hammer 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-449,Hammer 01 Green,这是Hammer 01 Green,Hammer 01 Green,Hammer 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
-450,Hammer 01 Magenta,这是Hammer 01 Magenta,Hammer 01 Magenta,Hammer 01 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-451,Hammer 01 Purple,这是Hammer 01 Purple,Hammer 01 Purple,Hammer 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
-452,Hammer 01 Red,这是Hammer 01 Red,Hammer 01 Red,Hammer 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
-453,Hammer 01 White,这是Hammer 01 White,Hammer 01 White,Hammer 01 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-454,Hammer 01 Yellow,这是Hammer 01 Yellow,Hammer 01 Yellow,Hammer 01 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,1
-455,Hammer 02 Black,这是Hammer 02 Black,Hammer 02 Black,Hammer 02 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-456,Hammer 02 Blue,这是Hammer 02 Blue,Hammer 02 Blue,Hammer 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-457,Hammer 02 Green,这是Hammer 02 Green,Hammer 02 Green,Hammer 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
-458,Hammer 02 Magenta,这是Hammer 02 Magenta,Hammer 02 Magenta,Hammer 02 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-459,Hammer 02 Purple,这是Hammer 02 Purple,Hammer 02 Purple,Hammer 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
-460,Hammer 02 Red,这是Hammer 02 Red,Hammer 02 Red,Hammer 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
-461,Hammer 02 Yellow,这是Hammer 02 Yellow,Hammer 02 Yellow,Hammer 02 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,1
-462,Hammer 03 Black,这是Hammer 03 Black,Hammer 03 Black,Hammer 03 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-463,Hammer 03 Blue,这是Hammer 03 Blue,Hammer 03 Blue,Hammer 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-464,Hammer 03 Green,这是Hammer 03 Green,Hammer 03 Green,Hammer 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
-465,Hammer 03 Magenta,这是Hammer 03 Magenta,Hammer 03 Magenta,Hammer 03 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-466,Hammer 03 Purple,这是Hammer 03 Purple,Hammer 03 Purple,Hammer 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
-467,Hammer 03 Red,这是Hammer 03 Red,Hammer 03 Red,Hammer 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
-468,Hammer 03 White,这是Hammer 03 White,Hammer 03 White,Hammer 03 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-469,Hammer 03 Yellow,这是Hammer 03 Yellow,Hammer 03 Yellow,Hammer 03 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,1
-470,Mace 01 Black,这是Mace 01 Black,Mace 01 Black,Mace 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-471,Mace 01 Blue,这是Mace 01 Blue,Mace 01 Blue,Mace 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-472,Mace 01 Green,这是Mace 01 Green,Mace 01 Green,Mace 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
-473,Mace 01 Purple,这是Mace 01 Purple,Mace 01 Purple,Mace 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
-474,Mace 01 Red,这是Mace 01 Red,Mace 01 Red,Mace 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
-475,Mace 01 Yellow,这是Mace 01 Yellow,Mace 01 Yellow,Mace 01 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
-476,Mace 02 Black,这是Mace 02 Black,Mace 02 Black,Mace 02 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-477,Mace 02 Blue,这是Mace 02 Blue,Mace 02 Blue,Mace 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-478,Mace 02 Fire,这是Mace 02 Fire,Mace 02 Fire,Mace 02 Fire,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-479,Mace 02 Green,这是Mace 02 Green,Mace 02 Green,Mace 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
-480,Mace 02 Ice,这是Mace 02 Ice,Mace 02 Ice,Mace 02 Ice,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-481,Mace 02 Poison,这是Mace 02 Poison,Mace 02 Poison,Mace 02 Poison,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-482,Mace 02 Purple,这是Mace 02 Purple,Mace 02 Purple,Mace 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
-483,Mace 02 Red,这是Mace 02 Red,Mace 02 Red,Mace 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
-484,Mace 02 Yellow,这是Mace 02 Yellow,Mace 02 Yellow,Mace 02 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
-485,Peasant Tool 01 Rake,这是Peasant Tool 01 Rake,Peasant Tool 01 Rake,Peasant Tool 01 Rake,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-486,Peasant Tool 02 Hammer,这是Peasant Tool 02 Hammer,Peasant Tool 02 Hammer,Peasant Tool 02 Hammer,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-487,Peasant Tool 03 Axe,这是Peasant Tool 03 Axe,Peasant Tool 03 Axe,Peasant Tool 03 Axe,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-488,Peasant Tool 04 Scyth,这是Peasant Tool 04 Scyth,Peasant Tool 04 Scyth,Peasant Tool 04 Scyth,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-489,Scepter 01 Black,这是Scepter 01 Black,Scepter 01 Black,Scepter 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-490,Scepter 01 Blue,这是Scepter 01 Blue,Scepter 01 Blue,Scepter 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-491,Scepter 01 Green,这是Scepter 01 Green,Scepter 01 Green,Scepter 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
-492,Scepter 01 Magenta,这是Scepter 01 Magenta,Scepter 01 Magenta,Scepter 01 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-493,Scepter 01 Purple,这是Scepter 01 Purple,Scepter 01 Purple,Scepter 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
-494,Scepter 01 Red,这是Scepter 01 Red,Scepter 01 Red,Scepter 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
-495,Scepter 01 White,这是Scepter 01 White,Scepter 01 White,Scepter 01 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
-496,Scepter 01 Yellow,这是Scepter 01 Yellow,Scepter 01 Yellow,Scepter 01 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,1
-497,Scythe 01 Black,这是Scythe 01 Black,Scythe 01 Black,Scythe 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-498,Scythe 01 Blue,这是Scythe 01 Blue,Scythe 01 Blue,Scythe 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-499,Scythe 01 Green,这是Scythe 01 Green,Scythe 01 Green,Scythe 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
-500,Scythe 01 Magenta,这是Scythe 01 Magenta,Scythe 01 Magenta,Scythe 01 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-501,Scythe 01 Purple,这是Scythe 01 Purple,Scythe 01 Purple,Scythe 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
-502,Scythe 01 Red,这是Scythe 01 Red,Scythe 01 Red,Scythe 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
-503,Scythe 01 White,这是Scythe 01 White,Scythe 01 White,Scythe 01 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-504,Scythe 01 Yellow,这是Scythe 01 Yellow,Scythe 01 Yellow,Scythe 01 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
-505,Scythe 02 Blue,这是Scythe 02 Blue,Scythe 02 Blue,Scythe 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-506,Scythe 02 Green,这是Scythe 02 Green,Scythe 02 Green,Scythe 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
-507,Scythe 02 Magenta,这是Scythe 02 Magenta,Scythe 02 Magenta,Scythe 02 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-508,Scythe 02 Purple,这是Scythe 02 Purple,Scythe 02 Purple,Scythe 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
-509,Scythe 02 Red,这是Scythe 02 Red,Scythe 02 Red,Scythe 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
-510,Scythe 02 White,这是Scythe 02 White,Scythe 02 White,Scythe 02 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-511,Scythe 02 Yellow,这是Scythe 02 Yellow,Scythe 02 Yellow,Scythe 02 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
-512,Scythe 03 Black,这是Scythe 03 Black,Scythe 03 Black,Scythe 03 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-513,Scythe 03 Blue,这是Scythe 03 Blue,Scythe 03 Blue,Scythe 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-514,Scythe 03 Green,这是Scythe 03 Green,Scythe 03 Green,Scythe 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
-515,Scythe 03 Magenta,这是Scythe 03 Magenta,Scythe 03 Magenta,Scythe 03 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-516,Scythe 03 Purple,这是Scythe 03 Purple,Scythe 03 Purple,Scythe 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
-517,Scythe 03 Red,这是Scythe 03 Red,Scythe 03 Red,Scythe 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
-518,Scythe 03 White,这是Scythe 03 White,Scythe 03 White,Scythe 03 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-519,Scythe 03 Yellow,这是Scythe 03 Yellow,Scythe 03 Yellow,Scythe 03 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
-520,Spear 01 Black,这是Spear 01 Black,Spear 01 Black,Spear 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
-521,Spear 01 Blue,这是Spear 01 Blue,Spear 01 Blue,Spear 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
-522,Spear 01 Brown,这是Spear 01 Brown,Spear 01 Brown,Spear 01 Brown,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
-523,Spear 01 Green,这是Spear 01 Green,Spear 01 Green,Spear 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,2
-524,Spear 01 Magenta,这是Spear 01 Magenta,Spear 01 Magenta,Spear 01 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
-525,Spear 01 Purple,这是Spear 01 Purple,Spear 01 Purple,Spear 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,2
-526,Spear 01 Red,这是Spear 01 Red,Spear 01 Red,Spear 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,2
-527,Spear 01 White,这是Spear 01 White,Spear 01 White,Spear 01 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
-528,Spear 02 Black,这是Spear 02 Black,Spear 02 Black,Spear 02 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
-529,Spear 02 Blue,这是Spear 02 Blue,Spear 02 Blue,Spear 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
-530,Spear 02 Green,这是Spear 02 Green,Spear 02 Green,Spear 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,2
-531,Spear 02 Magenta,这是Spear 02 Magenta,Spear 02 Magenta,Spear 02 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
-532,Spear 02 Purple,这是Spear 02 Purple,Spear 02 Purple,Spear 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,2
-533,Spear 02 Red,这是Spear 02 Red,Spear 02 Red,Spear 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,2
-534,Spear 02 White,这是Spear 02 White,Spear 02 White,Spear 02 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
-535,Spear 02 Yellow,这是Spear 02 Yellow,Spear 02 Yellow,Spear 02 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,2
-536,Spear 03 Black,这是Spear 03 Black,Spear 03 Black,Spear 03 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
-537,Spear 03 Blue,这是Spear 03 Blue,Spear 03 Blue,Spear 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
-538,Spear 03 Brown,这是Spear 03 Brown,Spear 03 Brown,Spear 03 Brown,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
-539,Spear 03 Green,这是Spear 03 Green,Spear 03 Green,Spear 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,2
-540,Spear 03 Magenta,这是Spear 03 Magenta,Spear 03 Magenta,Spear 03 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
-541,Spear 03 Purple,这是Spear 03 Purple,Spear 03 Purple,Spear 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,2
-542,Spear 03 Red,这是Spear 03 Red,Spear 03 Red,Spear 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,2
-543,Spear 03 White,这是Spear 03 White,Spear 03 White,Spear 03 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
-544,Sword 01 Black,这是Sword 01 Black,Sword 01 Black,Sword 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-545,Sword 01 Blue,这是Sword 01 Blue,Sword 01 Blue,Sword 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-546,Sword 01 Green,这是Sword 01 Green,Sword 01 Green,Sword 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
-547,Sword 01 Purple,这是Sword 01 Purple,Sword 01 Purple,Sword 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
-548,Sword 01 Red,这是Sword 01 Red,Sword 01 Red,Sword 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,4
-549,Sword 01 White,这是Sword 01 White,Sword 01 White,Sword 01 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-550,Sword 02 Fire,这是Sword 02 Fire,Sword 02 Fire,Sword 02 Fire,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-551,Sword 02 Ice,这是Sword 02 Ice,Sword 02 Ice,Sword 02 Ice,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-552,Sword 02 Normal,这是Sword 02 Normal,Sword 02 Normal,Sword 02 Normal,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-553,Sword 02 Poison,这是Sword 02 Poison,Sword 02 Poison,Sword 02 Poison,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-554,Sword 03 Blue,这是Sword 03 Blue,Sword 03 Blue,Sword 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-555,Sword 03 Gold,这是Sword 03 Gold,Sword 03 Gold,Sword 03 Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-556,Sword 03 Green,这是Sword 03 Green,Sword 03 Green,Sword 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
-557,Sword 03 Red,这是Sword 03 Red,Sword 03 Red,Sword 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,4
-558,Sword 04 Black,这是Sword 04 Black,Sword 04 Black,Sword 04 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-559,Sword 04 Blue,这是Sword 04 Blue,Sword 04 Blue,Sword 04 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-560,Sword 04 Brown,这是Sword 04 Brown,Sword 04 Brown,Sword 04 Brown,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-561,Sword 04 Green,这是Sword 04 Green,Sword 04 Green,Sword 04 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
-562,Sword 04 Purple,这是Sword 04 Purple,Sword 04 Purple,Sword 04 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
-563,Sword 04 White,这是Sword 04 White,Sword 04 White,Sword 04 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-564,Sword 05 Fire Ice,这是Sword 05 Fire Ice,Sword 05 Fire Ice,Sword 05 Fire Ice,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-565,Sword 05 Light Dark,这是Sword 05 Light Dark,Sword 05 Light Dark,Sword 05 Light Dark,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-566,Sword 05 Lightning,这是Sword 05 Lightning,Sword 05 Lightning,Sword 05 Lightning,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-567,Sword 05 Normal Blue,这是Sword 05 Normal Blue,Sword 05 Normal Blue,Sword 05 Normal Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-568,Sword 05 Normal Green,这是Sword 05 Normal Green,Sword 05 Normal Green,Sword 05 Normal Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
-569,Sword 05 Normal Purple,这是Sword 05 Normal Purple,Sword 05 Normal Purple,Sword 05 Normal Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
-570,Sword 05 Normal Red,这是Sword 05 Normal Red,Sword 05 Normal Red,Sword 05 Normal Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,4
-571,Sword 05 Poison,这是Sword 05 Poison,Sword 05 Poison,Sword 05 Poison,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-572,Sword 06 Blue,这是Sword 06 Blue,Sword 06 Blue,Sword 06 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-573,Sword 06 Green,这是Sword 06 Green,Sword 06 Green,Sword 06 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
-574,Sword 06 Purple,这是Sword 06 Purple,Sword 06 Purple,Sword 06 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
-575,Sword 06 Red,这是Sword 06 Red,Sword 06 Red,Sword 06 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,4
-576,Sword 06 Yellow,这是Sword 06 Yellow,Sword 06 Yellow,Sword 06 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,4
-577,Sword 07 Blue,这是Sword 07 Blue,Sword 07 Blue,Sword 07 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-578,Sword 07 Green,这是Sword 07 Green,Sword 07 Green,Sword 07 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
-579,Sword 07 Grey,这是Sword 07 Grey,Sword 07 Grey,Sword 07 Grey,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-580,Sword 07 Purple,这是Sword 07 Purple,Sword 07 Purple,Sword 07 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
-581,Sword 08 Blue,这是Sword 08 Blue,Sword 08 Blue,Sword 08 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-582,Sword 08 Green,这是Sword 08 Green,Sword 08 Green,Sword 08 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
-583,Sword 08 Purple,这是Sword 08 Purple,Sword 08 Purple,Sword 08 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
-584,Sword 08 Red,这是Sword 08 Red,Sword 08 Red,Sword 08 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,4
-585,Sword 08 Yellow,这是Sword 08 Yellow,Sword 08 Yellow,Sword 08 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,4
-586,Sword 09 Green,这是Sword 09 Green,Sword 09 Green,Sword 09 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
-587,Sword 09 Grey,这是Sword 09 Grey,Sword 09 Grey,Sword 09 Grey,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-588,Sword 09 Pink,这是Sword 09 Pink,Sword 09 Pink,Sword 09 Pink,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-589,Sword 09 Purple,这是Sword 09 Purple,Sword 09 Purple,Sword 09 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
-590,Sword 09 Red,这是Sword 09 Red,Sword 09 Red,Sword 09 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,4
-591,Sword 09 Yellow,这是Sword 09 Yellow,Sword 09 Yellow,Sword 09 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,4
-592,Sword 10 Black Gold,这是Sword 10 Black Gold,Sword 10 Black Gold,Sword 10 Black Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-593,Sword 10 Blue Gold,这是Sword 10 Blue Gold,Sword 10 Blue Gold,Sword 10 Blue Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-594,Sword 10 Green Gold,这是Sword 10 Green Gold,Sword 10 Green Gold,Sword 10 Green Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
-595,Sword 10 Purple Gold,这是Sword 10 Purple Gold,Sword 10 Purple Gold,Sword 10 Purple Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
-596,Sword 10 Red Gold,这是Sword 10 Red Gold,Sword 10 Red Gold,Sword 10 Red Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,4
-597,Sword 10 White Gold,这是Sword 10 White Gold,Sword 10 White Gold,Sword 10 White Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-598,Wand 01 Stick Blue,这是Wand 01 Stick Blue,Wand 01 Stick Blue,Wand 01 Stick Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-599,Wand 01 Stick Green,这是Wand 01 Stick Green,Wand 01 Stick Green,Wand 01 Stick Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
-600,Wand 01 Stick Orange,这是Wand 01 Stick Orange,Wand 01 Stick Orange,Wand 01 Stick Orange,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-601,Wand 01 Stick Purple,这是Wand 01 Stick Purple,Wand 01 Stick Purple,Wand 01 Stick Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
-602,Wand 01 Stick Red,这是Wand 01 Stick Red,Wand 01 Stick Red,Wand 01 Stick Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
-603,Wand 01 Stick White,这是Wand 01 Stick White,Wand 01 Stick White,Wand 01 Stick White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-604,Wand 01 Stick Yellow,这是Wand 01 Stick Yellow,Wand 01 Stick Yellow,Wand 01 Stick Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,5
-605,Wand 02 Blue,这是Wand 02 Blue,Wand 02 Blue,Wand 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-606,Wand 02 Green,这是Wand 02 Green,Wand 02 Green,Wand 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
-607,Wand 02 Purple,这是Wand 02 Purple,Wand 02 Purple,Wand 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
-608,Wand 02 Red,这是Wand 02 Red,Wand 02 Red,Wand 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
-609,Wand 02 White,这是Wand 02 White,Wand 02 White,Wand 02 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-610,Wand 02 Yellow,这是Wand 02 Yellow,Wand 02 Yellow,Wand 02 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,5
-611,Wand 03 Blue,这是Wand 03 Blue,Wand 03 Blue,Wand 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-612,Wand 03 Green,这是Wand 03 Green,Wand 03 Green,Wand 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
-613,Wand 03 Purple,这是Wand 03 Purple,Wand 03 Purple,Wand 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
-614,Wand 03 Red,这是Wand 03 Red,Wand 03 Red,Wand 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
-615,Wand 04 Blue,这是Wand 04 Blue,Wand 04 Blue,Wand 04 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-616,Wand 04 Green,这是Wand 04 Green,Wand 04 Green,Wand 04 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
-617,Wand 04 Purple,这是Wand 04 Purple,Wand 04 Purple,Wand 04 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
-618,Wand 04 Red,这是Wand 04 Red,Wand 04 Red,Wand 04 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
-619,Wand 04 White,这是Wand 04 White,Wand 04 White,Wand 04 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-620,Wand 04 Yellow,这是Wand 04 Yellow,Wand 04 Yellow,Wand 04 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,5
-621,Wand 05 Blue,这是Wand 05 Blue,Wand 05 Blue,Wand 05 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-622,Wand 05 Green,这是Wand 05 Green,Wand 05 Green,Wand 05 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
-623,Wand 05 Purple,这是Wand 05 Purple,Wand 05 Purple,Wand 05 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
-624,Wand 05 Red,这是Wand 05 Red,Wand 05 Red,Wand 05 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
-625,Wand 05 Yellow,这是Wand 05 Yellow,Wand 05 Yellow,Wand 05 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,5
-626,Wand 06 Broom Black,这是Wand 06 Broom Black,Wand 06 Broom Black,Wand 06 Broom Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-627,Wand 06 Broom Blue,这是Wand 06 Broom Blue,Wand 06 Broom Blue,Wand 06 Broom Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-628,Wand 06 Broom Brown,这是Wand 06 Broom Brown,Wand 06 Broom Brown,Wand 06 Broom Brown,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-629,Wand 06 Broom Green,这是Wand 06 Broom Green,Wand 06 Broom Green,Wand 06 Broom Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
-630,Wand 06 Broom Purple,这是Wand 06 Broom Purple,Wand 06 Broom Purple,Wand 06 Broom Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
-631,Wand 06 Broom Red,这是Wand 06 Broom Red,Wand 06 Broom Red,Wand 06 Broom Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
-632,Wand 06 Broom White,这是Wand 06 Broom White,Wand 06 Broom White,Wand 06 Broom White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-633,Wand 07 Blue,这是Wand 07 Blue,Wand 07 Blue,Wand 07 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-634,Wand 07 Green,这是Wand 07 Green,Wand 07 Green,Wand 07 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
-635,Wand 07 Purple,这是Wand 07 Purple,Wand 07 Purple,Wand 07 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
-636,Wand 07 Red,这是Wand 07 Red,Wand 07 Red,Wand 07 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
-637,Wand 07 White,这是Wand 07 White,Wand 07 White,Wand 07 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-638,Wand 07 Yellow,这是Wand 07 Yellow,Wand 07 Yellow,Wand 07 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,5
-639,Wand 08 Black,这是Wand 08 Black,Wand 08 Black,Wand 08 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-640,Wand 08 Blue,这是Wand 08 Blue,Wand 08 Blue,Wand 08 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-641,Wand 08 Green,这是Wand 08 Green,Wand 08 Green,Wand 08 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
-642,Wand 08 Purple,这是Wand 08 Purple,Wand 08 Purple,Wand 08 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
-643,Wand 08 Red,这是Wand 08 Red,Wand 08 Red,Wand 08 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
-644,Wand 08 White,这是Wand 08 White,Wand 08 White,Wand 08 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-645,Wand 08 Yellow,这是Wand 08 Yellow,Wand 08 Yellow,Wand 08 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,5
-646,Wand 09 Blue,这是Wand 09 Blue,Wand 09 Blue,Wand 09 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-647,Wand 09 Green,这是Wand 09 Green,Wand 09 Green,Wand 09 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
-648,Wand 09 Magenta,这是Wand 09 Magenta,Wand 09 Magenta,Wand 09 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-649,Wand 09 Pink,这是Wand 09 Pink,Wand 09 Pink,Wand 09 Pink,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-650,Wand 09 Purple,这是Wand 09 Purple,Wand 09 Purple,Wand 09 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
-651,Wand 09 Red,这是Wand 09 Red,Wand 09 Red,Wand 09 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
-652,Wand 10 Black,这是Wand 10 Black,Wand 10 Black,Wand 10 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-653,Wand 10 Blue,这是Wand 10 Blue,Wand 10 Blue,Wand 10 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-654,Wand 10 Green,这是Wand 10 Green,Wand 10 Green,Wand 10 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
-655,Wand 10 Purple,这是Wand 10 Purple,Wand 10 Purple,Wand 10 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
-656,Wand 10 Red,这是Wand 10 Red,Wand 10 Red,Wand 10 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
-657,Wand 10 White,这是Wand 10 White,Wand 10 White,Wand 10 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-658,Wand 11 Santa,这是Wand 11 Santa,Wand 11 Santa,Wand 11 Santa,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
-659,Claw 01 Black Red,这是Claw 01 Black Red,Claw 01 Black Red,Claw 01 Black Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-660,Claw 01 Blue Blue,这是Claw 01 Blue Blue,Claw 01 Blue Blue,Claw 01 Blue Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-661,Claw 01 Gold White,这是Claw 01 Gold White,Claw 01 Gold White,Claw 01 Gold White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-662,Claw 01 Grey Purple,这是Claw 01 Grey Purple,Claw 01 Grey Purple,Claw 01 Grey Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-663,Claw 01 Grey White,这是Claw 01 Grey White,Claw 01 Grey White,Claw 01 Grey White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-664,Claw 01 Purple Green,这是Claw 01 Purple Green,Claw 01 Purple Green,Claw 01 Purple Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-665,Claw 01 Purple Red,这是Claw 01 Purple Red,Claw 01 Purple Red,Claw 01 Purple Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-666,Claw 01 Red Yellow,这是Claw 01 Red Yellow,Claw 01 Red Yellow,Claw 01 Red Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-667,Claw 02 Blue,这是Claw 02 Blue,Claw 02 Blue,Claw 02 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-668,Claw 02 Green,这是Claw 02 Green,Claw 02 Green,Claw 02 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-669,Claw 02 Purple,这是Claw 02 Purple,Claw 02 Purple,Claw 02 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-670,Claw 02 Red,这是Claw 02 Red,Claw 02 Red,Claw 02 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-671,Claw 02 White,这是Claw 02 White,Claw 02 White,Claw 02 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-672,Claw 03 Black,这是Claw 03 Black,Claw 03 Black,Claw 03 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-673,Claw 03 Blue,这是Claw 03 Blue,Claw 03 Blue,Claw 03 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-674,Claw 03 Green,这是Claw 03 Green,Claw 03 Green,Claw 03 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-675,Claw 03 Magenta,这是Claw 03 Magenta,Claw 03 Magenta,Claw 03 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-676,Claw 03 Purple,这是Claw 03 Purple,Claw 03 Purple,Claw 03 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-677,Claw 03 Red,这是Claw 03 Red,Claw 03 Red,Claw 03 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-678,Claw 03 White,这是Claw 03 White,Claw 03 White,Claw 03 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-679,Claw 03 Yellow,这是Claw 03 Yellow,Claw 03 Yellow,Claw 03 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-680,Crossbow 01 Black,这是Crossbow 01 Black,Crossbow 01 Black,Crossbow 01 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-681,Crossbow 01 Blue,这是Crossbow 01 Blue,Crossbow 01 Blue,Crossbow 01 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-682,Crossbow 01 Green,这是Crossbow 01 Green,Crossbow 01 Green,Crossbow 01 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-683,Crossbow 01 No Arrow Black,这是Crossbow 01 No Arrow Black,Crossbow 01 No Arrow Black,Crossbow 01 No Arrow Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-684,Crossbow 01 No Arrow Blue,这是Crossbow 01 No Arrow Blue,Crossbow 01 No Arrow Blue,Crossbow 01 No Arrow Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-685,Crossbow 01 No Arrow Green,这是Crossbow 01 No Arrow Green,Crossbow 01 No Arrow Green,Crossbow 01 No Arrow Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-686,Crossbow 01 No Arrow Purple,这是Crossbow 01 No Arrow Purple,Crossbow 01 No Arrow Purple,Crossbow 01 No Arrow Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-687,Crossbow 01 No Arrow Red,这是Crossbow 01 No Arrow Red,Crossbow 01 No Arrow Red,Crossbow 01 No Arrow Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-688,Crossbow 01 No Arrow White,这是Crossbow 01 No Arrow White,Crossbow 01 No Arrow White,Crossbow 01 No Arrow White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-689,Crossbow 01 No Arrow Yellow,这是Crossbow 01 No Arrow Yellow,Crossbow 01 No Arrow Yellow,Crossbow 01 No Arrow Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-690,Crossbow 01 Purple,这是Crossbow 01 Purple,Crossbow 01 Purple,Crossbow 01 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-691,Crossbow 01 Red,这是Crossbow 01 Red,Crossbow 01 Red,Crossbow 01 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-692,Crossbow 01 White,这是Crossbow 01 White,Crossbow 01 White,Crossbow 01 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-693,Crossbow 01 Yellow,这是Crossbow 01 Yellow,Crossbow 01 Yellow,Crossbow 01 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-694,Crossbow 02 Black,这是Crossbow 02 Black,Crossbow 02 Black,Crossbow 02 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-695,Crossbow 02 Blue,这是Crossbow 02 Blue,Crossbow 02 Blue,Crossbow 02 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-696,Crossbow 02 Green,这是Crossbow 02 Green,Crossbow 02 Green,Crossbow 02 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-697,Crossbow 02 No Arrow Black,这是Crossbow 02 No Arrow Black,Crossbow 02 No Arrow Black,Crossbow 02 No Arrow Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-698,Crossbow 02 No Arrow Blue,这是Crossbow 02 No Arrow Blue,Crossbow 02 No Arrow Blue,Crossbow 02 No Arrow Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-699,Crossbow 02 No Arrow Green,这是Crossbow 02 No Arrow Green,Crossbow 02 No Arrow Green,Crossbow 02 No Arrow Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-700,Crossbow 02 No Arrow Orange,这是Crossbow 02 No Arrow Orange,Crossbow 02 No Arrow Orange,Crossbow 02 No Arrow Orange,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-701,Crossbow 02 No Arrow Purple,这是Crossbow 02 No Arrow Purple,Crossbow 02 No Arrow Purple,Crossbow 02 No Arrow Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-702,Crossbow 02 No Arrow Red,这是Crossbow 02 No Arrow Red,Crossbow 02 No Arrow Red,Crossbow 02 No Arrow Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-703,Crossbow 02 No Arrow White,这是Crossbow 02 No Arrow White,Crossbow 02 No Arrow White,Crossbow 02 No Arrow White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-704,Crossbow 02 No Arrow Yellow,这是Crossbow 02 No Arrow Yellow,Crossbow 02 No Arrow Yellow,Crossbow 02 No Arrow Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-705,Crossbow 02 Orange,这是Crossbow 02 Orange,Crossbow 02 Orange,Crossbow 02 Orange,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-706,Crossbow 02 Purple,这是Crossbow 02 Purple,Crossbow 02 Purple,Crossbow 02 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-707,Crossbow 02 Red,这是Crossbow 02 Red,Crossbow 02 Red,Crossbow 02 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-708,Crossbow 02 White,这是Crossbow 02 White,Crossbow 02 White,Crossbow 02 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-709,Crossbow 02 Yellow,这是Crossbow 02 Yellow,Crossbow 02 Yellow,Crossbow 02 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-710,Crossbow 03 Black,这是Crossbow 03 Black,Crossbow 03 Black,Crossbow 03 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-711,Crossbow 03 Blue,这是Crossbow 03 Blue,Crossbow 03 Blue,Crossbow 03 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-712,Crossbow 03 Green,这是Crossbow 03 Green,Crossbow 03 Green,Crossbow 03 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-713,Crossbow 03 Purple,这是Crossbow 03 Purple,Crossbow 03 Purple,Crossbow 03 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-714,Crossbow 03 Red,这是Crossbow 03 Red,Crossbow 03 Red,Crossbow 03 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-715,Hand Aura 01 Blue,这是Hand Aura 01 Blue,Hand Aura 01 Blue,Hand Aura 01 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-716,Hand Aura 01 Green,这是Hand Aura 01 Green,Hand Aura 01 Green,Hand Aura 01 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-717,Hand Aura 01 Purple,这是Hand Aura 01 Purple,Hand Aura 01 Purple,Hand Aura 01 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-718,Hand Aura 01 Red,这是Hand Aura 01 Red,Hand Aura 01 Red,Hand Aura 01 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-719,Hand Aura 01 Yellow,这是Hand Aura 01 Yellow,Hand Aura 01 Yellow,Hand Aura 01 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-720,Knuckles 01 Black Purple,这是Knuckles 01 Black Purple,Knuckles 01 Black Purple,Knuckles 01 Black Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-721,Knuckles 01 Blue Blue,这是Knuckles 01 Blue Blue,Knuckles 01 Blue Blue,Knuckles 01 Blue Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-722,Knuckles 01 Gold Blue,这是Knuckles 01 Gold Blue,Knuckles 01 Gold Blue,Knuckles 01 Gold Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-723,Knuckles 01 Gold Green,这是Knuckles 01 Gold Green,Knuckles 01 Gold Green,Knuckles 01 Gold Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-724,Knuckles 01 Gold Purple,这是Knuckles 01 Gold Purple,Knuckles 01 Gold Purple,Knuckles 01 Gold Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-725,Knuckles 01 Gold Red,这是Knuckles 01 Gold Red,Knuckles 01 Gold Red,Knuckles 01 Gold Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-726,Knuckles 01 Gold White,这是Knuckles 01 Gold White,Knuckles 01 Gold White,Knuckles 01 Gold White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-727,Knuckles 01 Gold Yellow,这是Knuckles 01 Gold Yellow,Knuckles 01 Gold Yellow,Knuckles 01 Gold Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-728,Knuckles 01 Grey White,这是Knuckles 01 Grey White,Knuckles 01 Grey White,Knuckles 01 Grey White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-729,Knuckles 01 Grey Yellow,这是Knuckles 01 Grey Yellow,Knuckles 01 Grey Yellow,Knuckles 01 Grey Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-730,Knuckles 02 Black,这是Knuckles 02 Black,Knuckles 02 Black,Knuckles 02 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-731,Knuckles 02 Blue,这是Knuckles 02 Blue,Knuckles 02 Blue,Knuckles 02 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-732,Knuckles 02 Brown,这是Knuckles 02 Brown,Knuckles 02 Brown,Knuckles 02 Brown,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-733,Knuckles 02 Green,这是Knuckles 02 Green,Knuckles 02 Green,Knuckles 02 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-734,Knuckles 02 Magenta,这是Knuckles 02 Magenta,Knuckles 02 Magenta,Knuckles 02 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-735,Knuckles 02 Purple,这是Knuckles 02 Purple,Knuckles 02 Purple,Knuckles 02 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-736,Knuckles 02 Red,这是Knuckles 02 Red,Knuckles 02 Red,Knuckles 02 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-737,Knuckles 02 White,这是Knuckles 02 White,Knuckles 02 White,Knuckles 02 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-738,Knuckles 03 Black,这是Knuckles 03 Black,Knuckles 03 Black,Knuckles 03 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-739,Knuckles 03 Blue,这是Knuckles 03 Blue,Knuckles 03 Blue,Knuckles 03 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-740,Knuckles 03 Brown,这是Knuckles 03 Brown,Knuckles 03 Brown,Knuckles 03 Brown,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-741,Knuckles 03 Green,这是Knuckles 03 Green,Knuckles 03 Green,Knuckles 03 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-742,Knuckles 03 Magenta,这是Knuckles 03 Magenta,Knuckles 03 Magenta,Knuckles 03 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-743,Knuckles 03 Purple,这是Knuckles 03 Purple,Knuckles 03 Purple,Knuckles 03 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-744,Knuckles 03 Red,这是Knuckles 03 Red,Knuckles 03 Red,Knuckles 03 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-745,Knuckles 03 White,这是Knuckles 03 White,Knuckles 03 White,Knuckles 03 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-746,Shield 01 Black,这是Shield 01 Black,Shield 01 Black,Shield 01 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-747,Shield 01 Blue,这是Shield 01 Blue,Shield 01 Blue,Shield 01 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-748,Shield 01 Green,这是Shield 01 Green,Shield 01 Green,Shield 01 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-749,Shield 01 Purple,这是Shield 01 Purple,Shield 01 Purple,Shield 01 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-750,Shield 01 Red,这是Shield 01 Red,Shield 01 Red,Shield 01 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-751,Shield 01 White,这是Shield 01 White,Shield 01 White,Shield 01 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-752,Shield 02 Blue,这是Shield 02 Blue,Shield 02 Blue,Shield 02 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-753,Shield 02 Brown,这是Shield 02 Brown,Shield 02 Brown,Shield 02 Brown,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-754,Shield 02 Green,这是Shield 02 Green,Shield 02 Green,Shield 02 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-755,Shield 02 Grey,这是Shield 02 Grey,Shield 02 Grey,Shield 02 Grey,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-756,Shield 02 Purple,这是Shield 02 Purple,Shield 02 Purple,Shield 02 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-757,Shield 03 Blue,这是Shield 03 Blue,Shield 03 Blue,Shield 03 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-758,Shield 03 Brown,这是Shield 03 Brown,Shield 03 Brown,Shield 03 Brown,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-759,Shield 03 Green,这是Shield 03 Green,Shield 03 Green,Shield 03 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-760,Shield 03 Magenta,这是Shield 03 Magenta,Shield 03 Magenta,Shield 03 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-761,Shield 03 Purple,这是Shield 03 Purple,Shield 03 Purple,Shield 03 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-762,Shield 04 Blue,这是Shield 04 Blue,Shield 04 Blue,Shield 04 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-763,Shield 04 Orange,这是Shield 04 Orange,Shield 04 Orange,Shield 04 Orange,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-764,Shield 04 Purple,这是Shield 04 Purple,Shield 04 Purple,Shield 04 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-765,Shield 04 Red,这是Shield 04 Red,Shield 04 Red,Shield 04 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-766,Shield 04 Yellow,这是Shield 04 Yellow,Shield 04 Yellow,Shield 04 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-767,Shield 05 Blue,这是Shield 05 Blue,Shield 05 Blue,Shield 05 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-768,Shield 05 Green,这是Shield 05 Green,Shield 05 Green,Shield 05 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-769,Shield 05 Purple,这是Shield 05 Purple,Shield 05 Purple,Shield 05 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-770,Shield 05 Red,这是Shield 05 Red,Shield 05 Red,Shield 05 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-771,Shield 05 Yellow,这是Shield 05 Yellow,Shield 05 Yellow,Shield 05 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-772,Shield 06 Black,这是Shield 06 Black,Shield 06 Black,Shield 06 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-773,Shield 06 Blue,这是Shield 06 Blue,Shield 06 Blue,Shield 06 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-774,Shield 06 Green,这是Shield 06 Green,Shield 06 Green,Shield 06 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-775,Shield 06 Purple,这是Shield 06 Purple,Shield 06 Purple,Shield 06 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-776,Shield 06 Red,这是Shield 06 Red,Shield 06 Red,Shield 06 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-777,Shield 06 White,这是Shield 06 White,Shield 06 White,Shield 06 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-778,Shield 07 Black,这是Shield 07 Black,Shield 07 Black,Shield 07 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-779,Shield 07 Blue,这是Shield 07 Blue,Shield 07 Blue,Shield 07 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-780,Shield 07 Green,这是Shield 07 Green,Shield 07 Green,Shield 07 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-781,Shield 07 Purple,这是Shield 07 Purple,Shield 07 Purple,Shield 07 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-782,Shield 07 Red,这是Shield 07 Red,Shield 07 Red,Shield 07 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-783,Shield 07 Yellow,这是Shield 07 Yellow,Shield 07 Yellow,Shield 07 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-784,Shield 08 Black,这是Shield 08 Black,Shield 08 Black,Shield 08 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-785,Shield 08 Blue,这是Shield 08 Blue,Shield 08 Blue,Shield 08 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-786,Shield 08 Green,这是Shield 08 Green,Shield 08 Green,Shield 08 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-787,Shield 08 Orange,这是Shield 08 Orange,Shield 08 Orange,Shield 08 Orange,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-788,Shield 08 Purple,这是Shield 08 Purple,Shield 08 Purple,Shield 08 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-789,Shield 08 Red,这是Shield 08 Red,Shield 08 Red,Shield 08 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-790,Shield 08 White,这是Shield 08 White,Shield 08 White,Shield 08 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-791,Shield 08 Yellow,这是Shield 08 Yellow,Shield 08 Yellow,Shield 08 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-792,Shield 09 Black,这是Shield 09 Black,Shield 09 Black,Shield 09 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-793,Shield 09 Blue,这是Shield 09 Blue,Shield 09 Blue,Shield 09 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-794,Shield 09 Green,这是Shield 09 Green,Shield 09 Green,Shield 09 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-795,Shield 09 Purple,这是Shield 09 Purple,Shield 09 Purple,Shield 09 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-796,Shield 09 Red,这是Shield 09 Red,Shield 09 Red,Shield 09 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-797,Shield 09 White,这是Shield 09 White,Shield 09 White,Shield 09 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-798,Shield 10 Black,这是Shield 10 Black,Shield 10 Black,Shield 10 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-799,Shield 10 Blue,这是Shield 10 Blue,Shield 10 Blue,Shield 10 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-800,Shield 10 Brown,这是Shield 10 Brown,Shield 10 Brown,Shield 10 Brown,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-801,Shield 10 Green,这是Shield 10 Green,Shield 10 Green,Shield 10 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-802,Shield 10 Purple,这是Shield 10 Purple,Shield 10 Purple,Shield 10 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-803,Shield 10 Red,这是Shield 10 Red,Shield 10 Red,Shield 10 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-804,Shield 10 White,这是Shield 10 White,Shield 10 White,Shield 10 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+162,Beard 04 Black,这是Beard 04 Black,Beard 04 Black,Beard 04 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+163,Beard 04 Blonde,这是Beard 04 Blonde,Beard 04 Blonde,Beard 04 Blonde,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+164,Beard 04 Blue,这是Beard 04 Blue,Beard 04 Blue,Beard 04 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+165,Beard 04 Brown,这是Beard 04 Brown,Beard 04 Brown,Beard 04 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+166,Beard 04 Purple,这是Beard 04 Purple,Beard 04 Purple,Beard 04 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+167,Beard 04 Red,这是Beard 04 Red,Beard 04 Red,Beard 04 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+168,Beard 04 White,这是Beard 04 White,Beard 04 White,Beard 04 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+169,Crown 01 Sorceress Blue,这是Crown 01 Sorceress Blue,Crown 01 Sorceress Blue,Crown 01 Sorceress Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+170,Crown 01 Sorceress Green,这是Crown 01 Sorceress Green,Crown 01 Sorceress Green,Crown 01 Sorceress Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+171,Crown 01 Sorceress Red,这是Crown 01 Sorceress Red,Crown 01 Sorceress Red,Crown 01 Sorceress Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+172,Crown 01 Sorceress White,这是Crown 01 Sorceress White,Crown 01 Sorceress White,Crown 01 Sorceress White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+173,Crown 02 Blue,这是Crown 02 Blue,Crown 02 Blue,Crown 02 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+174,Crown 02 Cyan,这是Crown 02 Cyan,Crown 02 Cyan,Crown 02 Cyan,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+175,Crown 02 Green,这是Crown 02 Green,Crown 02 Green,Crown 02 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+176,Crown 02 Purple,这是Crown 02 Purple,Crown 02 Purple,Crown 02 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+177,Crown 02 Red,这是Crown 02 Red,Crown 02 Red,Crown 02 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+178,Crown 02 White,这是Crown 02 White,Crown 02 White,Crown 02 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+179,Crown 03 Gold,这是Crown 03 Gold,Crown 03 Gold,Crown 03 Gold,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+180,Crown 04 Black,这是Crown 04 Black,Crown 04 Black,Crown 04 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+181,Crown 04 Blue,这是Crown 04 Blue,Crown 04 Blue,Crown 04 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+182,Crown 04 Green,这是Crown 04 Green,Crown 04 Green,Crown 04 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+183,Crown 04 Magenta,这是Crown 04 Magenta,Crown 04 Magenta,Crown 04 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+184,Crown 04 Purple,这是Crown 04 Purple,Crown 04 Purple,Crown 04 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+185,Crown 04 Red,这是Crown 04 Red,Crown 04 Red,Crown 04 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+186,Crown 04 White,这是Crown 04 White,Crown 04 White,Crown 04 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+187,Crown 04 Yellow,这是Crown 04 Yellow,Crown 04 Yellow,Crown 04 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+188,Bunny Ears Black Blue,这是Bunny Ears Black Blue,Bunny Ears Black Blue,Bunny Ears Black Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+189,Bunny Ears Black Pink,这是Bunny Ears Black Pink,Bunny Ears Black Pink,Bunny Ears Black Pink,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+190,Bunny Ears Black Purple,这是Bunny Ears Black Purple,Bunny Ears Black Purple,Bunny Ears Black Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+191,Bunny Ears Strips Black,这是Bunny Ears Strips Black,Bunny Ears Strips Black,Bunny Ears Strips Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+192,Bunny Ears Strips Blue,这是Bunny Ears Strips Blue,Bunny Ears Strips Blue,Bunny Ears Strips Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+193,Bunny Ears Strips Brown,这是Bunny Ears Strips Brown,Bunny Ears Strips Brown,Bunny Ears Strips Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+194,Bunny Ears Strips Purple,这是Bunny Ears Strips Purple,Bunny Ears Strips Purple,Bunny Ears Strips Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+195,Bunny Ears White Pink,这是Bunny Ears White Pink,Bunny Ears White Pink,Bunny Ears White Pink,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+196,Bunny Ears White Purple,这是Bunny Ears White Purple,Bunny Ears White Purple,Bunny Ears White Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+197,Cat Ears Black Blue,这是Cat Ears Black Blue,Cat Ears Black Blue,Cat Ears Black Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+198,Cat Ears Black Green,这是Cat Ears Black Green,Cat Ears Black Green,Cat Ears Black Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+199,Cat Ears Black Pink,这是Cat Ears Black Pink,Cat Ears Black Pink,Cat Ears Black Pink,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+200,Cat Ears Black Purple,这是Cat Ears Black Purple,Cat Ears Black Purple,Cat Ears Black Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+201,Cat Ears Black Red,这是Cat Ears Black Red,Cat Ears Black Red,Cat Ears Black Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+202,Cat Ears Black Yellow,这是Cat Ears Black Yellow,Cat Ears Black Yellow,Cat Ears Black Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+203,Cat Ears White Blue,这是Cat Ears White Blue,Cat Ears White Blue,Cat Ears White Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+204,Cat Ears White Purple,这是Cat Ears White Purple,Cat Ears White Purple,Cat Ears White Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+205,Cat Ears White Red,这是Cat Ears White Red,Cat Ears White Red,Cat Ears White Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+206,Cat Ears White Yellow,这是Cat Ears White Yellow,Cat Ears White Yellow,Cat Ears White Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+207,Elf Ears Black 01,这是Elf Ears Black 01,Elf Ears Black 01,Elf Ears Black 01,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+208,Elf Ears Brown 01,这是Elf Ears Brown 01,Elf Ears Brown 01,Elf Ears Brown 01,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+209,Elf Ears White 01,这是Elf Ears White 01,Elf Ears White 01,Elf Ears White 01,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+210,Coif 01 White,这是Coif 01 White,Coif 01 White,Coif 01 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+211,Hat 01 Wizard Black,这是Hat 01 Wizard Black,Hat 01 Wizard Black,Hat 01 Wizard Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+212,Hat 01 Wizard Blue,这是Hat 01 Wizard Blue,Hat 01 Wizard Blue,Hat 01 Wizard Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+213,Hat 01 Wizard Green,这是Hat 01 Wizard Green,Hat 01 Wizard Green,Hat 01 Wizard Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+214,Hat 01 Wizard Purple,这是Hat 01 Wizard Purple,Hat 01 Wizard Purple,Hat 01 Wizard Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+215,Hat 01 Wizard Red,这是Hat 01 Wizard Red,Hat 01 Wizard Red,Hat 01 Wizard Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+216,Hat 01 Wizard White,这是Hat 01 Wizard White,Hat 01 Wizard White,Hat 01 Wizard White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+217,Hat 02 Peasant Black White,这是Hat 02 Peasant Black White,Hat 02 Peasant Black White,Hat 02 Peasant Black White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+218,Hat 02 Peasant Blue Cyan,这是Hat 02 Peasant Blue Cyan,Hat 02 Peasant Blue Cyan,Hat 02 Peasant Blue Cyan,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+219,Hat 02 Peasant Green Yellow,这是Hat 02 Peasant Green Yellow,Hat 02 Peasant Green Yellow,Hat 02 Peasant Green Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+220,Hat 02 Peasant Grey Blue,这是Hat 02 Peasant Grey Blue,Hat 02 Peasant Grey Blue,Hat 02 Peasant Grey Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+221,Hat 02 Peasant Grey Brown,这是Hat 02 Peasant Grey Brown,Hat 02 Peasant Grey Brown,Hat 02 Peasant Grey Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+222,Hat 02 Peasant Grey Green,这是Hat 02 Peasant Grey Green,Hat 02 Peasant Grey Green,Hat 02 Peasant Grey Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+223,Hat 02 Peasant Grey Red,这是Hat 02 Peasant Grey Red,Hat 02 Peasant Grey Red,Hat 02 Peasant Grey Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+224,Hat 02 Peasant Purple Pink,这是Hat 02 Peasant Purple Pink,Hat 02 Peasant Purple Pink,Hat 02 Peasant Purple Pink,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+225,Hat 02 Peasant Red Yellow,这是Hat 02 Peasant Red Yellow,Hat 02 Peasant Red Yellow,Hat 02 Peasant Red Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+226,Hat 02 Peasant White Black,这是Hat 02 Peasant White Black,Hat 02 Peasant White Black,Hat 02 Peasant White Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+227,Hat 02 Peasant Yellow Blue,这是Hat 02 Peasant Yellow Blue,Hat 02 Peasant Yellow Blue,Hat 02 Peasant Yellow Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+228,Hat 02 Peasant Yellow Green,这是Hat 02 Peasant Yellow Green,Hat 02 Peasant Yellow Green,Hat 02 Peasant Yellow Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+229,Hat 02 Peasant Yellow Purple,这是Hat 02 Peasant Yellow Purple,Hat 02 Peasant Yellow Purple,Hat 02 Peasant Yellow Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+230,Hat 02 Peasant Yellow Red,这是Hat 02 Peasant Yellow Red,Hat 02 Peasant Yellow Red,Hat 02 Peasant Yellow Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+231,Hat 03 Black,这是Hat 03 Black,Hat 03 Black,Hat 03 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+232,Hat 03 Blue,这是Hat 03 Blue,Hat 03 Blue,Hat 03 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+233,Hat 03 Green,这是Hat 03 Green,Hat 03 Green,Hat 03 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+234,Hat 03 Purple,这是Hat 03 Purple,Hat 03 Purple,Hat 03 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+235,Hat 03 Red,这是Hat 03 Red,Hat 03 Red,Hat 03 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+236,Hat 03 Yellow,这是Hat 03 Yellow,Hat 03 Yellow,Hat 03 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+237,Hat 04 Black,这是Hat 04 Black,Hat 04 Black,Hat 04 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+238,Hat 04 Blue,这是Hat 04 Blue,Hat 04 Blue,Hat 04 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+239,Hat 04 Green,这是Hat 04 Green,Hat 04 Green,Hat 04 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+240,Hat 04 Purple,这是Hat 04 Purple,Hat 04 Purple,Hat 04 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+241,Hat 04 Red,这是Hat 04 Red,Hat 04 Red,Hat 04 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+242,Hat 04 Yellow,这是Hat 04 Yellow,Hat 04 Yellow,Hat 04 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+243,Hat 05 Elf,这是Hat 05 Elf,Hat 05 Elf,Hat 05 Elf,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+244,Hat 05 Santa,这是Hat 05 Santa,Hat 05 Santa,Hat 05 Santa,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+245,Headband 01 Black Blue,这是Headband 01 Black Blue,Headband 01 Black Blue,Headband 01 Black Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+246,Headband 01 Black Green,这是Headband 01 Black Green,Headband 01 Black Green,Headband 01 Black Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+247,Headband 01 Black Purple,这是Headband 01 Black Purple,Headband 01 Black Purple,Headband 01 Black Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+248,Headband 01 Black Red,这是Headband 01 Black Red,Headband 01 Black Red,Headband 01 Black Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+249,Headband 01 Black White,这是Headband 01 Black White,Headband 01 Black White,Headband 01 Black White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+250,Headband 01 Black Yellow,这是Headband 01 Black Yellow,Headband 01 Black Yellow,Headband 01 Black Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+251,Headband 01 Gold,这是Headband 01 Gold,Headband 01 Gold,Headband 01 Gold,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+252,Headband 02 Blue,这是Headband 02 Blue,Headband 02 Blue,Headband 02 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+253,Headband 02 Green,这是Headband 02 Green,Headband 02 Green,Headband 02 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+254,Headband 02 Purple,这是Headband 02 Purple,Headband 02 Purple,Headband 02 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+255,Headband 02 Red,这是Headband 02 Red,Headband 02 Red,Headband 02 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+256,Headband 02 White,这是Headband 02 White,Headband 02 White,Headband 02 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+257,Headband 02 Yellow,这是Headband 02 Yellow,Headband 02 Yellow,Headband 02 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+258,Headband 03 Blue,这是Headband 03 Blue,Headband 03 Blue,Headband 03 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+259,Headband 03 Green,这是Headband 03 Green,Headband 03 Green,Headband 03 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+260,Headband 03 Purple,这是Headband 03 Purple,Headband 03 Purple,Headband 03 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+261,Headband 03 Red,这是Headband 03 Red,Headband 03 Red,Headband 03 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+262,Headband 03 Yellow,这是Headband 03 Yellow,Headband 03 Yellow,Headband 03 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+263,Headband 04 Blue,这是Headband 04 Blue,Headband 04 Blue,Headband 04 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+264,Headband 04 Green,这是Headband 04 Green,Headband 04 Green,Headband 04 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+265,Headband 04 Purple,这是Headband 04 Purple,Headband 04 Purple,Headband 04 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+266,Headband 04 Red,这是Headband 04 Red,Headband 04 Red,Headband 04 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+267,Headband 05 Black,这是Headband 05 Black,Headband 05 Black,Headband 05 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+268,Headband 05 Blue,这是Headband 05 Blue,Headband 05 Blue,Headband 05 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+269,Headband 05 Green,这是Headband 05 Green,Headband 05 Green,Headband 05 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+270,Headband 05 Purple,这是Headband 05 Purple,Headband 05 Purple,Headband 05 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+271,Headband 05 Red,这是Headband 05 Red,Headband 05 Red,Headband 05 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+272,Headband 05 White,这是Headband 05 White,Headband 05 White,Headband 05 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+273,Headband 06 Blue,这是Headband 06 Blue,Headband 06 Blue,Headband 06 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+274,Headband 06 Green,这是Headband 06 Green,Headband 06 Green,Headband 06 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+275,Headband 06 Magenta,这是Headband 06 Magenta,Headband 06 Magenta,Headband 06 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+276,Headband 06 Purple,这是Headband 06 Purple,Headband 06 Purple,Headband 06 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+277,Headband 06 Red,这是Headband 06 Red,Headband 06 Red,Headband 06 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+278,Headband 06 White,这是Headband 06 White,Headband 06 White,Headband 06 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+279,Headband 06 Yellow,这是Headband 06 Yellow,Headband 06 Yellow,Headband 06 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+280,Headband 07 Black,这是Headband 07 Black,Headband 07 Black,Headband 07 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+281,Headband 07 Blue,这是Headband 07 Blue,Headband 07 Blue,Headband 07 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+282,Headband 07 Green,这是Headband 07 Green,Headband 07 Green,Headband 07 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+283,Headband 07 Magenta,这是Headband 07 Magenta,Headband 07 Magenta,Headband 07 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+284,Headband 07 Purple,这是Headband 07 Purple,Headband 07 Purple,Headband 07 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+285,Headband 07 Red,这是Headband 07 Red,Headband 07 Red,Headband 07 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+286,Headband 07 Yellow,这是Headband 07 Yellow,Headband 07 Yellow,Headband 07 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+287,Headband 08 Black,这是Headband 08 Black,Headband 08 Black,Headband 08 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+288,Headband 08 Blue,这是Headband 08 Blue,Headband 08 Blue,Headband 08 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+289,Headband 08 Green,这是Headband 08 Green,Headband 08 Green,Headband 08 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+290,Headband 08 Magenta,这是Headband 08 Magenta,Headband 08 Magenta,Headband 08 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+291,Headband 08 Purple,这是Headband 08 Purple,Headband 08 Purple,Headband 08 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+292,Headband 08 Red,这是Headband 08 Red,Headband 08 Red,Headband 08 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+293,Headband 08 White,这是Headband 08 White,Headband 08 White,Headband 08 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+294,Headband 08 Yellow,这是Headband 08 Yellow,Headband 08 Yellow,Headband 08 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+295,Headband 09 Blue,这是Headband 09 Blue,Headband 09 Blue,Headband 09 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+296,Headband 09 Green,这是Headband 09 Green,Headband 09 Green,Headband 09 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+297,Headband 09 Magenta,这是Headband 09 Magenta,Headband 09 Magenta,Headband 09 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+298,Headband 09 Purple,这是Headband 09 Purple,Headband 09 Purple,Headband 09 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+299,Headband 09 Red,这是Headband 09 Red,Headband 09 Red,Headband 09 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+300,Headband 09 Yellow,这是Headband 09 Yellow,Headband 09 Yellow,Headband 09 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+301,Helmet 01 Knight Black,这是Helmet 01 Knight Black,Helmet 01 Knight Black,Helmet 01 Knight Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+302,Helmet 01 Knight Blue,这是Helmet 01 Knight Blue,Helmet 01 Knight Blue,Helmet 01 Knight Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+303,Helmet 01 Knight Red,这是Helmet 01 Knight Red,Helmet 01 Knight Red,Helmet 01 Knight Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+304,Helmet 01 Knight White,这是Helmet 01 Knight White,Helmet 01 Knight White,Helmet 01 Knight White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+305,Helmet 02 Barbarian Black,这是Helmet 02 Barbarian Black,Helmet 02 Barbarian Black,Helmet 02 Barbarian Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+306,Helmet 02 Barbarian Blue,这是Helmet 02 Barbarian Blue,Helmet 02 Barbarian Blue,Helmet 02 Barbarian Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+307,Helmet 02 Barbarian Brown,这是Helmet 02 Barbarian Brown,Helmet 02 Barbarian Brown,Helmet 02 Barbarian Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+308,Helmet 02 Barbarian Green,这是Helmet 02 Barbarian Green,Helmet 02 Barbarian Green,Helmet 02 Barbarian Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+309,Helmet 02 Barbarian Purple,这是Helmet 02 Barbarian Purple,Helmet 02 Barbarian Purple,Helmet 02 Barbarian Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+310,Helmet 03 Black,这是Helmet 03 Black,Helmet 03 Black,Helmet 03 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+311,Helmet 03 Blue,这是Helmet 03 Blue,Helmet 03 Blue,Helmet 03 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+312,Helmet 03 Brown,这是Helmet 03 Brown,Helmet 03 Brown,Helmet 03 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+313,Helmet 03 Green,这是Helmet 03 Green,Helmet 03 Green,Helmet 03 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+314,Helmet 03 Purple,这是Helmet 03 Purple,Helmet 03 Purple,Helmet 03 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+315,Helmet 04 Pumpkin,这是Helmet 04 Pumpkin,Helmet 04 Pumpkin,Helmet 04 Pumpkin,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+316,Helmet 05 Black,这是Helmet 05 Black,Helmet 05 Black,Helmet 05 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+317,Helmet 05 Blue,这是Helmet 05 Blue,Helmet 05 Blue,Helmet 05 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+318,Helmet 05 Brown,这是Helmet 05 Brown,Helmet 05 Brown,Helmet 05 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+319,Helmet 05 Cyan,这是Helmet 05 Cyan,Helmet 05 Cyan,Helmet 05 Cyan,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+320,Helmet 05 Green,这是Helmet 05 Green,Helmet 05 Green,Helmet 05 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+321,Helmet 05 Purple,这是Helmet 05 Purple,Helmet 05 Purple,Helmet 05 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+322,Helmet 05 Red,这是Helmet 05 Red,Helmet 05 Red,Helmet 05 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+323,Helmet 05 White,这是Helmet 05 White,Helmet 05 White,Helmet 05 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+324,Helmet 06 Black,这是Helmet 06 Black,Helmet 06 Black,Helmet 06 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+325,Helmet 06 Blue,这是Helmet 06 Blue,Helmet 06 Blue,Helmet 06 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+326,Helmet 06 Brown,这是Helmet 06 Brown,Helmet 06 Brown,Helmet 06 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+327,Helmet 06 Green,这是Helmet 06 Green,Helmet 06 Green,Helmet 06 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+328,Helmet 06 Magenta,这是Helmet 06 Magenta,Helmet 06 Magenta,Helmet 06 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+329,Helmet 06 Purple,这是Helmet 06 Purple,Helmet 06 Purple,Helmet 06 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+330,Helmet 06 Red,这是Helmet 06 Red,Helmet 06 Red,Helmet 06 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+331,Helmet 06 White,这是Helmet 06 White,Helmet 06 White,Helmet 06 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+332,Helmet 07 Black,这是Helmet 07 Black,Helmet 07 Black,Helmet 07 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+333,Helmet 07 Blue,这是Helmet 07 Blue,Helmet 07 Blue,Helmet 07 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+334,Helmet 07 Brown,这是Helmet 07 Brown,Helmet 07 Brown,Helmet 07 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+335,Helmet 07 Green,这是Helmet 07 Green,Helmet 07 Green,Helmet 07 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+336,Helmet 07 Magenta,这是Helmet 07 Magenta,Helmet 07 Magenta,Helmet 07 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+337,Helmet 07 Purple,这是Helmet 07 Purple,Helmet 07 Purple,Helmet 07 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+338,Helmet 07 Red,这是Helmet 07 Red,Helmet 07 Red,Helmet 07 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+339,Helmet 07 White,这是Helmet 07 White,Helmet 07 White,Helmet 07 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+340,Helmet 08 Black,这是Helmet 08 Black,Helmet 08 Black,Helmet 08 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+341,Helmet 08 Blue,这是Helmet 08 Blue,Helmet 08 Blue,Helmet 08 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+342,Helmet 08 Brown,这是Helmet 08 Brown,Helmet 08 Brown,Helmet 08 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+343,Helmet 08 Green,这是Helmet 08 Green,Helmet 08 Green,Helmet 08 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+344,Helmet 08 Magenta,这是Helmet 08 Magenta,Helmet 08 Magenta,Helmet 08 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+345,Helmet 08 Purple,这是Helmet 08 Purple,Helmet 08 Purple,Helmet 08 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+346,Helmet 08 Red,这是Helmet 08 Red,Helmet 08 Red,Helmet 08 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+347,Helmet 08 White,这是Helmet 08 White,Helmet 08 White,Helmet 08 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+348,Helmet 09 Black,这是Helmet 09 Black,Helmet 09 Black,Helmet 09 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+349,Helmet 09 Blue,这是Helmet 09 Blue,Helmet 09 Blue,Helmet 09 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+350,Helmet 09 Brown,这是Helmet 09 Brown,Helmet 09 Brown,Helmet 09 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+351,Helmet 09 Green,这是Helmet 09 Green,Helmet 09 Green,Helmet 09 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+352,Helmet 09 Magenta,这是Helmet 09 Magenta,Helmet 09 Magenta,Helmet 09 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+353,Helmet 09 Purple,这是Helmet 09 Purple,Helmet 09 Purple,Helmet 09 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+354,Helmet 09 Red,这是Helmet 09 Red,Helmet 09 Red,Helmet 09 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+355,Helmet 09 White,这是Helmet 09 White,Helmet 09 White,Helmet 09 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+356,Helmet 10 Black,这是Helmet 10 Black,Helmet 10 Black,Helmet 10 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+357,Helmet 10 Blue,这是Helmet 10 Blue,Helmet 10 Blue,Helmet 10 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+358,Helmet 10 Brown,这是Helmet 10 Brown,Helmet 10 Brown,Helmet 10 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+359,Helmet 10 Green,这是Helmet 10 Green,Helmet 10 Green,Helmet 10 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+360,Helmet 10 Magenta,这是Helmet 10 Magenta,Helmet 10 Magenta,Helmet 10 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+361,Helmet 10 Purple,这是Helmet 10 Purple,Helmet 10 Purple,Helmet 10 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+362,Helmet 10 Red,这是Helmet 10 Red,Helmet 10 Red,Helmet 10 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+363,Helmet 10 White,这是Helmet 10 White,Helmet 10 White,Helmet 10 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+364,Horn 01 Front Black,这是Horn 01 Front Black,Horn 01 Front Black,Horn 01 Front Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+365,Horn 01 Front Red,这是Horn 01 Front Red,Horn 01 Front Red,Horn 01 Front Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+366,Horn 01 Front White,这是Horn 01 Front White,Horn 01 Front White,Horn 01 Front White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+367,Horn 02 Side Black Blue,这是Horn 02 Side Black Blue,Horn 02 Side Black Blue,Horn 02 Side Black Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+368,Horn 02 Side Black Green,这是Horn 02 Side Black Green,Horn 02 Side Black Green,Horn 02 Side Black Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+369,Horn 02 Side Black Orange,这是Horn 02 Side Black Orange,Horn 02 Side Black Orange,Horn 02 Side Black Orange,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+370,Horn 02 Side Black Purple,这是Horn 02 Side Black Purple,Horn 02 Side Black Purple,Horn 02 Side Black Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+371,Horn 02 Side Black Red,这是Horn 02 Side Black Red,Horn 02 Side Black Red,Horn 02 Side Black Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+372,Horn 02 Side Green Green,这是Horn 02 Side Green Green,Horn 02 Side Green Green,Horn 02 Side Green Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+373,Horn 02 Side Red Yellow,这是Horn 02 Side Red Yellow,Horn 02 Side Red Yellow,Horn 02 Side Red Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+374,Horn 02 Side White,这是Horn 02 Side White,Horn 02 Side White,Horn 02 Side White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+375,Horn 02 Side Yellow,这是Horn 02 Side Yellow,Horn 02 Side Yellow,Horn 02 Side Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+376,Horn 03 Blue,这是Horn 03 Blue,Horn 03 Blue,Horn 03 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+377,Horn 03 Green,这是Horn 03 Green,Horn 03 Green,Horn 03 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+378,Horn 03 Purple,这是Horn 03 Purple,Horn 03 Purple,Horn 03 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+379,Horn 03 Red,这是Horn 03 Red,Horn 03 Red,Horn 03 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+380,Horn 03 Yellow,这是Horn 03 Yellow,Horn 03 Yellow,Horn 03 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+381,Mask 01 Blue,这是Mask 01 Blue,Mask 01 Blue,Mask 01 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+382,Mask 01 Brown,这是Mask 01 Brown,Mask 01 Brown,Mask 01 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+383,Mask 01 Green,这是Mask 01 Green,Mask 01 Green,Mask 01 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+384,Mask 01 Purple,这是Mask 01 Purple,Mask 01 Purple,Mask 01 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+385,Mask 01 Red,这是Mask 01 Red,Mask 01 Red,Mask 01 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+386,Mask 02 Blue,这是Mask 02 Blue,Mask 02 Blue,Mask 02 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+387,Mask 02 Purple,这是Mask 02 Purple,Mask 02 Purple,Mask 02 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+388,Mask 02 Red,这是Mask 02 Red,Mask 02 Red,Mask 02 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+389,Mask 02 Yellow,这是Mask 02 Yellow,Mask 02 Yellow,Mask 02 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+390,Mask 03 Blue,这是Mask 03 Blue,Mask 03 Blue,Mask 03 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+391,Mask 03 Green,这是Mask 03 Green,Mask 03 Green,Mask 03 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+392,Mask 03 Purple,这是Mask 03 Purple,Mask 03 Purple,Mask 03 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+393,Mask 03 Red,这是Mask 03 Red,Mask 03 Red,Mask 03 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+394,Mask 03 Yellow,这是Mask 03 Yellow,Mask 03 Yellow,Mask 03 Yellow,0,Head,15,0,25,0.5,1,0,0,0,1,1,5,1
+395,Antlers Blue,这是Antlers Blue,Antlers Blue,Antlers Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+396,Antlers Dark,这是Antlers Dark,Antlers Dark,Antlers Dark,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+397,Antlers Green,这是Antlers Green,Antlers Green,Antlers Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+398,Antlers Light,这是Antlers Light,Antlers Light,Antlers Light,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+399,Antlers Purple,这是Antlers Purple,Antlers Purple,Antlers Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+400,Antlers Red,这是Antlers Red,Antlers Red,Antlers Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+401,Halo 01,这是Halo 01,Halo 01,Halo 01,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+402,Hood 01 Black,这是Hood 01 Black,Hood 01 Black,Hood 01 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+403,Hood 01 Blue,这是Hood 01 Blue,Hood 01 Blue,Hood 01 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+404,Hood 01 Brown,这是Hood 01 Brown,Hood 01 Brown,Hood 01 Brown,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+405,Hood 01 Green,这是Hood 01 Green,Hood 01 Green,Hood 01 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+406,Hood 01 Magenta,这是Hood 01 Magenta,Hood 01 Magenta,Hood 01 Magenta,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+407,Hood 01 Purple,这是Hood 01 Purple,Hood 01 Purple,Hood 01 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+408,Hood 01 Red,这是Hood 01 Red,Hood 01 Red,Hood 01 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+409,Hood 01 White,这是Hood 01 White,Hood 01 White,Hood 01 White,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+410,Jaw 01 Black,这是Jaw 01 Black,Jaw 01 Black,Jaw 01 Black,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+411,Jaw 01 Blue,这是Jaw 01 Blue,Jaw 01 Blue,Jaw 01 Blue,0,Head,15,0,25,0.5,1,0,0,0,1,1,1,1
+412,Jaw 01 Green,这是Jaw 01 Green,Jaw 01 Green,Jaw 01 Green,0,Head,15,0,25,0.5,1,0,0,0,1,1,2,1
+413,Jaw 01 Purple,这是Jaw 01 Purple,Jaw 01 Purple,Jaw 01 Purple,0,Head,15,0,25,0.5,1,0,0,0,1,1,4,1
+414,Jaw 01 Red,这是Jaw 01 Red,Jaw 01 Red,Jaw 01 Red,0,Head,15,0,25,0.5,1,0,0,0,1,1,6,1
+415,Jacket 01 Black,这是Jacket 01 Black,Jacket 01 Black,Jacket 01 Black,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
+416,Jacket 01 Blue,这是Jacket 01 Blue,Jacket 01 Blue,Jacket 01 Blue,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
+417,Jacket 01 Green,这是Jacket 01 Green,Jacket 01 Green,Jacket 01 Green,2,Chest,15,0,25,0.5,1,0,0,0,1,1,2,1
+418,Jacket 01 Magenta,这是Jacket 01 Magenta,Jacket 01 Magenta,Jacket 01 Magenta,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
+419,Jacket 01 Purple,这是Jacket 01 Purple,Jacket 01 Purple,Jacket 01 Purple,2,Chest,15,0,25,0.5,1,0,0,0,1,1,4,1
+420,Jacket 01 Red,这是Jacket 01 Red,Jacket 01 Red,Jacket 01 Red,2,Chest,15,0,25,0.5,1,0,0,0,1,1,6,1
+421,Jacket 01 White,这是Jacket 01 White,Jacket 01 White,Jacket 01 White,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
+422,Jacket 01 Yellow,这是Jacket 01 Yellow,Jacket 01 Yellow,Jacket 01 Yellow,2,Chest,15,0,25,0.5,1,0,0,0,1,1,5,1
+423,FX Flies,这是FX Flies,FX Flies,FX Flies,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
+424,FX Spinning Leaves,这是FX Spinning Leaves,FX Spinning Leaves,FX Spinning Leaves,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
+425,FX Spinning Petals,这是FX Spinning Petals,FX Spinning Petals,FX Spinning Petals,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
+426,FX Spinning Snowflakes,这是FX Spinning Snowflakes,FX Spinning Snowflakes,FX Spinning Snowflakes,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
+427,FX Spinning Sparks,这是FX Spinning Sparks,FX Spinning Sparks,FX Spinning Sparks,2,Chest,15,0,25,0.5,1,0,0,0,1,1,1,1
+428,Axe 01,这是Axe 01,Axe 01,Axe 01,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+429,Axe 02 Blue,这是Axe 02 Blue,Axe 02 Blue,Axe 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+430,Axe 02 Green,这是Axe 02 Green,Axe 02 Green,Axe 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
+431,Axe 02 Purple,这是Axe 02 Purple,Axe 02 Purple,Axe 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
+432,Axe 02 Red,这是Axe 02 Red,Axe 02 Red,Axe 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
+433,Axe 03 Blue,这是Axe 03 Blue,Axe 03 Blue,Axe 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+434,Axe 03 Green,这是Axe 03 Green,Axe 03 Green,Axe 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
+435,Axe 03 Purple,这是Axe 03 Purple,Axe 03 Purple,Axe 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
+436,Axe 03 Red,这是Axe 03 Red,Axe 03 Red,Axe 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
+437,Club 01,这是Club 01,Club 01,Club 01,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+438,Club 02 Blue,这是Club 02 Blue,Club 02 Blue,Club 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+439,Club 02 Green,这是Club 02 Green,Club 02 Green,Club 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
+440,Club 02 Purple,这是Club 02 Purple,Club 02 Purple,Club 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
+441,Club 02 Red,这是Club 02 Red,Club 02 Red,Club 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
+442,Club 03 Blue,这是Club 03 Blue,Club 03 Blue,Club 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+443,Club 03 Green,这是Club 03 Green,Club 03 Green,Club 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
+444,Club 03 Purple,这是Club 03 Purple,Club 03 Purple,Club 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
+445,Club 03 Red,这是Club 03 Red,Club 03 Red,Club 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
+446,Club 03 White,这是Club 03 White,Club 03 White,Club 03 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+447,Dagger 01 Blue,这是Dagger 01 Blue,Dagger 01 Blue,Dagger 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+448,Dagger 01 Green,这是Dagger 01 Green,Dagger 01 Green,Dagger 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
+449,Dagger 01 Purple,这是Dagger 01 Purple,Dagger 01 Purple,Dagger 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
+450,Dagger 01 Red,这是Dagger 01 Red,Dagger 01 Red,Dagger 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
+451,Dagger 02 Blue,这是Dagger 02 Blue,Dagger 02 Blue,Dagger 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+452,Dagger 02 Green,这是Dagger 02 Green,Dagger 02 Green,Dagger 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
+453,Dagger 02 Purple,这是Dagger 02 Purple,Dagger 02 Purple,Dagger 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
+454,Dagger 02 Red,这是Dagger 02 Red,Dagger 02 Red,Dagger 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
+455,Dagger 03 Black,这是Dagger 03 Black,Dagger 03 Black,Dagger 03 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+456,Dagger 03 Blue,这是Dagger 03 Blue,Dagger 03 Blue,Dagger 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+457,Dagger 03 Green,这是Dagger 03 Green,Dagger 03 Green,Dagger 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
+458,Dagger 03 Magenta,这是Dagger 03 Magenta,Dagger 03 Magenta,Dagger 03 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+459,Dagger 03 Purple,这是Dagger 03 Purple,Dagger 03 Purple,Dagger 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
+460,Dagger 03 Red,这是Dagger 03 Red,Dagger 03 Red,Dagger 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
+461,Dagger 03 White,这是Dagger 03 White,Dagger 03 White,Dagger 03 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+462,Dagger 03 Yellow,这是Dagger 03 Yellow,Dagger 03 Yellow,Dagger 03 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,1
+463,Hammer 01 Black,这是Hammer 01 Black,Hammer 01 Black,Hammer 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+464,Hammer 01 Blue,这是Hammer 01 Blue,Hammer 01 Blue,Hammer 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+465,Hammer 01 Green,这是Hammer 01 Green,Hammer 01 Green,Hammer 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
+466,Hammer 01 Magenta,这是Hammer 01 Magenta,Hammer 01 Magenta,Hammer 01 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+467,Hammer 01 Purple,这是Hammer 01 Purple,Hammer 01 Purple,Hammer 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
+468,Hammer 01 Red,这是Hammer 01 Red,Hammer 01 Red,Hammer 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
+469,Hammer 01 White,这是Hammer 01 White,Hammer 01 White,Hammer 01 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+470,Hammer 01 Yellow,这是Hammer 01 Yellow,Hammer 01 Yellow,Hammer 01 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,1
+471,Hammer 02 Black,这是Hammer 02 Black,Hammer 02 Black,Hammer 02 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+472,Hammer 02 Blue,这是Hammer 02 Blue,Hammer 02 Blue,Hammer 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+473,Hammer 02 Green,这是Hammer 02 Green,Hammer 02 Green,Hammer 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
+474,Hammer 02 Magenta,这是Hammer 02 Magenta,Hammer 02 Magenta,Hammer 02 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+475,Hammer 02 Purple,这是Hammer 02 Purple,Hammer 02 Purple,Hammer 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
+476,Hammer 02 Red,这是Hammer 02 Red,Hammer 02 Red,Hammer 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
+477,Hammer 02 Yellow,这是Hammer 02 Yellow,Hammer 02 Yellow,Hammer 02 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,1
+478,Hammer 03 Black,这是Hammer 03 Black,Hammer 03 Black,Hammer 03 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+479,Hammer 03 Blue,这是Hammer 03 Blue,Hammer 03 Blue,Hammer 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+480,Hammer 03 Green,这是Hammer 03 Green,Hammer 03 Green,Hammer 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
+481,Hammer 03 Magenta,这是Hammer 03 Magenta,Hammer 03 Magenta,Hammer 03 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+482,Hammer 03 Purple,这是Hammer 03 Purple,Hammer 03 Purple,Hammer 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
+483,Hammer 03 Red,这是Hammer 03 Red,Hammer 03 Red,Hammer 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
+484,Hammer 03 White,这是Hammer 03 White,Hammer 03 White,Hammer 03 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+485,Hammer 03 Yellow,这是Hammer 03 Yellow,Hammer 03 Yellow,Hammer 03 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,1
+486,Mace 01 Black,这是Mace 01 Black,Mace 01 Black,Mace 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+487,Mace 01 Blue,这是Mace 01 Blue,Mace 01 Blue,Mace 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+488,Mace 01 Green,这是Mace 01 Green,Mace 01 Green,Mace 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
+489,Mace 01 Purple,这是Mace 01 Purple,Mace 01 Purple,Mace 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
+490,Mace 01 Red,这是Mace 01 Red,Mace 01 Red,Mace 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
+491,Mace 01 Yellow,这是Mace 01 Yellow,Mace 01 Yellow,Mace 01 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
+492,Mace 02 Black,这是Mace 02 Black,Mace 02 Black,Mace 02 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+493,Mace 02 Blue,这是Mace 02 Blue,Mace 02 Blue,Mace 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+494,Mace 02 Fire,这是Mace 02 Fire,Mace 02 Fire,Mace 02 Fire,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+495,Mace 02 Green,这是Mace 02 Green,Mace 02 Green,Mace 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
+496,Mace 02 Ice,这是Mace 02 Ice,Mace 02 Ice,Mace 02 Ice,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+497,Mace 02 Poison,这是Mace 02 Poison,Mace 02 Poison,Mace 02 Poison,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+498,Mace 02 Purple,这是Mace 02 Purple,Mace 02 Purple,Mace 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
+499,Mace 02 Red,这是Mace 02 Red,Mace 02 Red,Mace 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
+500,Mace 02 Yellow,这是Mace 02 Yellow,Mace 02 Yellow,Mace 02 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
+501,Peasant Tool 01 Rake,这是Peasant Tool 01 Rake,Peasant Tool 01 Rake,Peasant Tool 01 Rake,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+502,Peasant Tool 02 Hammer,这是Peasant Tool 02 Hammer,Peasant Tool 02 Hammer,Peasant Tool 02 Hammer,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+503,Peasant Tool 03 Axe,这是Peasant Tool 03 Axe,Peasant Tool 03 Axe,Peasant Tool 03 Axe,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+504,Peasant Tool 04 Scyth,这是Peasant Tool 04 Scyth,Peasant Tool 04 Scyth,Peasant Tool 04 Scyth,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+505,Pickaxe 01,这是Pickaxe 01,Pickaxe 01,Pickaxe 01,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+506,Scepter 01 Black,这是Scepter 01 Black,Scepter 01 Black,Scepter 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+507,Scepter 01 Blue,这是Scepter 01 Blue,Scepter 01 Blue,Scepter 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+508,Scepter 01 Green,这是Scepter 01 Green,Scepter 01 Green,Scepter 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,1
+509,Scepter 01 Magenta,这是Scepter 01 Magenta,Scepter 01 Magenta,Scepter 01 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+510,Scepter 01 Purple,这是Scepter 01 Purple,Scepter 01 Purple,Scepter 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,1
+511,Scepter 01 Red,这是Scepter 01 Red,Scepter 01 Red,Scepter 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,1
+512,Scepter 01 White,这是Scepter 01 White,Scepter 01 White,Scepter 01 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,1
+513,Scepter 01 Yellow,这是Scepter 01 Yellow,Scepter 01 Yellow,Scepter 01 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,1
+514,Scythe 01 Black,这是Scythe 01 Black,Scythe 01 Black,Scythe 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+515,Scythe 01 Blue,这是Scythe 01 Blue,Scythe 01 Blue,Scythe 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+516,Scythe 01 Green,这是Scythe 01 Green,Scythe 01 Green,Scythe 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
+517,Scythe 01 Magenta,这是Scythe 01 Magenta,Scythe 01 Magenta,Scythe 01 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+518,Scythe 01 Purple,这是Scythe 01 Purple,Scythe 01 Purple,Scythe 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
+519,Scythe 01 Red,这是Scythe 01 Red,Scythe 01 Red,Scythe 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
+520,Scythe 01 White,这是Scythe 01 White,Scythe 01 White,Scythe 01 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+521,Scythe 01 Yellow,这是Scythe 01 Yellow,Scythe 01 Yellow,Scythe 01 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
+522,Scythe 02 Blue,这是Scythe 02 Blue,Scythe 02 Blue,Scythe 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+523,Scythe 02 Green,这是Scythe 02 Green,Scythe 02 Green,Scythe 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
+524,Scythe 02 Magenta,这是Scythe 02 Magenta,Scythe 02 Magenta,Scythe 02 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+525,Scythe 02 Purple,这是Scythe 02 Purple,Scythe 02 Purple,Scythe 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
+526,Scythe 02 Red,这是Scythe 02 Red,Scythe 02 Red,Scythe 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
+527,Scythe 02 White,这是Scythe 02 White,Scythe 02 White,Scythe 02 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+528,Scythe 02 Yellow,这是Scythe 02 Yellow,Scythe 02 Yellow,Scythe 02 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
+529,Scythe 03 Black,这是Scythe 03 Black,Scythe 03 Black,Scythe 03 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+530,Scythe 03 Blue,这是Scythe 03 Blue,Scythe 03 Blue,Scythe 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+531,Scythe 03 Green,这是Scythe 03 Green,Scythe 03 Green,Scythe 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
+532,Scythe 03 Magenta,这是Scythe 03 Magenta,Scythe 03 Magenta,Scythe 03 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+533,Scythe 03 Purple,这是Scythe 03 Purple,Scythe 03 Purple,Scythe 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
+534,Scythe 03 Red,这是Scythe 03 Red,Scythe 03 Red,Scythe 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
+535,Scythe 03 White,这是Scythe 03 White,Scythe 03 White,Scythe 03 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+536,Scythe 03 Yellow,这是Scythe 03 Yellow,Scythe 03 Yellow,Scythe 03 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
+537,Spear 01 Black,这是Spear 01 Black,Spear 01 Black,Spear 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
+538,Spear 01 Blue,这是Spear 01 Blue,Spear 01 Blue,Spear 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
+539,Spear 01 Brown,这是Spear 01 Brown,Spear 01 Brown,Spear 01 Brown,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
+540,Spear 01 Green,这是Spear 01 Green,Spear 01 Green,Spear 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,2
+541,Spear 01 Magenta,这是Spear 01 Magenta,Spear 01 Magenta,Spear 01 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
+542,Spear 01 Purple,这是Spear 01 Purple,Spear 01 Purple,Spear 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,2
+543,Spear 01 Red,这是Spear 01 Red,Spear 01 Red,Spear 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,2
+544,Spear 01 White,这是Spear 01 White,Spear 01 White,Spear 01 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
+545,Spear 02 Black,这是Spear 02 Black,Spear 02 Black,Spear 02 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
+546,Spear 02 Blue,这是Spear 02 Blue,Spear 02 Blue,Spear 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
+547,Spear 02 Green,这是Spear 02 Green,Spear 02 Green,Spear 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,2
+548,Spear 02 Magenta,这是Spear 02 Magenta,Spear 02 Magenta,Spear 02 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
+549,Spear 02 Purple,这是Spear 02 Purple,Spear 02 Purple,Spear 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,2
+550,Spear 02 Red,这是Spear 02 Red,Spear 02 Red,Spear 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,2
+551,Spear 02 White,这是Spear 02 White,Spear 02 White,Spear 02 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
+552,Spear 02 Yellow,这是Spear 02 Yellow,Spear 02 Yellow,Spear 02 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,2
+553,Spear 03 Black,这是Spear 03 Black,Spear 03 Black,Spear 03 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
+554,Spear 03 Blue,这是Spear 03 Blue,Spear 03 Blue,Spear 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
+555,Spear 03 Brown,这是Spear 03 Brown,Spear 03 Brown,Spear 03 Brown,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
+556,Spear 03 Green,这是Spear 03 Green,Spear 03 Green,Spear 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,2
+557,Spear 03 Magenta,这是Spear 03 Magenta,Spear 03 Magenta,Spear 03 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
+558,Spear 03 Purple,这是Spear 03 Purple,Spear 03 Purple,Spear 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,2
+559,Spear 03 Red,这是Spear 03 Red,Spear 03 Red,Spear 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,2
+560,Spear 03 White,这是Spear 03 White,Spear 03 White,Spear 03 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,2
+561,Sword 01 Black,这是Sword 01 Black,Sword 01 Black,Sword 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+562,Sword 01 Blue,这是Sword 01 Blue,Sword 01 Blue,Sword 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+563,Sword 01 Green,这是Sword 01 Green,Sword 01 Green,Sword 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
+564,Sword 01 Purple,这是Sword 01 Purple,Sword 01 Purple,Sword 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
+565,Sword 01 Red,这是Sword 01 Red,Sword 01 Red,Sword 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,4
+566,Sword 01 White,这是Sword 01 White,Sword 01 White,Sword 01 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+567,Sword 02 Fire,这是Sword 02 Fire,Sword 02 Fire,Sword 02 Fire,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+568,Sword 02 Ice,这是Sword 02 Ice,Sword 02 Ice,Sword 02 Ice,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+569,Sword 02 Normal,这是Sword 02 Normal,Sword 02 Normal,Sword 02 Normal,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+570,Sword 02 Poison,这是Sword 02 Poison,Sword 02 Poison,Sword 02 Poison,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+571,Sword 03 Blue,这是Sword 03 Blue,Sword 03 Blue,Sword 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+572,Sword 03 Gold,这是Sword 03 Gold,Sword 03 Gold,Sword 03 Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+573,Sword 03 Green,这是Sword 03 Green,Sword 03 Green,Sword 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
+574,Sword 03 Red,这是Sword 03 Red,Sword 03 Red,Sword 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,4
+575,Sword 04 Black,这是Sword 04 Black,Sword 04 Black,Sword 04 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+576,Sword 04 Blue,这是Sword 04 Blue,Sword 04 Blue,Sword 04 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+577,Sword 04 Brown,这是Sword 04 Brown,Sword 04 Brown,Sword 04 Brown,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+578,Sword 04 Green,这是Sword 04 Green,Sword 04 Green,Sword 04 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
+579,Sword 04 Purple,这是Sword 04 Purple,Sword 04 Purple,Sword 04 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
+580,Sword 04 White,这是Sword 04 White,Sword 04 White,Sword 04 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+581,Sword 05 Fire Ice,这是Sword 05 Fire Ice,Sword 05 Fire Ice,Sword 05 Fire Ice,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+582,Sword 05 Light Dark,这是Sword 05 Light Dark,Sword 05 Light Dark,Sword 05 Light Dark,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+583,Sword 05 Lightning,这是Sword 05 Lightning,Sword 05 Lightning,Sword 05 Lightning,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+584,Sword 05 Normal Blue,这是Sword 05 Normal Blue,Sword 05 Normal Blue,Sword 05 Normal Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+585,Sword 05 Normal Green,这是Sword 05 Normal Green,Sword 05 Normal Green,Sword 05 Normal Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
+586,Sword 05 Normal Purple,这是Sword 05 Normal Purple,Sword 05 Normal Purple,Sword 05 Normal Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
+587,Sword 05 Normal Red,这是Sword 05 Normal Red,Sword 05 Normal Red,Sword 05 Normal Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,4
+588,Sword 05 Poison,这是Sword 05 Poison,Sword 05 Poison,Sword 05 Poison,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+589,Sword 06 Blue,这是Sword 06 Blue,Sword 06 Blue,Sword 06 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+590,Sword 06 Green,这是Sword 06 Green,Sword 06 Green,Sword 06 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
+591,Sword 06 Purple,这是Sword 06 Purple,Sword 06 Purple,Sword 06 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
+592,Sword 06 Red,这是Sword 06 Red,Sword 06 Red,Sword 06 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,4
+593,Sword 06 Yellow,这是Sword 06 Yellow,Sword 06 Yellow,Sword 06 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,4
+594,Sword 07 Blue,这是Sword 07 Blue,Sword 07 Blue,Sword 07 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+595,Sword 07 Green,这是Sword 07 Green,Sword 07 Green,Sword 07 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
+596,Sword 07 Grey,这是Sword 07 Grey,Sword 07 Grey,Sword 07 Grey,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+597,Sword 07 Purple,这是Sword 07 Purple,Sword 07 Purple,Sword 07 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
+598,Sword 08 Blue,这是Sword 08 Blue,Sword 08 Blue,Sword 08 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+599,Sword 08 Green,这是Sword 08 Green,Sword 08 Green,Sword 08 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
+600,Sword 08 Purple,这是Sword 08 Purple,Sword 08 Purple,Sword 08 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
+601,Sword 08 Red,这是Sword 08 Red,Sword 08 Red,Sword 08 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,4
+602,Sword 08 Yellow,这是Sword 08 Yellow,Sword 08 Yellow,Sword 08 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,4
+603,Sword 09 Green,这是Sword 09 Green,Sword 09 Green,Sword 09 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
+604,Sword 09 Grey,这是Sword 09 Grey,Sword 09 Grey,Sword 09 Grey,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+605,Sword 09 Pink,这是Sword 09 Pink,Sword 09 Pink,Sword 09 Pink,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+606,Sword 09 Purple,这是Sword 09 Purple,Sword 09 Purple,Sword 09 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
+607,Sword 09 Red,这是Sword 09 Red,Sword 09 Red,Sword 09 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,4
+608,Sword 09 Yellow,这是Sword 09 Yellow,Sword 09 Yellow,Sword 09 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,4
+609,Sword 10 Black Gold,这是Sword 10 Black Gold,Sword 10 Black Gold,Sword 10 Black Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+610,Sword 10 Blue Gold,这是Sword 10 Blue Gold,Sword 10 Blue Gold,Sword 10 Blue Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+611,Sword 10 Green Gold,这是Sword 10 Green Gold,Sword 10 Green Gold,Sword 10 Green Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,4
+612,Sword 10 Purple Gold,这是Sword 10 Purple Gold,Sword 10 Purple Gold,Sword 10 Purple Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
+613,Sword 10 Red Gold,这是Sword 10 Red Gold,Sword 10 Red Gold,Sword 10 Red Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,4
+614,Sword 10 White Gold,这是Sword 10 White Gold,Sword 10 White Gold,Sword 10 White Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
+615,TH Axe 01 Black,这是TH Axe 01 Black,TH Axe 01 Black,TH Axe 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+616,TH Axe 01 Blue,这是TH Axe 01 Blue,TH Axe 01 Blue,TH Axe 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+617,TH Axe 01 Green,这是TH Axe 01 Green,TH Axe 01 Green,TH Axe 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
+618,TH Axe 01 Magenta,这是TH Axe 01 Magenta,TH Axe 01 Magenta,TH Axe 01 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+619,TH Axe 01 Purple,这是TH Axe 01 Purple,TH Axe 01 Purple,TH Axe 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
+620,TH Axe 01 Red,这是TH Axe 01 Red,TH Axe 01 Red,TH Axe 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
+621,TH Axe 01 White,这是TH Axe 01 White,TH Axe 01 White,TH Axe 01 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+622,TH Axe 01 Yellow,这是TH Axe 01 Yellow,TH Axe 01 Yellow,TH Axe 01 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
+623,TH Axe 02 Black,这是TH Axe 02 Black,TH Axe 02 Black,TH Axe 02 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+624,TH Axe 02 Blue,这是TH Axe 02 Blue,TH Axe 02 Blue,TH Axe 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+625,TH Axe 02 Green,这是TH Axe 02 Green,TH Axe 02 Green,TH Axe 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
+626,TH Axe 02 Magenta,这是TH Axe 02 Magenta,TH Axe 02 Magenta,TH Axe 02 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+627,TH Axe 02 Purple,这是TH Axe 02 Purple,TH Axe 02 Purple,TH Axe 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
+628,TH Axe 02 Red,这是TH Axe 02 Red,TH Axe 02 Red,TH Axe 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
+629,TH Axe 02 White,这是TH Axe 02 White,TH Axe 02 White,TH Axe 02 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+630,TH Axe 02 Yellow,这是TH Axe 02 Yellow,TH Axe 02 Yellow,TH Axe 02 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
+631,TH Axe 03 Black,这是TH Axe 03 Black,TH Axe 03 Black,TH Axe 03 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+632,TH Axe 03 Blue,这是TH Axe 03 Blue,TH Axe 03 Blue,TH Axe 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+633,TH Axe 03 Green,这是TH Axe 03 Green,TH Axe 03 Green,TH Axe 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
+634,TH Axe 03 Magenta,这是TH Axe 03 Magenta,TH Axe 03 Magenta,TH Axe 03 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+635,TH Axe 03 Purple,这是TH Axe 03 Purple,TH Axe 03 Purple,TH Axe 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
+636,TH Axe 03 Red,这是TH Axe 03 Red,TH Axe 03 Red,TH Axe 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
+637,TH Axe 03 White,这是TH Axe 03 White,TH Axe 03 White,TH Axe 03 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
+638,TH Axe 03 Yellow,这是TH Axe 03 Yellow,TH Axe 03 Yellow,TH Axe 03 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
+639,TH Sword 01 Black,这是TH Sword 01 Black,TH Sword 01 Black,TH Sword 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+640,TH Sword 01 Blue,这是TH Sword 01 Blue,TH Sword 01 Blue,TH Sword 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+641,TH Sword 01 Green,这是TH Sword 01 Green,TH Sword 01 Green,TH Sword 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,6
+642,TH Sword 01 Magenta,这是TH Sword 01 Magenta,TH Sword 01 Magenta,TH Sword 01 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+643,TH Sword 01 Purple,这是TH Sword 01 Purple,TH Sword 01 Purple,TH Sword 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,6
+644,TH Sword 01 Red,这是TH Sword 01 Red,TH Sword 01 Red,TH Sword 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,6
+645,TH Sword 01 White,这是TH Sword 01 White,TH Sword 01 White,TH Sword 01 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+646,TH Sword 01 Yellow,这是TH Sword 01 Yellow,TH Sword 01 Yellow,TH Sword 01 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,6
+647,TH Sword 02 Black,这是TH Sword 02 Black,TH Sword 02 Black,TH Sword 02 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+648,TH Sword 02 Blue,这是TH Sword 02 Blue,TH Sword 02 Blue,TH Sword 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+649,TH Sword 02 Green,这是TH Sword 02 Green,TH Sword 02 Green,TH Sword 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,6
+650,TH Sword 02 Magenta,这是TH Sword 02 Magenta,TH Sword 02 Magenta,TH Sword 02 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+651,TH Sword 02 Purple,这是TH Sword 02 Purple,TH Sword 02 Purple,TH Sword 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,6
+652,TH Sword 02 Red,这是TH Sword 02 Red,TH Sword 02 Red,TH Sword 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,6
+653,TH Sword 02 White,这是TH Sword 02 White,TH Sword 02 White,TH Sword 02 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+654,TH Sword 02 Yellow,这是TH Sword 02 Yellow,TH Sword 02 Yellow,TH Sword 02 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,6
+655,TH Sword 03 Black,这是TH Sword 03 Black,TH Sword 03 Black,TH Sword 03 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+656,TH Sword 03 Blue,这是TH Sword 03 Blue,TH Sword 03 Blue,TH Sword 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+657,TH Sword 03 Green,这是TH Sword 03 Green,TH Sword 03 Green,TH Sword 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,6
+658,TH Sword 03 Magenta,这是TH Sword 03 Magenta,TH Sword 03 Magenta,TH Sword 03 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+659,TH Sword 03 Purple,这是TH Sword 03 Purple,TH Sword 03 Purple,TH Sword 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,6
+660,TH Sword 03 Red,这是TH Sword 03 Red,TH Sword 03 Red,TH Sword 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,6
+661,TH Sword 03 White,这是TH Sword 03 White,TH Sword 03 White,TH Sword 03 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+662,TH Sword 03 Yellow,这是TH Sword 03 Yellow,TH Sword 03 Yellow,TH Sword 03 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,6
+663,Wand 01 Stick Blue,这是Wand 01 Stick Blue,Wand 01 Stick Blue,Wand 01 Stick Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+664,Wand 01 Stick Green,这是Wand 01 Stick Green,Wand 01 Stick Green,Wand 01 Stick Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
+665,Wand 01 Stick Orange,这是Wand 01 Stick Orange,Wand 01 Stick Orange,Wand 01 Stick Orange,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+666,Wand 01 Stick Purple,这是Wand 01 Stick Purple,Wand 01 Stick Purple,Wand 01 Stick Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
+667,Wand 01 Stick Red,这是Wand 01 Stick Red,Wand 01 Stick Red,Wand 01 Stick Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
+668,Wand 01 Stick White,这是Wand 01 Stick White,Wand 01 Stick White,Wand 01 Stick White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+669,Wand 01 Stick Yellow,这是Wand 01 Stick Yellow,Wand 01 Stick Yellow,Wand 01 Stick Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,5
+670,Wand 02 Blue,这是Wand 02 Blue,Wand 02 Blue,Wand 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+671,Wand 02 Green,这是Wand 02 Green,Wand 02 Green,Wand 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
+672,Wand 02 Purple,这是Wand 02 Purple,Wand 02 Purple,Wand 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
+673,Wand 02 Red,这是Wand 02 Red,Wand 02 Red,Wand 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
+674,Wand 02 White,这是Wand 02 White,Wand 02 White,Wand 02 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+675,Wand 02 Yellow,这是Wand 02 Yellow,Wand 02 Yellow,Wand 02 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,5
+676,Wand 03 Blue,这是Wand 03 Blue,Wand 03 Blue,Wand 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+677,Wand 03 Green,这是Wand 03 Green,Wand 03 Green,Wand 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
+678,Wand 03 Purple,这是Wand 03 Purple,Wand 03 Purple,Wand 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
+679,Wand 03 Red,这是Wand 03 Red,Wand 03 Red,Wand 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
+680,Wand 04 Blue,这是Wand 04 Blue,Wand 04 Blue,Wand 04 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+681,Wand 04 Green,这是Wand 04 Green,Wand 04 Green,Wand 04 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
+682,Wand 04 Purple,这是Wand 04 Purple,Wand 04 Purple,Wand 04 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
+683,Wand 04 Red,这是Wand 04 Red,Wand 04 Red,Wand 04 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
+684,Wand 04 White,这是Wand 04 White,Wand 04 White,Wand 04 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+685,Wand 04 Yellow,这是Wand 04 Yellow,Wand 04 Yellow,Wand 04 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,5
+686,Wand 05 Blue,这是Wand 05 Blue,Wand 05 Blue,Wand 05 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+687,Wand 05 Green,这是Wand 05 Green,Wand 05 Green,Wand 05 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
+688,Wand 05 Purple,这是Wand 05 Purple,Wand 05 Purple,Wand 05 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
+689,Wand 05 Red,这是Wand 05 Red,Wand 05 Red,Wand 05 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
+690,Wand 05 Yellow,这是Wand 05 Yellow,Wand 05 Yellow,Wand 05 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,5
+691,Wand 06 Broom Black,这是Wand 06 Broom Black,Wand 06 Broom Black,Wand 06 Broom Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+692,Wand 06 Broom Blue,这是Wand 06 Broom Blue,Wand 06 Broom Blue,Wand 06 Broom Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+693,Wand 06 Broom Brown,这是Wand 06 Broom Brown,Wand 06 Broom Brown,Wand 06 Broom Brown,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+694,Wand 06 Broom Green,这是Wand 06 Broom Green,Wand 06 Broom Green,Wand 06 Broom Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
+695,Wand 06 Broom Purple,这是Wand 06 Broom Purple,Wand 06 Broom Purple,Wand 06 Broom Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
+696,Wand 06 Broom Red,这是Wand 06 Broom Red,Wand 06 Broom Red,Wand 06 Broom Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
+697,Wand 06 Broom White,这是Wand 06 Broom White,Wand 06 Broom White,Wand 06 Broom White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+698,Wand 07 Blue,这是Wand 07 Blue,Wand 07 Blue,Wand 07 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+699,Wand 07 Green,这是Wand 07 Green,Wand 07 Green,Wand 07 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
+700,Wand 07 Purple,这是Wand 07 Purple,Wand 07 Purple,Wand 07 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
+701,Wand 07 Red,这是Wand 07 Red,Wand 07 Red,Wand 07 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
+702,Wand 07 White,这是Wand 07 White,Wand 07 White,Wand 07 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+703,Wand 07 Yellow,这是Wand 07 Yellow,Wand 07 Yellow,Wand 07 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,5
+704,Wand 08 Black,这是Wand 08 Black,Wand 08 Black,Wand 08 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+705,Wand 08 Blue,这是Wand 08 Blue,Wand 08 Blue,Wand 08 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+706,Wand 08 Green,这是Wand 08 Green,Wand 08 Green,Wand 08 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
+707,Wand 08 Purple,这是Wand 08 Purple,Wand 08 Purple,Wand 08 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
+708,Wand 08 Red,这是Wand 08 Red,Wand 08 Red,Wand 08 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
+709,Wand 08 White,这是Wand 08 White,Wand 08 White,Wand 08 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+710,Wand 08 Yellow,这是Wand 08 Yellow,Wand 08 Yellow,Wand 08 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,5
+711,Wand 09 Blue,这是Wand 09 Blue,Wand 09 Blue,Wand 09 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+712,Wand 09 Green,这是Wand 09 Green,Wand 09 Green,Wand 09 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
+713,Wand 09 Magenta,这是Wand 09 Magenta,Wand 09 Magenta,Wand 09 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+714,Wand 09 Pink,这是Wand 09 Pink,Wand 09 Pink,Wand 09 Pink,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+715,Wand 09 Purple,这是Wand 09 Purple,Wand 09 Purple,Wand 09 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
+716,Wand 09 Red,这是Wand 09 Red,Wand 09 Red,Wand 09 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
+717,Wand 10 Black,这是Wand 10 Black,Wand 10 Black,Wand 10 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+718,Wand 10 Blue,这是Wand 10 Blue,Wand 10 Blue,Wand 10 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+719,Wand 10 Green,这是Wand 10 Green,Wand 10 Green,Wand 10 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,5
+720,Wand 10 Purple,这是Wand 10 Purple,Wand 10 Purple,Wand 10 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,5
+721,Wand 10 Red,这是Wand 10 Red,Wand 10 Red,Wand 10 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,5
+722,Wand 10 White,这是Wand 10 White,Wand 10 White,Wand 10 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+723,Wand 11 Santa,这是Wand 11 Santa,Wand 11 Santa,Wand 11 Santa,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,5
+724,Claw 01 Black Red,这是Claw 01 Black Red,Claw 01 Black Red,Claw 01 Black Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+725,Claw 01 Blue Blue,这是Claw 01 Blue Blue,Claw 01 Blue Blue,Claw 01 Blue Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+726,Claw 01 Gold White,这是Claw 01 Gold White,Claw 01 Gold White,Claw 01 Gold White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+727,Claw 01 Grey Purple,这是Claw 01 Grey Purple,Claw 01 Grey Purple,Claw 01 Grey Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+728,Claw 01 Grey White,这是Claw 01 Grey White,Claw 01 Grey White,Claw 01 Grey White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+729,Claw 01 Purple Green,这是Claw 01 Purple Green,Claw 01 Purple Green,Claw 01 Purple Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+730,Claw 01 Purple Red,这是Claw 01 Purple Red,Claw 01 Purple Red,Claw 01 Purple Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+731,Claw 01 Red Yellow,这是Claw 01 Red Yellow,Claw 01 Red Yellow,Claw 01 Red Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+732,Claw 02 Blue,这是Claw 02 Blue,Claw 02 Blue,Claw 02 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+733,Claw 02 Green,这是Claw 02 Green,Claw 02 Green,Claw 02 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+734,Claw 02 Purple,这是Claw 02 Purple,Claw 02 Purple,Claw 02 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+735,Claw 02 Red,这是Claw 02 Red,Claw 02 Red,Claw 02 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+736,Claw 02 White,这是Claw 02 White,Claw 02 White,Claw 02 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+737,Claw 03 Black,这是Claw 03 Black,Claw 03 Black,Claw 03 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+738,Claw 03 Blue,这是Claw 03 Blue,Claw 03 Blue,Claw 03 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+739,Claw 03 Green,这是Claw 03 Green,Claw 03 Green,Claw 03 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+740,Claw 03 Magenta,这是Claw 03 Magenta,Claw 03 Magenta,Claw 03 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+741,Claw 03 Purple,这是Claw 03 Purple,Claw 03 Purple,Claw 03 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+742,Claw 03 Red,这是Claw 03 Red,Claw 03 Red,Claw 03 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+743,Claw 03 White,这是Claw 03 White,Claw 03 White,Claw 03 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+744,Claw 03 Yellow,这是Claw 03 Yellow,Claw 03 Yellow,Claw 03 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+745,Crossbow 01 Black,这是Crossbow 01 Black,Crossbow 01 Black,Crossbow 01 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+746,Crossbow 01 Blue,这是Crossbow 01 Blue,Crossbow 01 Blue,Crossbow 01 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+747,Crossbow 01 Green,这是Crossbow 01 Green,Crossbow 01 Green,Crossbow 01 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+748,Crossbow 01 No Arrow Black,这是Crossbow 01 No Arrow Black,Crossbow 01 No Arrow Black,Crossbow 01 No Arrow Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+749,Crossbow 01 No Arrow Blue,这是Crossbow 01 No Arrow Blue,Crossbow 01 No Arrow Blue,Crossbow 01 No Arrow Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+750,Crossbow 01 No Arrow Green,这是Crossbow 01 No Arrow Green,Crossbow 01 No Arrow Green,Crossbow 01 No Arrow Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+751,Crossbow 01 No Arrow Purple,这是Crossbow 01 No Arrow Purple,Crossbow 01 No Arrow Purple,Crossbow 01 No Arrow Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+752,Crossbow 01 No Arrow Red,这是Crossbow 01 No Arrow Red,Crossbow 01 No Arrow Red,Crossbow 01 No Arrow Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+753,Crossbow 01 No Arrow White,这是Crossbow 01 No Arrow White,Crossbow 01 No Arrow White,Crossbow 01 No Arrow White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+754,Crossbow 01 No Arrow Yellow,这是Crossbow 01 No Arrow Yellow,Crossbow 01 No Arrow Yellow,Crossbow 01 No Arrow Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+755,Crossbow 01 Purple,这是Crossbow 01 Purple,Crossbow 01 Purple,Crossbow 01 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+756,Crossbow 01 Red,这是Crossbow 01 Red,Crossbow 01 Red,Crossbow 01 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+757,Crossbow 01 White,这是Crossbow 01 White,Crossbow 01 White,Crossbow 01 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+758,Crossbow 01 Yellow,这是Crossbow 01 Yellow,Crossbow 01 Yellow,Crossbow 01 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+759,Crossbow 02 Black,这是Crossbow 02 Black,Crossbow 02 Black,Crossbow 02 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+760,Crossbow 02 Blue,这是Crossbow 02 Blue,Crossbow 02 Blue,Crossbow 02 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+761,Crossbow 02 Green,这是Crossbow 02 Green,Crossbow 02 Green,Crossbow 02 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+762,Crossbow 02 No Arrow Black,这是Crossbow 02 No Arrow Black,Crossbow 02 No Arrow Black,Crossbow 02 No Arrow Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+763,Crossbow 02 No Arrow Blue,这是Crossbow 02 No Arrow Blue,Crossbow 02 No Arrow Blue,Crossbow 02 No Arrow Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+764,Crossbow 02 No Arrow Green,这是Crossbow 02 No Arrow Green,Crossbow 02 No Arrow Green,Crossbow 02 No Arrow Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+765,Crossbow 02 No Arrow Orange,这是Crossbow 02 No Arrow Orange,Crossbow 02 No Arrow Orange,Crossbow 02 No Arrow Orange,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+766,Crossbow 02 No Arrow Purple,这是Crossbow 02 No Arrow Purple,Crossbow 02 No Arrow Purple,Crossbow 02 No Arrow Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+767,Crossbow 02 No Arrow Red,这是Crossbow 02 No Arrow Red,Crossbow 02 No Arrow Red,Crossbow 02 No Arrow Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+768,Crossbow 02 No Arrow White,这是Crossbow 02 No Arrow White,Crossbow 02 No Arrow White,Crossbow 02 No Arrow White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+769,Crossbow 02 No Arrow Yellow,这是Crossbow 02 No Arrow Yellow,Crossbow 02 No Arrow Yellow,Crossbow 02 No Arrow Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+770,Crossbow 02 Orange,这是Crossbow 02 Orange,Crossbow 02 Orange,Crossbow 02 Orange,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+771,Crossbow 02 Purple,这是Crossbow 02 Purple,Crossbow 02 Purple,Crossbow 02 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+772,Crossbow 02 Red,这是Crossbow 02 Red,Crossbow 02 Red,Crossbow 02 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+773,Crossbow 02 White,这是Crossbow 02 White,Crossbow 02 White,Crossbow 02 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+774,Crossbow 02 Yellow,这是Crossbow 02 Yellow,Crossbow 02 Yellow,Crossbow 02 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+775,Crossbow 03 Black,这是Crossbow 03 Black,Crossbow 03 Black,Crossbow 03 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+776,Crossbow 03 Blue,这是Crossbow 03 Blue,Crossbow 03 Blue,Crossbow 03 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+777,Crossbow 03 Green,这是Crossbow 03 Green,Crossbow 03 Green,Crossbow 03 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+778,Crossbow 03 Purple,这是Crossbow 03 Purple,Crossbow 03 Purple,Crossbow 03 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+779,Crossbow 03 Red,这是Crossbow 03 Red,Crossbow 03 Red,Crossbow 03 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+780,Guitar 01 Blue,这是Guitar 01 Blue,Guitar 01 Blue,Guitar 01 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+781,Guitar 01 Brown,这是Guitar 01 Brown,Guitar 01 Brown,Guitar 01 Brown,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+782,Guitar 01 Green,这是Guitar 01 Green,Guitar 01 Green,Guitar 01 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+783,Guitar 01 Purple,这是Guitar 01 Purple,Guitar 01 Purple,Guitar 01 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+784,Hand Aura 01 Blue,这是Hand Aura 01 Blue,Hand Aura 01 Blue,Hand Aura 01 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+785,Hand Aura 01 Green,这是Hand Aura 01 Green,Hand Aura 01 Green,Hand Aura 01 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+786,Hand Aura 01 Purple,这是Hand Aura 01 Purple,Hand Aura 01 Purple,Hand Aura 01 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+787,Hand Aura 01 Red,这是Hand Aura 01 Red,Hand Aura 01 Red,Hand Aura 01 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+788,Hand Aura 01 Yellow,这是Hand Aura 01 Yellow,Hand Aura 01 Yellow,Hand Aura 01 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+789,Knuckles 01 Black Purple,这是Knuckles 01 Black Purple,Knuckles 01 Black Purple,Knuckles 01 Black Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+790,Knuckles 01 Blue Blue,这是Knuckles 01 Blue Blue,Knuckles 01 Blue Blue,Knuckles 01 Blue Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+791,Knuckles 01 Gold Blue,这是Knuckles 01 Gold Blue,Knuckles 01 Gold Blue,Knuckles 01 Gold Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+792,Knuckles 01 Gold Green,这是Knuckles 01 Gold Green,Knuckles 01 Gold Green,Knuckles 01 Gold Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+793,Knuckles 01 Gold Purple,这是Knuckles 01 Gold Purple,Knuckles 01 Gold Purple,Knuckles 01 Gold Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+794,Knuckles 01 Gold Red,这是Knuckles 01 Gold Red,Knuckles 01 Gold Red,Knuckles 01 Gold Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+795,Knuckles 01 Gold White,这是Knuckles 01 Gold White,Knuckles 01 Gold White,Knuckles 01 Gold White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+796,Knuckles 01 Gold Yellow,这是Knuckles 01 Gold Yellow,Knuckles 01 Gold Yellow,Knuckles 01 Gold Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+797,Knuckles 01 Grey White,这是Knuckles 01 Grey White,Knuckles 01 Grey White,Knuckles 01 Grey White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+798,Knuckles 01 Grey Yellow,这是Knuckles 01 Grey Yellow,Knuckles 01 Grey Yellow,Knuckles 01 Grey Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+799,Knuckles 02 Black,这是Knuckles 02 Black,Knuckles 02 Black,Knuckles 02 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+800,Knuckles 02 Blue,这是Knuckles 02 Blue,Knuckles 02 Blue,Knuckles 02 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+801,Knuckles 02 Brown,这是Knuckles 02 Brown,Knuckles 02 Brown,Knuckles 02 Brown,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+802,Knuckles 02 Green,这是Knuckles 02 Green,Knuckles 02 Green,Knuckles 02 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+803,Knuckles 02 Magenta,这是Knuckles 02 Magenta,Knuckles 02 Magenta,Knuckles 02 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+804,Knuckles 02 Purple,这是Knuckles 02 Purple,Knuckles 02 Purple,Knuckles 02 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+805,Knuckles 02 Red,这是Knuckles 02 Red,Knuckles 02 Red,Knuckles 02 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+806,Knuckles 02 White,这是Knuckles 02 White,Knuckles 02 White,Knuckles 02 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+807,Knuckles 03 Black,这是Knuckles 03 Black,Knuckles 03 Black,Knuckles 03 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+808,Knuckles 03 Blue,这是Knuckles 03 Blue,Knuckles 03 Blue,Knuckles 03 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+809,Knuckles 03 Brown,这是Knuckles 03 Brown,Knuckles 03 Brown,Knuckles 03 Brown,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+810,Knuckles 03 Green,这是Knuckles 03 Green,Knuckles 03 Green,Knuckles 03 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+811,Knuckles 03 Magenta,这是Knuckles 03 Magenta,Knuckles 03 Magenta,Knuckles 03 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+812,Knuckles 03 Purple,这是Knuckles 03 Purple,Knuckles 03 Purple,Knuckles 03 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+813,Knuckles 03 Red,这是Knuckles 03 Red,Knuckles 03 Red,Knuckles 03 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+814,Knuckles 03 White,这是Knuckles 03 White,Knuckles 03 White,Knuckles 03 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+815,Longbow 01 Black,这是Longbow 01 Black,Longbow 01 Black,Longbow 01 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+816,Longbow 01 Blue,这是Longbow 01 Blue,Longbow 01 Blue,Longbow 01 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+817,Longbow 01 Green,这是Longbow 01 Green,Longbow 01 Green,Longbow 01 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+818,Longbow 01 Magenta,这是Longbow 01 Magenta,Longbow 01 Magenta,Longbow 01 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+819,Longbow 01 Purple,这是Longbow 01 Purple,Longbow 01 Purple,Longbow 01 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+820,Longbow 01 Red,这是Longbow 01 Red,Longbow 01 Red,Longbow 01 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+821,Longbow 01 White,这是Longbow 01 White,Longbow 01 White,Longbow 01 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+822,Longbow 01 Yellow,这是Longbow 01 Yellow,Longbow 01 Yellow,Longbow 01 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+823,Longbow 02 Black,这是Longbow 02 Black,Longbow 02 Black,Longbow 02 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+824,Longbow 02 Blue,这是Longbow 02 Blue,Longbow 02 Blue,Longbow 02 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+825,Longbow 02 Green,这是Longbow 02 Green,Longbow 02 Green,Longbow 02 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+826,Longbow 02 Magenta,这是Longbow 02 Magenta,Longbow 02 Magenta,Longbow 02 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+827,Longbow 02 Purple,这是Longbow 02 Purple,Longbow 02 Purple,Longbow 02 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+828,Longbow 02 Red,这是Longbow 02 Red,Longbow 02 Red,Longbow 02 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+829,Longbow 02 White,这是Longbow 02 White,Longbow 02 White,Longbow 02 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+830,Longbow 02 Yellow,这是Longbow 02 Yellow,Longbow 02 Yellow,Longbow 02 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+831,Longbow 03 Black,这是Longbow 03 Black,Longbow 03 Black,Longbow 03 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+832,Longbow 03 Blue,这是Longbow 03 Blue,Longbow 03 Blue,Longbow 03 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+833,Longbow 03 Green,这是Longbow 03 Green,Longbow 03 Green,Longbow 03 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+834,Longbow 03 Magenta,这是Longbow 03 Magenta,Longbow 03 Magenta,Longbow 03 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+835,Longbow 03 Purple,这是Longbow 03 Purple,Longbow 03 Purple,Longbow 03 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+836,Longbow 03 Red,这是Longbow 03 Red,Longbow 03 Red,Longbow 03 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+837,Longbow 03 White,这是Longbow 03 White,Longbow 03 White,Longbow 03 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+838,Longbow 03 Yellow,这是Longbow 03 Yellow,Longbow 03 Yellow,Longbow 03 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+839,Shield 01 Black,这是Shield 01 Black,Shield 01 Black,Shield 01 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+840,Shield 01 Blue,这是Shield 01 Blue,Shield 01 Blue,Shield 01 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+841,Shield 01 Green,这是Shield 01 Green,Shield 01 Green,Shield 01 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+842,Shield 01 Purple,这是Shield 01 Purple,Shield 01 Purple,Shield 01 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+843,Shield 01 Red,这是Shield 01 Red,Shield 01 Red,Shield 01 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+844,Shield 01 White,这是Shield 01 White,Shield 01 White,Shield 01 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+845,Shield 02 Blue,这是Shield 02 Blue,Shield 02 Blue,Shield 02 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+846,Shield 02 Brown,这是Shield 02 Brown,Shield 02 Brown,Shield 02 Brown,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+847,Shield 02 Green,这是Shield 02 Green,Shield 02 Green,Shield 02 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+848,Shield 02 Grey,这是Shield 02 Grey,Shield 02 Grey,Shield 02 Grey,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+849,Shield 02 Purple,这是Shield 02 Purple,Shield 02 Purple,Shield 02 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+850,Shield 03 Blue,这是Shield 03 Blue,Shield 03 Blue,Shield 03 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+851,Shield 03 Brown,这是Shield 03 Brown,Shield 03 Brown,Shield 03 Brown,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+852,Shield 03 Green,这是Shield 03 Green,Shield 03 Green,Shield 03 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+853,Shield 03 Magenta,这是Shield 03 Magenta,Shield 03 Magenta,Shield 03 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+854,Shield 03 Purple,这是Shield 03 Purple,Shield 03 Purple,Shield 03 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+855,Shield 04 Blue,这是Shield 04 Blue,Shield 04 Blue,Shield 04 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+856,Shield 04 Orange,这是Shield 04 Orange,Shield 04 Orange,Shield 04 Orange,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+857,Shield 04 Purple,这是Shield 04 Purple,Shield 04 Purple,Shield 04 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+858,Shield 04 Red,这是Shield 04 Red,Shield 04 Red,Shield 04 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+859,Shield 04 Yellow,这是Shield 04 Yellow,Shield 04 Yellow,Shield 04 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+860,Shield 05 Blue,这是Shield 05 Blue,Shield 05 Blue,Shield 05 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+861,Shield 05 Green,这是Shield 05 Green,Shield 05 Green,Shield 05 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+862,Shield 05 Purple,这是Shield 05 Purple,Shield 05 Purple,Shield 05 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+863,Shield 05 Red,这是Shield 05 Red,Shield 05 Red,Shield 05 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+864,Shield 05 Yellow,这是Shield 05 Yellow,Shield 05 Yellow,Shield 05 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+865,Shield 06 Black,这是Shield 06 Black,Shield 06 Black,Shield 06 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+866,Shield 06 Blue,这是Shield 06 Blue,Shield 06 Blue,Shield 06 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+867,Shield 06 Green,这是Shield 06 Green,Shield 06 Green,Shield 06 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+868,Shield 06 Purple,这是Shield 06 Purple,Shield 06 Purple,Shield 06 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+869,Shield 06 Red,这是Shield 06 Red,Shield 06 Red,Shield 06 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+870,Shield 06 White,这是Shield 06 White,Shield 06 White,Shield 06 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+871,Shield 07 Black,这是Shield 07 Black,Shield 07 Black,Shield 07 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+872,Shield 07 Blue,这是Shield 07 Blue,Shield 07 Blue,Shield 07 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+873,Shield 07 Green,这是Shield 07 Green,Shield 07 Green,Shield 07 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+874,Shield 07 Purple,这是Shield 07 Purple,Shield 07 Purple,Shield 07 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+875,Shield 07 Red,这是Shield 07 Red,Shield 07 Red,Shield 07 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+876,Shield 07 Yellow,这是Shield 07 Yellow,Shield 07 Yellow,Shield 07 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+877,Shield 08 Black,这是Shield 08 Black,Shield 08 Black,Shield 08 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+878,Shield 08 Blue,这是Shield 08 Blue,Shield 08 Blue,Shield 08 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+879,Shield 08 Green,这是Shield 08 Green,Shield 08 Green,Shield 08 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+880,Shield 08 Orange,这是Shield 08 Orange,Shield 08 Orange,Shield 08 Orange,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+881,Shield 08 Purple,这是Shield 08 Purple,Shield 08 Purple,Shield 08 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+882,Shield 08 Red,这是Shield 08 Red,Shield 08 Red,Shield 08 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+883,Shield 08 White,这是Shield 08 White,Shield 08 White,Shield 08 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+884,Shield 08 Yellow,这是Shield 08 Yellow,Shield 08 Yellow,Shield 08 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+885,Shield 09 Black,这是Shield 09 Black,Shield 09 Black,Shield 09 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+886,Shield 09 Blue,这是Shield 09 Blue,Shield 09 Blue,Shield 09 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+887,Shield 09 Green,这是Shield 09 Green,Shield 09 Green,Shield 09 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+888,Shield 09 Purple,这是Shield 09 Purple,Shield 09 Purple,Shield 09 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+889,Shield 09 Red,这是Shield 09 Red,Shield 09 Red,Shield 09 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+890,Shield 09 White,这是Shield 09 White,Shield 09 White,Shield 09 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+891,Shield 10 Black,这是Shield 10 Black,Shield 10 Black,Shield 10 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+892,Shield 10 Blue,这是Shield 10 Blue,Shield 10 Blue,Shield 10 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+893,Shield 10 Brown,这是Shield 10 Brown,Shield 10 Brown,Shield 10 Brown,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
+894,Shield 10 Green,这是Shield 10 Green,Shield 10 Green,Shield 10 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
+895,Shield 10 Purple,这是Shield 10 Purple,Shield 10 Purple,Shield 10 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
+896,Shield 10 Red,这是Shield 10 Red,Shield 10 Red,Shield 10 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+897,Shield 10 White,这是Shield 10 White,Shield 10 White,Shield 10 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 91078881
+CRC: 3013006905
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: cb61255893797eccc1b91e622a9d10cd
+    Hash: ca559408095b26bc40b60a8b50401a16
   TypeTreeHash:
     serializedVersion: 2
     Hash: 82fb81bfc4990b2a2b08febba9ba96e2
@@ -87,6 +87,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Cat Ears
   Black Green.prefab
 - Assets/Prefabs/SimpleZombies_RiotCop_Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
+  04 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   02 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scepters (R Arm)/Scepter
@@ -96,6 +98,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   04 Dragonfly Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Maces (R Arm)/Mace 02 Fire.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 01 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   03 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
@@ -115,6 +119,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Maces (R Arm)/Mace 02 Poison.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 02
   Peasant Grey Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Elf Ears
+  Brown 01.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Daggers (R Arm)/Dagger
   02 Purple.prefab
 - Assets/Prefabs/AI.prefab
@@ -143,6 +149,8 @@ Assets:
   11 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   08 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Elf Ears
+  Black 01.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   07 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Clubs (R Arm)/Club 03 Blue.prefab
@@ -151,6 +159,8 @@ Assets:
   02 No Arrow Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 02
   White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 03 Magenta.prefab
 - Assets/StylizedExplosionPack/explosions/funkyMix_jokerFire/explosion_stylized_small_jokerFire.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Axes (R Arm)/Axe 01.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 03
@@ -166,6 +176,8 @@ Assets:
   Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Baskets (Back)/Basket
   01 Brown Water.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 01 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Peasant Tools (R Arm)/Peasant
   Tool 01 Rake.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
@@ -201,6 +213,8 @@ Assets:
 - Assets/Prefabs/SimpleZombies_Nazi_Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Special Effects (Main
   Prefab)/FX Spinning Snowflakes.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 03 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 05 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Red Arrow Green.prefab
@@ -214,6 +228,8 @@ Assets:
   06 Leaves Green Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Baskets (Back)/Basket
   01 Purple Water.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 03 White.prefab
 - Assets/Prefabs/SimpleZombies_02_Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 10
   White Gold.prefab
@@ -288,11 +304,15 @@ Assets:
   02 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Baskets (Back)/Basket
   01 Brown Vege.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  03 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Maces (R Arm)/Mace 02 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   02 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 05
   Normal Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 01 Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   03 Bone Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
@@ -326,6 +346,8 @@ Assets:
   01 Purple Tomato.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 01
   Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 02 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   04 Dragonfly White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Bags and Sacks (Back)/Sack
@@ -356,6 +378,8 @@ Assets:
   01 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 01
   Wizard Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  03 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   03 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
@@ -372,6 +396,10 @@ Assets:
   02 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   03 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  02 Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 02 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   03 Red.prefab
 - Assets/StylizedExplosionPack/explosions/purple_darkFire/explosion_stylized_large_darkFire.prefab
@@ -383,6 +411,8 @@ Assets:
   02 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   01 Gold Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 03 Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 03
   Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Jackets (Main Prefab)/Jacket
@@ -391,6 +421,8 @@ Assets:
   06 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   07 White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 03 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Masks (Head)/Mask 02
   Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Coif 01
@@ -398,8 +430,12 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 10 Green.prefab
 - Assets/StylizedExplosionPack/explosions/funkyMix_jokerFire/explosion_stylized_medium_jokerFire.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 09 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  01 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   10 Purple Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Elf Ears
+  White 01.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
   03 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
@@ -411,6 +447,10 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Bunny Ears
   Strips Purple.prefab
 - Assets/Prefabs/HeroIcon.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Guitars (L Arm)/Guitar
+  01 Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  02 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Back Props (Back)/Back
   Prop 02 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Back Props (Back)/Back
@@ -430,12 +470,20 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 11 Santa.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 02
   Ice.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 02 Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Daggers (R Arm)/Dagger
   03 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   07 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 03 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 01
   Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 03 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
+  04 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   07 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
@@ -447,6 +495,8 @@ Assets:
   Peasant Black White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
   01 Grey Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Guitars (L Arm)/Guitar
+  01 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 04 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Clubs (R Arm)/Club 02 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 01
@@ -456,6 +506,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   01 No Arrow Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 03 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
+  04 Red.prefab
 - Assets/Prefabs/SimpleZombies_BusinessMan_Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Arrows/Arrow 02 Light.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
@@ -473,10 +525,14 @@ Assets:
 - Assets/Prefabs/hero/huonan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   02 No Arrow Orange.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  02 Black.prefab
 - Assets/Prefabs/hero/akali.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   01 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Maces (R Arm)/Mace 01 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  02 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Back Props (Back)/Back
   Prop 02 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 05
@@ -495,6 +551,8 @@ Assets:
   03 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Jackets (Main Prefab)/Jacket
   01 Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
+  09 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   01 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Special Effects (Main
@@ -514,6 +572,8 @@ Assets:
   01 Red Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 02
   Fire.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 01 Purple.prefab
 - Assets/Prefabs/SimpleZombies_RiotCop_Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 06 Broom
   Green.prefab
@@ -549,16 +609,22 @@ Assets:
   03 Bone Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 09
   Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 01 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   03 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   02 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   01 Black Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  01 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Blue Arrow Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Masks (Head)/Mask 01
   Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 03 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   05 Butterfly Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 03
@@ -569,6 +635,8 @@ Assets:
   Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   06 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 02 Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Daggers (R Arm)/Dagger
   01 Purple.prefab
 - Assets/StylizedExplosionPack/explosions/blue_demonFire/explosion_stylized_small_demonFire.prefab
@@ -580,12 +648,18 @@ Assets:
   Purple Arrow Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 02
   Peasant Grey Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
+  04 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   09 Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Peasant Tools (R Arm)/Pickaxe
+  01.prefab
 - Assets/Prefabs/SimpleZombies_Sherif_Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 02
   Side Black Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 07 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  01 Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scepters (R Arm)/Scepter
   01 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
@@ -604,6 +678,8 @@ Assets:
   02 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Red Arrow Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 01 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Blue Arrow Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Masks (Head)/Mask 03
@@ -622,6 +698,8 @@ Assets:
   02 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   02 Dragon Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 01 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 01
   Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 03 Purple.prefab
@@ -629,6 +707,8 @@ Assets:
   11 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   10 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 02 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   02 Barbarian Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
@@ -657,6 +737,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   04 Dragonfly Brown.prefab
 - Assets/StylizedExplosionPack/explosions/funkyMix_jokerFire/explosion_stylized_large_jokerFire.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
+  09 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Red Arrow Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
@@ -694,6 +776,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 09 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   10 Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
+  09 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   02 Barbarian Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Misc (Head)/Halo 01.prefab
@@ -714,10 +798,14 @@ Assets:
 - Assets/Prefabs/SimpleZombies_Punk_Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   03 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  03 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
   01 Purple Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Baskets (Back)/Basket
   01 Brown Tomato.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 03 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Baskets (Back)/Basket
   01 Purple Vege.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
@@ -751,8 +839,12 @@ Assets:
   Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 02
   Side Green Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 02 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   02 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  03 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Special Effects (Main
   Prefab)/FX Spinning Sparks.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Jackets (Main Prefab)/Jacket
@@ -763,6 +855,8 @@ Assets:
   03 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   03 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 01 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 01 Stick
   Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
@@ -793,8 +887,12 @@ Assets:
   Orange.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Bunny Ears
   Black Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 02 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   03 Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 03 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   02 Barbarian Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
@@ -812,6 +910,8 @@ Assets:
   05 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   03 White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 02 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   01 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Peasant Tools (R Arm)/Peasant
@@ -823,6 +923,8 @@ Assets:
   Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   03 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
+  09 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Maces (R Arm)/Mace 02 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 02
   Side Black Red.prefab
@@ -834,6 +936,8 @@ Assets:
   Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Masks (Head)/Mask 03
   Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 01 Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 03
   Gold.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 02
@@ -853,6 +957,8 @@ Assets:
   01 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   02 Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 03 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   06 Leaves Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 10 Blue.prefab
@@ -867,6 +973,8 @@ Assets:
   03 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 01 Stick
   Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 02 Red.prefab
 - Assets/Prefabs/SimpleZombies_RiotCop_Green.prefab
 - Assets/Prefabs/SimpleZombies_03_Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 03
@@ -908,6 +1016,8 @@ Assets:
   White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   08 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 01 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Crowns (Head)/Crown
   02 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
@@ -951,6 +1061,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 02
   Side Black Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 10 White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 02 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 02
   Normal.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 05 Green.prefab
@@ -989,6 +1101,8 @@ Assets:
   Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scepters (R Arm)/Scepter
   01 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  02 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   04 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
@@ -1000,6 +1114,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Clubs (R Arm)/Club 01.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 01
   White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
+  09 Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   02 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Misc (Head)/Antlers
@@ -1015,12 +1131,16 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Green Arrow Black.prefab
 - Assets/StylizedExplosionPack/explosions/green_wildFire/explosion_stylized_small_wildFire.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 02 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   01 Gold Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   03 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   06 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
+  04 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Crowns (Head)/Crown
   04 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 05 Yellow.prefab
@@ -1030,6 +1150,8 @@ Assets:
   Aura 01 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 02
   Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 03 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Arrows/Arrow 01 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   03 Black.prefab
@@ -1121,6 +1243,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 03
   Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
+  04 Blonde.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   01 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   10 Red.prefab
@@ -1132,9 +1256,13 @@ Assets:
   01 Knight Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   08 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
+  09 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 02
   Side Black Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Clubs (R Arm)/Club 03 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Guitars (L Arm)/Guitar
+  01 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   02 Barbarian Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
@@ -1167,6 +1295,8 @@ Assets:
   09 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Back Props (Back)/Back
   Prop 02 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  02 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   09 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
@@ -1230,6 +1360,8 @@ Assets:
   06 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   01 Black Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 01 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   06 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Arrows/Arrow 01 Purple.prefab
@@ -1254,10 +1386,14 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Maces (R Arm)/Mace 01 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   09 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  03 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Bags and Sacks (Back)/Bag
   01 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   07 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  03 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   06 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
@@ -1308,6 +1444,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   08 Brown.prefab
 - Assets/StylizedExplosionPack/explosions/blue_demonFire/explosion_stylized_medium_demonFire.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 03 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 10
   Green Gold.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
@@ -1340,6 +1478,12 @@ Assets:
   03 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Daggers (R Arm)/Dagger
   02 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  01 Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 03 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  02 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Axes (R Arm)/Axe 03 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 01
   Blue.prefab
@@ -1357,6 +1501,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   03 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Axes (R Arm)/Axe 03 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 02 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   08 Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
@@ -1388,6 +1534,8 @@ Assets:
   Green Arrow Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 08
   Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  01 Purple.prefab
 - Assets/Prefabs/SimpleZombies_02_Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Red Arrow Yellow.prefab
@@ -1409,9 +1557,13 @@ Assets:
   03 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   02 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 02 Blue.prefab
 - Assets/Prefabs/SimpleZombies_BeachBabe_Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 04
   Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  03 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
   02 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
@@ -1423,6 +1575,8 @@ Assets:
   Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Blue Arrow Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 03 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   02 Green.prefab
 - Assets/Prefabs/SimpleZombies_Police_Grey.prefab
@@ -1434,6 +1588,8 @@ Assets:
   08 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 06 Broom
   Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  01 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   02 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
@@ -1446,6 +1602,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 02 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
   01 Grey White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 02 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Crowns (Head)/Crown
   01 Sorceress Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Misc (Head)/Hood 01
@@ -1475,8 +1633,12 @@ Assets:
   02 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   02 Grey.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  01 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   01 Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 01 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   08 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
@@ -1490,8 +1652,12 @@ Assets:
   01 Sorceress Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   02 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
+  Axe 01 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 06
   Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 01 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   03 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
@@ -1505,6 +1671,8 @@ Assets:
   02 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 03
   Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Guitars (L Arm)/Guitar
+  01 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 02
   Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 04
@@ -1518,6 +1686,8 @@ Assets:
   09 Black.prefab
 - Assets/Prefabs/SimpleZombies_Police_Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 10 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  02 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   02 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 03
@@ -1525,6 +1695,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 06 Broom
   White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 08 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 03 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   07 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Bunny Ears
@@ -1545,6 +1717,8 @@ Assets:
   02 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   03 Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  01 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Special Effects (Main
   Prefab)/FX Spinning Leaves.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 04
@@ -1563,6 +1737,8 @@ Assets:
   Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Crowns (Head)/Crown
   02 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
+  03 Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   03 Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Cat Ears
@@ -1618,6 +1794,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   05 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Maces (R Arm)/Mace 02 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
+  04 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   03 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 07
@@ -1633,6 +1811,8 @@ Assets:
   02 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   07 Love Pink.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 02 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Back Props (Back)/Back
   Prop 02 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Daggers (R Arm)/Dagger
@@ -1648,11 +1828,15 @@ Assets:
 - Assets/Prefabs/SimpleZombies_Punk_Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   06 Leaves Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 01 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 04
   Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   09 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 08 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 01 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Bags and Sacks (Back)/Bag
   01 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
@@ -1664,6 +1848,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Axes (R Arm)/Axe 02 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   02 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
+  Sword 02 Purple.prefab
 - Assets/StylizedExplosionPack/explosions/red_originalFire_noSmoke/explosion_stylized_large_originalFire_noSmoke.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Axes (R Arm)/Axe 03 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01

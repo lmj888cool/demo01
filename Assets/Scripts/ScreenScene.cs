@@ -34,27 +34,36 @@ public class ScreenScene : MonoBehaviour
             }
             else
             {
-                if (DataManager.GetInstance().ItemTableDataDic.ContainsKey(ItemId))
+                while (DataManager.GetInstance().ItemTableDataDic.ContainsKey(ItemId))
                 {
                     itemTableData = DataManager.GetInstance().ItemTableDataDic[ItemId];
-                    ItemShow3D = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", itemTableData.itemPrefab);
-                    if (ItemShow3D != null && Camera.main != null)
+                    if(DataManager.GetInstance().GetItemTableDataByItemName(itemTableData.name) ==null)
                     {
-                        ItemShow3D.transform.SetParent(item.transform, false);
-                        ParticleSystem[] particleSystems = ItemShow3D.GetComponentsInChildren<ParticleSystem>();
-                        for (int i = 0; i < particleSystems.Length; i++)
+                        ItemShow3D = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", itemTableData.itemPrefab);
+                        if (ItemShow3D != null && Camera.main != null)
                         {
-                            particleSystems[i].gameObject.SetActive(false);
-                        }
-                        Quaternion quaternion = new Quaternion(ItemShow3D.transform.localRotation.x, ItemShow3D.transform.localRotation.y, ItemShow3D.transform.localRotation.z, ItemShow3D.transform.localRotation.w);
-                        quaternion.x = 0;
-                        quaternion.y = 145;
-                        ItemShow3D.transform.localRotation = quaternion;
-                        ItemShow3D.transform.localScale = new Vector3(1, 1, 1);
-                        ItemShow3D.transform.localPosition = new Vector3(0, 0, 0);
-                        
+                            ItemShow3D.transform.SetParent(item.transform, false);
+                            ParticleSystem[] particleSystems = ItemShow3D.GetComponentsInChildren<ParticleSystem>();
+                            for (int i = 0; i < particleSystems.Length; i++)
+                            {
+                                particleSystems[i].gameObject.SetActive(false);
+                            }
+                            Quaternion quaternion = new Quaternion(ItemShow3D.transform.localRotation.x, ItemShow3D.transform.localRotation.y, ItemShow3D.transform.localRotation.z, ItemShow3D.transform.localRotation.w);
+                            quaternion.x = 0;
+                            quaternion.y = 145;
+                            ItemShow3D.transform.localRotation = quaternion;
+                            ItemShow3D.transform.localScale = new Vector3(1, 1, 1);
+                            ItemShow3D.transform.localPosition = new Vector3(0, 0, 0);
 
+
+                        }
+                        break;
                     }
+                    else
+                    {
+                        ItemId++;
+                    }
+                   
                 }
                 ItemId++;
             }
