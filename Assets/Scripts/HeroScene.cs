@@ -170,6 +170,13 @@ public class HeroScene : MonoBehaviour
         HeroPanel.SetActive(HeroPanel.name == panelType.ToString());
         ChangeEquipPanel.gameObject.SetActive(ChangeEquipPanel.name == panelType.ToString());
         HeroChair.SetActive(PanelType.HeroPanel == panelType);
+        //SetActive貌似会使animator重置
+        if (panelType == PanelType.HeroPanel)
+        {
+            if (CurrentHero == null)
+                return;
+            CurrentHero.OnPlayAnimation(CurrentHero.animatorAction);
+        }
     }
     public void ChangeEquip(Item equipdata)
     {

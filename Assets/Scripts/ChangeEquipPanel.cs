@@ -42,10 +42,11 @@ public class ChangeEquipPanel : MonoBehaviour
         if(ItemShow3D != null && Camera.main != null)
         {
             ItemShow3D.AddComponent<RolateObject>();
-            
+            Quaternion quaternion = new Quaternion(90, 45, 45, 1);
+            ItemShow3D.transform.localRotation = quaternion;
             ItemShow3D.transform.SetParent(Camera.main.transform.parent,false);
-            ItemShow3D.transform.localRotation = Quaternion.identity;
-            ItemShow3D.transform.localScale = new Vector3(1, 1, 1);
+            
+            ItemShow3D.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
             ItemShow3D.transform.localPosition = new Vector3(0, 0, 0);
             if (ItemShow != null)
             {

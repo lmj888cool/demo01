@@ -30,10 +30,11 @@ public class Enity : MonoBehaviour
     private bool isFly = false;//是否是飞行状态
     private bool isSpear = false;//是否拿着长矛
     private AnimationTableData animationTableData;
-    public AnimatorAction animatorAction;//当前的动作状态
+    public AnimatorAction animatorAction = AnimatorAction.Idle;//当前的动作状态
+    private AnimatorParameters animatorParameters = AnimatorParameters.NULL;//当前勾选的动作参数
     void Start()
     {
-        animatorAction = AnimatorAction.Idle;
+        
     }
     void Update()
     {
@@ -41,6 +42,7 @@ public class Enity : MonoBehaviour
     }
     public void InitEnityByHero(Hero hero)
     {
+
         this.hero = hero;
         heroTableData = DataManager.GetInstance().GetHeroTableDataByHero(hero);
         enityType = heroTableData.id < 10000 ? EnityType.Hero : EnityType.Enemy;
@@ -214,6 +216,10 @@ public class Enity : MonoBehaviour
                     if(itemTableData != null)
                     {
                         animationTableData = DataManager.GetInstance().GetAnimationTableDataById(itemTableData.animationId);
+                        if (isupdate)
+                        {
+                            OnPlayAnimation(animatorAction);
+                        }
                     }
                    
                 }
@@ -241,8 +247,12 @@ public class Enity : MonoBehaviour
             Animator animator = animatorList[i];
             if (animator != null)
             {
-                if(animator.parameterCount > (int)_actionType)
+                if (animator.parameterCount > (int)_actionType)
                 {
+                    if (_ActionParamtersType != ActionParamtersType.Trigger)
+                    {
+                        animatorParameters = _actionType;
+                    }
                     string _animatorParameterName = animator.GetParameter((int)_actionType).name;
                     switch (_ActionParamtersType)
                     {
@@ -289,7 +299,13 @@ public class Enity : MonoBehaviour
     }
     public void OnPlayAnimation(AnimatorAction _actionType, int _intValue = 1, float _floatValue = 0.0f)
     {
+        if(animatorParameters != AnimatorParameters.NULL)//说明当前有一个动作被勾选，需要重置
+        {
+            OnPlayAnimation(animatorParameters, ActionParamtersType.Bool, 0);
+            animatorParameters = AnimatorParameters.NULL;
+        }
         animatorAction = _actionType;
+        //先重置为idle状态，比如飞行状态播放其他动作必须flyidle始终勾选
         OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Idle), ActionParamtersType.Bool, _intValue);
         switch (_actionType)
         {
@@ -297,7 +313,7 @@ public class Enity : MonoBehaviour
                     OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Idle), ActionParamtersType.Bool, _intValue);
                 break;
             case AnimatorAction.Walk:
-                OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Walk), ActionParamtersType.Bool, _intValue);
+                    OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Walk), ActionParamtersType.Bool, _intValue);
                 break;
             case AnimatorAction.Run:
                     OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Run), ActionParamtersType.Bool, _intValue);
@@ -306,7 +322,7 @@ public class Enity : MonoBehaviour
                     OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Attack), ActionParamtersType.Trigger, _intValue);
                 break;
             case AnimatorAction.Die:
-                    OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Die), ActionParamtersType.Bool, _intValue);
+                    OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Die), ActionParamtersType.Trigger, _intValue);
                 break;
             case AnimatorAction.Hit:
                 OnPlayAnimation(GetAnimatorParametersByName(animationTableData.Hit), ActionParamtersType.Trigger, _intValue);

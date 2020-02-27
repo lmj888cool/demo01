@@ -134,7 +134,7 @@ public class DataManager
     }
     public DataManager()
     {
-        CreateItemTableData();
+        //CreateItemTableData();
         assetBundlePrefabs = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/prefab");
         assetBundleStatic = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/staticdata");
         assetBundleUI = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/ui");
