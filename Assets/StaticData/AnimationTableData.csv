@@ -7,3 +7,5 @@ id,Idle,Walk,Run,Attack,Hit,Die,Stunned,Victory,Info
 4,Idle,Walk,Run,MeleeRightAttack02,TakeDamage,Die,Stunned,Victory,佩戴单手剑的动作
 5,Idle,Walk,Run,MeleeRightAttack01,TakeDamage,Die,Stunned,Victory,佩戴法杖的动作
 6,THSwordIdle,THSwordWalk,THSwordRun,THSwordMeleeAttack01,THSwordTakeDamage,THSwordDie,Stunned,Victory,佩戴双手剑的动作
+7,Idle,Walk,Run,LongbowShootAttack01,TakeDamage,Die,Stunned,Victory,弓箭的动作
+8,Idle,Walk,Dash,CrossbowRightShootAttack,TakeDamage,Die,Stunned,Victory,弩的动作

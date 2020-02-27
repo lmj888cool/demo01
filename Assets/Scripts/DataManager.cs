@@ -134,7 +134,7 @@ public class DataManager
     }
     public DataManager()
     {
-        //CreateItemTableData();
+        CreateItemTableData();
         assetBundlePrefabs = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/prefab");
         assetBundleStatic = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/staticdata");
         assetBundleUI = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/ui");
@@ -318,6 +318,18 @@ public class DataManager
         if (itemname.Contains("Spear"))
         {
             animationId = 2;
+        }
+        if (itemname.Contains("Crossbow"))
+        {
+            animationId = 8;
+        }
+        if (itemname.Contains("TH Axe") || itemname.Contains("TH Sword"))
+        {
+            animationId = 6;
+        }
+        if (itemname.Contains("Longbow"))
+        {
+            animationId = 7;
         }
         return animationId;
     }

@@ -1,5 +1,5 @@
-int,string,string,string,string,int,string,int,int,float,float,int,string,string,string,float,int,,
-ID,名字,描述,预制体,图标,分组,组名称,初始伤害值,初始防御值,攻击距离,攻击频率,是否有子弹,攻击口特效,移动特效,击中特效,子弹移动速度,一次攻击几发子弹,,
+int,string,string,string,string,int,string,int,int,float,float,int,string,string,string,float,int
+ID,名字,描述,预制体,图标,分组,组名称,初始伤害值,初始防御值,攻击距离,攻击频率,是否有子弹,攻击口特效,移动特效,击中特效,子弹移动速度,一次攻击几发子弹
 id,name,des,itemPrefab,icon,group,groupName,damaged,defene,attackRadius,attackSpeed,isBomb,pointParticle,moveParticle,hitParticle,bombMoveSpeed,bombCount,quality,animationId
 1,Back Prop 01 Black,这是Back Prop 01 Black,Back Prop 01 Black,Back Prop 01 Black,1,Back,15,0,25,0.5,1,0,0,0,1,1,1,1
 2,Back Prop 01 Blue,这是Back Prop 01 Blue,Back Prop 01 Blue,Back Prop 01 Blue,1,Back,15,0,25,0.5,1,0,0,0,1,1,1,1
@@ -615,30 +615,30 @@ id,name,des,itemPrefab,icon,group,groupName,damaged,defene,attackRadius,attackSp
 612,Sword 10 Purple Gold,这是Sword 10 Purple Gold,Sword 10 Purple Gold,Sword 10 Purple Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,4
 613,Sword 10 Red Gold,这是Sword 10 Red Gold,Sword 10 Red Gold,Sword 10 Red Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,4
 614,Sword 10 White Gold,这是Sword 10 White Gold,Sword 10 White Gold,Sword 10 White Gold,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,4
-615,TH Axe 01 Black,这是TH Axe 01 Black,TH Axe 01 Black,TH Axe 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-616,TH Axe 01 Blue,这是TH Axe 01 Blue,TH Axe 01 Blue,TH Axe 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-617,TH Axe 01 Green,这是TH Axe 01 Green,TH Axe 01 Green,TH Axe 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
-618,TH Axe 01 Magenta,这是TH Axe 01 Magenta,TH Axe 01 Magenta,TH Axe 01 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-619,TH Axe 01 Purple,这是TH Axe 01 Purple,TH Axe 01 Purple,TH Axe 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
-620,TH Axe 01 Red,这是TH Axe 01 Red,TH Axe 01 Red,TH Axe 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
-621,TH Axe 01 White,这是TH Axe 01 White,TH Axe 01 White,TH Axe 01 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-622,TH Axe 01 Yellow,这是TH Axe 01 Yellow,TH Axe 01 Yellow,TH Axe 01 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
-623,TH Axe 02 Black,这是TH Axe 02 Black,TH Axe 02 Black,TH Axe 02 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-624,TH Axe 02 Blue,这是TH Axe 02 Blue,TH Axe 02 Blue,TH Axe 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-625,TH Axe 02 Green,这是TH Axe 02 Green,TH Axe 02 Green,TH Axe 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
-626,TH Axe 02 Magenta,这是TH Axe 02 Magenta,TH Axe 02 Magenta,TH Axe 02 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-627,TH Axe 02 Purple,这是TH Axe 02 Purple,TH Axe 02 Purple,TH Axe 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
-628,TH Axe 02 Red,这是TH Axe 02 Red,TH Axe 02 Red,TH Axe 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
-629,TH Axe 02 White,这是TH Axe 02 White,TH Axe 02 White,TH Axe 02 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-630,TH Axe 02 Yellow,这是TH Axe 02 Yellow,TH Axe 02 Yellow,TH Axe 02 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
-631,TH Axe 03 Black,这是TH Axe 03 Black,TH Axe 03 Black,TH Axe 03 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-632,TH Axe 03 Blue,这是TH Axe 03 Blue,TH Axe 03 Blue,TH Axe 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-633,TH Axe 03 Green,这是TH Axe 03 Green,TH Axe 03 Green,TH Axe 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,3
-634,TH Axe 03 Magenta,这是TH Axe 03 Magenta,TH Axe 03 Magenta,TH Axe 03 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-635,TH Axe 03 Purple,这是TH Axe 03 Purple,TH Axe 03 Purple,TH Axe 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,3
-636,TH Axe 03 Red,这是TH Axe 03 Red,TH Axe 03 Red,TH Axe 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,3
-637,TH Axe 03 White,这是TH Axe 03 White,TH Axe 03 White,TH Axe 03 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,3
-638,TH Axe 03 Yellow,这是TH Axe 03 Yellow,TH Axe 03 Yellow,TH Axe 03 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,3
+615,TH Axe 01 Black,这是TH Axe 01 Black,TH Axe 01 Black,TH Axe 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+616,TH Axe 01 Blue,这是TH Axe 01 Blue,TH Axe 01 Blue,TH Axe 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+617,TH Axe 01 Green,这是TH Axe 01 Green,TH Axe 01 Green,TH Axe 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,6
+618,TH Axe 01 Magenta,这是TH Axe 01 Magenta,TH Axe 01 Magenta,TH Axe 01 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+619,TH Axe 01 Purple,这是TH Axe 01 Purple,TH Axe 01 Purple,TH Axe 01 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,6
+620,TH Axe 01 Red,这是TH Axe 01 Red,TH Axe 01 Red,TH Axe 01 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,6
+621,TH Axe 01 White,这是TH Axe 01 White,TH Axe 01 White,TH Axe 01 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+622,TH Axe 01 Yellow,这是TH Axe 01 Yellow,TH Axe 01 Yellow,TH Axe 01 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,6
+623,TH Axe 02 Black,这是TH Axe 02 Black,TH Axe 02 Black,TH Axe 02 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+624,TH Axe 02 Blue,这是TH Axe 02 Blue,TH Axe 02 Blue,TH Axe 02 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+625,TH Axe 02 Green,这是TH Axe 02 Green,TH Axe 02 Green,TH Axe 02 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,6
+626,TH Axe 02 Magenta,这是TH Axe 02 Magenta,TH Axe 02 Magenta,TH Axe 02 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+627,TH Axe 02 Purple,这是TH Axe 02 Purple,TH Axe 02 Purple,TH Axe 02 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,6
+628,TH Axe 02 Red,这是TH Axe 02 Red,TH Axe 02 Red,TH Axe 02 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,6
+629,TH Axe 02 White,这是TH Axe 02 White,TH Axe 02 White,TH Axe 02 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+630,TH Axe 02 Yellow,这是TH Axe 02 Yellow,TH Axe 02 Yellow,TH Axe 02 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,6
+631,TH Axe 03 Black,这是TH Axe 03 Black,TH Axe 03 Black,TH Axe 03 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+632,TH Axe 03 Blue,这是TH Axe 03 Blue,TH Axe 03 Blue,TH Axe 03 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+633,TH Axe 03 Green,这是TH Axe 03 Green,TH Axe 03 Green,TH Axe 03 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,6
+634,TH Axe 03 Magenta,这是TH Axe 03 Magenta,TH Axe 03 Magenta,TH Axe 03 Magenta,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+635,TH Axe 03 Purple,这是TH Axe 03 Purple,TH Axe 03 Purple,TH Axe 03 Purple,4,Right,15,0,25,0.5,1,0,0,0,1,1,4,6
+636,TH Axe 03 Red,这是TH Axe 03 Red,TH Axe 03 Red,TH Axe 03 Red,4,Right,15,0,25,0.5,1,0,0,0,1,1,6,6
+637,TH Axe 03 White,这是TH Axe 03 White,TH Axe 03 White,TH Axe 03 White,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
+638,TH Axe 03 Yellow,这是TH Axe 03 Yellow,TH Axe 03 Yellow,TH Axe 03 Yellow,4,Right,15,0,25,0.5,1,0,0,0,1,1,5,6
 639,TH Sword 01 Black,这是TH Sword 01 Black,TH Sword 01 Black,TH Sword 01 Black,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
 640,TH Sword 01 Blue,这是TH Sword 01 Blue,TH Sword 01 Blue,TH Sword 01 Blue,4,Right,15,0,25,0.5,1,0,0,0,1,1,1,6
 641,TH Sword 01 Green,这是TH Sword 01 Green,TH Sword 01 Green,TH Sword 01 Green,4,Right,15,0,25,0.5,1,0,0,0,1,1,2,6
@@ -745,41 +745,41 @@ id,name,des,itemPrefab,icon,group,groupName,damaged,defene,attackRadius,attackSp
 742,Claw 03 Red,这是Claw 03 Red,Claw 03 Red,Claw 03 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
 743,Claw 03 White,这是Claw 03 White,Claw 03 White,Claw 03 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
 744,Claw 03 Yellow,这是Claw 03 Yellow,Claw 03 Yellow,Claw 03 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-745,Crossbow 01 Black,这是Crossbow 01 Black,Crossbow 01 Black,Crossbow 01 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-746,Crossbow 01 Blue,这是Crossbow 01 Blue,Crossbow 01 Blue,Crossbow 01 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-747,Crossbow 01 Green,这是Crossbow 01 Green,Crossbow 01 Green,Crossbow 01 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-748,Crossbow 01 No Arrow Black,这是Crossbow 01 No Arrow Black,Crossbow 01 No Arrow Black,Crossbow 01 No Arrow Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-749,Crossbow 01 No Arrow Blue,这是Crossbow 01 No Arrow Blue,Crossbow 01 No Arrow Blue,Crossbow 01 No Arrow Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-750,Crossbow 01 No Arrow Green,这是Crossbow 01 No Arrow Green,Crossbow 01 No Arrow Green,Crossbow 01 No Arrow Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-751,Crossbow 01 No Arrow Purple,这是Crossbow 01 No Arrow Purple,Crossbow 01 No Arrow Purple,Crossbow 01 No Arrow Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-752,Crossbow 01 No Arrow Red,这是Crossbow 01 No Arrow Red,Crossbow 01 No Arrow Red,Crossbow 01 No Arrow Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-753,Crossbow 01 No Arrow White,这是Crossbow 01 No Arrow White,Crossbow 01 No Arrow White,Crossbow 01 No Arrow White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-754,Crossbow 01 No Arrow Yellow,这是Crossbow 01 No Arrow Yellow,Crossbow 01 No Arrow Yellow,Crossbow 01 No Arrow Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-755,Crossbow 01 Purple,这是Crossbow 01 Purple,Crossbow 01 Purple,Crossbow 01 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-756,Crossbow 01 Red,这是Crossbow 01 Red,Crossbow 01 Red,Crossbow 01 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-757,Crossbow 01 White,这是Crossbow 01 White,Crossbow 01 White,Crossbow 01 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-758,Crossbow 01 Yellow,这是Crossbow 01 Yellow,Crossbow 01 Yellow,Crossbow 01 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-759,Crossbow 02 Black,这是Crossbow 02 Black,Crossbow 02 Black,Crossbow 02 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-760,Crossbow 02 Blue,这是Crossbow 02 Blue,Crossbow 02 Blue,Crossbow 02 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-761,Crossbow 02 Green,这是Crossbow 02 Green,Crossbow 02 Green,Crossbow 02 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-762,Crossbow 02 No Arrow Black,这是Crossbow 02 No Arrow Black,Crossbow 02 No Arrow Black,Crossbow 02 No Arrow Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-763,Crossbow 02 No Arrow Blue,这是Crossbow 02 No Arrow Blue,Crossbow 02 No Arrow Blue,Crossbow 02 No Arrow Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-764,Crossbow 02 No Arrow Green,这是Crossbow 02 No Arrow Green,Crossbow 02 No Arrow Green,Crossbow 02 No Arrow Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-765,Crossbow 02 No Arrow Orange,这是Crossbow 02 No Arrow Orange,Crossbow 02 No Arrow Orange,Crossbow 02 No Arrow Orange,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-766,Crossbow 02 No Arrow Purple,这是Crossbow 02 No Arrow Purple,Crossbow 02 No Arrow Purple,Crossbow 02 No Arrow Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-767,Crossbow 02 No Arrow Red,这是Crossbow 02 No Arrow Red,Crossbow 02 No Arrow Red,Crossbow 02 No Arrow Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-768,Crossbow 02 No Arrow White,这是Crossbow 02 No Arrow White,Crossbow 02 No Arrow White,Crossbow 02 No Arrow White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-769,Crossbow 02 No Arrow Yellow,这是Crossbow 02 No Arrow Yellow,Crossbow 02 No Arrow Yellow,Crossbow 02 No Arrow Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-770,Crossbow 02 Orange,这是Crossbow 02 Orange,Crossbow 02 Orange,Crossbow 02 Orange,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-771,Crossbow 02 Purple,这是Crossbow 02 Purple,Crossbow 02 Purple,Crossbow 02 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-772,Crossbow 02 Red,这是Crossbow 02 Red,Crossbow 02 Red,Crossbow 02 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-773,Crossbow 02 White,这是Crossbow 02 White,Crossbow 02 White,Crossbow 02 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-774,Crossbow 02 Yellow,这是Crossbow 02 Yellow,Crossbow 02 Yellow,Crossbow 02 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-775,Crossbow 03 Black,这是Crossbow 03 Black,Crossbow 03 Black,Crossbow 03 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-776,Crossbow 03 Blue,这是Crossbow 03 Blue,Crossbow 03 Blue,Crossbow 03 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-777,Crossbow 03 Green,这是Crossbow 03 Green,Crossbow 03 Green,Crossbow 03 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-778,Crossbow 03 Purple,这是Crossbow 03 Purple,Crossbow 03 Purple,Crossbow 03 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-779,Crossbow 03 Red,这是Crossbow 03 Red,Crossbow 03 Red,Crossbow 03 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
+745,Crossbow 01 Black,这是Crossbow 01 Black,Crossbow 01 Black,Crossbow 01 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+746,Crossbow 01 Blue,这是Crossbow 01 Blue,Crossbow 01 Blue,Crossbow 01 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+747,Crossbow 01 Green,这是Crossbow 01 Green,Crossbow 01 Green,Crossbow 01 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,8
+748,Crossbow 01 No Arrow Black,这是Crossbow 01 No Arrow Black,Crossbow 01 No Arrow Black,Crossbow 01 No Arrow Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+749,Crossbow 01 No Arrow Blue,这是Crossbow 01 No Arrow Blue,Crossbow 01 No Arrow Blue,Crossbow 01 No Arrow Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+750,Crossbow 01 No Arrow Green,这是Crossbow 01 No Arrow Green,Crossbow 01 No Arrow Green,Crossbow 01 No Arrow Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,8
+751,Crossbow 01 No Arrow Purple,这是Crossbow 01 No Arrow Purple,Crossbow 01 No Arrow Purple,Crossbow 01 No Arrow Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,8
+752,Crossbow 01 No Arrow Red,这是Crossbow 01 No Arrow Red,Crossbow 01 No Arrow Red,Crossbow 01 No Arrow Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,8
+753,Crossbow 01 No Arrow White,这是Crossbow 01 No Arrow White,Crossbow 01 No Arrow White,Crossbow 01 No Arrow White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+754,Crossbow 01 No Arrow Yellow,这是Crossbow 01 No Arrow Yellow,Crossbow 01 No Arrow Yellow,Crossbow 01 No Arrow Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,8
+755,Crossbow 01 Purple,这是Crossbow 01 Purple,Crossbow 01 Purple,Crossbow 01 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,8
+756,Crossbow 01 Red,这是Crossbow 01 Red,Crossbow 01 Red,Crossbow 01 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,8
+757,Crossbow 01 White,这是Crossbow 01 White,Crossbow 01 White,Crossbow 01 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+758,Crossbow 01 Yellow,这是Crossbow 01 Yellow,Crossbow 01 Yellow,Crossbow 01 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,8
+759,Crossbow 02 Black,这是Crossbow 02 Black,Crossbow 02 Black,Crossbow 02 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+760,Crossbow 02 Blue,这是Crossbow 02 Blue,Crossbow 02 Blue,Crossbow 02 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+761,Crossbow 02 Green,这是Crossbow 02 Green,Crossbow 02 Green,Crossbow 02 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,8
+762,Crossbow 02 No Arrow Black,这是Crossbow 02 No Arrow Black,Crossbow 02 No Arrow Black,Crossbow 02 No Arrow Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+763,Crossbow 02 No Arrow Blue,这是Crossbow 02 No Arrow Blue,Crossbow 02 No Arrow Blue,Crossbow 02 No Arrow Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+764,Crossbow 02 No Arrow Green,这是Crossbow 02 No Arrow Green,Crossbow 02 No Arrow Green,Crossbow 02 No Arrow Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,8
+765,Crossbow 02 No Arrow Orange,这是Crossbow 02 No Arrow Orange,Crossbow 02 No Arrow Orange,Crossbow 02 No Arrow Orange,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+766,Crossbow 02 No Arrow Purple,这是Crossbow 02 No Arrow Purple,Crossbow 02 No Arrow Purple,Crossbow 02 No Arrow Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,8
+767,Crossbow 02 No Arrow Red,这是Crossbow 02 No Arrow Red,Crossbow 02 No Arrow Red,Crossbow 02 No Arrow Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,8
+768,Crossbow 02 No Arrow White,这是Crossbow 02 No Arrow White,Crossbow 02 No Arrow White,Crossbow 02 No Arrow White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+769,Crossbow 02 No Arrow Yellow,这是Crossbow 02 No Arrow Yellow,Crossbow 02 No Arrow Yellow,Crossbow 02 No Arrow Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,8
+770,Crossbow 02 Orange,这是Crossbow 02 Orange,Crossbow 02 Orange,Crossbow 02 Orange,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+771,Crossbow 02 Purple,这是Crossbow 02 Purple,Crossbow 02 Purple,Crossbow 02 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,8
+772,Crossbow 02 Red,这是Crossbow 02 Red,Crossbow 02 Red,Crossbow 02 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,8
+773,Crossbow 02 White,这是Crossbow 02 White,Crossbow 02 White,Crossbow 02 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+774,Crossbow 02 Yellow,这是Crossbow 02 Yellow,Crossbow 02 Yellow,Crossbow 02 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,8
+775,Crossbow 03 Black,这是Crossbow 03 Black,Crossbow 03 Black,Crossbow 03 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+776,Crossbow 03 Blue,这是Crossbow 03 Blue,Crossbow 03 Blue,Crossbow 03 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,8
+777,Crossbow 03 Green,这是Crossbow 03 Green,Crossbow 03 Green,Crossbow 03 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,8
+778,Crossbow 03 Purple,这是Crossbow 03 Purple,Crossbow 03 Purple,Crossbow 03 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,8
+779,Crossbow 03 Red,这是Crossbow 03 Red,Crossbow 03 Red,Crossbow 03 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,8
 780,Guitar 01 Blue,这是Guitar 01 Blue,Guitar 01 Blue,Guitar 01 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
 781,Guitar 01 Brown,这是Guitar 01 Brown,Guitar 01 Brown,Guitar 01 Brown,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
 782,Guitar 01 Green,这是Guitar 01 Green,Guitar 01 Green,Guitar 01 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
@@ -815,30 +815,30 @@ id,name,des,itemPrefab,icon,group,groupName,damaged,defene,attackRadius,attackSp
 812,Knuckles 03 Purple,这是Knuckles 03 Purple,Knuckles 03 Purple,Knuckles 03 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
 813,Knuckles 03 Red,这是Knuckles 03 Red,Knuckles 03 Red,Knuckles 03 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
 814,Knuckles 03 White,这是Knuckles 03 White,Knuckles 03 White,Knuckles 03 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-815,Longbow 01 Black,这是Longbow 01 Black,Longbow 01 Black,Longbow 01 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-816,Longbow 01 Blue,这是Longbow 01 Blue,Longbow 01 Blue,Longbow 01 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-817,Longbow 01 Green,这是Longbow 01 Green,Longbow 01 Green,Longbow 01 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-818,Longbow 01 Magenta,这是Longbow 01 Magenta,Longbow 01 Magenta,Longbow 01 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-819,Longbow 01 Purple,这是Longbow 01 Purple,Longbow 01 Purple,Longbow 01 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-820,Longbow 01 Red,这是Longbow 01 Red,Longbow 01 Red,Longbow 01 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-821,Longbow 01 White,这是Longbow 01 White,Longbow 01 White,Longbow 01 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-822,Longbow 01 Yellow,这是Longbow 01 Yellow,Longbow 01 Yellow,Longbow 01 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-823,Longbow 02 Black,这是Longbow 02 Black,Longbow 02 Black,Longbow 02 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-824,Longbow 02 Blue,这是Longbow 02 Blue,Longbow 02 Blue,Longbow 02 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-825,Longbow 02 Green,这是Longbow 02 Green,Longbow 02 Green,Longbow 02 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-826,Longbow 02 Magenta,这是Longbow 02 Magenta,Longbow 02 Magenta,Longbow 02 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-827,Longbow 02 Purple,这是Longbow 02 Purple,Longbow 02 Purple,Longbow 02 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-828,Longbow 02 Red,这是Longbow 02 Red,Longbow 02 Red,Longbow 02 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-829,Longbow 02 White,这是Longbow 02 White,Longbow 02 White,Longbow 02 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-830,Longbow 02 Yellow,这是Longbow 02 Yellow,Longbow 02 Yellow,Longbow 02 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
-831,Longbow 03 Black,这是Longbow 03 Black,Longbow 03 Black,Longbow 03 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-832,Longbow 03 Blue,这是Longbow 03 Blue,Longbow 03 Blue,Longbow 03 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-833,Longbow 03 Green,这是Longbow 03 Green,Longbow 03 Green,Longbow 03 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
-834,Longbow 03 Magenta,这是Longbow 03 Magenta,Longbow 03 Magenta,Longbow 03 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-835,Longbow 03 Purple,这是Longbow 03 Purple,Longbow 03 Purple,Longbow 03 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,1
-836,Longbow 03 Red,这是Longbow 03 Red,Longbow 03 Red,Longbow 03 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,1
-837,Longbow 03 White,这是Longbow 03 White,Longbow 03 White,Longbow 03 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
-838,Longbow 03 Yellow,这是Longbow 03 Yellow,Longbow 03 Yellow,Longbow 03 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,1
+815,Longbow 01 Black,这是Longbow 01 Black,Longbow 01 Black,Longbow 01 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,7
+816,Longbow 01 Blue,这是Longbow 01 Blue,Longbow 01 Blue,Longbow 01 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,7
+817,Longbow 01 Green,这是Longbow 01 Green,Longbow 01 Green,Longbow 01 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,7
+818,Longbow 01 Magenta,这是Longbow 01 Magenta,Longbow 01 Magenta,Longbow 01 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,7
+819,Longbow 01 Purple,这是Longbow 01 Purple,Longbow 01 Purple,Longbow 01 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,7
+820,Longbow 01 Red,这是Longbow 01 Red,Longbow 01 Red,Longbow 01 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,7
+821,Longbow 01 White,这是Longbow 01 White,Longbow 01 White,Longbow 01 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,7
+822,Longbow 01 Yellow,这是Longbow 01 Yellow,Longbow 01 Yellow,Longbow 01 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,7
+823,Longbow 02 Black,这是Longbow 02 Black,Longbow 02 Black,Longbow 02 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,7
+824,Longbow 02 Blue,这是Longbow 02 Blue,Longbow 02 Blue,Longbow 02 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,7
+825,Longbow 02 Green,这是Longbow 02 Green,Longbow 02 Green,Longbow 02 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,7
+826,Longbow 02 Magenta,这是Longbow 02 Magenta,Longbow 02 Magenta,Longbow 02 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,7
+827,Longbow 02 Purple,这是Longbow 02 Purple,Longbow 02 Purple,Longbow 02 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,7
+828,Longbow 02 Red,这是Longbow 02 Red,Longbow 02 Red,Longbow 02 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,7
+829,Longbow 02 White,这是Longbow 02 White,Longbow 02 White,Longbow 02 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,7
+830,Longbow 02 Yellow,这是Longbow 02 Yellow,Longbow 02 Yellow,Longbow 02 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,7
+831,Longbow 03 Black,这是Longbow 03 Black,Longbow 03 Black,Longbow 03 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,7
+832,Longbow 03 Blue,这是Longbow 03 Blue,Longbow 03 Blue,Longbow 03 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,7
+833,Longbow 03 Green,这是Longbow 03 Green,Longbow 03 Green,Longbow 03 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,7
+834,Longbow 03 Magenta,这是Longbow 03 Magenta,Longbow 03 Magenta,Longbow 03 Magenta,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,7
+835,Longbow 03 Purple,这是Longbow 03 Purple,Longbow 03 Purple,Longbow 03 Purple,3,Left,15,0,25,0.5,1,0,0,0,1,1,4,7
+836,Longbow 03 Red,这是Longbow 03 Red,Longbow 03 Red,Longbow 03 Red,3,Left,15,0,25,0.5,1,0,0,0,1,1,6,7
+837,Longbow 03 White,这是Longbow 03 White,Longbow 03 White,Longbow 03 White,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,7
+838,Longbow 03 Yellow,这是Longbow 03 Yellow,Longbow 03 Yellow,Longbow 03 Yellow,3,Left,15,0,25,0.5,1,0,0,0,1,1,5,7
 839,Shield 01 Black,这是Shield 01 Black,Shield 01 Black,Shield 01 Black,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
 840,Shield 01 Blue,这是Shield 01 Blue,Shield 01 Blue,Shield 01 Blue,3,Left,15,0,25,0.5,1,0,0,0,1,1,1,1
 841,Shield 01 Green,这是Shield 01 Green,Shield 01 Green,Shield 01 Green,3,Left,15,0,25,0.5,1,0,0,0,1,1,2,1
