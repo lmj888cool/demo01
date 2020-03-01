@@ -246,13 +246,13 @@
       <HintPath>F:/Unity3D/2018.4.14c1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>F:/Unity3D/demo01/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>F:/GitHub/demo01/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>F:/Unity3D/demo01/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>F:/GitHub/demo01/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>F:/Unity3D/demo01/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>F:/GitHub/demo01/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>F:/Unity3D/2018.4.14c1/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -607,6 +607,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="demo01.Plugins.csproj">
+      <Project>{9CE5197B-095D-1283-4C0A-F05ECC5CE695}</Project>
+      <Name>demo01.Plugins</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.DocZh.Editor.csproj">
       <Project>{4723738F-7E53-5823-63D2-CDB863FC0D45}</Project>
       <Name>Unity.DocZh.Editor</Name>
@@ -663,17 +667,29 @@
     <Compile Include="Assets\Scripts\AI\AIBase.cs" />
     <Compile Include="Assets\Scripts\AI\AIBomb.cs" />
     <Compile Include="Assets\Scripts\AI\AIWeapon.cs" />
+    <Compile Include="Assets\Scripts\ChangeEquipPanel.cs" />
     <Compile Include="Assets\Scripts\DataManager.cs" />
     <Compile Include="Assets\Scripts\Detonate.cs" />
     <Compile Include="Assets\Scripts\Enity.cs" />
     <Compile Include="Assets\Scripts\EnityManager.cs" />
     <Compile Include="Assets\Scripts\FightScene.cs" />
+    <Compile Include="Assets\Scripts\GameData.cs" />
+    <Compile Include="Assets\Scripts\Hero.cs" />
+    <Compile Include="Assets\Scripts\HeroIcon.cs" />
+    <Compile Include="Assets\Scripts\HeroManager.cs" />
     <Compile Include="Assets\Scripts\HeroScene.cs" />
+    <Compile Include="Assets\Scripts\HP.cs" />
+    <Compile Include="Assets\Scripts\HPManager.cs" />
     <Compile Include="Assets\Scripts\HyperbitBeamScript.cs" />
     <Compile Include="Assets\Scripts\HyperbitLightFade.cs" />
     <Compile Include="Assets\Scripts\HyperbitRotation.cs" />
-    <Compile Include="Assets\Scripts\menuBtns.cs" />
-    <Compile Include="Assets\Scripts\rolateObject.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\ItemIcon.cs" />
+    <Compile Include="Assets\Scripts\MenuBtns.cs" />
+    <Compile Include="Assets\Scripts\RolateObject.cs" />
+    <Compile Include="Assets\Scripts\ScreenScene.cs" />
+    <Compile Include="Assets\Scripts\ScreenTool.cs" />
+    <Compile Include="Assets\Scripts\ShopScene.cs" />
     <Compile Include="Assets\Scripts\Way.cs" />
     <Compile Include="Assets\StylizedExplosionPack\scripts\destroyMe.cs" />
     <Compile Include="Assets\StylizedExplosionPack\scripts\instantiateEffectCaller.cs" />
@@ -715,6 +731,8 @@
   <ItemGroup>
     <None Include="Assets\Hyperbit Arsenal Readme.txt" />
     <None Include="Assets\Little Heroes Mega Pack\Read me.txt" />
+    <None Include="Assets\Little Heroes Mega Pack\www.meshtint.com.txt" />
+    <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
     <None Include="Assets\Shader\BumpDistort.shader" />
     <None Include="Assets\StylizedExplosionPack\Tips &amp; Documentations.txt" />
     <None Include="Assets\StylizedExplosionPack\shader\alphaBlend_depthBlend_glow.shader" />
@@ -740,6 +758,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\unity3d.txt" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryCommon.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryDark.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryLight.uss" />

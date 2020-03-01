@@ -279,22 +279,22 @@
       <HintPath>F:/Unity3D/2018.4.14c1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>F:/Unity3D/demo01/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>F:/GitHub/demo01/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>F:/Unity3D/demo01/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>F:/GitHub/demo01/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>F:/Unity3D/demo01/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>F:/GitHub/demo01/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>F:/Unity3D/demo01/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>F:/GitHub/demo01/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>F:/Unity3D/demo01/Library/PackageCache/com.unity.messenger@1.0.7-preview/Editor/Third-Party/websocket-sharp.dll</HintPath>
+      <HintPath>F:/GitHub/demo01/Library/PackageCache/com.unity.messenger@1.0.7-preview/Editor/Third-Party/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>F:/Unity3D/demo01/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>F:/GitHub/demo01/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>F:/Unity3D/2018.4.14c1/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -1107,6 +1107,8 @@
   <ItemGroup>
     <None Include="Assets\Hyperbit Arsenal Readme.txt" />
     <None Include="Assets\Little Heroes Mega Pack\Read me.txt" />
+    <None Include="Assets\Little Heroes Mega Pack\www.meshtint.com.txt" />
+    <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
     <None Include="Assets\Shader\BumpDistort.shader" />
     <None Include="Assets\StylizedExplosionPack\Tips &amp; Documentations.txt" />
     <None Include="Assets\StylizedExplosionPack\shader\alphaBlend_depthBlend_glow.shader" />
@@ -1132,6 +1134,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\unity3d.txt" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryCommon.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryDark.uss" />
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryLight.uss" />

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1303506681
+CRC: 2509203063
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: fc118767080306ccf6a4c9feefd2f6fa
+    Hash: 9dfd712ca0fd350ed5a3400120bb8629
   TypeTreeHash:
     serializedVersion: 2
     Hash: ea5a42e0fd8ea905efa7aa926a3b8944
@@ -267,6 +267,7 @@ Assets:
 - Assets/UI/itemicon/Cat Ears White Blue.png
 - Assets/UI/itemicon/Wand 04 Yellow.png
 - Assets/UI/itemicon/Beard 01 Red.png
+- Assets/UI/Snowflake.png
 - Assets/UI/itemicon/Scythe 03 Yellow.png
 - Assets/UI/itemicon/Hat 02 Peasant Green Yellow.png
 - Assets/UI/itemicon/Spear 01 Magenta.png
