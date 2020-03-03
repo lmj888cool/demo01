@@ -15,7 +15,7 @@ public class FightScene : MonoBehaviour
     private int ChapterId;
     private int SubId;
     private ChapterTableData mChapterTableData;
-    private Vector3 heroStartPos = Vector3.zero;
+    private Transform[] heroStartPos = null;
     void Start()
     {
 
@@ -25,13 +25,14 @@ public class FightScene : MonoBehaviour
         SubId = DataManager.GetInstance().GetGameData().SubId;
         InitFightChapter();
         /////////////////必须初始化地图/////////////////////////
-        teamPostionDic = new Dictionary<int, Vector3>
-        {
-            [0] = new Vector3(1.70f, 0,heroStartPos.z - 50f),
-            [1] = new Vector3(1.22f, 0,heroStartPos.z - 50f),
-            [2] = new Vector3(0.19f,0, heroStartPos.z - 50f),
-            [3] = new Vector3(-1.44f,0, heroStartPos.z - 50f)
-        };
+        
+        //teamPostionDic = new Dictionary<int, Vector3>
+        //{
+        //    [0] = new Vector3(1.70f, 0,heroStartPos.z - 50f),
+        //    [1] = new Vector3(1.22f, 0,heroStartPos.z - 50f),
+        //    [2] = new Vector3(0.19f,0, heroStartPos.z - 50f),
+        //    [3] = new Vector3(-1.44f,0, heroStartPos.z - 50f)
+        //};
         InitFightingHero();
         //////////////////////////////////////////////
         if (SceneCamera != null && followHero != null)
@@ -56,14 +57,17 @@ public class FightScene : MonoBehaviour
 
         foreach (KeyValuePair<int,Hero> heropair in heroes)
         {
-            if(teamPostionDic.ContainsKey(heropair.Value.teamPosition))//必须在阵容
+            if(heropair.Value.teamPosition > -1)//必须在阵容
             {
                 HeroTableData heroTableData = DataManager.GetInstance().GetHeroTableDataByHero(heropair.Value);
                 if (heroTableData != null)
                 {
                     GameObject fighthero = EnityManager.GetInstance().CreateFightHero(heropair.Value);
                     fighthero.transform.SetParent(transform, false);
-                    fighthero.transform.position = teamPostionDic[heropair.Value.teamPosition];
+                    if(heroStartPos != null && heroStartPos.Length > heropair.Value.teamPosition)
+                    {
+                        fighthero.transform.position = heroStartPos[heropair.Value.teamPosition].position;
+                    }                      
                     if (heropair.Value.teamPosition == 2)
                     {
                         followHero = fighthero.transform;
@@ -89,7 +93,15 @@ public class FightScene : MonoBehaviour
                 way.transform.position = pos;
                 if (i== 0)
                 {
-                    heroStartPos = pos;
+                    Way wayScript = way.GetComponentInChildren<Way>();
+                    if(wayScript != null)
+                    {
+                        wayScript.Init();
+                        heroStartPos = wayScript.heroPosArr;
+                        string split = "_";
+                        wayScript.InitMonster(mChapterTableData.monsters.Split(split.ToCharArray()));
+                    }
+                    
                 }
             }
         }

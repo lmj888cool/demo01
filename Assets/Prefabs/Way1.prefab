@@ -89,7 +89,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2296435283519643065}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.5, y: 0, z: -50}
+  m_LocalPosition: {x: -2.79, y: 0, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 943324193056304268}
@@ -119,7 +119,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2327770912194671859}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 0, z: -50}
+  m_LocalPosition: {x: 4.21, y: 0, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 943324193056304268}
@@ -192,6 +192,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WayGameObject: {fileID: 6995949898863711996}
+  heroPosArr:
+  - {fileID: 4939683794845816506}
+  - {fileID: 2733071633475923941}
+  - {fileID: 4353743347704890934}
+  - {fileID: 3743196096297926507}
+  monsterPosArr:
+  - {fileID: 6507944329020412610}
 --- !u!1 &3870855436812169167
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3870855436812169167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0, z: -50}
+  m_LocalPosition: {x: 1.21, y: 0, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 943324193056304268}
@@ -246,7 +253,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6253862358118341144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5, y: 0, z: -50}
+  m_LocalPosition: {x: -0.78999996, y: 0, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 943324193056304268}
