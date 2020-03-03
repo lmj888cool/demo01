@@ -12,16 +12,28 @@ public class FightScene : MonoBehaviour
     private Vector3 followHeroPos;
     private Dictionary<int, Vector3> teamPostionDic;
     private List<GameObject> FightHeros = new List<GameObject>();
+    private int ChapterId;
+    private int SubId;
+    private ChapterTableData mChapterTableData;
+    private Vector3 heroStartPos = Vector3.zero;
     void Start()
     {
+
+        
+        //先初始化地图
+        ChapterId = DataManager.GetInstance().GetGameData().ChapterId;
+        SubId = DataManager.GetInstance().GetGameData().SubId;
+        InitFightChapter();
+        /////////////////必须初始化地图/////////////////////////
         teamPostionDic = new Dictionary<int, Vector3>
         {
-            [0] = new Vector3(1.70f, 0, -50),
-            [1] = new Vector3(1.22f, 0, -50),
-            [2] = new Vector3(0.19f, 0, -50),
-            [3] = new Vector3(-1.44f, 0, -50)
+            [0] = new Vector3(1.70f, 0,heroStartPos.z - 50f),
+            [1] = new Vector3(1.22f, 0,heroStartPos.z - 50f),
+            [2] = new Vector3(0.19f,0, heroStartPos.z - 50f),
+            [3] = new Vector3(-1.44f,0, heroStartPos.z - 50f)
         };
         InitFightingHero();
+        //////////////////////////////////////////////
         if (SceneCamera != null && followHero != null)
         {
             followHeroPos = followHero.position;
@@ -61,6 +73,27 @@ public class FightScene : MonoBehaviour
             }
            
         }
+    }
+    public void InitFightChapter()
+    {
+        mChapterTableData = DataManager.GetInstance().GetChapterTableDataByChapterIdAndSubId(ChapterId, SubId);
+        string wayname = "Way" + mChapterTableData.chapterId.ToString();
+        for (int i = 0; i < 3; i++)
+        {
+            GameObject way = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", wayname);
+            if (way != null)
+            {
+                way.transform.SetParent(transform, false);
+                Vector3 pos = Vector3.zero;
+                pos.z = 120.0f * mChapterTableData.chapterId * (mChapterTableData.subId - 1) + 120.0f * i;
+                way.transform.position = pos;
+                if (i== 0)
+                {
+                    heroStartPos = pos;
+                }
+            }
+        }
+        
     }
     private void OnEnable()
     {

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2509203063
+CRC: 1299868575
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9dfd712ca0fd350ed5a3400120bb8629
+    Hash: 067bf4459dabd709d0e72a0264724bb5
   TypeTreeHash:
     serializedVersion: 2
     Hash: ea5a42e0fd8ea905efa7aa926a3b8944
@@ -773,6 +773,7 @@ Assets:
 - Assets/UI/itemicon/Beard 02 Cyan.png
 - Assets/UI/itemicon/Mace 01 Green.png
 - Assets/UI/itemicon/Quiver 01 Red Arrow White.png
+- Assets/UI/TavernRefresh.png
 - Assets/UI/itemicon/Longbow 02 Yellow.png
 - Assets/UI/itemicon/Helmet 06 White.png
 - Assets/UI/itemicon/Hand Aura 01 Purple.png

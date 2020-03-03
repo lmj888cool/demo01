@@ -23,6 +23,9 @@ public class HeroTableData
     public int attack;//初始物理攻击力
     public int defene;//初始防御
     public int magic;//魔法攻击
+    public int magicDef;//魔法抗性
+    public int speed;//出手速度
+    public int technique;//技巧，影响命中率和暴击
     public int isCanMove;//是否可以移动
     public int equipType;//武器类型限制
     public float searchRadius;//攻击敌人的搜索半径
@@ -89,6 +92,22 @@ public class AnimationTableData
     public string Stunned;                 // 被晕住动作
     public string Victory;					// 待机动作
 };
+public class ChapterTableData
+{
+    public int id;                         // 不可重置（归零再加），只能增长
+    public int chapterId;                  // 大关ID
+    public string chapterName;                 // 大关名称
+    public int subId;                  // 小关ID，小关没有名称，直接用<大关名称+subId>来表示
+    public int isBoss;                 // 是否为Boss关
+    public string monsters;                    // 怪物们儿，使用下划线_分割开，如果是Boss，第一个为Boss的id
+    public string monsterAddRate;      // 怪物在初始属性上的加成比例,比如10，则表示加成比率为10%，初始血量了100，则加成后为110，用string为了方便扩展
+    public int newMonster;                 // 需要介绍的新怪物id
+    public string drops;                   // 物品掉落列表，使用下划线_分割开。
+    public int reserve1;                   // 保留字段，方便扩展
+    public int reserve2;                   // 保留字段，方便扩展
+    public string reserve3;                    // 保留字段，方便扩展
+    public string reserve4;					// 保留字段，方便扩展
+};
 
 public class ConfigTableData
 {
@@ -103,7 +122,8 @@ public enum TableDataName
     HeroTableData,
     EnemyTableData,
     AnimationTableData,
-    ItemTableDataOld
+    ItemTableDataOld,
+    ChapterTableData
 }
 public enum ItemQuality
 {
@@ -123,6 +143,7 @@ public class DataManager
     public Dictionary<int, DefaultItemTableData> DefaultItemTableDataDic = new Dictionary<int, DefaultItemTableData>();
     public Dictionary<int, AnimationTableData> AnimationTableDataDic = new Dictionary<int, AnimationTableData>();
     public Dictionary<int, ItemTableData> ItemTableDataOldDic = new Dictionary<int, ItemTableData>();
+    public Dictionary<int, ChapterTableData> ChapterTableDataDic = new Dictionary<int, ChapterTableData>();
     public AssetBundle assetBundlePrefabs;
     public AssetBundle assetBundleStatic;
     public AssetBundle assetBundleUI;
@@ -143,6 +164,7 @@ public class DataManager
         InitHeroTableData();
         InitEnemyTableData();
         InitAnimationTableData();
+        InitChapterTableData();
 
 
 
@@ -417,12 +439,15 @@ public class DataManager
                 attack = int.Parse(arr[6]),
                 defene = int.Parse(arr[7]),
                 magic = int.Parse(arr[8]),
-                isCanMove = int.Parse(arr[9]),
-                equipType = int.Parse(arr[10]),
-                searchRadius = float.Parse(arr[11]),
-                attackSpeed = float.Parse(arr[12]),
-                moveSpeed = float.Parse(arr[13]),
-                skillid = int.Parse(arr[14])
+                magicDef = int.Parse(arr[9]),
+                speed = int.Parse(arr[10]),
+                technique = int.Parse(arr[11]),
+                isCanMove = int.Parse(arr[12]),
+                equipType = int.Parse(arr[13]),
+                searchRadius = float.Parse(arr[14]),
+                attackSpeed = float.Parse(arr[15]),
+                moveSpeed = float.Parse(arr[16]),
+                skillid = int.Parse(arr[17])
             };
             HeroTableDataDic[id] = tableData;
         }
@@ -497,6 +522,45 @@ public class DataManager
             };
             AnimationTableDataDic[id] = tableData;
         }
+    }
+    public void InitChapterTableData()
+    {
+        string[][] arrAll = GetData(TableDataName.ChapterTableData.ToString());
+        for (int i = 0; i < arrAll.Length; i++)
+        {
+            string[] arr = arrAll[i];
+            int id = int.Parse(arr[0]);
+            ChapterTableData tableData = new ChapterTableData
+            {
+                id = id,
+                chapterId = int.Parse(arr[1]),
+                chapterName = arr[2],
+                subId = int.Parse(arr[3]),
+                isBoss = int.Parse(arr[4]),
+                monsters = arr[5],
+                monsterAddRate = arr[6],
+                newMonster = int.Parse(arr[7]),
+                drops = arr[8],
+                reserve1 = int.Parse(arr[9]),
+                reserve2 = int.Parse(arr[10]),
+                reserve3 = arr[11],
+                reserve4 = arr[12]
+            };
+            ChapterTableDataDic[id] = tableData;
+        }
+    }
+    public ChapterTableData GetChapterTableDataByChapterIdAndSubId(int chapterid,int subid)
+    {
+        ChapterTableData chapterTableData = null;
+        foreach (KeyValuePair<int, ChapterTableData> item in ChapterTableDataDic)
+        {
+            if (item.Value.chapterId == chapterid && item.Value.subId == subid)
+            {
+                chapterTableData = item.Value;
+                break;
+            }
+        }
+        return chapterTableData;
     }
     public HeroTableData GetHeroTableDataByHeroId(int heroid)
     {

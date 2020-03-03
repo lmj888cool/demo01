@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3914597396
+CRC: 2937042223
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5cd65cdbce8e3030a056ddedeea3b685
+    Hash: 5deb2a42798315008d873665381e545d
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5ad585dd02dfb5016c0dad519eab8f49
@@ -15,6 +15,7 @@ Assets:
 - Assets/StaticData/ItemTableData.csv
 - Assets/StaticData/EnemyTableData.csv
 - Assets/StaticData/ItemTableDataOld.csv
+- Assets/StaticData/ChapterTableData.csv
 - Assets/StaticData/DefaultItemTableData.csv
 - Assets/StaticData/AnimationTableData.csv
 - Assets/StaticData/HeroTableData.csv
