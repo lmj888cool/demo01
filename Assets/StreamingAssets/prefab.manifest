@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2031622286
+CRC: 1924838576
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 999c51acc0a813677dea0469125aeb33
+    Hash: be61c82fb5a517ee4b65cddc3d1b3985
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 464b8e0ebd206851d21a806519f86a03
+    Hash: 2af3c94f56f4f7a472bb8ba67f8825d1
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -268,6 +268,7 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
   03 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Clubs (R Arm)/Club 02 Purple.prefab
+- Assets/Prefabs/Way2.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 09 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   01 No Arrow Blue.prefab
@@ -450,6 +451,7 @@ Assets:
 - Assets/Cartoon Trees Low Poly/models/co_Tree01.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 10 Green.prefab
 - Assets/StylizedExplosionPack/explosions/funkyMix_jokerFire/explosion_stylized_medium_jokerFire.prefab
+- Assets/Prefabs/Way3.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 09 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
   01 Blue.prefab

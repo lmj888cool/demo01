@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Bomb
   - Prefab_Hero
+  - Way
   layers:
   - Default
   - TransparentFX

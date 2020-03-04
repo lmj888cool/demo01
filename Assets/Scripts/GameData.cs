@@ -8,8 +8,9 @@ public class GameData
     public Dictionary<int,Item> Items = new Dictionary<int, Item>();
     public int Gold = 0;//金币数量
     public int Silver = 0;//银币数量
-    public int ChapterId = 1;//当前挂机的大关
-    public int SubId=1;//当前挂机的小关
+    public int ChapterId = 1;//当前挂机的关卡ID
+    public int MapId = 1;//当前地图ID
+    public int SubId=1;//当前挂机地图的小关
     public bool IsPveLose = false;//挑战Boss是否失败
     public Hero GetHeroById(int heroid)
     {

@@ -95,9 +95,9 @@ public class AnimationTableData
 public class ChapterTableData
 {
     public int id;                         // 不可重置（归零再加），只能增长
-    public int chapterId;                  // 大关ID
-    public string chapterName;                 // 大关名称
-    public int subId;                  // 小关ID，小关没有名称，直接用<大关名称+subId>来表示
+    public int mapId;                  // 地图ID
+    public string mapName;                 // 地图名称
+    public int subId;                  // 小关ID，小关没有名称，直接用<地图名称+subId>来表示
     public int isBoss;                 // 是否为Boss关
     public string monsters;                    // 怪物们儿，使用下划线_分割开，如果是Boss，第一个为Boss的id
     public string monsterAddRate;      // 怪物在初始属性上的加成比例,比如10，则表示加成比率为10%，初始血量了100，则加成后为110，用string为了方便扩展
@@ -533,8 +533,8 @@ public class DataManager
             ChapterTableData tableData = new ChapterTableData
             {
                 id = id,
-                chapterId = int.Parse(arr[1]),
-                chapterName = arr[2],
+                mapId = int.Parse(arr[1]),
+                mapName = arr[2],
                 subId = int.Parse(arr[3]),
                 isBoss = int.Parse(arr[4]),
                 monsters = arr[5],
@@ -549,18 +549,13 @@ public class DataManager
             ChapterTableDataDic[id] = tableData;
         }
     }
-    public ChapterTableData GetChapterTableDataByChapterIdAndSubId(int chapterid,int subid)
+    public ChapterTableData GetChapterTableDataById(int chapterid)
     {
-        ChapterTableData chapterTableData = null;
-        foreach (KeyValuePair<int, ChapterTableData> item in ChapterTableDataDic)
+        if (ChapterTableDataDic.ContainsKey(chapterid))
         {
-            if (item.Value.chapterId == chapterid && item.Value.subId == subid)
-            {
-                chapterTableData = item.Value;
-                break;
-            }
+            return ChapterTableDataDic[chapterid];
         }
-        return chapterTableData;
+        return null;
     }
     public HeroTableData GetHeroTableDataByHeroId(int heroid)
     {
