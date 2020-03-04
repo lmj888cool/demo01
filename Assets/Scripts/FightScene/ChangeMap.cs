@@ -8,7 +8,8 @@ public class ChangeMap : MonoBehaviour
     public Image changeMapBG;
     public Text mapNameTxt;
     public Text mapIdTxt;
-    public float speed = 0.01f;
+    public float speed = 0.005f;
+    public float alpha = 1.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,29 +19,37 @@ public class ChangeMap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ChangeTextAlpha(mapNameTxt);
-        ChangeTextAlpha(mapIdTxt);
-        ChangeImageAlpha(changeMapBG);
-    }
-    public void ChangeTextAlpha(Text text)
-    {
-        Color color = text.color;
-        color.a -= speed;
-        if (color.a < 0.0f)
+        alpha -= 0.01f;
+        if (alpha < 0.0f)
         {
-            color.a = 0.0f;
+            alpha = 1.0f;
+            gameObject.SetActive(false);
         }
-        text.color = color;
-    }
-    public void ChangeImageAlpha(Image image)
-    {
-        Color color = image.color;
-        color.a -= speed;
-        if (color.a < 0.0f)
+        else
         {
-            color.a = 0.0f;
+            ChangeAlpha();
         }
-        image.color = color;
+        
+
+    }
+    public void ChangeAlpha()
+    {
+        Text[] texts = gameObject.GetComponentsInChildren<Text>();
+        for (int i = 0; i < texts.Length; i++)
+        {
+            Color color = texts[i].color;
+            color.a = alpha;
+            texts[i].color = color;
+        }
+
+        Image[] images = gameObject.GetComponentsInChildren<Image>();
+        for (int j = 0; j < images.Length; j++)
+        {
+            Color color = images[j].color;
+            color.a = alpha;
+            images[j].color = color;
+        }
+
     }
     public void Init(string name,string id, string bg="")
     {

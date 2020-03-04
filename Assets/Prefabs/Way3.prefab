@@ -165,6 +165,74 @@ MonoBehaviour:
   monsterPosArr:
   - {fileID: 6507944329020412610}
   cameraPos: {fileID: 6878583105180828039}
+  wayLenght: 120
+--- !u!1 &3291896902248207806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2549845086070835333}
+  - component: {fileID: 5740568098978852715}
+  - component: {fileID: 6463064036007318252}
+  - component: {fileID: 7035261724566493099}
+  m_Layer: 0
+  m_Name: destory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2549845086070835333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3291896902248207806}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 118.6}
+  m_LocalScale: {x: 78.765, y: 1, z: 0.55031}
+  m_Children: []
+  m_Father: {fileID: 6995949898863711995}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5740568098978852715
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3291896902248207806}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &6463064036007318252
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3291896902248207806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7035261724566493099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3291896902248207806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d997d1657e758e458b401906c6222ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  me: {fileID: 6995949898863711996}
 --- !u!1 &3870855436812169167
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6995949898863711995}
   m_Layer: 0
-  m_Name: Way1
+  m_Name: Way3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -283,6 +351,7 @@ Transform:
   - {fileID: 3743196096297926507}
   - {fileID: 6507944329020412610}
   - {fileID: 6878583105180828039}
+  - {fileID: 2549845086070835333}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -374,7 +443,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2e7041fc90e66dd46b59036a28acb6dd, type: 2}
+  - {fileID: 2100000, guid: 357bb4ca510257540acedc19fdb3e0e6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

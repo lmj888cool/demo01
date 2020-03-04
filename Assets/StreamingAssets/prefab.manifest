@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1924838576
+CRC: 2249022306
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: be61c82fb5a517ee4b65cddc3d1b3985
+    Hash: 9f6698885d31b19ed270bca787c867d6
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 2af3c94f56f4f7a472bb8ba67f8825d1
+    Hash: b192d176caa3c425407eceddba2521ad
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -55,6 +55,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: b8a4d634fc6e7ac46af48982f0183d2c, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 388fcb34147bd8a42b38dfa70d3ed769, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5d997d1657e758e458b401906c6222ca, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 977894fad5ae89f42a8e35b58bcc8271, type: 3}
 - Class: 114
@@ -1726,6 +1728,7 @@ Assets:
   02 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 03
   Black.prefab
+- Assets/Prefabs/Way4.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Guitars (L Arm)/Guitar
   01 Blue.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Bush02.fbx
@@ -1773,6 +1776,7 @@ Assets:
   01 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
   02 Red.prefab
+- Assets/Prefabs/Way5.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   03 Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow

@@ -472,13 +472,13 @@ public class AIBase : MonoBehaviour
     public void KillSelf()//自杀引起爆炸！
     {
         //if (dieParticle)
-        {
-            dieParticle = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("enemy", "explosion_stylized_large_jokerFire");
-            if(dieParticle != null)
-            {
-                dieParticle.transform.position = transform.position;
-            }
-        }
+        //{
+        //    dieParticle = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("enemy", "explosion_stylized_large_jokerFire");
+        //    if(dieParticle != null)
+        //    {
+        //        dieParticle.transform.position = transform.position;
+        //    }
+        //}
         if (animator != null && animator.parameterCount > (int)AnimatorParameters.Die)
         {
             this.enity.OnPlayAnimation(AnimatorAction.Die);
