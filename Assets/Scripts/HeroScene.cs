@@ -25,6 +25,8 @@ public class HeroScene : MonoBehaviour
     private List<ItemIcon> Equips = new List<ItemIcon>();//装备图标
     public Dropdown dropDown;
     private AnimatorAction currentAnimatorAction;
+    public GameObject panels;
+    private RolateObject rolateObject;
     void Start()
     {
         //LCustomizedCharacterSamples = DataManager.GetInstance().GetGameObjectsByPath("Prefabs/Customized Character Samples", ".prefab");
@@ -32,6 +34,7 @@ public class HeroScene : MonoBehaviour
         {
             LCustomizedCharacterSamples = GameObject.FindGameObjectsWithTag("Prefab_Hero");
         }
+        rolateObject = GetComponentInChildren<RolateObject>();
         // SetCuurentHero();
         currentAnimatorAction = AnimatorAction.Idle;
         ShowPanel(PanelType.HeroPanel);
@@ -41,9 +44,88 @@ public class HeroScene : MonoBehaviour
     }
 
     // Update is called once per frame
+    Vector3 beginTouchPos;//触点
+    Vector3 beginTouchPosMoblie;//触点
+    bool startRolateObject = false;
+    public Transform topLine;
+    public Transform bottomLine;
     void Update()
     {
-        
+        /////////////////////////触摸屏////////////////////////
+#if UNITY_ANDROID || UNITY_IOS
+        if (Input.touchCount == 1) //[color=Red]如果点击手指touch了  并且手指touch的状态为移动的[/color]
+        {
+            Vector3 touchposition = Input.GetTouch(0).position;  //[color=Red]获取手指touch最后一帧移动的xy轴距离[/color]
+            if (Input.GetTouch(0).phase == TouchPhase.Moved)
+            {              
+                OnFire1Up(beginTouchPosMoblie - touchposition);
+            }
+            else
+            {
+                rolateObject.isInit = touchposition.y < topLine.position.y;
+                if (rolateObject.isInit && panels.gameObject.activeInHierarchy)
+                {
+                    rolateObject.isInit = touchposition.y > bottomLine.position.y;
+                }
+            }
+            beginTouchPosMoblie = Input.GetTouch(0).position;
+
+        }
+        else
+        {
+            beginTouchPosMoblie = Vector3.zero;
+
+        }
+#endif
+        ////////////////////////////PC/////////////////////
+        if (Input.GetButtonUp("Fire1"))
+        {
+            OnFire1Up(Input.mousePosition - beginTouchPos);
+            
+        }
+
+        if (Input.GetButtonDown("Fire1"))//按下鼠标左键
+        {
+            beginTouchPos = Input.mousePosition;
+            rolateObject.isInit  = Input.mousePosition.y < topLine.position.y;
+            if (rolateObject.isInit && panels.gameObject.activeInHierarchy)
+            {
+                rolateObject.isInit  = Input.mousePosition.y > bottomLine.position.y;
+            }
+        }
+    }
+    public void OnFire1Up(Vector3 movepos)
+    {
+        if (Math.Abs(movepos.x) < 1.0f && Math.Abs(movepos.y) < 1.0f && Math.Abs(movepos.z) < 1.0f)
+        {
+            //屏幕点击
+            if (Input.mousePosition.y < topLine.position.y)
+            {
+
+                if (panels.gameObject.activeInHierarchy)
+                {
+                    if (Input.mousePosition.y > bottomLine.position.y)
+                    {
+
+                        panels.gameObject.SetActive(!panels.gameObject.activeInHierarchy);
+                    }
+                }
+                else
+                {
+                    panels.gameObject.SetActive(!panels.gameObject.activeInHierarchy);
+                }
+                if (panels.gameObject.activeInHierarchy)
+                {
+                    iTween.MoveTo(Camera.main.gameObject, new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 3.0f), 0.5f);
+                }
+                else
+                {
+                    iTween.MoveTo(Camera.main.gameObject, new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 3.5f), 0.5f);
+                }
+
+            }
+
+        }
     }
     private void InitHeroHead()
     {
