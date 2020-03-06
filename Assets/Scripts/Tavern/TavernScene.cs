@@ -78,4 +78,17 @@ public class TavernScene : MonoBehaviour
             
         }
     }
+    public void OnRandomHeroes()
+    {
+
+    }
+    public Enity OnRandomOneHero()
+    {
+        Enity enity = null;
+        HeroJob heroJob = (HeroJob)Random.Range((int)HeroJob.Archer, (int)HeroJob.NULL);
+        int sex = Random.Range(0,100) > 50 ? 1:0;
+        int part = Random.Range(0, 100) > 50 ? 1 : 0;
+        return enity;
+    }
+
 }

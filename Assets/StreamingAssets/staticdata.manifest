@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1819978787
+CRC: 3483919086
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5722c7e7cf5b139e00c264a297c5fb39
+    Hash: ec0d766fee92bf6ecec4bb6ea6adc3c0
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5ad585dd02dfb5016c0dad519eab8f49
@@ -19,4 +19,5 @@ Assets:
 - Assets/StaticData/DefaultItemTableData.csv
 - Assets/StaticData/AnimationTableData.csv
 - Assets/StaticData/HeroTableData.csv
+- Assets/StaticData/DIYTableData.csv
 Dependencies: []

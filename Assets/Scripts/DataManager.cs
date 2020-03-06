@@ -92,6 +92,15 @@ public class AnimationTableData
     public string Stunned;                 // 被晕住动作
     public string Victory;					// 待机动作
 };
+public class DIYTableData
+{
+    public int id;                         // 不可重置（归零再加），只能增长
+    public string name;                    // 名字
+    public string prefab;                  // 预制体
+    public int sex;                    // 性别 0为女性 1位男性
+    public int job;                    // 职业 0射手 1战士 2法师 3牧师 4刺客 -1不是职业预制体，可能是头发或者胡须
+    public int part;					// 如果job为-1，需要这个字段判断是哪个部位 0为头发 1为胡须
+};
 public class ChapterTableData
 {
     public int id;                         // 不可重置（归零再加），只能增长
@@ -123,7 +132,8 @@ public enum TableDataName
     EnemyTableData,
     AnimationTableData,
     ItemTableDataOld,
-    ChapterTableData
+    ChapterTableData,
+    DIYTableData
 }
 public enum ItemQuality
 {
@@ -135,6 +145,21 @@ public enum ItemQuality
     Red
 
 }
+public enum HeroJob
+{
+    Archer,//射手
+    Warrior,//战士
+    Mage,//法师
+    Priest,//牧师
+    Assassin,//刺客
+    NULL
+}
+public enum HeroPart
+{
+    Hair,//头发
+    Beard,//胡子
+    NULL
+}
 public class DataManager
 {
     public Dictionary<int, ItemTableData> ItemTableDataDic = new Dictionary<int, ItemTableData>();
@@ -144,6 +169,7 @@ public class DataManager
     public Dictionary<int, AnimationTableData> AnimationTableDataDic = new Dictionary<int, AnimationTableData>();
     public Dictionary<int, ItemTableData> ItemTableDataOldDic = new Dictionary<int, ItemTableData>();
     public Dictionary<int, ChapterTableData> ChapterTableDataDic = new Dictionary<int, ChapterTableData>();
+    public Dictionary<int, DIYTableData> DIYTableDataDic = new Dictionary<int, DIYTableData>();
     public AssetBundle assetBundlePrefabs;
     public AssetBundle assetBundleStatic;
     public AssetBundle assetBundleUI;
@@ -156,6 +182,7 @@ public class DataManager
     public DataManager()
     {
         //CreateItemTableData();
+        //CreateDIYTableData("Assets/Little Heroes Mega Pack/Prefabs/01 Choose Costume", ".prefab");
         assetBundlePrefabs = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/prefab");
         assetBundleStatic = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/staticdata");
         assetBundleUI = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/ui");
@@ -165,7 +192,7 @@ public class DataManager
         InitEnemyTableData();
         InitAnimationTableData();
         InitChapterTableData();
-
+        InitDIYTableData();
 
 
         //初始化英雄，可以读取本地数据，或者服务器发来的数据
@@ -252,6 +279,7 @@ public class DataManager
     public void CreateItemTableData()
     {
         Dictionary<DummyProp, List<string>> names = GetFileNameByPath("Assets/Little Heroes Mega Pack/Prefabs", ".prefab");
+        
         //创建一个文件流
         string dir = Application.persistentDataPath;
         if (Directory.Exists(dir) == false)
@@ -296,6 +324,96 @@ public class DataManager
 
         };
 
+    }
+    public void CreateDIYTableData(string path, string format)
+    {
+        Dictionary<HeroJob, List<string>> names = GetFileNameByPathForDIY(path, format);
+        Dictionary<HeroPart, List<string>> names2 = GetFileNameByPathForDIY2("Assets/Little Heroes Mega Pack/Prefabs", ".prefab");
+        //创建一个文件流
+        string dir = Application.persistentDataPath;
+        if (Directory.Exists(dir) == false)
+        {
+            Directory.CreateDirectory(dir);
+        }
+        //FileStream fileStream = File.Create(dir + "/ItemTableData.csv");
+
+        using (FileStream fsWrite = new FileStream(dir + "/DIYTableData.csv", FileMode.Append))
+        {
+            string msg1 = "int,string,string,int,int,int\n";
+            byte[] myByte1 = System.Text.Encoding.UTF8.GetBytes(msg1);
+            fsWrite.Write(myByte1, 0, myByte1.Length);
+
+            string msg2 = "不可重置（归零再加），只能增长,名字,预制体,性别 0为女性 1位男性,职业 0射手 1战士 2法师 3牧师 4刺客 -1不是职业预制体，可能是头发或者胡须,如果job为-1，需要这个字段判断是哪个部位 0为头发 1为胡须\n";
+            byte[] myByte2 = System.Text.Encoding.UTF8.GetBytes(msg2);
+            fsWrite.Write(myByte2, 0, myByte2.Length);
+
+            string msg3 = "id,name,prefab,sex,job,part\n";
+            byte[] myByte3 = System.Text.Encoding.UTF8.GetBytes(msg3);
+            fsWrite.Write(myByte3, 0, myByte3.Length);
+            int id = 1;
+            foreach (KeyValuePair<HeroJob, List<string>> sub in names)
+            {
+                for (int i = 0; i < sub.Value.Count; i++)
+                {
+                    int group = (int)sub.Key;
+                    string msg = id.ToString() + "," + sub.Value[i]  + "," + sub.Value[i] + "," + GetSex(sub.Value[i]).ToString() +"," + group.ToString() +
+                        "," + GetPart(sub.Value[i]).ToString() + "\n";
+                    //if (sub.Value.Count-1 != i)
+                    //{
+                    //    msg += "\n";
+                    //}
+                    byte[] myByte = System.Text.Encoding.UTF8.GetBytes(msg);
+                    fsWrite.Write(myByte, 0, myByte.Length);
+                    id++;
+                }
+            }
+            foreach (KeyValuePair<HeroPart, List<string>> sub in names2)
+            {
+                for (int k = 0; k < sub.Value.Count; k++)
+                {
+                    int group = (int)sub.Key;
+                    string msg = id.ToString() + "," + sub.Value[k] + "," + sub.Value[k] + "," + GetSex(sub.Value[k]).ToString() + ",-1"+
+                        "," + GetPart(sub.Value[k]).ToString() + "\n";
+                    //if (sub.Value.Count-1 != i)
+                    //{
+                    //    msg += "\n";
+                    //}
+                    byte[] myByte = System.Text.Encoding.UTF8.GetBytes(msg);
+                    fsWrite.Write(myByte, 0, myByte.Length);
+                    id++;
+                }
+            }
+
+
+        };
+    }
+    public int GetSex(string name)
+    {
+        if (name.Contains("Male"))
+        {
+            return 0;
+        }
+        if (name.Contains("Female"))
+        {
+            return 1;
+        }
+        if (name.Contains("Beard"))
+        {
+            return 1;
+        }
+        return -1;
+    }
+    public int GetPart(string name)
+    {
+        if (name.Contains("Beard"))
+        {
+            return 1;
+        }
+        if (name.Contains("Hair"))
+        {
+            return 0;
+        }
+        return -1;
     }
     public int GetQuality(String itemname)
     {
@@ -523,6 +641,25 @@ public class DataManager
             AnimationTableDataDic[id] = tableData;
         }
     }
+    public void InitDIYTableData()
+    {
+        string[][] arrAll = GetData(TableDataName.DIYTableData.ToString());
+        for (int i = 0; i < arrAll.Length; i++)
+        {
+            string[] arr = arrAll[i];
+            int id = int.Parse(arr[0]);
+            DIYTableData tableData = new DIYTableData
+            {
+                id = id,
+                name = arr[1],
+                prefab = arr[2],
+                sex = int.Parse(arr[3]),
+                job = int.Parse(arr[4]),
+                part = int.Parse(arr[5]),
+            };
+            DIYTableDataDic[id] = tableData;
+        }
+    }
     public void InitChapterTableData()
     {
         string[][] arrAll = GetData(TableDataName.ChapterTableData.ToString());
@@ -730,6 +867,135 @@ public class DataManager
             }
         }
         
+        return names;
+
+    }
+    public Dictionary<HeroJob, List<string>> GetFileNameByPathForDIY(string path, string format)
+    {
+
+        Dictionary<HeroJob, List<string>> names = new Dictionary<HeroJob, List<string>>();
+        //1、获得当前运行程序的路径
+        string rootPath = Directory.GetCurrentDirectory();
+        //C#遍历指定文件夹中的所有文件 
+        DirectoryInfo TheFolder = new DirectoryInfo(path);
+        if (!TheFolder.Exists)
+            return null;
+
+
+        DirectoryInfo[] directoryInfos = TheFolder.GetDirectories();
+        for (int i = 0; i < directoryInfos.Length; i++)
+        {
+            //FileInfo[] fileInfosAll = directoryInfos[i].GetFiles(directoryInfos[i].FullName, SearchOption.AllDirectories);
+            DirectoryInfo[] directoryInfos2 = directoryInfos[i].GetDirectories();
+            for (int k = 0; k < directoryInfos2.Length; k++)
+            {
+                FileInfo[] fileInfos = directoryInfos2[k].GetFiles();
+                //遍历文件
+                foreach (FileInfo NextFile in fileInfos)
+                {
+                    //if (NextFile.Name == "0-0-11.grid")
+                    //    continue;
+                    // 获取文件完整路径
+                    //string heatmappath = NextFile.FullName;
+                    HeroJob keyname = HeroJob.NULL;
+                    if (NextFile.Directory.Name.Contains("Archer"))
+                    {
+                        keyname = HeroJob.Archer;
+                    }
+                    if (NextFile.Directory.Name.Contains("Knight"))
+                    {
+                        keyname = HeroJob.Warrior;
+                    }
+                    if (NextFile.Directory.Name.Contains("Long Dress") || NextFile.Directory.Name.Contains("Long Robe"))
+                    {
+                        keyname = HeroJob.Priest;
+                    }
+                    if (NextFile.Directory.Name.Contains("Sorceress") || NextFile.Directory.Name.Contains("Wizard"))
+                    {
+                        keyname = HeroJob.Mage;
+                    }
+                    if (NextFile.Directory.Name.Contains("Special"))
+                    {
+                        keyname = HeroJob.Assassin;
+                    }
+                    if (keyname != HeroJob.NULL)
+                    {
+                        if (!names.ContainsKey(keyname))
+                        {
+                            names[keyname] = new List<string>();
+                        }
+                        if (format == NextFile.Extension)
+                        {
+                            string name = NextFile.Name.Replace(format, "");
+                            names[keyname].Add(name);
+                        }
+                    }
+
+                }
+            }
+        }
+
+        return names;
+
+    }
+    public Dictionary<HeroPart, List<string>> GetFileNameByPathForDIY2(string path, string format)
+    {
+
+        Dictionary<HeroPart, List<string>> names = new Dictionary<HeroPart, List<string>>();
+        //1、获得当前运行程序的路径
+        string rootPath = Directory.GetCurrentDirectory();
+        //C#遍历指定文件夹中的所有文件 
+        DirectoryInfo TheFolder = new DirectoryInfo(path);
+        if (!TheFolder.Exists)
+            return null;
+
+
+        DirectoryInfo[] directoryInfos = TheFolder.GetDirectories();
+        for (int i = 0; i < directoryInfos.Length; i++)
+        {
+            //FileInfo[] fileInfosAll = directoryInfos[i].GetFiles(directoryInfos[i].FullName, SearchOption.AllDirectories);
+            DirectoryInfo[] directoryInfos2 = directoryInfos[i].GetDirectories();
+            for (int k = 0; k < directoryInfos2.Length; k++)
+            {
+                FileInfo[] fileInfos = directoryInfos2[k].GetFiles();
+                //遍历文件
+                foreach (FileInfo NextFile in fileInfos)
+                {
+                    //if (NextFile.Name == "0-0-11.grid")
+                    //    continue;
+                    // 获取文件完整路径
+                    //string heatmappath = NextFile.FullName;
+                    HeroPart keyname = HeroPart.NULL;
+                    if (NextFile.Directory.Name.Contains("Male"))
+                    {
+                        keyname = HeroPart.Hair;
+                    }
+                    if (NextFile.Directory.Name.Contains("Female"))
+                    {
+                        keyname = HeroPart.Hair;
+                    }
+                    if (NextFile.Directory.Name.Contains("Beards"))
+                    {
+                        keyname = HeroPart.Beard;
+                    }
+                
+                    if (keyname != HeroPart.NULL)
+                    {
+                        if (!names.ContainsKey(keyname))
+                        {
+                            names[keyname] = new List<string>();
+                        }
+                        if (format == NextFile.Extension)
+                        {
+                            string name = NextFile.Name.Replace(format, "");
+                            names[keyname].Add(name);
+                        }
+                    }
+
+                }
+            }
+        }
+
         return names;
 
     }
