@@ -71,7 +71,7 @@ public class FightScene : MonoBehaviour
                     {
                         fighthero.transform.position = heroStartPos[heropair.Value.teamPosition].position;
                     }                      
-                    if (heropair.Value.teamPosition == 2)
+                    //if (heropair.Value.teamPosition == 2)
                     {
                         followHero = fighthero.transform;
                     }

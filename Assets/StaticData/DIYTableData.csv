@@ -1,0 +1,1225 @@
+int,string,string,int,int,int
+不可重置（归零再加），只能增长,名字,预制体,性别 0为女性 1位男性,职业 0射手 1战士 2法师 3牧师 4刺客 -1不是职业预制体，可能是头发或者胡须,如果job为-1，需要这个字段判断是哪个部位 0为头发 1为胡须
+id,name,prefab,sex,job,part
+1,Female Black Archer 01 Black,Female Black Archer 01 Black,1,0,-1
+2,Female Black Archer 01 Blue,Female Black Archer 01 Blue,1,0,-1
+3,Female Black Archer 01 Green,Female Black Archer 01 Green,1,0,-1
+4,Female Black Archer 01 Magenta,Female Black Archer 01 Magenta,1,0,-1
+5,Female Black Archer 01 Purple,Female Black Archer 01 Purple,1,0,-1
+6,Female Black Archer 01 White,Female Black Archer 01 White,1,0,-1
+7,Female Black Archer 02 Black,Female Black Archer 02 Black,1,0,-1
+8,Female Black Archer 02 Blue,Female Black Archer 02 Blue,1,0,-1
+9,Female Black Archer 02 Green,Female Black Archer 02 Green,1,0,-1
+10,Female Black Archer 02 Lime,Female Black Archer 02 Lime,1,0,-1
+11,Female Black Archer 02 Magenta,Female Black Archer 02 Magenta,1,0,-1
+12,Female Black Archer 02 Purple,Female Black Archer 02 Purple,1,0,-1
+13,Female Black Archer 02 White,Female Black Archer 02 White,1,0,-1
+14,Female Black Archer 03 Black,Female Black Archer 03 Black,1,0,-1
+15,Female Black Archer 03 Blue,Female Black Archer 03 Blue,1,0,-1
+16,Female Black Archer 03 Green,Female Black Archer 03 Green,1,0,-1
+17,Female Black Archer 03 Maroon,Female Black Archer 03 Maroon,1,0,-1
+18,Female Black Archer 03 Olive,Female Black Archer 03 Olive,1,0,-1
+19,Female Black Archer 03 Purple,Female Black Archer 03 Purple,1,0,-1
+20,Female Black Archer 03 White,Female Black Archer 03 White,1,0,-1
+21,Female Black Archer 04 Black,Female Black Archer 04 Black,1,0,-1
+22,Female Black Archer 04 Blue,Female Black Archer 04 Blue,1,0,-1
+23,Female Black Archer 04 Green,Female Black Archer 04 Green,1,0,-1
+24,Female Black Archer 04 Magenta,Female Black Archer 04 Magenta,1,0,-1
+25,Female Black Archer 04 Purple,Female Black Archer 04 Purple,1,0,-1
+26,Female Black Archer 04 Red,Female Black Archer 04 Red,1,0,-1
+27,Female Black Archer 04 White,Female Black Archer 04 White,1,0,-1
+28,Female Black Archer 04 Yellow,Female Black Archer 04 Yellow,1,0,-1
+29,Female Black Archer 05 Black,Female Black Archer 05 Black,1,0,-1
+30,Female Black Archer 05 Blue,Female Black Archer 05 Blue,1,0,-1
+31,Female Black Archer 05 Green,Female Black Archer 05 Green,1,0,-1
+32,Female Black Archer 05 Magenta,Female Black Archer 05 Magenta,1,0,-1
+33,Female Black Archer 05 Purple,Female Black Archer 05 Purple,1,0,-1
+34,Female Black Archer 05 Red,Female Black Archer 05 Red,1,0,-1
+35,Female Black Archer 05 White,Female Black Archer 05 White,1,0,-1
+36,Female Black Archer 05 Yellow,Female Black Archer 05 Yellow,1,0,-1
+37,Female Brown Archer 01 Black,Female Brown Archer 01 Black,1,0,-1
+38,Female Brown Archer 01 Blue,Female Brown Archer 01 Blue,1,0,-1
+39,Female Brown Archer 01 Green,Female Brown Archer 01 Green,1,0,-1
+40,Female Brown Archer 01 Magenta,Female Brown Archer 01 Magenta,1,0,-1
+41,Female Brown Archer 01 Purple,Female Brown Archer 01 Purple,1,0,-1
+42,Female Brown Archer 01 White,Female Brown Archer 01 White,1,0,-1
+43,Female Brown Archer 02 Black,Female Brown Archer 02 Black,1,0,-1
+44,Female Brown Archer 02 Blue,Female Brown Archer 02 Blue,1,0,-1
+45,Female Brown Archer 02 Green,Female Brown Archer 02 Green,1,0,-1
+46,Female Brown Archer 02 Lime,Female Brown Archer 02 Lime,1,0,-1
+47,Female Brown Archer 02 Magenta,Female Brown Archer 02 Magenta,1,0,-1
+48,Female Brown Archer 02 Purple,Female Brown Archer 02 Purple,1,0,-1
+49,Female Brown Archer 02 White,Female Brown Archer 02 White,1,0,-1
+50,Female Brown Archer 03 Black,Female Brown Archer 03 Black,1,0,-1
+51,Female Brown Archer 03 Blue,Female Brown Archer 03 Blue,1,0,-1
+52,Female Brown Archer 03 Green,Female Brown Archer 03 Green,1,0,-1
+53,Female Brown Archer 03 Magenta,Female Brown Archer 03 Magenta,1,0,-1
+54,Female Brown Archer 03 Olive,Female Brown Archer 03 Olive,1,0,-1
+55,Female Brown Archer 03 Purple,Female Brown Archer 03 Purple,1,0,-1
+56,Female Brown Archer 03 White,Female Brown Archer 03 White,1,0,-1
+57,Female Brown Archer 04 Black,Female Brown Archer 04 Black,1,0,-1
+58,Female Brown Archer 04 Blue,Female Brown Archer 04 Blue,1,0,-1
+59,Female Brown Archer 04 Green,Female Brown Archer 04 Green,1,0,-1
+60,Female Brown Archer 04 Magenta,Female Brown Archer 04 Magenta,1,0,-1
+61,Female Brown Archer 04 Purple,Female Brown Archer 04 Purple,1,0,-1
+62,Female Brown Archer 04 Red,Female Brown Archer 04 Red,1,0,-1
+63,Female Brown Archer 04 White,Female Brown Archer 04 White,1,0,-1
+64,Female Brown Archer 04 Yellow,Female Brown Archer 04 Yellow,1,0,-1
+65,Female Brown Archer 05 Black,Female Brown Archer 05 Black,1,0,-1
+66,Female Brown Archer 05 Blue,Female Brown Archer 05 Blue,1,0,-1
+67,Female Brown Archer 05 Green,Female Brown Archer 05 Green,1,0,-1
+68,Female Brown Archer 05 Magenta,Female Brown Archer 05 Magenta,1,0,-1
+69,Female Brown Archer 05 Purple,Female Brown Archer 05 Purple,1,0,-1
+70,Female Brown Archer 05 Red,Female Brown Archer 05 Red,1,0,-1
+71,Female Brown Archer 05 White,Female Brown Archer 05 White,1,0,-1
+72,Female Brown Archer 05 Yellow,Female Brown Archer 05 Yellow,1,0,-1
+73,Female White Archer 01 Black,Female White Archer 01 Black,1,0,-1
+74,Female White Archer 01 Blue,Female White Archer 01 Blue,1,0,-1
+75,Female White Archer 01 Green,Female White Archer 01 Green,1,0,-1
+76,Female White Archer 01 Magenta,Female White Archer 01 Magenta,1,0,-1
+77,Female White Archer 01 Purple,Female White Archer 01 Purple,1,0,-1
+78,Female White Archer 01 White,Female White Archer 01 White,1,0,-1
+79,Female White Archer 02 Black,Female White Archer 02 Black,1,0,-1
+80,Female White Archer 02 Blue,Female White Archer 02 Blue,1,0,-1
+81,Female White Archer 02 Green,Female White Archer 02 Green,1,0,-1
+82,Female White Archer 02 Lime,Female White Archer 02 Lime,1,0,-1
+83,Female White Archer 02 Magenta,Female White Archer 02 Magenta,1,0,-1
+84,Female White Archer 02 Purple,Female White Archer 02 Purple,1,0,-1
+85,Female White Archer 02 White,Female White Archer 02 White,1,0,-1
+86,Female White Archer 03 Black,Female White Archer 03 Black,1,0,-1
+87,Female White Archer 03 Blue,Female White Archer 03 Blue,1,0,-1
+88,Female White Archer 03 Green,Female White Archer 03 Green,1,0,-1
+89,Female White Archer 03 Maroon,Female White Archer 03 Maroon,1,0,-1
+90,Female White Archer 03 Olive,Female White Archer 03 Olive,1,0,-1
+91,Female White Archer 03 Purple,Female White Archer 03 Purple,1,0,-1
+92,Female White Archer 03 White,Female White Archer 03 White,1,0,-1
+93,Female White Archer 04 Black,Female White Archer 04 Black,1,0,-1
+94,Female White Archer 04 Blue,Female White Archer 04 Blue,1,0,-1
+95,Female White Archer 04 Green,Female White Archer 04 Green,1,0,-1
+96,Female White Archer 04 Magenta,Female White Archer 04 Magenta,1,0,-1
+97,Female White Archer 04 Purple,Female White Archer 04 Purple,1,0,-1
+98,Female White Archer 04 Red,Female White Archer 04 Red,1,0,-1
+99,Female White Archer 04 White,Female White Archer 04 White,1,0,-1
+100,Female White Archer 04 Yellow,Female White Archer 04 Yellow,1,0,-1
+101,Female White Archer 05 Black,Female White Archer 05 Black,1,0,-1
+102,Female White Archer 05 Blue,Female White Archer 05 Blue,1,0,-1
+103,Female White Archer 05 Green,Female White Archer 05 Green,1,0,-1
+104,Female White Archer 05 Magenta,Female White Archer 05 Magenta,1,0,-1
+105,Female White Archer 05 Purple,Female White Archer 05 Purple,1,0,-1
+106,Female White Archer 05 Red,Female White Archer 05 Red,1,0,-1
+107,Female White Archer 05 White,Female White Archer 05 White,1,0,-1
+108,Female White Archer 05 Yellow,Female White Archer 05 Yellow,1,0,-1
+109,Male Black Archer 01 Black,Male Black Archer 01 Black,0,0,-1
+110,Male Black Archer 01 Blue,Male Black Archer 01 Blue,0,0,-1
+111,Male Black Archer 01 Green,Male Black Archer 01 Green,0,0,-1
+112,Male Black Archer 01 Maroon,Male Black Archer 01 Maroon,0,0,-1
+113,Male Black Archer 01 Olive,Male Black Archer 01 Olive,0,0,-1
+114,Male Black Archer 01 Purple,Male Black Archer 01 Purple,0,0,-1
+115,Male Black Archer 01 White,Male Black Archer 01 White,0,0,-1
+116,Male Black Archer 02 Blue,Male Black Archer 02 Blue,0,0,-1
+117,Male Black Archer 02 Green,Male Black Archer 02 Green,0,0,-1
+118,Male Black Archer 02 Olive,Male Black Archer 02 Olive,0,0,-1
+119,Male Black Archer 02 Purple,Male Black Archer 02 Purple,0,0,-1
+120,Male Black Archer 02 Red,Male Black Archer 02 Red,0,0,-1
+121,Male Black Archer 02 White,Male Black Archer 02 White,0,0,-1
+122,Male Black Archer 03 Black,Male Black Archer 03 Black,0,0,-1
+123,Male Black Archer 03 Blue,Male Black Archer 03 Blue,0,0,-1
+124,Male Black Archer 03 Green,Male Black Archer 03 Green,0,0,-1
+125,Male Black Archer 03 Magenta,Male Black Archer 03 Magenta,0,0,-1
+126,Male Black Archer 03 Purple,Male Black Archer 03 Purple,0,0,-1
+127,Male Black Archer 03 Red,Male Black Archer 03 Red,0,0,-1
+128,Male Black Archer 03 White,Male Black Archer 03 White,0,0,-1
+129,Male Black Archer 03 Yellow,Male Black Archer 03 Yellow,0,0,-1
+130,Male Black Archer 04 Black,Male Black Archer 04 Black,0,0,-1
+131,Male Black Archer 04 Blue,Male Black Archer 04 Blue,0,0,-1
+132,Male Black Archer 04 Green,Male Black Archer 04 Green,0,0,-1
+133,Male Black Archer 04 Magenta,Male Black Archer 04 Magenta,0,0,-1
+134,Male Black Archer 04 Purple,Male Black Archer 04 Purple,0,0,-1
+135,Male Black Archer 04 Red,Male Black Archer 04 Red,0,0,-1
+136,Male Black Archer 04 White,Male Black Archer 04 White,0,0,-1
+137,Male Black Archer 04 Yellow,Male Black Archer 04 Yellow,0,0,-1
+138,Male Black Archer 05 Black,Male Black Archer 05 Black,0,0,-1
+139,Male Black Archer 05 Blue,Male Black Archer 05 Blue,0,0,-1
+140,Male Black Archer 05 Green,Male Black Archer 05 Green,0,0,-1
+141,Male Black Archer 05 Magenta,Male Black Archer 05 Magenta,0,0,-1
+142,Male Black Archer 05 Purple,Male Black Archer 05 Purple,0,0,-1
+143,Male Black Archer 05 Red,Male Black Archer 05 Red,0,0,-1
+144,Male Black Archer 05 White,Male Black Archer 05 White,0,0,-1
+145,Male Black Archer 05 Yellow,Male Black Archer 05 Yellow,0,0,-1
+146,Male Brown Archer 01 Black,Male Brown Archer 01 Black,0,0,-1
+147,Male Brown Archer 01 Blue,Male Brown Archer 01 Blue,0,0,-1
+148,Male Brown Archer 01 Green,Male Brown Archer 01 Green,0,0,-1
+149,Male Brown Archer 01 Maroon,Male Brown Archer 01 Maroon,0,0,-1
+150,Male Brown Archer 01 Olive,Male Brown Archer 01 Olive,0,0,-1
+151,Male Brown Archer 01 Purple,Male Brown Archer 01 Purple,0,0,-1
+152,Male Brown Archer 01 White,Male Brown Archer 01 White,0,0,-1
+153,Male Brown Archer 02 Blue,Male Brown Archer 02 Blue,0,0,-1
+154,Male Brown Archer 02 Green,Male Brown Archer 02 Green,0,0,-1
+155,Male Brown Archer 02 Olive,Male Brown Archer 02 Olive,0,0,-1
+156,Male Brown Archer 02 Purple,Male Brown Archer 02 Purple,0,0,-1
+157,Male Brown Archer 02 Red,Male Brown Archer 02 Red,0,0,-1
+158,Male Brown Archer 02 White,Male Brown Archer 02 White,0,0,-1
+159,Male Brown Archer 03 Black,Male Brown Archer 03 Black,0,0,-1
+160,Male Brown Archer 03 Blue,Male Brown Archer 03 Blue,0,0,-1
+161,Male Brown Archer 03 Green,Male Brown Archer 03 Green,0,0,-1
+162,Male Brown Archer 03 Magenta,Male Brown Archer 03 Magenta,0,0,-1
+163,Male Brown Archer 03 Purple,Male Brown Archer 03 Purple,0,0,-1
+164,Male Brown Archer 03 Red,Male Brown Archer 03 Red,0,0,-1
+165,Male Brown Archer 03 White,Male Brown Archer 03 White,0,0,-1
+166,Male Brown Archer 03 Yellow,Male Brown Archer 03 Yellow,0,0,-1
+167,Male Brown Archer 04 Black,Male Brown Archer 04 Black,0,0,-1
+168,Male Brown Archer 04 Blue,Male Brown Archer 04 Blue,0,0,-1
+169,Male Brown Archer 04 Green,Male Brown Archer 04 Green,0,0,-1
+170,Male Brown Archer 04 Magenta,Male Brown Archer 04 Magenta,0,0,-1
+171,Male Brown Archer 04 Purple,Male Brown Archer 04 Purple,0,0,-1
+172,Male Brown Archer 04 Red,Male Brown Archer 04 Red,0,0,-1
+173,Male Brown Archer 04 White,Male Brown Archer 04 White,0,0,-1
+174,Male Brown Archer 04 Yellow,Male Brown Archer 04 Yellow,0,0,-1
+175,Male Brown Archer 05 Black,Male Brown Archer 05 Black,0,0,-1
+176,Male Brown Archer 05 Blue,Male Brown Archer 05 Blue,0,0,-1
+177,Male Brown Archer 05 Green,Male Brown Archer 05 Green,0,0,-1
+178,Male Brown Archer 05 Magenta,Male Brown Archer 05 Magenta,0,0,-1
+179,Male Brown Archer 05 Purple,Male Brown Archer 05 Purple,0,0,-1
+180,Male Brown Archer 05 Red,Male Brown Archer 05 Red,0,0,-1
+181,Male Brown Archer 05 White,Male Brown Archer 05 White,0,0,-1
+182,Male Brown Archer 05 Yellow,Male Brown Archer 05 Yellow,0,0,-1
+183,Male White Archer 01 Black,Male White Archer 01 Black,0,0,-1
+184,Male White Archer 01 Blue,Male White Archer 01 Blue,0,0,-1
+185,Male White Archer 01 Green,Male White Archer 01 Green,0,0,-1
+186,Male White Archer 01 Maroon,Male White Archer 01 Maroon,0,0,-1
+187,Male White Archer 01 Olive,Male White Archer 01 Olive,0,0,-1
+188,Male White Archer 01 Purple,Male White Archer 01 Purple,0,0,-1
+189,Male White Archer 01 White,Male White Archer 01 White,0,0,-1
+190,Male White Archer 02 Blue,Male White Archer 02 Blue,0,0,-1
+191,Male White Archer 02 Green,Male White Archer 02 Green,0,0,-1
+192,Male White Archer 02 Olive,Male White Archer 02 Olive,0,0,-1
+193,Male White Archer 02 Purple,Male White Archer 02 Purple,0,0,-1
+194,Male White Archer 02 Red,Male White Archer 02 Red,0,0,-1
+195,Male White Archer 02 White,Male White Archer 02 White,0,0,-1
+196,Male White Archer 03 Black,Male White Archer 03 Black,0,0,-1
+197,Male White Archer 03 Blue,Male White Archer 03 Blue,0,0,-1
+198,Male White Archer 03 Green,Male White Archer 03 Green,0,0,-1
+199,Male White Archer 03 Magenta,Male White Archer 03 Magenta,0,0,-1
+200,Male White Archer 03 Purple,Male White Archer 03 Purple,0,0,-1
+201,Male White Archer 03 Red,Male White Archer 03 Red,0,0,-1
+202,Male White Archer 03 White,Male White Archer 03 White,0,0,-1
+203,Male White Archer 03 Yellow,Male White Archer 03 Yellow,0,0,-1
+204,Male White Archer 04 Black,Male White Archer 04 Black,0,0,-1
+205,Male White Archer 04 Blue,Male White Archer 04 Blue,0,0,-1
+206,Male White Archer 04 Green,Male White Archer 04 Green,0,0,-1
+207,Male White Archer 04 Magenta,Male White Archer 04 Magenta,0,0,-1
+208,Male White Archer 04 Purple,Male White Archer 04 Purple,0,0,-1
+209,Male White Archer 04 Red,Male White Archer 04 Red,0,0,-1
+210,Male White Archer 04 White,Male White Archer 04 White,0,0,-1
+211,Male White Archer 04 Yellow,Male White Archer 04 Yellow,0,0,-1
+212,Male White Archer 05 Black,Male White Archer 05 Black,0,0,-1
+213,Male White Archer 05 Blue,Male White Archer 05 Blue,0,0,-1
+214,Male White Archer 05 Green,Male White Archer 05 Green,0,0,-1
+215,Male White Archer 05 Magenta,Male White Archer 05 Magenta,0,0,-1
+216,Male White Archer 05 Purple,Male White Archer 05 Purple,0,0,-1
+217,Male White Archer 05 Red,Male White Archer 05 Red,0,0,-1
+218,Male White Archer 05 White,Male White Archer 05 White,0,0,-1
+219,Male White Archer 05 Yellow,Male White Archer 05 Yellow,0,0,-1
+220,Female Black Knight 01 Black,Female Black Knight 01 Black,1,1,-1
+221,Female Black Knight 01 Blue,Female Black Knight 01 Blue,1,1,-1
+222,Female Black Knight 01 Green,Female Black Knight 01 Green,1,1,-1
+223,Female Black Knight 01 Purple,Female Black Knight 01 Purple,1,1,-1
+224,Female Black Knight 01 Red,Female Black Knight 01 Red,1,1,-1
+225,Female Black Knight 01 White,Female Black Knight 01 White,1,1,-1
+226,Female Black Knight 02 Black,Female Black Knight 02 Black,1,1,-1
+227,Female Black Knight 02 Blue,Female Black Knight 02 Blue,1,1,-1
+228,Female Black Knight 02 Green,Female Black Knight 02 Green,1,1,-1
+229,Female Black Knight 02 Purple,Female Black Knight 02 Purple,1,1,-1
+230,Female Black Knight 02 Red,Female Black Knight 02 Red,1,1,-1
+231,Female Black Knight 02 White,Female Black Knight 02 White,1,1,-1
+232,Female Black Knight 03 Black,Female Black Knight 03 Black,1,1,-1
+233,Female Black Knight 03 Blue,Female Black Knight 03 Blue,1,1,-1
+234,Female Black Knight 03 Green,Female Black Knight 03 Green,1,1,-1
+235,Female Black Knight 03 Purple,Female Black Knight 03 Purple,1,1,-1
+236,Female Black Knight 03 Red,Female Black Knight 03 Red,1,1,-1
+237,Female Black Knight 03 White,Female Black Knight 03 White,1,1,-1
+238,Female Black Knight 04 Black,Female Black Knight 04 Black,1,1,-1
+239,Female Black Knight 04 Blue,Female Black Knight 04 Blue,1,1,-1
+240,Female Black Knight 04 Green,Female Black Knight 04 Green,1,1,-1
+241,Female Black Knight 04 Magenta,Female Black Knight 04 Magenta,1,1,-1
+242,Female Black Knight 04 Purple,Female Black Knight 04 Purple,1,1,-1
+243,Female Black Knight 04 Red,Female Black Knight 04 Red,1,1,-1
+244,Female Black Knight 04 White,Female Black Knight 04 White,1,1,-1
+245,Female Black Knight 04 Yellow,Female Black Knight 04 Yellow,1,1,-1
+246,Female Black Knight 05 Black,Female Black Knight 05 Black,1,1,-1
+247,Female Black Knight 05 Blue,Female Black Knight 05 Blue,1,1,-1
+248,Female Black Knight 05 Green,Female Black Knight 05 Green,1,1,-1
+249,Female Black Knight 05 Magenta,Female Black Knight 05 Magenta,1,1,-1
+250,Female Black Knight 05 Purple,Female Black Knight 05 Purple,1,1,-1
+251,Female Black Knight 05 Red,Female Black Knight 05 Red,1,1,-1
+252,Female Black Knight 05 White,Female Black Knight 05 White,1,1,-1
+253,Female Black Knight 05 Yellow,Female Black Knight 05 Yellow,1,1,-1
+254,Female Black Knight 06 Black,Female Black Knight 06 Black,1,1,-1
+255,Female Black Knight 06 Blue,Female Black Knight 06 Blue,1,1,-1
+256,Female Black Knight 06 Green,Female Black Knight 06 Green,1,1,-1
+257,Female Black Knight 06 Magenta,Female Black Knight 06 Magenta,1,1,-1
+258,Female Black Knight 06 Purple,Female Black Knight 06 Purple,1,1,-1
+259,Female Black Knight 06 Red,Female Black Knight 06 Red,1,1,-1
+260,Female Black Knight 06 White,Female Black Knight 06 White,1,1,-1
+261,Female Black Knight 06 Yellow,Female Black Knight 06 Yellow,1,1,-1
+262,Female Brown Knight 01 Black,Female Brown Knight 01 Black,1,1,-1
+263,Female Brown Knight 01 Blue,Female Brown Knight 01 Blue,1,1,-1
+264,Female Brown Knight 01 Green,Female Brown Knight 01 Green,1,1,-1
+265,Female Brown Knight 01 Purple,Female Brown Knight 01 Purple,1,1,-1
+266,Female Brown Knight 01 Red,Female Brown Knight 01 Red,1,1,-1
+267,Female Brown Knight 01 White,Female Brown Knight 01 White,1,1,-1
+268,Female Brown Knight 02 Black,Female Brown Knight 02 Black,1,1,-1
+269,Female Brown Knight 02 Blue,Female Brown Knight 02 Blue,1,1,-1
+270,Female Brown Knight 02 Green,Female Brown Knight 02 Green,1,1,-1
+271,Female Brown Knight 02 Purple,Female Brown Knight 02 Purple,1,1,-1
+272,Female Brown Knight 02 Red,Female Brown Knight 02 Red,1,1,-1
+273,Female Brown Knight 02 White,Female Brown Knight 02 White,1,1,-1
+274,Female Brown Knight 03 Black,Female Brown Knight 03 Black,1,1,-1
+275,Female Brown Knight 03 Blue,Female Brown Knight 03 Blue,1,1,-1
+276,Female Brown Knight 03 Green,Female Brown Knight 03 Green,1,1,-1
+277,Female Brown Knight 03 Purple,Female Brown Knight 03 Purple,1,1,-1
+278,Female Brown Knight 03 Red,Female Brown Knight 03 Red,1,1,-1
+279,Female Brown Knight 03 White,Female Brown Knight 03 White,1,1,-1
+280,Female Brown Knight 04 Black,Female Brown Knight 04 Black,1,1,-1
+281,Female Brown Knight 04 Blue,Female Brown Knight 04 Blue,1,1,-1
+282,Female Brown Knight 04 Green,Female Brown Knight 04 Green,1,1,-1
+283,Female Brown Knight 04 Magenta,Female Brown Knight 04 Magenta,1,1,-1
+284,Female Brown Knight 04 Purple,Female Brown Knight 04 Purple,1,1,-1
+285,Female Brown Knight 04 Red,Female Brown Knight 04 Red,1,1,-1
+286,Female Brown Knight 04 White,Female Brown Knight 04 White,1,1,-1
+287,Female Brown Knight 04 Yellow,Female Brown Knight 04 Yellow,1,1,-1
+288,Female Brown Knight 05 Blue,Female Brown Knight 05 Blue,1,1,-1
+289,Female Brown Knight 05 Green,Female Brown Knight 05 Green,1,1,-1
+290,Female Brown Knight 05 Magenta,Female Brown Knight 05 Magenta,1,1,-1
+291,Female Brown Knight 05 Purple,Female Brown Knight 05 Purple,1,1,-1
+292,Female Brown Knight 05 Red,Female Brown Knight 05 Red,1,1,-1
+293,Female Brown Knight 05 White,Female Brown Knight 05 White,1,1,-1
+294,Female Brown Knight 05 Yellow,Female Brown Knight 05 Yellow,1,1,-1
+295,Female Brown Knight 06 Black,Female Brown Knight 06 Black,1,1,-1
+296,Female Brown Knight 06 Blue,Female Brown Knight 06 Blue,1,1,-1
+297,Female Brown Knight 06 Green,Female Brown Knight 06 Green,1,1,-1
+298,Female Brown Knight 06 Magenta,Female Brown Knight 06 Magenta,1,1,-1
+299,Female Brown Knight 06 Purple,Female Brown Knight 06 Purple,1,1,-1
+300,Female Brown Knight 06 Red,Female Brown Knight 06 Red,1,1,-1
+301,Female Brown Knight 06 White,Female Brown Knight 06 White,1,1,-1
+302,Female Brown Knight 06 Yellow,Female Brown Knight 06 Yellow,1,1,-1
+303,Female White Knight 01 Black,Female White Knight 01 Black,1,1,-1
+304,Female White Knight 01 Blue,Female White Knight 01 Blue,1,1,-1
+305,Female White Knight 01 Green,Female White Knight 01 Green,1,1,-1
+306,Female White Knight 01 Purple,Female White Knight 01 Purple,1,1,-1
+307,Female White Knight 01 Red,Female White Knight 01 Red,1,1,-1
+308,Female White Knight 01 White,Female White Knight 01 White,1,1,-1
+309,Female White Knight 02 Black,Female White Knight 02 Black,1,1,-1
+310,Female White Knight 02 Blue,Female White Knight 02 Blue,1,1,-1
+311,Female White Knight 02 Green,Female White Knight 02 Green,1,1,-1
+312,Female White Knight 02 Purple,Female White Knight 02 Purple,1,1,-1
+313,Female White Knight 02 Red,Female White Knight 02 Red,1,1,-1
+314,Female White Knight 02 White,Female White Knight 02 White,1,1,-1
+315,Female White Knight 03 Black,Female White Knight 03 Black,1,1,-1
+316,Female White Knight 03 Blue,Female White Knight 03 Blue,1,1,-1
+317,Female White Knight 03 Green,Female White Knight 03 Green,1,1,-1
+318,Female White Knight 03 Purple,Female White Knight 03 Purple,1,1,-1
+319,Female White Knight 03 Red,Female White Knight 03 Red,1,1,-1
+320,Female White Knight 03 White,Female White Knight 03 White,1,1,-1
+321,Female White Knight 04 Black,Female White Knight 04 Black,1,1,-1
+322,Female White Knight 04 Blue,Female White Knight 04 Blue,1,1,-1
+323,Female White Knight 04 Green,Female White Knight 04 Green,1,1,-1
+324,Female White Knight 04 Magenta,Female White Knight 04 Magenta,1,1,-1
+325,Female White Knight 04 Purple,Female White Knight 04 Purple,1,1,-1
+326,Female White Knight 04 Red,Female White Knight 04 Red,1,1,-1
+327,Female White Knight 04 White,Female White Knight 04 White,1,1,-1
+328,Female White Knight 04 Yellow,Female White Knight 04 Yellow,1,1,-1
+329,Female White Knight 05 Black,Female White Knight 05 Black,1,1,-1
+330,Female White Knight 05 Blue,Female White Knight 05 Blue,1,1,-1
+331,Female White Knight 05 Green,Female White Knight 05 Green,1,1,-1
+332,Female White Knight 05 Magenta,Female White Knight 05 Magenta,1,1,-1
+333,Female White Knight 05 Purple,Female White Knight 05 Purple,1,1,-1
+334,Female White Knight 05 Red,Female White Knight 05 Red,1,1,-1
+335,Female White Knight 05 White,Female White Knight 05 White,1,1,-1
+336,Female White Knight 05 Yellow,Female White Knight 05 Yellow,1,1,-1
+337,Female White Knight 06 Black,Female White Knight 06 Black,1,1,-1
+338,Female White Knight 06 Blue,Female White Knight 06 Blue,1,1,-1
+339,Female White Knight 06 Green,Female White Knight 06 Green,1,1,-1
+340,Female White Knight 06 Magenta,Female White Knight 06 Magenta,1,1,-1
+341,Female White Knight 06 Purple,Female White Knight 06 Purple,1,1,-1
+342,Female White Knight 06 Red,Female White Knight 06 Red,1,1,-1
+343,Female White Knight 06 White,Female White Knight 06 White,1,1,-1
+344,Female White Knight 06 Yellow,Female White Knight 06 Yellow,1,1,-1
+345,Male Black Knight 01 Black,Male Black Knight 01 Black,0,1,-1
+346,Male Black Knight 01 Blue,Male Black Knight 01 Blue,0,1,-1
+347,Male Black Knight 01 Red,Male Black Knight 01 Red,0,1,-1
+348,Male Black Knight 01 White,Male Black Knight 01 White,0,1,-1
+349,Male Black Knight 02 Black,Male Black Knight 02 Black,0,1,-1
+350,Male Black Knight 02 Blue,Male Black Knight 02 Blue,0,1,-1
+351,Male Black Knight 02 Green,Male Black Knight 02 Green,0,1,-1
+352,Male Black Knight 02 Purple,Male Black Knight 02 Purple,0,1,-1
+353,Male Black Knight 02 Red,Male Black Knight 02 Red,0,1,-1
+354,Male Black Knight 02 White,Male Black Knight 02 White,0,1,-1
+355,Male Black Knight 03 Black,Male Black Knight 03 Black,0,1,-1
+356,Male Black Knight 03 Blue,Male Black Knight 03 Blue,0,1,-1
+357,Male Black Knight 03 Brown,Male Black Knight 03 Brown,0,1,-1
+358,Male Black Knight 03 Green,Male Black Knight 03 Green,0,1,-1
+359,Male Black Knight 03 Magenta,Male Black Knight 03 Magenta,0,1,-1
+360,Male Black Knight 03 Purple,Male Black Knight 03 Purple,0,1,-1
+361,Male Black Knight 03 Red,Male Black Knight 03 Red,0,1,-1
+362,Male Black Knight 03 White,Male Black Knight 03 White,0,1,-1
+363,Male Black Knight 04 Black,Male Black Knight 04 Black,0,1,-1
+364,Male Black Knight 04 Blue,Male Black Knight 04 Blue,0,1,-1
+365,Male Black Knight 04 Brown,Male Black Knight 04 Brown,0,1,-1
+366,Male Black Knight 04 Green,Male Black Knight 04 Green,0,1,-1
+367,Male Black Knight 04 Magenta,Male Black Knight 04 Magenta,0,1,-1
+368,Male Black Knight 04 Purple,Male Black Knight 04 Purple,0,1,-1
+369,Male Black Knight 04 Red,Male Black Knight 04 Red,0,1,-1
+370,Male Black Knight 04 White,Male Black Knight 04 White,0,1,-1
+371,Male Black Knight 05 Black,Male Black Knight 05 Black,0,1,-1
+372,Male Black Knight 05 Blue,Male Black Knight 05 Blue,0,1,-1
+373,Male Black Knight 05 Brown,Male Black Knight 05 Brown,0,1,-1
+374,Male Black Knight 05 Green,Male Black Knight 05 Green,0,1,-1
+375,Male Black Knight 05 Magenta,Male Black Knight 05 Magenta,0,1,-1
+376,Male Black Knight 05 Purple,Male Black Knight 05 Purple,0,1,-1
+377,Male Black Knight 05 Red,Male Black Knight 05 Red,0,1,-1
+378,Male Black Knight 05 White,Male Black Knight 05 White,0,1,-1
+379,Male Black Knight 06 Black,Male Black Knight 06 Black,0,1,-1
+380,Male Black Knight 06 Blue,Male Black Knight 06 Blue,0,1,-1
+381,Male Black Knight 06 Green,Male Black Knight 06 Green,0,1,-1
+382,Male Black Knight 06 Magenta,Male Black Knight 06 Magenta,0,1,-1
+383,Male Black Knight 06 Purple,Male Black Knight 06 Purple,0,1,-1
+384,Male Black Knight 06 Red,Male Black Knight 06 Red,0,1,-1
+385,Male Black Knight 06 White,Male Black Knight 06 White,0,1,-1
+386,Male Black Knight 06 Yellow,Male Black Knight 06 Yellow,0,1,-1
+387,Male Black Knight 07 Black,Male Black Knight 07 Black,0,1,-1
+388,Male Black Knight 07 Blue,Male Black Knight 07 Blue,0,1,-1
+389,Male Black Knight 07 Green,Male Black Knight 07 Green,0,1,-1
+390,Male Black Knight 07 Magenta,Male Black Knight 07 Magenta,0,1,-1
+391,Male Black Knight 07 Purple,Male Black Knight 07 Purple,0,1,-1
+392,Male Black Knight 07 Red,Male Black Knight 07 Red,0,1,-1
+393,Male Black Knight 07 White,Male Black Knight 07 White,0,1,-1
+394,Male Black Knight 07 Yellow,Male Black Knight 07 Yellow,0,1,-1
+395,Male Black Knight 08 Black,Male Black Knight 08 Black,0,1,-1
+396,Male Black Knight 08 Blue,Male Black Knight 08 Blue,0,1,-1
+397,Male Black Knight 08 Green,Male Black Knight 08 Green,0,1,-1
+398,Male Black Knight 08 Magenta,Male Black Knight 08 Magenta,0,1,-1
+399,Male Black Knight 08 Purple,Male Black Knight 08 Purple,0,1,-1
+400,Male Black Knight 08 Red,Male Black Knight 08 Red,0,1,-1
+401,Male Black Knight 08 White,Male Black Knight 08 White,0,1,-1
+402,Male Black Knight 08 Yellow,Male Black Knight 08 Yellow,0,1,-1
+403,Male Brown Knight 01 Black,Male Brown Knight 01 Black,0,1,-1
+404,Male Brown Knight 01 Blue,Male Brown Knight 01 Blue,0,1,-1
+405,Male Brown Knight 01 Red,Male Brown Knight 01 Red,0,1,-1
+406,Male Brown Knight 01 White,Male Brown Knight 01 White,0,1,-1
+407,Male Brown Knight 02 Black,Male Brown Knight 02 Black,0,1,-1
+408,Male Brown Knight 02 Blue,Male Brown Knight 02 Blue,0,1,-1
+409,Male Brown Knight 02 Green,Male Brown Knight 02 Green,0,1,-1
+410,Male Brown Knight 02 Purple,Male Brown Knight 02 Purple,0,1,-1
+411,Male Brown Knight 02 Red,Male Brown Knight 02 Red,0,1,-1
+412,Male Brown Knight 02 White,Male Brown Knight 02 White,0,1,-1
+413,Male Brown Knight 03 Black,Male Brown Knight 03 Black,0,1,-1
+414,Male Brown Knight 03 Blue,Male Brown Knight 03 Blue,0,1,-1
+415,Male Brown Knight 03 Brown,Male Brown Knight 03 Brown,0,1,-1
+416,Male Brown Knight 03 Green,Male Brown Knight 03 Green,0,1,-1
+417,Male Brown Knight 03 Magenta,Male Brown Knight 03 Magenta,0,1,-1
+418,Male Brown Knight 03 Purple,Male Brown Knight 03 Purple,0,1,-1
+419,Male Brown Knight 03 Red,Male Brown Knight 03 Red,0,1,-1
+420,Male Brown Knight 03 White,Male Brown Knight 03 White,0,1,-1
+421,Male Brown Knight 04 Black,Male Brown Knight 04 Black,0,1,-1
+422,Male Brown Knight 04 Blue,Male Brown Knight 04 Blue,0,1,-1
+423,Male Brown Knight 04 Brown,Male Brown Knight 04 Brown,0,1,-1
+424,Male Brown Knight 04 Green,Male Brown Knight 04 Green,0,1,-1
+425,Male Brown Knight 04 Magenta,Male Brown Knight 04 Magenta,0,1,-1
+426,Male Brown Knight 04 Purple,Male Brown Knight 04 Purple,0,1,-1
+427,Male Brown Knight 04 Red,Male Brown Knight 04 Red,0,1,-1
+428,Male Brown Knight 04 White,Male Brown Knight 04 White,0,1,-1
+429,Male Brown Knight 05 Black,Male Brown Knight 05 Black,0,1,-1
+430,Male Brown Knight 05 Blue,Male Brown Knight 05 Blue,0,1,-1
+431,Male Brown Knight 05 Brown,Male Brown Knight 05 Brown,0,1,-1
+432,Male Brown Knight 05 Green,Male Brown Knight 05 Green,0,1,-1
+433,Male Brown Knight 05 Magenta,Male Brown Knight 05 Magenta,0,1,-1
+434,Male Brown Knight 05 Purple,Male Brown Knight 05 Purple,0,1,-1
+435,Male Brown Knight 05 Red,Male Brown Knight 05 Red,0,1,-1
+436,Male Brown Knight 05 White,Male Brown Knight 05 White,0,1,-1
+437,Male Brown Knight 06 Black,Male Brown Knight 06 Black,0,1,-1
+438,Male Brown Knight 06 Blue,Male Brown Knight 06 Blue,0,1,-1
+439,Male Brown Knight 06 Green,Male Brown Knight 06 Green,0,1,-1
+440,Male Brown Knight 06 Magenta,Male Brown Knight 06 Magenta,0,1,-1
+441,Male Brown Knight 06 Purple,Male Brown Knight 06 Purple,0,1,-1
+442,Male Brown Knight 06 Red,Male Brown Knight 06 Red,0,1,-1
+443,Male Brown Knight 06 White,Male Brown Knight 06 White,0,1,-1
+444,Male Brown Knight 06 Yellow,Male Brown Knight 06 Yellow,0,1,-1
+445,Male Brown Knight 07 Black,Male Brown Knight 07 Black,0,1,-1
+446,Male Brown Knight 07 Blue,Male Brown Knight 07 Blue,0,1,-1
+447,Male Brown Knight 07 Green,Male Brown Knight 07 Green,0,1,-1
+448,Male Brown Knight 07 Magenta,Male Brown Knight 07 Magenta,0,1,-1
+449,Male Brown Knight 07 Purple,Male Brown Knight 07 Purple,0,1,-1
+450,Male Brown Knight 07 Red,Male Brown Knight 07 Red,0,1,-1
+451,Male Brown Knight 07 White,Male Brown Knight 07 White,0,1,-1
+452,Male Brown Knight 07 Yellow,Male Brown Knight 07 Yellow,0,1,-1
+453,Male Brown Knight 08 Black,Male Brown Knight 08 Black,0,1,-1
+454,Male Brown Knight 08 Blue,Male Brown Knight 08 Blue,0,1,-1
+455,Male Brown Knight 08 Green,Male Brown Knight 08 Green,0,1,-1
+456,Male Brown Knight 08 Magenta,Male Brown Knight 08 Magenta,0,1,-1
+457,Male Brown Knight 08 Purple,Male Brown Knight 08 Purple,0,1,-1
+458,Male Brown Knight 08 Red,Male Brown Knight 08 Red,0,1,-1
+459,Male Brown Knight 08 White,Male Brown Knight 08 White,0,1,-1
+460,Male Brown Knight 08 Yellow,Male Brown Knight 08 Yellow,0,1,-1
+461,Male White Knight 01 Black,Male White Knight 01 Black,0,1,-1
+462,Male White Knight 01 Blue,Male White Knight 01 Blue,0,1,-1
+463,Male White Knight 01 Red,Male White Knight 01 Red,0,1,-1
+464,Male White Knight 01 White,Male White Knight 01 White,0,1,-1
+465,Male White Knight 02 Black,Male White Knight 02 Black,0,1,-1
+466,Male White Knight 02 Blue,Male White Knight 02 Blue,0,1,-1
+467,Male White Knight 02 Green,Male White Knight 02 Green,0,1,-1
+468,Male White Knight 02 Purple,Male White Knight 02 Purple,0,1,-1
+469,Male White Knight 02 Red,Male White Knight 02 Red,0,1,-1
+470,Male White Knight 02 White,Male White Knight 02 White,0,1,-1
+471,Male White Knight 03 Black,Male White Knight 03 Black,0,1,-1
+472,Male White Knight 03 Blue,Male White Knight 03 Blue,0,1,-1
+473,Male White Knight 03 Brown,Male White Knight 03 Brown,0,1,-1
+474,Male White Knight 03 Green,Male White Knight 03 Green,0,1,-1
+475,Male White Knight 03 Magenta,Male White Knight 03 Magenta,0,1,-1
+476,Male White Knight 03 Purple,Male White Knight 03 Purple,0,1,-1
+477,Male White Knight 03 Red,Male White Knight 03 Red,0,1,-1
+478,Male White Knight 03 White,Male White Knight 03 White,0,1,-1
+479,Male White Knight 04 Black,Male White Knight 04 Black,0,1,-1
+480,Male White Knight 04 Blue,Male White Knight 04 Blue,0,1,-1
+481,Male White Knight 04 Brown,Male White Knight 04 Brown,0,1,-1
+482,Male White Knight 04 Green,Male White Knight 04 Green,0,1,-1
+483,Male White Knight 04 Magenta,Male White Knight 04 Magenta,0,1,-1
+484,Male White Knight 04 Purple,Male White Knight 04 Purple,0,1,-1
+485,Male White Knight 04 Red,Male White Knight 04 Red,0,1,-1
+486,Male White Knight 04 White,Male White Knight 04 White,0,1,-1
+487,Male White Knight 05 Black,Male White Knight 05 Black,0,1,-1
+488,Male White Knight 05 Blue,Male White Knight 05 Blue,0,1,-1
+489,Male White Knight 05 Brown,Male White Knight 05 Brown,0,1,-1
+490,Male White Knight 05 Green,Male White Knight 05 Green,0,1,-1
+491,Male White Knight 05 Magenta,Male White Knight 05 Magenta,0,1,-1
+492,Male White Knight 05 Purple,Male White Knight 05 Purple,0,1,-1
+493,Male White Knight 05 Red,Male White Knight 05 Red,0,1,-1
+494,Male White Knight 05 White,Male White Knight 05 White,0,1,-1
+495,Male White Knight 06 Black,Male White Knight 06 Black,0,1,-1
+496,Male White Knight 06 Blue,Male White Knight 06 Blue,0,1,-1
+497,Male White Knight 06 Green,Male White Knight 06 Green,0,1,-1
+498,Male White Knight 06 Magenta,Male White Knight 06 Magenta,0,1,-1
+499,Male White Knight 06 Purple,Male White Knight 06 Purple,0,1,-1
+500,Male White Knight 06 Red,Male White Knight 06 Red,0,1,-1
+501,Male White Knight 06 White,Male White Knight 06 White,0,1,-1
+502,Male White Knight 06 Yellow,Male White Knight 06 Yellow,0,1,-1
+503,Male White Knight 07 Black,Male White Knight 07 Black,0,1,-1
+504,Male White Knight 07 Blue,Male White Knight 07 Blue,0,1,-1
+505,Male White Knight 07 Green,Male White Knight 07 Green,0,1,-1
+506,Male White Knight 07 Magenta,Male White Knight 07 Magenta,0,1,-1
+507,Male White Knight 07 Purple,Male White Knight 07 Purple,0,1,-1
+508,Male White Knight 07 Red,Male White Knight 07 Red,0,1,-1
+509,Male White Knight 07 White,Male White Knight 07 White,0,1,-1
+510,Male White Knight 07 Yellow,Male White Knight 07 Yellow,0,1,-1
+511,Male White Knight 08 Black,Male White Knight 08 Black,0,1,-1
+512,Male White Knight 08 Blue,Male White Knight 08 Blue,0,1,-1
+513,Male White Knight 08 Green,Male White Knight 08 Green,0,1,-1
+514,Male White Knight 08 Magenta,Male White Knight 08 Magenta,0,1,-1
+515,Male White Knight 08 Purple,Male White Knight 08 Purple,0,1,-1
+516,Male White Knight 08 Red,Male White Knight 08 Red,0,1,-1
+517,Male White Knight 08 White,Male White Knight 08 White,0,1,-1
+518,Male White Knight 08 Yellow,Male White Knight 08 Yellow,0,1,-1
+519,Female Black L Dress 01 Blue,Female Black L Dress 01 Blue,1,3,-1
+520,Female Black L Dress 01 Brown,Female Black L Dress 01 Brown,1,3,-1
+521,Female Black L Dress 01 Green,Female Black L Dress 01 Green,1,3,-1
+522,Female Black L Dress 01 Purple,Female Black L Dress 01 Purple,1,3,-1
+523,Female Black L Dress 01 Red,Female Black L Dress 01 Red,1,3,-1
+524,Female Black L Dress 02 Blue ,Female Black L Dress 02 Blue ,1,3,-1
+525,Female Black L Dress 02 Brown ,Female Black L Dress 02 Brown ,1,3,-1
+526,Female Black L Dress 02 Green ,Female Black L Dress 02 Green ,1,3,-1
+527,Female Black L Dress 02 Purple ,Female Black L Dress 02 Purple ,1,3,-1
+528,Female Black L Dress 02 Red,Female Black L Dress 02 Red,1,3,-1
+529,Female Black L Dress 03 Blue ,Female Black L Dress 03 Blue ,1,3,-1
+530,Female Black L Dress 03 Brown ,Female Black L Dress 03 Brown ,1,3,-1
+531,Female Black L Dress 03 Green ,Female Black L Dress 03 Green ,1,3,-1
+532,Female Black L Dress 03 Purple ,Female Black L Dress 03 Purple ,1,3,-1
+533,Female Black L Dress 03 Red,Female Black L Dress 03 Red,1,3,-1
+534,Female Black L Dress 04 Blue ,Female Black L Dress 04 Blue ,1,3,-1
+535,Female Black L Dress 04 Brown ,Female Black L Dress 04 Brown ,1,3,-1
+536,Female Black L Dress 04 Green ,Female Black L Dress 04 Green ,1,3,-1
+537,Female Black L Dress 04 Purple ,Female Black L Dress 04 Purple ,1,3,-1
+538,Female Black L Dress 04 Red,Female Black L Dress 04 Red,1,3,-1
+539,Female Brown L Dress 01 Blue,Female Brown L Dress 01 Blue,1,3,-1
+540,Female Brown L Dress 01 Brown,Female Brown L Dress 01 Brown,1,3,-1
+541,Female Brown L Dress 01 Green,Female Brown L Dress 01 Green,1,3,-1
+542,Female Brown L Dress 01 Purple,Female Brown L Dress 01 Purple,1,3,-1
+543,Female Brown L Dress 01 Red,Female Brown L Dress 01 Red,1,3,-1
+544,Female Brown L Dress 02 Blue ,Female Brown L Dress 02 Blue ,1,3,-1
+545,Female Brown L Dress 02 Brown ,Female Brown L Dress 02 Brown ,1,3,-1
+546,Female Brown L Dress 02 Green ,Female Brown L Dress 02 Green ,1,3,-1
+547,Female Brown L Dress 02 Purple ,Female Brown L Dress 02 Purple ,1,3,-1
+548,Female Brown L Dress 02 Red,Female Brown L Dress 02 Red,1,3,-1
+549,Female Brown L Dress 03 Blue ,Female Brown L Dress 03 Blue ,1,3,-1
+550,Female Brown L Dress 03 Brown ,Female Brown L Dress 03 Brown ,1,3,-1
+551,Female Brown L Dress 03 Green ,Female Brown L Dress 03 Green ,1,3,-1
+552,Female Brown L Dress 03 Purple ,Female Brown L Dress 03 Purple ,1,3,-1
+553,Female Brown L Dress 03 Red,Female Brown L Dress 03 Red,1,3,-1
+554,Female Brown L Dress 04 Blue ,Female Brown L Dress 04 Blue ,1,3,-1
+555,Female Brown L Dress 04 Brown ,Female Brown L Dress 04 Brown ,1,3,-1
+556,Female Brown L Dress 04 Green ,Female Brown L Dress 04 Green ,1,3,-1
+557,Female Brown L Dress 04 Purple ,Female Brown L Dress 04 Purple ,1,3,-1
+558,Female Brown L Dress 04 Red,Female Brown L Dress 04 Red,1,3,-1
+559,Female White L Dress 01 Blue,Female White L Dress 01 Blue,1,3,-1
+560,Female White L Dress 01 Brown,Female White L Dress 01 Brown,1,3,-1
+561,Female White L Dress 01 Green,Female White L Dress 01 Green,1,3,-1
+562,Female White L Dress 01 Purple,Female White L Dress 01 Purple,1,3,-1
+563,Female White L Dress 01 Red,Female White L Dress 01 Red,1,3,-1
+564,Female White L Dress 02 Blue ,Female White L Dress 02 Blue ,1,3,-1
+565,Female White L Dress 02 Brown ,Female White L Dress 02 Brown ,1,3,-1
+566,Female White L Dress 02 Green ,Female White L Dress 02 Green ,1,3,-1
+567,Female White L Dress 02 Purple ,Female White L Dress 02 Purple ,1,3,-1
+568,Female White L Dress 02 Red,Female White L Dress 02 Red,1,3,-1
+569,Female White L Dress 03 Blue ,Female White L Dress 03 Blue ,1,3,-1
+570,Female White L Dress 03 Brown ,Female White L Dress 03 Brown ,1,3,-1
+571,Female White L Dress 03 Green ,Female White L Dress 03 Green ,1,3,-1
+572,Female White L Dress 03 Purple ,Female White L Dress 03 Purple ,1,3,-1
+573,Female White L Dress 03 Red,Female White L Dress 03 Red,1,3,-1
+574,Female White L Dress 04 Blue ,Female White L Dress 04 Blue ,1,3,-1
+575,Female White L Dress 04 Brown ,Female White L Dress 04 Brown ,1,3,-1
+576,Female White L Dress 04 Green ,Female White L Dress 04 Green ,1,3,-1
+577,Female White L Dress 04 Purple ,Female White L Dress 04 Purple ,1,3,-1
+578,Female White L Dress 04 Red,Female White L Dress 04 Red,1,3,-1
+579,Male Black L Robe 01 Blue,Male Black L Robe 01 Blue,0,3,-1
+580,Male Black L Robe 01 Brown,Male Black L Robe 01 Brown,0,3,-1
+581,Male Black L Robe 01 Green,Male Black L Robe 01 Green,0,3,-1
+582,Male Black L Robe 01 Purple,Male Black L Robe 01 Purple,0,3,-1
+583,Male Black L Robe 01 Red,Male Black L Robe 01 Red,0,3,-1
+584,Male Black L Robe 02 Blue,Male Black L Robe 02 Blue,0,3,-1
+585,Male Black L Robe 02 Brown,Male Black L Robe 02 Brown,0,3,-1
+586,Male Black L Robe 02 Green,Male Black L Robe 02 Green,0,3,-1
+587,Male Black L Robe 02 Purple,Male Black L Robe 02 Purple,0,3,-1
+588,Male Black L Robe 02 Red,Male Black L Robe 02 Red,0,3,-1
+589,Male Brown L Robe 01 Blue,Male Brown L Robe 01 Blue,0,3,-1
+590,Male Brown L Robe 01 Brown,Male Brown L Robe 01 Brown,0,3,-1
+591,Male Brown L Robe 01 Green,Male Brown L Robe 01 Green,0,3,-1
+592,Male Brown L Robe 01 Purple,Male Brown L Robe 01 Purple,0,3,-1
+593,Male Brown L Robe 01 Red,Male Brown L Robe 01 Red,0,3,-1
+594,Male Brown L Robe 02 Blue,Male Brown L Robe 02 Blue,0,3,-1
+595,Male Brown L Robe 02 Brown,Male Brown L Robe 02 Brown,0,3,-1
+596,Male Brown L Robe 02 Green,Male Brown L Robe 02 Green,0,3,-1
+597,Male Brown L Robe 02 Purple,Male Brown L Robe 02 Purple,0,3,-1
+598,Male Brown L Robe 02 Red,Male Brown L Robe 02 Red,0,3,-1
+599,Male White L Robe 01 Blue,Male White L Robe 01 Blue,0,3,-1
+600,Male White L Robe 01 Brown,Male White L Robe 01 Brown,0,3,-1
+601,Male White L Robe 01 Green,Male White L Robe 01 Green,0,3,-1
+602,Male White L Robe 01 Purple,Male White L Robe 01 Purple,0,3,-1
+603,Male White L Robe 01 Red,Male White L Robe 01 Red,0,3,-1
+604,Male White L Robe 02 Blue,Male White L Robe 02 Blue,0,3,-1
+605,Male White L Robe 02 Brown,Male White L Robe 02 Brown,0,3,-1
+606,Male White L Robe 02 Green,Male White L Robe 02 Green,0,3,-1
+607,Male White L Robe 02 Purple,Male White L Robe 02 Purple,0,3,-1
+608,Male White L Robe 02 Red,Male White L Robe 02 Red,0,3,-1
+609,Female Black Sorceress 01 Black,Female Black Sorceress 01 Black,1,2,-1
+610,Female Black Sorceress 01 Blue,Female Black Sorceress 01 Blue,1,2,-1
+611,Female Black Sorceress 01 Green,Female Black Sorceress 01 Green,1,2,-1
+612,Female Black Sorceress 01 Pink,Female Black Sorceress 01 Pink,1,2,-1
+613,Female Black Sorceress 01 Purple,Female Black Sorceress 01 Purple,1,2,-1
+614,Female Black Sorceress 02 Blue,Female Black Sorceress 02 Blue,1,2,-1
+615,Female Black Sorceress 02 Green,Female Black Sorceress 02 Green,1,2,-1
+616,Female Black Sorceress 02 Purple,Female Black Sorceress 02 Purple,1,2,-1
+617,Female Black Sorceress 02 Red,Female Black Sorceress 02 Red,1,2,-1
+618,Female Black Sorceress 03 Black,Female Black Sorceress 03 Black,1,2,-1
+619,Female Black Sorceress 03 Blue,Female Black Sorceress 03 Blue,1,2,-1
+620,Female Black Sorceress 03 Brown,Female Black Sorceress 03 Brown,1,2,-1
+621,Female Black Sorceress 03 Green,Female Black Sorceress 03 Green,1,2,-1
+622,Female Black Sorceress 03 Purple,Female Black Sorceress 03 Purple,1,2,-1
+623,Female Black Sorceress 03 Red,Female Black Sorceress 03 Red,1,2,-1
+624,Female Black Sorceress 03 White,Female Black Sorceress 03 White,1,2,-1
+625,Female Black Sorceress 04 Black,Female Black Sorceress 04 Black,1,2,-1
+626,Female Black Sorceress 04 Blue,Female Black Sorceress 04 Blue,1,2,-1
+627,Female Black Sorceress 04 Brown,Female Black Sorceress 04 Brown,1,2,-1
+628,Female Black Sorceress 04 Green,Female Black Sorceress 04 Green,1,2,-1
+629,Female Black Sorceress 04 Magenta,Female Black Sorceress 04 Magenta,1,2,-1
+630,Female Black Sorceress 04 Purple,Female Black Sorceress 04 Purple,1,2,-1
+631,Female Black Sorceress 04 Red,Female Black Sorceress 04 Red,1,2,-1
+632,Female Black Sorceress 04 White,Female Black Sorceress 04 White,1,2,-1
+633,Female Black Sorceress 05 Black,Female Black Sorceress 05 Black,1,2,-1
+634,Female Black Sorceress 05 Blue,Female Black Sorceress 05 Blue,1,2,-1
+635,Female Black Sorceress 05 Brown,Female Black Sorceress 05 Brown,1,2,-1
+636,Female Black Sorceress 05 Green,Female Black Sorceress 05 Green,1,2,-1
+637,Female Black Sorceress 05 Magenta,Female Black Sorceress 05 Magenta,1,2,-1
+638,Female Black Sorceress 05 Purple,Female Black Sorceress 05 Purple,1,2,-1
+639,Female Black Sorceress 05 Red,Female Black Sorceress 05 Red,1,2,-1
+640,Female Black Sorceress 05 White,Female Black Sorceress 05 White,1,2,-1
+641,Female Black Sorceress 06 Black,Female Black Sorceress 06 Black,1,2,-1
+642,Female Black Sorceress 06 Blue,Female Black Sorceress 06 Blue,1,2,-1
+643,Female Black Sorceress 06 Brown,Female Black Sorceress 06 Brown,1,2,-1
+644,Female Black Sorceress 06 Green,Female Black Sorceress 06 Green,1,2,-1
+645,Female Black Sorceress 06 Magenta,Female Black Sorceress 06 Magenta,1,2,-1
+646,Female Black Sorceress 06 Purple,Female Black Sorceress 06 Purple,1,2,-1
+647,Female Black Sorceress 06 Red,Female Black Sorceress 06 Red,1,2,-1
+648,Female Black Sorceress 06 White,Female Black Sorceress 06 White,1,2,-1
+649,Female Brown Sorceress 01 Black,Female Brown Sorceress 01 Black,1,2,-1
+650,Female Brown Sorceress 01 Blue,Female Brown Sorceress 01 Blue,1,2,-1
+651,Female Brown Sorceress 01 Green,Female Brown Sorceress 01 Green,1,2,-1
+652,Female Brown Sorceress 01 Pink,Female Brown Sorceress 01 Pink,1,2,-1
+653,Female Brown Sorceress 01 Purple,Female Brown Sorceress 01 Purple,1,2,-1
+654,Female Brown Sorceress 02 Blue,Female Brown Sorceress 02 Blue,1,2,-1
+655,Female Brown Sorceress 02 Green,Female Brown Sorceress 02 Green,1,2,-1
+656,Female Brown Sorceress 02 Purple,Female Brown Sorceress 02 Purple,1,2,-1
+657,Female Brown Sorceress 02 Red,Female Brown Sorceress 02 Red,1,2,-1
+658,Female Brown Sorceress 03 Black,Female Brown Sorceress 03 Black,1,2,-1
+659,Female Brown Sorceress 03 Blue,Female Brown Sorceress 03 Blue,1,2,-1
+660,Female Brown Sorceress 03 Brown,Female Brown Sorceress 03 Brown,1,2,-1
+661,Female Brown Sorceress 03 Green,Female Brown Sorceress 03 Green,1,2,-1
+662,Female Brown Sorceress 03 Purple,Female Brown Sorceress 03 Purple,1,2,-1
+663,Female Brown Sorceress 03 Red,Female Brown Sorceress 03 Red,1,2,-1
+664,Female Brown Sorceress 03 White,Female Brown Sorceress 03 White,1,2,-1
+665,Female Brown Sorceress 04 Black,Female Brown Sorceress 04 Black,1,2,-1
+666,Female Brown Sorceress 04 Blue,Female Brown Sorceress 04 Blue,1,2,-1
+667,Female Brown Sorceress 04 Brown,Female Brown Sorceress 04 Brown,1,2,-1
+668,Female Brown Sorceress 04 Green,Female Brown Sorceress 04 Green,1,2,-1
+669,Female Brown Sorceress 04 Magenta,Female Brown Sorceress 04 Magenta,1,2,-1
+670,Female Brown Sorceress 04 Purple,Female Brown Sorceress 04 Purple,1,2,-1
+671,Female Brown Sorceress 04 Red,Female Brown Sorceress 04 Red,1,2,-1
+672,Female Brown Sorceress 04 White,Female Brown Sorceress 04 White,1,2,-1
+673,Female Brown Sorceress 05 Black,Female Brown Sorceress 05 Black,1,2,-1
+674,Female Brown Sorceress 05 Blue,Female Brown Sorceress 05 Blue,1,2,-1
+675,Female Brown Sorceress 05 Brown,Female Brown Sorceress 05 Brown,1,2,-1
+676,Female Brown Sorceress 05 Green,Female Brown Sorceress 05 Green,1,2,-1
+677,Female Brown Sorceress 05 Magenta,Female Brown Sorceress 05 Magenta,1,2,-1
+678,Female Brown Sorceress 05 Purple,Female Brown Sorceress 05 Purple,1,2,-1
+679,Female Brown Sorceress 05 Red,Female Brown Sorceress 05 Red,1,2,-1
+680,Female Brown Sorceress 05 White,Female Brown Sorceress 05 White,1,2,-1
+681,Female Brown Sorceress 06 Black,Female Brown Sorceress 06 Black,1,2,-1
+682,Female Brown Sorceress 06 Blue,Female Brown Sorceress 06 Blue,1,2,-1
+683,Female Brown Sorceress 06 Brown,Female Brown Sorceress 06 Brown,1,2,-1
+684,Female Brown Sorceress 06 Green,Female Brown Sorceress 06 Green,1,2,-1
+685,Female Brown Sorceress 06 Magenta,Female Brown Sorceress 06 Magenta,1,2,-1
+686,Female Brown Sorceress 06 Purple,Female Brown Sorceress 06 Purple,1,2,-1
+687,Female Brown Sorceress 06 Red,Female Brown Sorceress 06 Red,1,2,-1
+688,Female Brown Sorceress 06 White,Female Brown Sorceress 06 White,1,2,-1
+689,Female White Sorceress 01 Black,Female White Sorceress 01 Black,1,2,-1
+690,Female White Sorceress 01 Blue,Female White Sorceress 01 Blue,1,2,-1
+691,Female White Sorceress 01 Green,Female White Sorceress 01 Green,1,2,-1
+692,Female White Sorceress 01 Pink,Female White Sorceress 01 Pink,1,2,-1
+693,Female White Sorceress 01 Purple,Female White Sorceress 01 Purple,1,2,-1
+694,Female White Sorceress 02 Blue,Female White Sorceress 02 Blue,1,2,-1
+695,Female White Sorceress 02 Green,Female White Sorceress 02 Green,1,2,-1
+696,Female White Sorceress 02 Purple,Female White Sorceress 02 Purple,1,2,-1
+697,Female White Sorceress 02 Red,Female White Sorceress 02 Red,1,2,-1
+698,Female White Sorceress 03 Black,Female White Sorceress 03 Black,1,2,-1
+699,Female White Sorceress 03 Blue,Female White Sorceress 03 Blue,1,2,-1
+700,Female White Sorceress 03 Brown,Female White Sorceress 03 Brown,1,2,-1
+701,Female White Sorceress 03 Green,Female White Sorceress 03 Green,1,2,-1
+702,Female White Sorceress 03 Purple,Female White Sorceress 03 Purple,1,2,-1
+703,Female White Sorceress 03 Red,Female White Sorceress 03 Red,1,2,-1
+704,Female White Sorceress 03 White,Female White Sorceress 03 White,1,2,-1
+705,Female White Sorceress 04 Black,Female White Sorceress 04 Black,1,2,-1
+706,Female White Sorceress 04 Blue,Female White Sorceress 04 Blue,1,2,-1
+707,Female White Sorceress 04 Brown,Female White Sorceress 04 Brown,1,2,-1
+708,Female White Sorceress 04 Green,Female White Sorceress 04 Green,1,2,-1
+709,Female White Sorceress 04 Magenta,Female White Sorceress 04 Magenta,1,2,-1
+710,Female White Sorceress 04 Purple,Female White Sorceress 04 Purple,1,2,-1
+711,Female White Sorceress 04 Red,Female White Sorceress 04 Red,1,2,-1
+712,Female White Sorceress 04 White,Female White Sorceress 04 White,1,2,-1
+713,Female White Sorceress 05 Black,Female White Sorceress 05 Black,1,2,-1
+714,Female White Sorceress 05 Blue,Female White Sorceress 05 Blue,1,2,-1
+715,Female White Sorceress 05 Brown,Female White Sorceress 05 Brown,1,2,-1
+716,Female White Sorceress 05 Green,Female White Sorceress 05 Green,1,2,-1
+717,Female White Sorceress 05 Magenta,Female White Sorceress 05 Magenta,1,2,-1
+718,Female White Sorceress 05 Purple,Female White Sorceress 05 Purple,1,2,-1
+719,Female White Sorceress 05 Red,Female White Sorceress 05 Red,1,2,-1
+720,Female White Sorceress 05 White,Female White Sorceress 05 White,1,2,-1
+721,Female White Sorceress 06 Black,Female White Sorceress 06 Black,1,2,-1
+722,Female White Sorceress 06 Blue,Female White Sorceress 06 Blue,1,2,-1
+723,Female White Sorceress 06 Brown,Female White Sorceress 06 Brown,1,2,-1
+724,Female White Sorceress 06 Green,Female White Sorceress 06 Green,1,2,-1
+725,Female White Sorceress 06 Magenta,Female White Sorceress 06 Magenta,1,2,-1
+726,Female White Sorceress 06 Purple,Female White Sorceress 06 Purple,1,2,-1
+727,Female White Sorceress 06 Red,Female White Sorceress 06 Red,1,2,-1
+728,Female White Sorceress 06 White,Female White Sorceress 06 White,1,2,-1
+729,Male Black Wizard 01 Black,Male Black Wizard 01 Black,0,2,-1
+730,Male Black Wizard 01 Blue,Male Black Wizard 01 Blue,0,2,-1
+731,Male Black Wizard 01 Green,Male Black Wizard 01 Green,0,2,-1
+732,Male Black Wizard 01 Purple,Male Black Wizard 01 Purple,0,2,-1
+733,Male Black Wizard 01 Red,Male Black Wizard 01 Red,0,2,-1
+734,Male Black Wizard 01 White,Male Black Wizard 01 White,0,2,-1
+735,Male Black Wizard 02 Black,Male Black Wizard 02 Black,0,2,-1
+736,Male Black Wizard 02 Blue,Male Black Wizard 02 Blue,0,2,-1
+737,Male Black Wizard 02 Brown,Male Black Wizard 02 Brown,0,2,-1
+738,Male Black Wizard 02 Green,Male Black Wizard 02 Green,0,2,-1
+739,Male Black Wizard 02 Purple,Male Black Wizard 02 Purple,0,2,-1
+740,Male Black Wizard 02 Red,Male Black Wizard 02 Red,0,2,-1
+741,Male Black Wizard 02 White,Male Black Wizard 02 White,0,2,-1
+742,Male Black Wizard 03 Black,Male Black Wizard 03 Black,0,2,-1
+743,Male Black Wizard 03 Blue,Male Black Wizard 03 Blue,0,2,-1
+744,Male Black Wizard 03 Green,Male Black Wizard 03 Green,0,2,-1
+745,Male Black Wizard 03 Purple,Male Black Wizard 03 Purple,0,2,-1
+746,Male Black Wizard 03 Red,Male Black Wizard 03 Red,0,2,-1
+747,Male Black Wizard 03 Yellow,Male Black Wizard 03 Yellow,0,2,-1
+748,Male Black Wizard 04 Black,Male Black Wizard 04 Black,0,2,-1
+749,Male Black Wizard 04 Blue,Male Black Wizard 04 Blue,0,2,-1
+750,Male Black Wizard 04 Brown,Male Black Wizard 04 Brown,0,2,-1
+751,Male Black Wizard 04 Green,Male Black Wizard 04 Green,0,2,-1
+752,Male Black Wizard 04 Magenta,Male Black Wizard 04 Magenta,0,2,-1
+753,Male Black Wizard 04 Purple,Male Black Wizard 04 Purple,0,2,-1
+754,Male Black Wizard 04 Red,Male Black Wizard 04 Red,0,2,-1
+755,Male Black Wizard 04 White,Male Black Wizard 04 White,0,2,-1
+756,Male Black Wizard 05 Black,Male Black Wizard 05 Black,0,2,-1
+757,Male Black Wizard 05 Blue,Male Black Wizard 05 Blue,0,2,-1
+758,Male Black Wizard 05 Brown,Male Black Wizard 05 Brown,0,2,-1
+759,Male Black Wizard 05 Green,Male Black Wizard 05 Green,0,2,-1
+760,Male Black Wizard 05 Magenta,Male Black Wizard 05 Magenta,0,2,-1
+761,Male Black Wizard 05 Purple,Male Black Wizard 05 Purple,0,2,-1
+762,Male Black Wizard 05 Red,Male Black Wizard 05 Red,0,2,-1
+763,Male Black Wizard 05 White,Male Black Wizard 05 White,0,2,-1
+764,Male Black Wizard 06 Black,Male Black Wizard 06 Black,0,2,-1
+765,Male Black Wizard 06 Blue,Male Black Wizard 06 Blue,0,2,-1
+766,Male Black Wizard 06 Brown,Male Black Wizard 06 Brown,0,2,-1
+767,Male Black Wizard 06 Green,Male Black Wizard 06 Green,0,2,-1
+768,Male Black Wizard 06 Magenta,Male Black Wizard 06 Magenta,0,2,-1
+769,Male Black Wizard 06 Purple,Male Black Wizard 06 Purple,0,2,-1
+770,Male Black Wizard 06 Red,Male Black Wizard 06 Red,0,2,-1
+771,Male Black Wizard 06 White,Male Black Wizard 06 White,0,2,-1
+772,Male Brown Wizard 01 Black,Male Brown Wizard 01 Black,0,2,-1
+773,Male Brown Wizard 01 Blue,Male Brown Wizard 01 Blue,0,2,-1
+774,Male Brown Wizard 01 Green,Male Brown Wizard 01 Green,0,2,-1
+775,Male Brown Wizard 01 Purple,Male Brown Wizard 01 Purple,0,2,-1
+776,Male Brown Wizard 01 Red,Male Brown Wizard 01 Red,0,2,-1
+777,Male Brown Wizard 01 White,Male Brown Wizard 01 White,0,2,-1
+778,Male Brown Wizard 02 Black,Male Brown Wizard 02 Black,0,2,-1
+779,Male Brown Wizard 02 Blue,Male Brown Wizard 02 Blue,0,2,-1
+780,Male Brown Wizard 02 Brown,Male Brown Wizard 02 Brown,0,2,-1
+781,Male Brown Wizard 02 Green,Male Brown Wizard 02 Green,0,2,-1
+782,Male Brown Wizard 02 Purple,Male Brown Wizard 02 Purple,0,2,-1
+783,Male Brown Wizard 02 Red,Male Brown Wizard 02 Red,0,2,-1
+784,Male Brown Wizard 02 White,Male Brown Wizard 02 White,0,2,-1
+785,Male Brown Wizard 03 Black,Male Brown Wizard 03 Black,0,2,-1
+786,Male Brown Wizard 03 Blue,Male Brown Wizard 03 Blue,0,2,-1
+787,Male Brown Wizard 03 Green,Male Brown Wizard 03 Green,0,2,-1
+788,Male Brown Wizard 03 Purple,Male Brown Wizard 03 Purple,0,2,-1
+789,Male Brown Wizard 03 Red,Male Brown Wizard 03 Red,0,2,-1
+790,Male Brown Wizard 03 Yellow,Male Brown Wizard 03 Yellow,0,2,-1
+791,Male Brown Wizard 04 Black,Male Brown Wizard 04 Black,0,2,-1
+792,Male Brown Wizard 04 Blue,Male Brown Wizard 04 Blue,0,2,-1
+793,Male Brown Wizard 04 Brown,Male Brown Wizard 04 Brown,0,2,-1
+794,Male Brown Wizard 04 Green,Male Brown Wizard 04 Green,0,2,-1
+795,Male Brown Wizard 04 Magenta,Male Brown Wizard 04 Magenta,0,2,-1
+796,Male Brown Wizard 04 Purple,Male Brown Wizard 04 Purple,0,2,-1
+797,Male Brown Wizard 04 Red,Male Brown Wizard 04 Red,0,2,-1
+798,Male Brown Wizard 04 White,Male Brown Wizard 04 White,0,2,-1
+799,Male Brown Wizard 05 Black,Male Brown Wizard 05 Black,0,2,-1
+800,Male Brown Wizard 05 Blue,Male Brown Wizard 05 Blue,0,2,-1
+801,Male Brown Wizard 05 Brown,Male Brown Wizard 05 Brown,0,2,-1
+802,Male Brown Wizard 05 Green,Male Brown Wizard 05 Green,0,2,-1
+803,Male Brown Wizard 05 Magenta,Male Brown Wizard 05 Magenta,0,2,-1
+804,Male Brown Wizard 05 Purple,Male Brown Wizard 05 Purple,0,2,-1
+805,Male Brown Wizard 05 Red,Male Brown Wizard 05 Red,0,2,-1
+806,Male Brown Wizard 05 White,Male Brown Wizard 05 White,0,2,-1
+807,Male Brown Wizard 06 Black,Male Brown Wizard 06 Black,0,2,-1
+808,Male Brown Wizard 06 Blue,Male Brown Wizard 06 Blue,0,2,-1
+809,Male Brown Wizard 06 Brown,Male Brown Wizard 06 Brown,0,2,-1
+810,Male Brown Wizard 06 Green,Male Brown Wizard 06 Green,0,2,-1
+811,Male Brown Wizard 06 Magenta,Male Brown Wizard 06 Magenta,0,2,-1
+812,Male Brown Wizard 06 Purple,Male Brown Wizard 06 Purple,0,2,-1
+813,Male Brown Wizard 06 Red,Male Brown Wizard 06 Red,0,2,-1
+814,Male Brown Wizard 06 White,Male Brown Wizard 06 White,0,2,-1
+815,Male White Wizard 01 Black,Male White Wizard 01 Black,0,2,-1
+816,Male White Wizard 01 Blue,Male White Wizard 01 Blue,0,2,-1
+817,Male White Wizard 01 Green,Male White Wizard 01 Green,0,2,-1
+818,Male White Wizard 01 Purple,Male White Wizard 01 Purple,0,2,-1
+819,Male White Wizard 01 Red,Male White Wizard 01 Red,0,2,-1
+820,Male White Wizard 01 White,Male White Wizard 01 White,0,2,-1
+821,Male White Wizard 02 Black,Male White Wizard 02 Black,0,2,-1
+822,Male White Wizard 02 Blue,Male White Wizard 02 Blue,0,2,-1
+823,Male White Wizard 02 Brown,Male White Wizard 02 Brown,0,2,-1
+824,Male White Wizard 02 Green,Male White Wizard 02 Green,0,2,-1
+825,Male White Wizard 02 Purple,Male White Wizard 02 Purple,0,2,-1
+826,Male White Wizard 02 Red,Male White Wizard 02 Red,0,2,-1
+827,Male White Wizard 02 White,Male White Wizard 02 White,0,2,-1
+828,Male White Wizard 03 Black,Male White Wizard 03 Black,0,2,-1
+829,Male White Wizard 03 Blue,Male White Wizard 03 Blue,0,2,-1
+830,Male White Wizard 03 Green,Male White Wizard 03 Green,0,2,-1
+831,Male White Wizard 03 Purple,Male White Wizard 03 Purple,0,2,-1
+832,Male White Wizard 03 Red,Male White Wizard 03 Red,0,2,-1
+833,Male White Wizard 03 Yellow,Male White Wizard 03 Yellow,0,2,-1
+834,Male White Wizard 04 Black,Male White Wizard 04 Black,0,2,-1
+835,Male White Wizard 04 Blue,Male White Wizard 04 Blue,0,2,-1
+836,Male White Wizard 04 Brown,Male White Wizard 04 Brown,0,2,-1
+837,Male White Wizard 04 Green,Male White Wizard 04 Green,0,2,-1
+838,Male White Wizard 04 Magenta,Male White Wizard 04 Magenta,0,2,-1
+839,Male White Wizard 04 Purple,Male White Wizard 04 Purple,0,2,-1
+840,Male White Wizard 04 Red,Male White Wizard 04 Red,0,2,-1
+841,Male White Wizard 04 White,Male White Wizard 04 White,0,2,-1
+842,Male White Wizard 05 Black,Male White Wizard 05 Black,0,2,-1
+843,Male White Wizard 05 Blue,Male White Wizard 05 Blue,0,2,-1
+844,Male White Wizard 05 Brown,Male White Wizard 05 Brown,0,2,-1
+845,Male White Wizard 05 Green,Male White Wizard 05 Green,0,2,-1
+846,Male White Wizard 05 Magenta,Male White Wizard 05 Magenta,0,2,-1
+847,Male White Wizard 05 Purple,Male White Wizard 05 Purple,0,2,-1
+848,Male White Wizard 05 Red,Male White Wizard 05 Red,0,2,-1
+849,Male White Wizard 05 White,Male White Wizard 05 White,0,2,-1
+850,Male White Wizard 06 Black,Male White Wizard 06 Black,0,2,-1
+851,Male White Wizard 06 Blue,Male White Wizard 06 Blue,0,2,-1
+852,Male White Wizard 06 Brown,Male White Wizard 06 Brown,0,2,-1
+853,Male White Wizard 06 Green,Male White Wizard 06 Green,0,2,-1
+854,Male White Wizard 06 Magenta,Male White Wizard 06 Magenta,0,2,-1
+855,Male White Wizard 06 Purple,Male White Wizard 06 Purple,0,2,-1
+856,Male White Wizard 06 Red,Male White Wizard 06 Red,0,2,-1
+857,Male White Wizard 06 White,Male White Wizard 06 White,0,2,-1
+858,Female Aqua 01 Blue,Female Aqua 01 Blue,1,4,-1
+859,Female Aqua 01 Cyan,Female Aqua 01 Cyan,1,4,-1
+860,Female Black Elf 01,Female Black Elf 01,1,4,-1
+861,Female Brown Elf 01,Female Brown Elf 01,1,4,-1
+862,Female Fire 01 Orange,Female Fire 01 Orange,1,4,-1
+863,Female Fire 01 Yellow,Female Fire 01 Yellow,1,4,-1
+864,Female Gorgon 01 Black,Female Gorgon 01 Black,1,4,-1
+865,Female Gorgon 01 Blue,Female Gorgon 01 Blue,1,4,-1
+866,Female Gorgon 01 Brown,Female Gorgon 01 Brown,1,4,-1
+867,Female Gorgon 01 Green,Female Gorgon 01 Green,1,4,-1
+868,Female Gorgon 01 Magenta,Female Gorgon 01 Magenta,1,4,-1
+869,Female Gorgon 01 Purple,Female Gorgon 01 Purple,1,4,-1
+870,Female Gorgon 01 Red,Female Gorgon 01 Red,1,4,-1
+871,Female Gorgon 02 Black,Female Gorgon 02 Black,1,4,-1
+872,Female Gorgon 02 Blue,Female Gorgon 02 Blue,1,4,-1
+873,Female Gorgon 02 Green,Female Gorgon 02 Green,1,4,-1
+874,Female Gorgon 02 Magenta,Female Gorgon 02 Magenta,1,4,-1
+875,Female Gorgon 02 Purple,Female Gorgon 02 Purple,1,4,-1
+876,Female Gorgon 02 Red,Female Gorgon 02 Red,1,4,-1
+877,Female Gorgon 02 White,Female Gorgon 02 White,1,4,-1
+878,Female Gorgon 02 Yellow,Female Gorgon 02 Yellow,1,4,-1
+879,Female Gorgon 03 Black,Female Gorgon 03 Black,1,4,-1
+880,Female Gorgon 03 Blue,Female Gorgon 03 Blue,1,4,-1
+881,Female Gorgon 03 Green,Female Gorgon 03 Green,1,4,-1
+882,Female Gorgon 03 Magenta,Female Gorgon 03 Magenta,1,4,-1
+883,Female Gorgon 03 Purple,Female Gorgon 03 Purple,1,4,-1
+884,Female Gorgon 03 Red,Female Gorgon 03 Red,1,4,-1
+885,Female Gorgon 03 Yellow,Female Gorgon 03 Yellow,1,4,-1
+886,Female Spideress 01 Blue,Female Spideress 01 Blue,1,4,-1
+887,Female Spideress 01 Green,Female Spideress 01 Green,1,4,-1
+888,Female Spideress 01 Magenta,Female Spideress 01 Magenta,1,4,-1
+889,Female Spideress 01 Purple,Female Spideress 01 Purple,1,4,-1
+890,Female Spideress 01 Red,Female Spideress 01 Red,1,4,-1
+891,Female Spideress 01 White,Female Spideress 01 White,1,4,-1
+892,Female Spideress 01 Yellow,Female Spideress 01 Yellow,1,4,-1
+893,Female Spideress 02 Black,Female Spideress 02 Black,1,4,-1
+894,Female Spideress 02 Blue,Female Spideress 02 Blue,1,4,-1
+895,Female Spideress 02 Green,Female Spideress 02 Green,1,4,-1
+896,Female Spideress 02 Magenta,Female Spideress 02 Magenta,1,4,-1
+897,Female Spideress 02 Purple,Female Spideress 02 Purple,1,4,-1
+898,Female Spideress 02 Yellow,Female Spideress 02 Yellow,1,4,-1
+899,Female Spideress 03 Black,Female Spideress 03 Black,1,4,-1
+900,Female Spideress 03 Blue,Female Spideress 03 Blue,1,4,-1
+901,Female Spideress 03 Green,Female Spideress 03 Green,1,4,-1
+902,Female Spideress 03 Magenta,Female Spideress 03 Magenta,1,4,-1
+903,Female Spideress 03 Purple,Female Spideress 03 Purple,1,4,-1
+904,Female Spideress 03 Red,Female Spideress 03 Red,1,4,-1
+905,Female Spideress 03 Yellow,Female Spideress 03 Yellow,1,4,-1
+906,Female White Elf 01,Female White Elf 01,1,4,-1
+907,Male Aqua 01 Blue,Male Aqua 01 Blue,0,4,-1
+908,Male Aqua 01 Cyan,Male Aqua 01 Cyan,0,4,-1
+909,Male Black King 01 Black,Male Black King 01 Black,0,4,-1
+910,Male Black King 01 Blue,Male Black King 01 Blue,0,4,-1
+911,Male Black King 01 Green,Male Black King 01 Green,0,4,-1
+912,Male Black King 01 Magenta,Male Black King 01 Magenta,0,4,-1
+913,Male Black King 01 Purple,Male Black King 01 Purple,0,4,-1
+914,Male Black King 01 Red,Male Black King 01 Red,0,4,-1
+915,Male Black King 01 White,Male Black King 01 White,0,4,-1
+916,Male Black King 01 Yellow,Male Black King 01 Yellow,0,4,-1
+917,Male Black Santa 01,Male Black Santa 01,0,4,-1
+918,Male Brown King 01 Black,Male Brown King 01 Black,0,4,-1
+919,Male Brown King 01 Blue,Male Brown King 01 Blue,0,4,-1
+920,Male Brown King 01 Green,Male Brown King 01 Green,0,4,-1
+921,Male Brown King 01 Magenta,Male Brown King 01 Magenta,0,4,-1
+922,Male Brown King 01 Purple,Male Brown King 01 Purple,0,4,-1
+923,Male Brown King 01 Red,Male Brown King 01 Red,0,4,-1
+924,Male Brown King 01 White,Male Brown King 01 White,0,4,-1
+925,Male Brown King 01 Yellow,Male Brown King 01 Yellow,0,4,-1
+926,Male Brown Santa 01,Male Brown Santa 01,0,4,-1
+927,Male Fire 01 Orange,Male Fire 01 Orange,0,4,-1
+928,Male Fire 01 Yellow,Male Fire 01 Yellow,0,4,-1
+929,Male White King 01 Black,Male White King 01 Black,0,4,-1
+930,Male White King 01 Blue,Male White King 01 Blue,0,4,-1
+931,Male White King 01 Green,Male White King 01 Green,0,4,-1
+932,Male White King 01 Magenta,Male White King 01 Magenta,0,4,-1
+933,Male White King 01 Purple,Male White King 01 Purple,0,4,-1
+934,Male White King 01 Red,Male White King 01 Red,0,4,-1
+935,Male White King 01 White,Male White King 01 White,0,4,-1
+936,Male White King 01 Yellow,Male White King 01 Yellow,0,4,-1
+937,Male White Santa 01,Male White Santa 01,0,4,-1
+938,Hair Female 01 Black,Hair Female 01 Black,1,-1,0
+939,Hair Female 01 Blonde,Hair Female 01 Blonde,1,-1,0
+940,Hair Female 01 Brown,Hair Female 01 Brown,1,-1,0
+941,Hair Female 01 Cyan,Hair Female 01 Cyan,1,-1,0
+942,Hair Female 01 Purple,Hair Female 01 Purple,1,-1,0
+943,Hair Female 01 Red,Hair Female 01 Red,1,-1,0
+944,Hair Female 01 White,Hair Female 01 White,1,-1,0
+945,Hair Female 02 Black,Hair Female 02 Black,1,-1,0
+946,Hair Female 02 Blonde,Hair Female 02 Blonde,1,-1,0
+947,Hair Female 02 Brown,Hair Female 02 Brown,1,-1,0
+948,Hair Female 02 Cyan,Hair Female 02 Cyan,1,-1,0
+949,Hair Female 02 Grey,Hair Female 02 Grey,1,-1,0
+950,Hair Female 02 Purple,Hair Female 02 Purple,1,-1,0
+951,Hair Female 02 Red,Hair Female 02 Red,1,-1,0
+952,Hair Female 03 Black,Hair Female 03 Black,1,-1,0
+953,Hair Female 03 Blonde,Hair Female 03 Blonde,1,-1,0
+954,Hair Female 03 Brown,Hair Female 03 Brown,1,-1,0
+955,Hair Female 03 Cyan,Hair Female 03 Cyan,1,-1,0
+956,Hair Female 03 Grey,Hair Female 03 Grey,1,-1,0
+957,Hair Female 03 Purple,Hair Female 03 Purple,1,-1,0
+958,Hair Female 03 Red,Hair Female 03 Red,1,-1,0
+959,Hair Female 04 Black,Hair Female 04 Black,1,-1,0
+960,Hair Female 04 Blonde,Hair Female 04 Blonde,1,-1,0
+961,Hair Female 04 Brown,Hair Female 04 Brown,1,-1,0
+962,Hair Female 04 Cyan,Hair Female 04 Cyan,1,-1,0
+963,Hair Female 04 Grey,Hair Female 04 Grey,1,-1,0
+964,Hair Female 04 Purple,Hair Female 04 Purple,1,-1,0
+965,Hair Female 04 Red,Hair Female 04 Red,1,-1,0
+966,Hair Female 05 Black,Hair Female 05 Black,1,-1,0
+967,Hair Female 05 Blonde,Hair Female 05 Blonde,1,-1,0
+968,Hair Female 05 Brown,Hair Female 05 Brown,1,-1,0
+969,Hair Female 05 Cyan,Hair Female 05 Cyan,1,-1,0
+970,Hair Female 05 Grey,Hair Female 05 Grey,1,-1,0
+971,Hair Female 05 Purple,Hair Female 05 Purple,1,-1,0
+972,Hair Female 05 Red,Hair Female 05 Red,1,-1,0
+973,Hair Female 06 Black,Hair Female 06 Black,1,-1,0
+974,Hair Female 06 Blonde,Hair Female 06 Blonde,1,-1,0
+975,Hair Female 06 Brown,Hair Female 06 Brown,1,-1,0
+976,Hair Female 06 Cyan,Hair Female 06 Cyan,1,-1,0
+977,Hair Female 06 Grey,Hair Female 06 Grey,1,-1,0
+978,Hair Female 06 Purple,Hair Female 06 Purple,1,-1,0
+979,Hair Female 06 Red,Hair Female 06 Red,1,-1,0
+980,Hair Female 07 Black,Hair Female 07 Black,1,-1,0
+981,Hair Female 07 Blonde,Hair Female 07 Blonde,1,-1,0
+982,Hair Female 07 Brown,Hair Female 07 Brown,1,-1,0
+983,Hair Female 07 Cyan,Hair Female 07 Cyan,1,-1,0
+984,Hair Female 07 Grey,Hair Female 07 Grey,1,-1,0
+985,Hair Female 07 Purple,Hair Female 07 Purple,1,-1,0
+986,Hair Female 07 Red,Hair Female 07 Red,1,-1,0
+987,Hair Female 08 Black,Hair Female 08 Black,1,-1,0
+988,Hair Female 08 Blonde,Hair Female 08 Blonde,1,-1,0
+989,Hair Female 08 Brown,Hair Female 08 Brown,1,-1,0
+990,Hair Female 08 Cyan,Hair Female 08 Cyan,1,-1,0
+991,Hair Female 08 Grey,Hair Female 08 Grey,1,-1,0
+992,Hair Female 08 Purple,Hair Female 08 Purple,1,-1,0
+993,Hair Female 08 Red,Hair Female 08 Red,1,-1,0
+994,Hair Female 09 Black,Hair Female 09 Black,1,-1,0
+995,Hair Female 09 Blonde,Hair Female 09 Blonde,1,-1,0
+996,Hair Female 09 Brown,Hair Female 09 Brown,1,-1,0
+997,Hair Female 09 Cyan,Hair Female 09 Cyan,1,-1,0
+998,Hair Female 09 Grey,Hair Female 09 Grey,1,-1,0
+999,Hair Female 09 Purple,Hair Female 09 Purple,1,-1,0
+1000,Hair Female 09 Red,Hair Female 09 Red,1,-1,0
+1001,Hair Female 10 Black,Hair Female 10 Black,1,-1,0
+1002,Hair Female 10 Blonde,Hair Female 10 Blonde,1,-1,0
+1003,Hair Female 10 Brown,Hair Female 10 Brown,1,-1,0
+1004,Hair Female 10 Cyan,Hair Female 10 Cyan,1,-1,0
+1005,Hair Female 10 Grey,Hair Female 10 Grey,1,-1,0
+1006,Hair Female 10 Purple,Hair Female 10 Purple,1,-1,0
+1007,Hair Female 10 Red,Hair Female 10 Red,1,-1,0
+1008,Hair Female 11 Black,Hair Female 11 Black,1,-1,0
+1009,Hair Female 11 Blonde,Hair Female 11 Blonde,1,-1,0
+1010,Hair Female 11 Brown,Hair Female 11 Brown,1,-1,0
+1011,Hair Female 11 Cyan,Hair Female 11 Cyan,1,-1,0
+1012,Hair Female 11 Grey,Hair Female 11 Grey,1,-1,0
+1013,Hair Female 11 Purple,Hair Female 11 Purple,1,-1,0
+1014,Hair Female 11 Red,Hair Female 11 Red,1,-1,0
+1015,Hair Female 12 Black,Hair Female 12 Black,1,-1,0
+1016,Hair Female 12 Blonde,Hair Female 12 Blonde,1,-1,0
+1017,Hair Female 12 Brown,Hair Female 12 Brown,1,-1,0
+1018,Hair Female 12 Cyan,Hair Female 12 Cyan,1,-1,0
+1019,Hair Female 12 Grey,Hair Female 12 Grey,1,-1,0
+1020,Hair Female 12 Purple,Hair Female 12 Purple,1,-1,0
+1021,Hair Female 12 Red,Hair Female 12 Red,1,-1,0
+1022,Hair Female 13 Black,Hair Female 13 Black,1,-1,0
+1023,Hair Female 13 Blonde,Hair Female 13 Blonde,1,-1,0
+1024,Hair Female 13 Brown,Hair Female 13 Brown,1,-1,0
+1025,Hair Female 13 Cyan,Hair Female 13 Cyan,1,-1,0
+1026,Hair Female 13 Grey,Hair Female 13 Grey,1,-1,0
+1027,Hair Female 13 Purple,Hair Female 13 Purple,1,-1,0
+1028,Hair Female 13 Red,Hair Female 13 Red,1,-1,0
+1029,Hair Female 14 Black,Hair Female 14 Black,1,-1,0
+1030,Hair Female 14 Blonde,Hair Female 14 Blonde,1,-1,0
+1031,Hair Female 14 Brown,Hair Female 14 Brown,1,-1,0
+1032,Hair Female 14 Cyan,Hair Female 14 Cyan,1,-1,0
+1033,Hair Female 14 Grey,Hair Female 14 Grey,1,-1,0
+1034,Hair Female 14 Purple,Hair Female 14 Purple,1,-1,0
+1035,Hair Female 14 Red,Hair Female 14 Red,1,-1,0
+1036,Hair Female 15 Black,Hair Female 15 Black,1,-1,0
+1037,Hair Female 15 Blonde,Hair Female 15 Blonde,1,-1,0
+1038,Hair Female 15 Brown,Hair Female 15 Brown,1,-1,0
+1039,Hair Female 15 Cyan,Hair Female 15 Cyan,1,-1,0
+1040,Hair Female 15 Grey,Hair Female 15 Grey,1,-1,0
+1041,Hair Female 15 Purple,Hair Female 15 Purple,1,-1,0
+1042,Hair Female 15 Red,Hair Female 15 Red,1,-1,0
+1043,Hair Female 16 Black,Hair Female 16 Black,1,-1,0
+1044,Hair Female 16 Blonde,Hair Female 16 Blonde,1,-1,0
+1045,Hair Female 16 Brown,Hair Female 16 Brown,1,-1,0
+1046,Hair Female 16 Cyan,Hair Female 16 Cyan,1,-1,0
+1047,Hair Female 16 Grey,Hair Female 16 Grey,1,-1,0
+1048,Hair Female 16 Purple,Hair Female 16 Purple,1,-1,0
+1049,Hair Female 16 Red,Hair Female 16 Red,1,-1,0
+1050,Hair Female 17 Aqua,Hair Female 17 Aqua,1,-1,0
+1051,Hair Female 17 Black,Hair Female 17 Black,1,-1,0
+1052,Hair Female 17 Blonde,Hair Female 17 Blonde,1,-1,0
+1053,Hair Female 17 Brown,Hair Female 17 Brown,1,-1,0
+1054,Hair Female 17 Cyan,Hair Female 17 Cyan,1,-1,0
+1055,Hair Female 17 Fire,Hair Female 17 Fire,1,-1,0
+1056,Hair Female 17 Grey,Hair Female 17 Grey,1,-1,0
+1057,Hair Female 17 Purple,Hair Female 17 Purple,1,-1,0
+1058,Hair Female 17 Red,Hair Female 17 Red,1,-1,0
+1059,Hair Female 18 Black,Hair Female 18 Black,1,-1,0
+1060,Hair Female 18 Blue,Hair Female 18 Blue,1,-1,0
+1061,Hair Female 18 Green,Hair Female 18 Green,1,-1,0
+1062,Hair Female 18 Magenta,Hair Female 18 Magenta,1,-1,0
+1063,Hair Female 18 Purple,Hair Female 18 Purple,1,-1,0
+1064,Hair Female 18 Red,Hair Female 18 Red,1,-1,0
+1065,Hair Female 18 White,Hair Female 18 White,1,-1,0
+1066,Hair Female 18 Yellow,Hair Female 18 Yellow,1,-1,0
+1067,Hair Male 01 Black,Hair Male 01 Black,0,-1,0
+1068,Hair Male 01 Blonde,Hair Male 01 Blonde,0,-1,0
+1069,Hair Male 01 Brown,Hair Male 01 Brown,0,-1,0
+1070,Hair Male 01 Cyan,Hair Male 01 Cyan,0,-1,0
+1071,Hair Male 01 Grey,Hair Male 01 Grey,0,-1,0
+1072,Hair Male 01 Purple,Hair Male 01 Purple,0,-1,0
+1073,Hair Male 01 Red,Hair Male 01 Red,0,-1,0
+1074,Hair Male 02 Black,Hair Male 02 Black,0,-1,0
+1075,Hair Male 02 Blonde,Hair Male 02 Blonde,0,-1,0
+1076,Hair Male 02 Brown,Hair Male 02 Brown,0,-1,0
+1077,Hair Male 02 Cyan,Hair Male 02 Cyan,0,-1,0
+1078,Hair Male 02 Grey,Hair Male 02 Grey,0,-1,0
+1079,Hair Male 02 Purple,Hair Male 02 Purple,0,-1,0
+1080,Hair Male 02 Red,Hair Male 02 Red,0,-1,0
+1081,Hair Male 03 Old Black,Hair Male 03 Old Black,0,-1,0
+1082,Hair Male 03 Old Blonde,Hair Male 03 Old Blonde,0,-1,0
+1083,Hair Male 03 Old Brown,Hair Male 03 Old Brown,0,-1,0
+1084,Hair Male 03 Old Cyan,Hair Male 03 Old Cyan,0,-1,0
+1085,Hair Male 03 Old Grey,Hair Male 03 Old Grey,0,-1,0
+1086,Hair Male 03 Old Purple,Hair Male 03 Old Purple,0,-1,0
+1087,Hair Male 03 Old Red,Hair Male 03 Old Red,0,-1,0
+1088,Hair Male 04 Black,Hair Male 04 Black,0,-1,0
+1089,Hair Male 04 Blonde,Hair Male 04 Blonde,0,-1,0
+1090,Hair Male 04 Brown,Hair Male 04 Brown,0,-1,0
+1091,Hair Male 04 Cyan,Hair Male 04 Cyan,0,-1,0
+1092,Hair Male 04 Grey,Hair Male 04 Grey,0,-1,0
+1093,Hair Male 04 Purple,Hair Male 04 Purple,0,-1,0
+1094,Hair Male 04 Red,Hair Male 04 Red,0,-1,0
+1095,Hair Male 05 Black,Hair Male 05 Black,0,-1,0
+1096,Hair Male 05 Blonde,Hair Male 05 Blonde,0,-1,0
+1097,Hair Male 05 Brown,Hair Male 05 Brown,0,-1,0
+1098,Hair Male 05 Cyan,Hair Male 05 Cyan,0,-1,0
+1099,Hair Male 05 Grey,Hair Male 05 Grey,0,-1,0
+1100,Hair Male 05 Purple,Hair Male 05 Purple,0,-1,0
+1101,Hair Male 05 Red,Hair Male 05 Red,0,-1,0
+1102,Hair Male 06 Black,Hair Male 06 Black,0,-1,0
+1103,Hair Male 06 Blonde,Hair Male 06 Blonde,0,-1,0
+1104,Hair Male 06 Brown,Hair Male 06 Brown,0,-1,0
+1105,Hair Male 06 Cyan,Hair Male 06 Cyan,0,-1,0
+1106,Hair Male 06 Grey,Hair Male 06 Grey,0,-1,0
+1107,Hair Male 06 Purple,Hair Male 06 Purple,0,-1,0
+1108,Hair Male 06 Red,Hair Male 06 Red,0,-1,0
+1109,Hair Male 07 Black,Hair Male 07 Black,0,-1,0
+1110,Hair Male 07 Blonde,Hair Male 07 Blonde,0,-1,0
+1111,Hair Male 07 Brown,Hair Male 07 Brown,0,-1,0
+1112,Hair Male 07 Cyan,Hair Male 07 Cyan,0,-1,0
+1113,Hair Male 07 Grey,Hair Male 07 Grey,0,-1,0
+1114,Hair Male 07 Purple,Hair Male 07 Purple,0,-1,0
+1115,Hair Male 07 Red,Hair Male 07 Red,0,-1,0
+1116,Hair Male 08 Black,Hair Male 08 Black,0,-1,0
+1117,Hair Male 08 Blonde,Hair Male 08 Blonde,0,-1,0
+1118,Hair Male 08 Brown,Hair Male 08 Brown,0,-1,0
+1119,Hair Male 08 Cyan,Hair Male 08 Cyan,0,-1,0
+1120,Hair Male 08 Grey,Hair Male 08 Grey,0,-1,0
+1121,Hair Male 08 Purple,Hair Male 08 Purple,0,-1,0
+1122,Hair Male 08 Red,Hair Male 08 Red,0,-1,0
+1123,Hair Male 09 Black,Hair Male 09 Black,0,-1,0
+1124,Hair Male 09 Blonde,Hair Male 09 Blonde,0,-1,0
+1125,Hair Male 09 Brown,Hair Male 09 Brown,0,-1,0
+1126,Hair Male 09 Cyan,Hair Male 09 Cyan,0,-1,0
+1127,Hair Male 09 Grey,Hair Male 09 Grey,0,-1,0
+1128,Hair Male 09 Purple,Hair Male 09 Purple,0,-1,0
+1129,Hair Male 09 Red,Hair Male 09 Red,0,-1,0
+1130,Hair Male 10 Black,Hair Male 10 Black,0,-1,0
+1131,Hair Male 10 Blonde,Hair Male 10 Blonde,0,-1,0
+1132,Hair Male 10 Brown,Hair Male 10 Brown,0,-1,0
+1133,Hair Male 10 Cyan,Hair Male 10 Cyan,0,-1,0
+1134,Hair Male 10 Grey,Hair Male 10 Grey,0,-1,0
+1135,Hair Male 10 Purple,Hair Male 10 Purple,0,-1,0
+1136,Hair Male 10 Red,Hair Male 10 Red,0,-1,0
+1137,Hair Male 11 Black,Hair Male 11 Black,0,-1,0
+1138,Hair Male 11 Blonde,Hair Male 11 Blonde,0,-1,0
+1139,Hair Male 11 Brown,Hair Male 11 Brown,0,-1,0
+1140,Hair Male 11 Cyan,Hair Male 11 Cyan,0,-1,0
+1141,Hair Male 11 Grey,Hair Male 11 Grey,0,-1,0
+1142,Hair Male 11 Purple,Hair Male 11 Purple,0,-1,0
+1143,Hair Male 11 Red,Hair Male 11 Red,0,-1,0
+1144,Hair Male 12 Black,Hair Male 12 Black,0,-1,0
+1145,Hair Male 12 Blonde,Hair Male 12 Blonde,0,-1,0
+1146,Hair Male 12 Brown,Hair Male 12 Brown,0,-1,0
+1147,Hair Male 12 Cyan,Hair Male 12 Cyan,0,-1,0
+1148,Hair Male 12 Grey,Hair Male 12 Grey,0,-1,0
+1149,Hair Male 12 Purple,Hair Male 12 Purple,0,-1,0
+1150,Hair Male 12 Red,Hair Male 12 Red,0,-1,0
+1151,Hair Male 13 Black,Hair Male 13 Black,0,-1,0
+1152,Hair Male 13 Blonde,Hair Male 13 Blonde,0,-1,0
+1153,Hair Male 13 Brown,Hair Male 13 Brown,0,-1,0
+1154,Hair Male 13 Cyan,Hair Male 13 Cyan,0,-1,0
+1155,Hair Male 13 Grey,Hair Male 13 Grey,0,-1,0
+1156,Hair Male 13 Purple,Hair Male 13 Purple,0,-1,0
+1157,Hair Male 13 Red,Hair Male 13 Red,0,-1,0
+1158,Hair Male 14 Black,Hair Male 14 Black,0,-1,0
+1159,Hair Male 14 Blonde,Hair Male 14 Blonde,0,-1,0
+1160,Hair Male 14 Brown,Hair Male 14 Brown,0,-1,0
+1161,Hair Male 14 Cyan,Hair Male 14 Cyan,0,-1,0
+1162,Hair Male 14 Grey,Hair Male 14 Grey,0,-1,0
+1163,Hair Male 14 Purple,Hair Male 14 Purple,0,-1,0
+1164,Hair Male 14 Red,Hair Male 14 Red,0,-1,0
+1165,Hair Male 15 Black,Hair Male 15 Black,0,-1,0
+1166,Hair Male 15 Blonde,Hair Male 15 Blonde,0,-1,0
+1167,Hair Male 15 Brown,Hair Male 15 Brown,0,-1,0
+1168,Hair Male 15 Cyan,Hair Male 15 Cyan,0,-1,0
+1169,Hair Male 15 Grey,Hair Male 15 Grey,0,-1,0
+1170,Hair Male 15 Purple,Hair Male 15 Purple,0,-1,0
+1171,Hair Male 15 Red,Hair Male 15 Red,0,-1,0
+1172,Hair Male 16 Black,Hair Male 16 Black,0,-1,0
+1173,Hair Male 16 Blonde,Hair Male 16 Blonde,0,-1,0
+1174,Hair Male 16 Brown,Hair Male 16 Brown,0,-1,0
+1175,Hair Male 16 Cyan,Hair Male 16 Cyan,0,-1,0
+1176,Hair Male 16 Grey,Hair Male 16 Grey,0,-1,0
+1177,Hair Male 16 Purple,Hair Male 16 Purple,0,-1,0
+1178,Hair Male 16 Red,Hair Male 16 Red,0,-1,0
+1179,Hair Male 17 Aqua,Hair Male 17 Aqua,0,-1,0
+1180,Hair Male 17 Black,Hair Male 17 Black,0,-1,0
+1181,Hair Male 17 Blonde,Hair Male 17 Blonde,0,-1,0
+1182,Hair Male 17 Brown,Hair Male 17 Brown,0,-1,0
+1183,Hair Male 17 Cyan,Hair Male 17 Cyan,0,-1,0
+1184,Hair Male 17 Fire,Hair Male 17 Fire,0,-1,0
+1185,Hair Male 17 Grey,Hair Male 17 Grey,0,-1,0
+1186,Hair Male 17 Purple,Hair Male 17 Purple,0,-1,0
+1187,Hair Male 17 Red,Hair Male 17 Red,0,-1,0
+1188,Hair Male 18 Black,Hair Male 18 Black,0,-1,0
+1189,Hair Male 18 Blonde,Hair Male 18 Blonde,0,-1,0
+1190,Hair Male 18 Brown,Hair Male 18 Brown,0,-1,0
+1191,Hair Male 18 Cyan,Hair Male 18 Cyan,0,-1,0
+1192,Hair Male 18 Grey,Hair Male 18 Grey,0,-1,0
+1193,Hair Male 18 Purple,Hair Male 18 Purple,0,-1,0
+1194,Hair Male 18 Red,Hair Male 18 Red,0,-1,0
+1195,Beard 01 Black,Beard 01 Black,1,-1,1
+1196,Beard 01 Blonde,Beard 01 Blonde,1,-1,1
+1197,Beard 01 Brown,Beard 01 Brown,1,-1,1
+1198,Beard 01 Cyan,Beard 01 Cyan,1,-1,1
+1199,Beard 01 Grey,Beard 01 Grey,1,-1,1
+1200,Beard 01 Purple,Beard 01 Purple,1,-1,1
+1201,Beard 01 Red,Beard 01 Red,1,-1,1
+1202,Beard 02 Black,Beard 02 Black,1,-1,1
+1203,Beard 02 Blonde,Beard 02 Blonde,1,-1,1
+1204,Beard 02 Brown,Beard 02 Brown,1,-1,1
+1205,Beard 02 Cyan,Beard 02 Cyan,1,-1,1
+1206,Beard 02 Grey,Beard 02 Grey,1,-1,1
+1207,Beard 02 Purple,Beard 02 Purple,1,-1,1
+1208,Beard 02 Red,Beard 02 Red,1,-1,1
+1209,Beard 03 Black,Beard 03 Black,1,-1,1
+1210,Beard 03 Blonde,Beard 03 Blonde,1,-1,1
+1211,Beard 03 Brown,Beard 03 Brown,1,-1,1
+1212,Beard 03 Cyan,Beard 03 Cyan,1,-1,1
+1213,Beard 03 Grey,Beard 03 Grey,1,-1,1
+1214,Beard 03 Purple,Beard 03 Purple,1,-1,1
+1215,Beard 03 Red,Beard 03 Red,1,-1,1
+1216,Beard 04 Black,Beard 04 Black,1,-1,1
+1217,Beard 04 Blonde,Beard 04 Blonde,1,-1,1
+1218,Beard 04 Blue,Beard 04 Blue,1,-1,1
+1219,Beard 04 Brown,Beard 04 Brown,1,-1,1
+1220,Beard 04 Purple,Beard 04 Purple,1,-1,1
+1221,Beard 04 Red,Beard 04 Red,1,-1,1
+1222,Beard 04 White,Beard 04 White,1,-1,1
