@@ -3,3 +3,4 @@ Temp
 obj
 .vs
 Assets/Archanor/*
+*.csproj
