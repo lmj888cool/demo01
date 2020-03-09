@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1819978787
+CRC: 434846463
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5722c7e7cf5b139e00c264a297c5fb39
+    Hash: 553cefa36e42ca347faf6385484ec078
   TypeTreeHash:
     serializedVersion: 2
     Hash: 5ad585dd02dfb5016c0dad519eab8f49
@@ -13,10 +13,12 @@ ClassTypes:
   Script: {instanceID: 0}
 Assets:
 - Assets/StaticData/ItemTableData.csv
+- Assets/StaticData/ConfigTableData.csv
 - Assets/StaticData/EnemyTableData.csv
 - Assets/StaticData/ItemTableDataOld.csv
 - Assets/StaticData/ChapterTableData.csv
 - Assets/StaticData/DefaultItemTableData.csv
 - Assets/StaticData/AnimationTableData.csv
 - Assets/StaticData/HeroTableData.csv
+- Assets/StaticData/DIYTableData.csv
 Dependencies: []

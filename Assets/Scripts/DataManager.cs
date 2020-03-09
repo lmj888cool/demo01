@@ -118,14 +118,15 @@ public class ChapterTableData
     public string reserve4;					// 保留字段，方便扩展
 };
 
-public class ConfigTableData
-{
-    public int id;
-    public string value;
-    public string info;
-}
+//public class ConfigTableData
+//{
+//    public string key;                         // key
+//    public string value;                   // 值
+//    public string info;					// 说明
+//};
 public enum TableDataName
 {
+    ConfigTableData,
     DefaultItemTableData,
     ItemTableData,
     HeroTableData,
@@ -160,8 +161,15 @@ public enum HeroPart
     Beard,//胡子
     NULL
 }
+public enum HeroSex
+{
+    Female,//女性
+    Male,//男性
+    NULL
+}
 public class DataManager
 {
+    public Dictionary<string, string> ConfigMap = new Dictionary<string, string>();
     public Dictionary<int, ItemTableData> ItemTableDataDic = new Dictionary<int, ItemTableData>();
     public Dictionary<int, HeroTableData> HeroTableDataDic = new Dictionary<int, HeroTableData>();
     public Dictionary<int, EnemyTableData> EnemyTableDataDic = new Dictionary<int, EnemyTableData>();
@@ -173,8 +181,9 @@ public class DataManager
     public AssetBundle assetBundlePrefabs;
     public AssetBundle assetBundleStatic;
     public AssetBundle assetBundleUI;
+    public AssetBundle assetBundleMaterial;
     private GameData GD;
-    private static readonly DataManager instance = new DataManager();
+    public static readonly DataManager instance = new DataManager();
     public static DataManager GetInstance()//单例
     {
         return instance;
@@ -186,6 +195,7 @@ public class DataManager
         assetBundlePrefabs = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/prefab");
         assetBundleStatic = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/staticdata");
         assetBundleUI = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/ui");
+        assetBundleMaterial = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/material");
         InitItemTableDataOld();
         InitItemTableData();
         InitHeroTableData();
@@ -193,6 +203,7 @@ public class DataManager
         InitAnimationTableData();
         InitChapterTableData();
         InitDIYTableData();
+        InitConfigTableData();
 
 
         //初始化英雄，可以读取本地数据，或者服务器发来的数据
@@ -391,11 +402,11 @@ public class DataManager
     {
         if (name.Contains("Male"))
         {
-            return 0;
+            return 1;
         }
         if (name.Contains("Female"))
         {
-            return 1;
+            return 0;
         }
         if (name.Contains("Beard"))
         {
@@ -660,6 +671,15 @@ public class DataManager
             DIYTableDataDic[id] = tableData;
         }
     }
+    public void InitConfigTableData()
+    {
+        string[][] arrAll = GetData(TableDataName.ConfigTableData.ToString());
+        for (int i = 0; i < arrAll.Length; i++)
+        {
+            string[] arr = arrAll[i];
+            ConfigMap[arr[0]] = arr[1];
+        }
+    }
     public void InitChapterTableData()
     {
         string[][] arrAll = GetData(TableDataName.ChapterTableData.ToString());
@@ -685,6 +705,18 @@ public class DataManager
             };
             ChapterTableDataDic[id] = tableData;
         }
+    }
+    public int GetConfigValueToInt(string key)
+    {
+        return int.Parse(ConfigMap[key]);
+    }
+    public float GetConfigValueToFloat(string key)
+    {
+        return float.Parse(ConfigMap[key]);
+    }
+    public string GetConfigValueToString(string key)
+    {
+        return ConfigMap[key];
     }
     public ChapterTableData GetChapterTableDataById(int chapterid)
     {
@@ -758,12 +790,24 @@ public class DataManager
         }
         return null;
     }
-    public List<DIYTableData> GetDIYTableDatasByHeroJobAndSex(HeroJob heroJob,int sex)
+    public List<DIYTableData> GetDIYTableDatasByHeroJobAndSex(HeroJob heroJob, HeroSex sex)
     {
         List<DIYTableData> dIYTableDatas = new List<DIYTableData>();
         foreach (KeyValuePair<int,DIYTableData> item in DIYTableDataDic)
         {
-            if (item.Value.job == (int)heroJob && item.Value.sex == sex)
+            if (item.Value.job == (int)heroJob && item.Value.sex == (int)sex)
+            {
+                dIYTableDatas.Add(item.Value);
+            }
+        }
+        return dIYTableDatas;
+    }
+    public List<DIYTableData> GetDIYTableDatasByHeroPartAndSex(HeroPart heroPart, HeroSex sex)
+    {
+        List<DIYTableData> dIYTableDatas = new List<DIYTableData>();
+        foreach (KeyValuePair<int, DIYTableData> item in DIYTableDataDic)
+        {
+            if (item.Value.part == (int)heroPart && item.Value.sex == (int)sex)
             {
                 dIYTableDatas.Add(item.Value);
             }
@@ -809,6 +853,18 @@ public class DataManager
         }
         
         return sprite;
+    }
+    public Material CreateMaterialFromAssetsBundle(string path, string name)
+    {
+        Material material = null;
+        //3、资源加载的第三种方式，使用AssetBundle加载的方式加载(常用方式)
+        Material load = assetBundleMaterial.LoadAsset<Material>(name);
+        if (load != null)
+        {
+            material = GameObject.Instantiate(assetBundleMaterial.LoadAsset<Material>(name));
+        }
+
+        return material;
     }
     public Dictionary<DummyProp, List<string>> GetFileNameByPath(string path, string format)
     {
@@ -939,7 +995,7 @@ public class DataManager
                         if (format == NextFile.Extension)
                         {
                             string name = NextFile.Name.Replace(format, "");
-                            names[keyname].Add(name);
+                            names[keyname].Add(name.Trim());
                         }
                     }
 

@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2249022306
+CRC: 712100921
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9f6698885d31b19ed270bca787c867d6
+    Hash: 5db8146fb103c6952c443336c3dc6117
   TypeTreeHash:
     serializedVersion: 2
-    Hash: b192d176caa3c425407eceddba2521ad
+    Hash: a1e7b3b0f0c36f7a7646da4900acd145
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -86,12 +86,14 @@ ClassTypes:
 Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   01 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 04 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Bags and Sacks (Back)/Sack
   01 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Daggers (R Arm)/Dagger
   02 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   02 Dragon White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 05 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   08 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Cat Ears
@@ -102,8 +104,10 @@ Assets:
   04 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   02 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 09 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scepters (R Arm)/Scepter
   01 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 05 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   03 Bone White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
@@ -112,10 +116,12 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
   Sword 01 White.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Tree06.fbx
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 17 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   03 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   01 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 02 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Purple Arrow Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
@@ -124,10 +130,13 @@ Assets:
   Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 02
   Peasant Yellow Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 05 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   01 Blue Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Bunny Ears
   Strips Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 03 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 01 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Maces (R Arm)/Mace 02 Poison.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 02
   Peasant Grey Blue.prefab
@@ -157,6 +166,7 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   08 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 07 Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 14 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   11 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
@@ -166,16 +176,21 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   07 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Clubs (R Arm)/Club 03 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 05 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 08 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   02 No Arrow Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 14 Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 17 Cyan.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Tree15.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 02
   White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 11 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
   Axe 03 Magenta.prefab
 - Assets/StylizedExplosionPack/explosions/funkyMix_jokerFire/explosion_stylized_small_jokerFire.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Axes (R Arm)/Axe 01.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 10 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 03
   Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
@@ -195,6 +210,7 @@ Assets:
 - Assets/Cartoon Trees Low Poly/models/co_PalmTree01.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Peasant Tools (R Arm)/Peasant
   Tool 01 Rake.prefab
+- Assets/Prefabs/HeroBody2.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   05 Butterfly Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
@@ -219,13 +235,18 @@ Assets:
   Red.prefab
 - Assets/StylizedExplosionPack/explosions/template/explosion_stylized_large_template.prefab
 - Assets/Prefabs/SimpleZombies_01_Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 05 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   03 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 13 Blonde.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 01 Cyan.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 13 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Bunny Ears
   White Pink.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   08 Yellow.prefab
 - Assets/Prefabs/SimpleZombies_Nazi_Grey.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 08 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Special Effects (Main
   Prefab)/FX Spinning Snowflakes.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
@@ -235,12 +256,16 @@ Assets:
   Red Arrow Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   07 Love Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 03 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   02 Orange.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 01
   Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 09 Blonde.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 16 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   06 Leaves Green Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 14 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Baskets (Back)/Basket
   01 Purple Water.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
@@ -255,6 +280,7 @@ Assets:
   01 Gold Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Misc (Head)/Antlers
   Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 15 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   10 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
@@ -270,6 +296,7 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
   03 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Clubs (R Arm)/Club 02 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 16 Purple.prefab
 - Assets/Prefabs/Way2.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 09 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
@@ -284,6 +311,7 @@ Assets:
   02 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   01 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 04 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   06 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
@@ -292,6 +320,7 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Cat Ears
   White Blue.prefab
 - Assets/StylizedExplosionPack/explosions/green_wildFire/explosion_stylized_medium_wildFire.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 13 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hand Auras (Both Arms)/Hand
   Aura 01 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
@@ -302,7 +331,11 @@ Assets:
 - Assets/Cartoon Trees Low Poly/models/co_Tree07.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 02
   Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 10 Grey.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 18 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Arrows/Arrow 02 Freeze.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 09 Cyan.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 16 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 07 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Baskets (Back)/Basket
   01 Blue Tomato.prefab
@@ -314,10 +347,14 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 05
   Poison.prefab
 - Assets/Prefabs/SimpleZombies_Sherif_Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 10 Cyan.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 04 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 02 Purple.prefab
 - Assets/StylizedExplosionPack/explosions/template/explosion_stylized_small_template.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   04 Green.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Tree05_B.fbx
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 16 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 02
   Peasant Yellow Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
@@ -329,6 +366,7 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Maces (R Arm)/Mace 02 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   02 Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 17 Fire.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 05
   Normal Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
@@ -342,10 +380,13 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Crowns (Head)/Crown
   04 Blue.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Stone06.fbx
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 12 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   09 Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 01 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   03 Grey.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 01 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   04 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 04
@@ -355,6 +396,7 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   08 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Arrows/Arrow 01 Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 02 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 03
   Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
@@ -384,11 +426,13 @@ Assets:
 - Assets/Cartoon Trees Low Poly/models/co_Tree08_B.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 02
   Peasant Yellow Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 11 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 09
   Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Axes (R Arm)/Axe 02 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Purple Arrow Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 09 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Bunny Ears
   White Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
@@ -436,6 +480,8 @@ Assets:
   01 Gold Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
   Sword 03 Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 17 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 13 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 03
   Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Jackets (Main Prefab)/Jacket
@@ -457,8 +503,11 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 09 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
   01 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 12 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 17 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   10 Purple Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 05 Purple.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Tree16.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Elf Ears
   White 01.prefab
@@ -499,6 +548,7 @@ Assets:
   Ice.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
   Axe 02 Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 04 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Daggers (R Arm)/Dagger
   03 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
@@ -507,10 +557,13 @@ Assets:
   Axe 03 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 01
   Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 02 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
   Sword 03 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 10 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   04 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 15 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   07 Blue.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Bush01.fbx
@@ -523,15 +576,19 @@ Assets:
   Peasant Black White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
   01 Grey Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 04 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Guitars (L Arm)/Guitar
   01 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 04 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Clubs (R Arm)/Club 02 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 08 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 15 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 01
   Wizard Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 10
   Purple Gold.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Bush04_B.fbx
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 08 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   01 No Arrow Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 03 Green.prefab
@@ -541,8 +598,10 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Arrows/Arrow 02 Light.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   10 Purple Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 18 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   06 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 02 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Bags and Sacks (Back)/Sack
   01 Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 03
@@ -559,6 +618,7 @@ Assets:
 - Assets/Prefabs/hero/akali.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   01 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 15 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Maces (R Arm)/Mace 01 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
   02 Blue.prefab
@@ -566,6 +626,7 @@ Assets:
   Prop 02 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 05
   Elf.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 01 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   02 Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
@@ -584,29 +645,41 @@ Assets:
   09 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   01 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 10 Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 14 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Special Effects (Main
   Prefab)/FX Spinning Petals.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   04 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 15 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Maces (R Arm)/Mace 02 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   01 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Daggers (R Arm)/Dagger
   03 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 08 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 10
   Black Gold.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Bags and Sacks (Back)/Sack
   01 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 14 Blonde.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 01 Black.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Bush07.fbx
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 07 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
   01 Red Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 02
   Fire.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 16 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
   Sword 01 Purple.prefab
 - Assets/Prefabs/SimpleZombies_RiotCop_Grey.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 01 Blonde.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 11 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 07 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 06 Broom
   Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 13 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   09 Gold White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
@@ -633,12 +706,16 @@ Assets:
   01 No Arrow Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   02 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 02 Cyan.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 12 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   09 White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 01 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   03 Bone Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 09
   Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 05 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
   Sword 01 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
@@ -688,9 +765,12 @@ Assets:
 - Assets/Prefabs/SimpleZombies_Sherif_Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 02
   Side Black Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 13 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 07 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 04 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
   01 Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 13 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scepters (R Arm)/Scepter
   01 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
@@ -708,6 +788,7 @@ Assets:
   01 Gold White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
   02 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 11 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Red Arrow Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
@@ -732,11 +813,15 @@ Assets:
   02 Dragon Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
   Axe 01 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 06 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 04 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 01
   Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 06 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 03 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   11 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 06 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   10 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
@@ -755,6 +840,7 @@ Assets:
   02 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 03
   Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 05 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Daggers (R Arm)/Dagger
   03 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
@@ -762,11 +848,14 @@ Assets:
 - Assets/Cartoon Trees Low Poly/models/co_Bush01_B.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 01
   Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 11 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   03 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 03 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 13 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   03 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 15 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   04 Dragonfly Brown.prefab
 - Assets/StylizedExplosionPack/explosions/funkyMix_jokerFire/explosion_stylized_large_jokerFire.prefab
@@ -780,6 +869,8 @@ Assets:
   Red Arrow Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   10 Red Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 18 Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 15 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Back Props (Back)/Back
   Prop 01 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
@@ -788,20 +879,25 @@ Assets:
   Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 04
   Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 10 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   09 Black Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 06 Broom
   Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   02 Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 18 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 11 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   01 Black Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 09
   Pink.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   03 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 09 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 10
   Blue Gold.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 08 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Jackets (Main Prefab)/Jacket
   01 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 02
@@ -818,6 +914,7 @@ Assets:
 - Assets/Cartoon Trees Low Poly/models/co_Bush05.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Cat Ears
   White Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 12 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   07 Yellow.prefab
 - Assets/Prefabs/hero/ajin.prefab
@@ -835,6 +932,7 @@ Assets:
   03 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
   03 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 15 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
   01 Purple Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Baskets (Back)/Basket
@@ -843,12 +941,14 @@ Assets:
   Axe 03 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Baskets (Back)/Basket
   01 Purple Vege.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 13 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   02 No Arrow Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Peasant Tools (R Arm)/Peasant
   Tool 03 Axe.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 01
   Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 06 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Daggers (R Arm)/Dagger
   03 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
@@ -863,6 +963,7 @@ Assets:
   06 Leaves Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   03 Bone Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 06 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   03 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 05
@@ -870,12 +971,15 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Green Arrow White.prefab
 - Assets/Prefabs/SimpleZombies_BeachBabe_Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 16 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Misc (Head)/Hood 01
   Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 02
   Side Green Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
   Axe 02 Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 08 Grey.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 05 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   02 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
@@ -903,6 +1007,7 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 06
   Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Arrows/Arrow 01 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 11 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   04 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
@@ -911,6 +1016,7 @@ Assets:
 - Assets/Cartoon Trees Low Poly/models/co_Tree14_B.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   06 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 17 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 01
   Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 04
@@ -924,6 +1030,7 @@ Assets:
 - Assets/Cartoon Trees Low Poly/models/co_CutTree01.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Bunny Ears
   Black Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 02 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
   Sword 02 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
@@ -956,8 +1063,10 @@ Assets:
   Tool 02 Hammer.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 04 Purple.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Bush08.fbx
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 10 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 02
   Side Red Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 02 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Misc (Head)/Hood 01
   Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
@@ -988,8 +1097,10 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   01 Knight Red.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Tree13.fbx
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 03 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 04
   Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 07 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 04 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   07 Green.prefab
@@ -1001,20 +1112,24 @@ Assets:
   Axe 03 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   06 Leaves Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 18 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 10 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Blue Arrow Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   01 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 08 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 07 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 02
   Side White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 16 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   03 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 01 Stick
   Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
   Axe 02 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 09 Red.prefab
 - Assets/Prefabs/SimpleZombies_RiotCop_Green.prefab
 - Assets/Prefabs/SimpleZombies_03_Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 03
@@ -1025,6 +1140,8 @@ Assets:
   01 No Arrow Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 01
   White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 07 Cyan.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 08 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Masks (Head)/Mask 01
   Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Peasant Tools (R Arm)/Peasant
@@ -1033,6 +1150,8 @@ Assets:
   01 Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 02 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 04 Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 02 Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 16 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   02 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
@@ -1041,14 +1160,17 @@ Assets:
   02 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   10 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 14 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   01 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   01 White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 16 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 02
   Side Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   08 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 18 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 09 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   03 Magenta.prefab
@@ -1058,21 +1180,26 @@ Assets:
   08 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
   Axe 01 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 14 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Crowns (Head)/Crown
   02 Cyan.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 11 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   02 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   02 No Arrow White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 17 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   02 Barbarian Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   05 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   05 Butterfly Orange.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 01 Red.prefab
 - Assets/Prefabs/SimpleZombies_Nazi_Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   01 White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 09 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   10 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Cat Ears
@@ -1093,6 +1220,9 @@ Assets:
   Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   02 White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 02 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 01 Cyan.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 18 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   05 Red.prefab
 - Assets/Prefabs/SimpleZombies_BusinessMan_Grey.prefab
@@ -1111,12 +1241,16 @@ Assets:
   01 Black Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   01 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 17 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 10 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   02 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   01 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 04 Blonde.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 03 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Axes (R Arm)/Axe 02 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 07 Red.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Bush06_B.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   01 Knight White.prefab
@@ -1142,6 +1276,8 @@ Assets:
   Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scepters (R Arm)/Scepter
   01 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 15 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 11 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
   02 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
@@ -1150,6 +1286,7 @@ Assets:
   01 Gold Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 02
   Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 09 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 01
   Front Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Clubs (R Arm)/Club 01.prefab
@@ -1159,6 +1296,7 @@ Assets:
   09 Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   02 Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 18 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Misc (Head)/Antlers
   Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
@@ -1175,6 +1313,7 @@ Assets:
 - Assets/Cartoon Trees Low Poly/models/co_Stone05.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
   Sword 02 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 06 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   01 Gold Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
@@ -1192,6 +1331,7 @@ Assets:
   Aura 01 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 02
   Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 03 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
   Axe 03 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Arrows/Arrow 01 Blue.prefab
@@ -1199,7 +1339,10 @@ Assets:
   03 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Masks (Head)/Mask 02
   Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 14 Blonde.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 15 Cyan.prefab
 - Assets/Prefabs/SimpleZombies_01_Grey.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 14 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Baskets (Back)/Basket
   01 Green Water.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 04
@@ -1214,6 +1357,7 @@ Assets:
 - Assets/Prefabs/hero/bingmeiren.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Tree02.fbx
 - Assets/StylizedExplosionPack/explosions/blue_demonFire/explosion_stylized_large_demonFire.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 14 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Misc (Head)/Jaw 01
   Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Cat Ears
@@ -1226,6 +1370,7 @@ Assets:
 - Assets/Prefabs/ItemIcon.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 03
   Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 09 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   08 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 07
@@ -1261,6 +1406,7 @@ Assets:
   03 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   01 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 10 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Crowns (Head)/Crown
   02 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
@@ -1283,33 +1429,42 @@ Assets:
   Wizard White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   01 Gold White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 13 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 05
   Normal Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 03
   Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 07 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   04 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   01 Cyan.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 09 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   10 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scepters (R Arm)/Scepter
   01 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 01 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   06 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   01 Knight Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 08 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   08 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   09 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 02
   Side Black Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 18 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Clubs (R Arm)/Club 03 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 10 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Guitars (L Arm)/Guitar
   01 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 09 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   02 Barbarian Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 15 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Green Arrow Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
@@ -1323,6 +1478,8 @@ Assets:
 - Assets/Cartoon Trees Low Poly/models/co_Stone02.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Misc (Head)/Antlers
   Light.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 16 Grey.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 06 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 07 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Special Effects (Main
   Prefab)/FX Flies.prefab
@@ -1330,6 +1487,8 @@ Assets:
   08 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   06 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 05 Cyan.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 12 Purple.prefab
 - Assets/StylizedExplosionPack/explosions/red_originalFire/explosion_stylized_small_originalFire.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   03 Green.prefab
@@ -1337,20 +1496,24 @@ Assets:
   10 White Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   08 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 07 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   09 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Back Props (Back)/Back
   Prop 02 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 12 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
   02 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   09 Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 12 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   05 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   01 No Arrow Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   03 Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 04 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   05 Butterfly Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Misc (Head)/Antlers
@@ -1358,6 +1521,8 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   03 Blonde.prefab
 - Assets/Prefabs/SimpleZombies_02_Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 06 Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 03 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   02 No Arrow Yellow.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Stone04.fbx
@@ -1365,10 +1530,12 @@ Assets:
   05 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Bags and Sacks (Back)/Sack
   01 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 07 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Crowns (Head)/Crown
   04 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   06 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 03 Old Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   02 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
@@ -1394,11 +1561,14 @@ Assets:
   01 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 02
   Peasant Blue Cyan.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 04 Red.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Tree04.fbx
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 17 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   08 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Masks (Head)/Mask 03
   Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 08 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   05 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
@@ -1426,14 +1596,19 @@ Assets:
   Peasant Grey Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   01 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 03 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 13 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 08
   Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   10 White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 12 Blonde.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 17 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Horns (Head)/Horn 03
   Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 09 Pink.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Maces (R Arm)/Mace 01 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 06 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   09 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
@@ -1452,6 +1627,7 @@ Assets:
   10 Purple Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   02 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 06 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   03 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 01
@@ -1462,8 +1638,11 @@ Assets:
   03 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 01 Stick
   Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 14 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   09 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 02 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 17 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   03 Purple.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Bush04.fbx
@@ -1471,6 +1650,7 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 06
   Blue.prefab
 - Assets/StylizedExplosionPack/explosions/red_originalFire_noSmoke/explosion_stylized_small_originalFire_noSmoke.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 09 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   07 Love Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Crowns (Head)/Crown
@@ -1478,6 +1658,7 @@ Assets:
 - Assets/Cartoon Trees Low Poly/models/co_PineTree.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 05
   Normal Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 09 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   09 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 03
@@ -1489,6 +1670,8 @@ Assets:
   Peasant Grey Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Daggers (R Arm)/Dagger
   03 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 12 Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 13 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   04 Purple.prefab
 - Assets/Prefabs/SimpleZombies_Punk_Grey.prefab
@@ -1499,6 +1682,9 @@ Assets:
 - Assets/StylizedExplosionPack/explosions/blue_demonFire/explosion_stylized_medium_demonFire.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
   Sword 03 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 03 Old Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 17 Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 10 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 10
   Green Gold.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
@@ -1509,12 +1695,16 @@ Assets:
   01 Grey White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Baskets (Back)/Basket
   01 Green Vege.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 05 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   08 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
   01 Gold.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 11 Blonde.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 10 Blonde.prefab
 - Assets/StylizedExplosionPack/explosions/red_originalFire/explosion_stylized_medium_originalFire.prefab
 - Assets/Prefabs/SimpleZombies_BeachBabe_Grey.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 12 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   08 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
@@ -1523,6 +1713,8 @@ Assets:
   Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   03 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 06 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 12 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 03
   Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
@@ -1545,11 +1737,13 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Back Props (Back)/Back
   Prop 01 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 07 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 12 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   09 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   03 Yellow.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Bush07_B.fbx
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 05 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   09 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
@@ -1563,6 +1757,7 @@ Assets:
   03 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   02 No Arrow Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 17 Grey.prefab
 - Assets/Prefabs/SimpleZombies_01_Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Clubs (R Arm)/Club 03 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 05 Purple.prefab
@@ -1571,6 +1766,7 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   09 Red.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Tree11.fbx
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 16 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   10 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
@@ -1580,18 +1776,25 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Arrows/Arrow 01 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   02 Dragon Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 03 Old Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 08 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Back Props (Back)/Back
   Prop 02 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 04 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 01 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 17 Fire.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Crowns (Head)/Crown
   04 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 18 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Green Arrow Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 13 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 08
   Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
   01 Purple.prefab
 - Assets/Prefabs/SimpleZombies_02_Grey.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 10 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Red Arrow Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
@@ -1624,6 +1827,7 @@ Assets:
   02 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   01 Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 03 Old Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   01 Black.prefab
 - Assets/StylizedExplosionPack/explosions/red_originalFire/explosion_stylized_large_originalFire.prefab
@@ -1631,6 +1835,7 @@ Assets:
   Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Blue Arrow Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 03 Old Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
   Axe 03 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
@@ -1648,6 +1853,7 @@ Assets:
   01 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   02 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 08 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   03 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Headbands (Head)/Headband
@@ -1656,16 +1862,22 @@ Assets:
   Dark.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 08 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 02 White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 13 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Claws (Both Arms)/Claw
   01 Grey White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 07 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Axes (R Arm)/TH
   Axe 02 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 12 Grey.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 03 Old Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Crowns (Head)/Crown
   01 Sorceress Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 06 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Misc (Head)/Hood 01
   Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Masks (Head)/Mask 02
   Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 10 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 07 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hand Auras (Both Arms)/Hand
   Aura 01 Red.prefab
@@ -1674,8 +1886,11 @@ Assets:
   02 No Arrow Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   08 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 08 Blonde.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 02 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Cat Ears
   Black Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 16 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   10 Black Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 02
@@ -1683,8 +1898,10 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   01 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 02 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 07 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Arrows/Arrow 02 Fire.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 09 Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 05 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   02 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
@@ -1717,6 +1934,7 @@ Assets:
   Sword 01 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Knuckles (Both Arms)/Knuckles
   03 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 18 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   09 Purple.prefab
 - Assets/Prefabs/SimpleZombies_BusinessMan_Green.prefab
@@ -1724,11 +1942,13 @@ Assets:
   08 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Bunny Ears
   Strips Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 18 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   02 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Hats (Head)/Hat 03
   Black.prefab
 - Assets/Prefabs/Way4.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 18 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Guitars (L Arm)/Guitar
   01 Blue.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Bush02.fbx
@@ -1741,6 +1961,7 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hammers (R Arm)/Hammer
   01 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Maces (R Arm)/Mace 01 Green.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 18 Magenta.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Tree13_B.fbx
 - Assets/Cartoon Trees Low Poly/models/co_Tree06_B.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
@@ -1755,21 +1976,28 @@ Assets:
   Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 06 Broom
   White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 09 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 08 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Two Handed Swords (R Arm)/TH
   Sword 03 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   07 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 16 Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 18 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Bunny Ears
   Black Pink.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Daggers (R Arm)/Dagger
   01 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Jackets (Main Prefab)/Jacket
   01 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 15 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   09 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Misc (Head)/Hood 01
   Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 01 Black.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 14 Black.prefab
+- Assets/Prefabs/HeroBody.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Spears (R Arm)/Spear 03
   Magenta.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Bags and Sacks (Back)/Bag
@@ -1785,39 +2013,57 @@ Assets:
   Prefab)/FX Spinning Leaves.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 04
   White.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 14 Cyan.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 07 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Maces (R Arm)/Mace 01 Yellow.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   01 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Clubs (R Arm)/Club 03 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 15 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   09 Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 11 Cyan.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 06 Blonde.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 17 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Crowns (Head)/Crown
   01 Sorceress Blue.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Bush03.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   02 Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 17 Aqua.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 11 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 02 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 08
   Blue.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Tree12.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Crowns (Head)/Crown
   02 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 03 Old Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Longbows (L Arm)/Longbow
   03 Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 12 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   03 Magenta.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Bush05_B.fbx
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 07 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Cat Ears
   Black Pink.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 11 Blonde.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 01 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 06 Broom
   Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Helmets (Head)/Helmet
   06 Magenta.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 04 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Ears (Head)/Cat Ears
   Black Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Hand Auras (Both Arms)/Hand
   Aura 01 Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 16 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   05 Butterfly Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 11 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 10 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   06 Leaves Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
@@ -1864,11 +2110,13 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Maces (R Arm)/Mace 02 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Beards (Head)/Beard
   04 Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 17 Aqua.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Scythes (R Arm)/Scythe
   03 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 07
   Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Arrows/Arrow 02 Poison.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 05 Black.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   08 White.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Bush02_B.fbx
@@ -1885,7 +2133,10 @@ Assets:
   Sword 02 White.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Back Props (Back)/Back
   Prop 02 Yellow.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 17 Brown.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Bush03_B.fbx
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 14 Grey.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 08 Grey.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Daggers (R Arm)/Dagger
   02 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 02
@@ -1903,6 +2154,7 @@ Assets:
   Sword 01 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Swords (R Arm)/Sword 04
   Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 08 Blonde.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Wings (Back)/Wings
   09 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Wands (R Arm)/Wand 08 Purple.prefab
@@ -1910,14 +2162,20 @@ Assets:
   Sword 01 Green.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Bags and Sacks (Back)/Bag
   01 Red.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 02 Cyan.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 04 Cyan.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   02 No Arrow Blue.prefab
 - Assets/Cartoon Trees Low Poly/models/co_PalmTree03.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Quivers (Back)/Quiver 01
   Blue Arrow Blue.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 04 Cyan.prefab
 - Assets/Cartoon Trees Low Poly/models/co_Tree08.fbx
 - Assets/Little Heroes Mega Pack/Prefabs/03 Attach Accessories/Baskets (Back)/Basket
   01 Blue Water.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Male/Hair Male 08 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 07 Brown.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 06 Purple.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Axes (R Arm)/Axe 02 Blue.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   02 Green.prefab
@@ -1931,6 +2189,8 @@ Assets:
   08 Red.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Crossbows (L Arm)/Crossbow
   03 Purple.prefab
+- Assets/Little Heroes Mega Pack/Prefabs/02 Attach Hair/Female/Hair Female 15 Brown.prefab
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   09 Blue.prefab
-Dependencies: []
+Dependencies:
+- E:/GitHub/demo01/Assets/StreamingAssets/material

@@ -21,6 +21,7 @@ public class Enity : MonoBehaviour
     // Start is called before the first frame update
     public List<Transform> dummyProp_Parent = new List<Transform>();//道具的父节点
     private Dictionary<DummyProp, GameObject>  dummyProp_Enity = new Dictionary<DummyProp, GameObject>();//道具
+    public GameObject materialBody;
 
     public GameObject _LoadObj_Pre;
     public HeroTableData heroTableData;

@@ -10,7 +10,8 @@ public class TavernScene : MonoBehaviour
     RaycastHit hit;
     GameObject obj;
     private Vector3 CameraDefaultPos;//摄像机初始的位置
-    public GameObject[] RandomHeroes;
+    public Transform[] RandomHeroesPosArr;
+    public List<GameObject> RandomHeroes;
 
     public GameObject heroInfoPanel;
 
@@ -19,6 +20,8 @@ public class TavernScene : MonoBehaviour
     {
         CameraDefaultPos = Camera.main.transform.position;
         OnClickBack();
+
+        OnFleshRandomHeroes();
     }
 
     // Update is called once per frame
@@ -43,9 +46,9 @@ public class TavernScene : MonoBehaviour
                 {
                     Debug.Log("点中" + obj.name);
                 }
-                for (int i = 0; i < RandomHeroes.Length; i++)
+                for (int i = 0; i < RandomHeroesPosArr.Length; i++)
                 {
-                    if(RandomHeroes[i].gameObject.name == obj.name)
+                    if(RandomHeroesPosArr[i].gameObject.name == obj.name)
                     {
                         if (Camera.main != null)
                         {
@@ -55,7 +58,7 @@ public class TavernScene : MonoBehaviour
                     }
                     else
                     {
-                        RandomHeroes[i].gameObject.SetActive(false);
+                        RandomHeroesPosArr[i].gameObject.SetActive(false);
                     }
                 }
                 
@@ -69,42 +72,33 @@ public class TavernScene : MonoBehaviour
         {
             iTween.MoveTo(Camera.main.gameObject, CameraDefaultPos, 0.5f);
             heroInfoPanel.gameObject.SetActive(false);
-            for (int i = 0; i < RandomHeroes.Length; i++)
+            for (int i = 0; i < RandomHeroesPosArr.Length; i++)
             {
                 {
-                    RandomHeroes[i].gameObject.SetActive(true);
+                    RandomHeroesPosArr[i].gameObject.SetActive(true);
                 }
             }
             
         }
     }
-    public void OnRandomHeroes()
+    
+    public void ClearRandomHeroes()
     {
-
-    }
-    public Enity OnRandomOneHero()
-    {
-        Enity enity = null;
-        HeroJob heroJob = (HeroJob)Random.Range((int)HeroJob.Archer, (int)HeroJob.NULL);
-        int sex = Random.Range(0, 100) > 50 ? 1 : 0;
-        List<DIYTableData> dIYTableDatas = DataManager.GetInstance().GetDIYTableDatasByHeroJobAndSex(heroJob,sex);
-
-        ///////获取身体/////////////////////////////////////////////
-        int bodyIndex = Random.Range(0,dIYTableDatas.Count);
-        DIYTableData body = dIYTableDatas[bodyIndex];
-        GameObject prefab = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("enemy", body.prefab);
-        if(prefab != null)
+        for (int i = 0; i < RandomHeroes.Count; i++)
         {
-            enity = prefab.AddComponent<Enity>();
-            if (enity != null)
-            {
-
-            }
+            Destroy(RandomHeroes[i]);
         }
-
-        ////////////////////////////////////////////////////////////
-        int part = Random.Range(0, 100) > 50 ? 1 : 0;
-        return enity;
+        RandomHeroes.Clear();
+    }
+    public void OnFleshRandomHeroes()
+    {
+        ClearRandomHeroes();
+        for (int i = 0; i < RandomHeroesPosArr.Length; i++)
+        {
+            GameObject gameObject = RandomHeroManager.instance.OnRandomOneHero();
+            RandomHeroes.Add(gameObject);
+            gameObject.transform.SetParent(RandomHeroesPosArr[i].transform, false);
+        }
     }
 
 }
