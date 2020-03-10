@@ -25,7 +25,8 @@ public class Enity : MonoBehaviour
 
     public GameObject _LoadObj_Pre;
     public HeroTableData heroTableData;
-    public Hero hero;
+    public Hero hero = null;
+    public Monster monster = null;
     public EnityType enityType;
     private List<Animator> animatorList = new List<Animator>();
     private bool isFly = false;//是否是飞行状态
@@ -45,16 +46,47 @@ public class Enity : MonoBehaviour
     {
 
         this.hero = hero;
-        heroTableData = DataManager.GetInstance().GetHeroTableDataByHero(hero);
-        enityType = heroTableData.id < 10000 ? EnityType.Hero : EnityType.Enemy;
-        Animator animator = gameObject.GetComponent<Animator>();
-        string str = "";
-        for (int i = 0; i < animator.parameterCount; i++)
+        enityType = EnityType.Hero;
+        foreach (KeyValuePair<HeroPart,int> part in hero.heroPartDic)
         {
-            string parametername = animator.GetParameter(i).name;
-            str += parametername + ",\n";
+            DIYTableData dIYTableData = DataManager.instance.GetDIYTableDatasById(part.Value);
+            if (dIYTableData.dummyProp != -1)
+            {
+                GameObject diyPrefab = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("enemy", dIYTableData.prefab);
+                if (diyPrefab != null)
+                {
+                    diyPrefab.transform.SetParent(dummyProp_Parent[(int)dIYTableData.dummyProp], false);
+                }
+            }
+            else
+            {
+                Material material = DataManager.GetInstance().CreateMaterialFromAssetsBundle("enemy", dIYTableData.prefab);
+                SkinnedMeshRenderer skinnedMeshRenderer = materialBody.GetComponent<SkinnedMeshRenderer>();
+                if (skinnedMeshRenderer != null && material != null)
+                {
+                    skinnedMeshRenderer.material = material;
+
+                }
+            }
+            
         }
-        print(str);
+        Animator animator = gameObject.GetComponent<Animator>();
+        if (animator != null)
+        {
+            animatorList.Add(animator);
+        }
+        UpdateHeroEquips();
+
+        OnPlayAnimation(animatorAction);
+
+
+    }
+    public void InitEnityByMonster(Monster monster)
+    {
+
+        this.monster = monster;
+        enityType = EnityType.Enemy;
+        Animator animator = gameObject.GetComponent<Animator>();
         if (animator != null)
         {
             animatorList.Add(animator);
@@ -72,7 +104,7 @@ public class Enity : MonoBehaviour
             ///////先判断右手是否有武器，左手一般是防御武器////////////
             if (hero.dummyPropDic.ContainsKey(DummyProp.Right))
             {
-                int itemid = hero.dummyPropDic[DummyProp.Right];
+                long itemid = hero.dummyPropDic[DummyProp.Right];
 
                 return DataManager.GetInstance().GetGameData().GetItemById(itemid);
             }
@@ -96,12 +128,12 @@ public class Enity : MonoBehaviour
     public void UpdateHeroEquips()
     {
         
-        Dictionary<int, Item> items = DataManager.GetInstance().GetGameData().Items;
+        Dictionary<long, Item> items = DataManager.GetInstance().GetGameData().Items;
         if(items.Count > 0)
         {
-            foreach (KeyValuePair<DummyProp, int> item in hero.dummyPropDic)
+            foreach (KeyValuePair<DummyProp, long> item in hero.dummyPropDic)
             {
-                int itemid = item.Value;
+                long itemid = item.Value;
                 if (items.ContainsKey(itemid))
                 {
                     UpdateEquipsByDummyProp(itemid);
@@ -114,7 +146,7 @@ public class Enity : MonoBehaviour
         }
        
     }
-    public void UpdateEquipsByDummyProp(int itemid,bool isAdd = true,bool isupdate = false)
+    public void UpdateEquipsByDummyProp(long itemid,bool isAdd = true,bool isupdate = false)
     {
         Item item = DataManager.GetInstance().GetGameData().GetItemById(itemid);
 
@@ -163,7 +195,7 @@ public class Enity : MonoBehaviour
                     //先把当前装备脱下
                     if (hero.dummyPropDic.ContainsKey(dummyProp))
                     {
-                        int olditemid = hero.dummyPropDic[dummyProp];
+                        long olditemid = hero.dummyPropDic[dummyProp];
                         olditem = DataManager.GetInstance().GetGameData().GetItemById(olditemid);
                         hero.dummyPropDic.Remove(dummyProp);
                         //olditem.masterId = 0;
@@ -229,13 +261,13 @@ public class Enity : MonoBehaviour
 
         }
     }
-    public void ChangeEquip(int itemid)
+    public void ChangeEquip(long itemid)
     {
         UpdateEquipsByDummyProp(itemid,true,true);
         OnPlayAnimation(animatorAction);
         DataManager.GetInstance().SaveByBin();
     }
-    public void RemoveEquip(int itemid)
+    public void RemoveEquip(long itemid)
     {
         UpdateEquipsByDummyProp(itemid,false, true);
         OnPlayAnimation(animatorAction);

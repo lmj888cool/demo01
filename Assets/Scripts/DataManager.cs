@@ -100,6 +100,7 @@ public class DIYTableData
     public int sex;                    // 性别 0为女性 1位男性
     public int job;                    // 职业 0射手 1战士 2法师 3牧师 4刺客 -1不是职业预制体，可能是头发或者胡须
     public int part;					// 如果job为-1，需要这个字段判断是哪个部位 0为头发 1为胡须
+    public int dummyProp;					// 如果job为-1，需要这个字段判断添加到dummyProp
 };
 public class ChapterTableData
 {
@@ -146,6 +147,7 @@ public enum ItemQuality
     Red
 
 }
+[Serializable]
 public enum HeroJob
 {
     Archer,//射手
@@ -155,12 +157,26 @@ public enum HeroJob
     Assassin,//刺客
     NULL
 }
+[Serializable]
 public enum HeroPart
 {
     Hair,//头发
     Beard,//胡子
+    Body,//身体
     NULL
 }
+[Serializable]
+public enum HeroQuality
+{
+    C,
+    B,
+    A,
+    S,
+    SS,
+    SSR,
+    NULL
+}
+[Serializable]
 public enum HeroSex
 {
     Female,//女性
@@ -191,7 +207,7 @@ public class DataManager
     public DataManager()
     {
         //CreateItemTableData();
-        //CreateDIYTableData("Assets/Little Heroes Mega Pack/Prefabs/01 Choose Costume", ".prefab");
+        CreateDIYTableData("Assets/Little Heroes Mega Pack/Prefabs/01 Choose Costume", ".prefab");
         assetBundlePrefabs = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/prefab");
         assetBundleStatic = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/staticdata");
         assetBundleUI = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/ui");
@@ -212,6 +228,7 @@ public class DataManager
         {
             GD = new GameData();
             int teamposition = 0;
+            long startid = long.Parse(System.DateTime.Now.ToString("yyyyMMddhhmmss"));
             foreach (KeyValuePair<int, DefaultItemTableData> pair in DefaultItemTableDataDic)
             {
                 //if (HeroTableDataDic.ContainsKey(pair.Value.itemid))
@@ -221,7 +238,7 @@ public class DataManager
                         ItemTableData itemTableData = ItemTableDataDic[pair.Value.itemid];
                         Item item = new Item
                         {
-                            id = pair.Key,
+                            id = startid + pair.Key,
                             itemId = pair.Value.itemid,
                             masterId = pair.Value.masterId,
                             itemLevel = 1
@@ -232,8 +249,8 @@ public class DataManager
                         HeroTableData heroTableData = HeroTableDataDic[pair.Value.itemid];
                         Hero hero = new Hero
                         {
-                            id = pair.Key,
-                            heroId = pair.Value.itemid,
+                            id = startid + pair.Key,
+                            //heroId = pair.Value.itemid,
                             teamPosition = teamposition,
                             heroLevel = 1
                         };
@@ -249,7 +266,7 @@ public class DataManager
 
 
 
-        foreach (KeyValuePair<int, Item> item in GD.Items)
+        foreach (KeyValuePair<long, Item> item in GD.Items)
         {
             if (item.Value.masterId > 0)//有持有者
             {
@@ -350,15 +367,15 @@ public class DataManager
 
         using (FileStream fsWrite = new FileStream(dir + "/DIYTableData.csv", FileMode.Append))
         {
-            string msg1 = "int,string,string,int,int,int\n";
+            string msg1 = "int,string,string,int,int,int,int\n";
             byte[] myByte1 = System.Text.Encoding.UTF8.GetBytes(msg1);
             fsWrite.Write(myByte1, 0, myByte1.Length);
 
-            string msg2 = "不可重置（归零再加），只能增长,名字,预制体,性别 0为女性 1位男性,职业 0射手 1战士 2法师 3牧师 4刺客 -1不是职业预制体，可能是头发或者胡须,如果job为-1，需要这个字段判断是哪个部位 0为头发 1为胡须\n";
+            string msg2 = "不可重置（归零再加），只能增长,名字,预制体,性别 0为女性 1位男性,职业 0射手 1战士 2法师 3牧师 4刺客 -1不是职业预制体，可能是头发或者胡须,如果job为-1，需要这个字段判断是哪个部位 0为头发 1为胡须,如果job为-1，需要这个字段判断添加到dummyProp\n";
             byte[] myByte2 = System.Text.Encoding.UTF8.GetBytes(msg2);
             fsWrite.Write(myByte2, 0, myByte2.Length);
 
-            string msg3 = "id,name,prefab,sex,job,part\n";
+            string msg3 = "id,name,prefab,sex,job,part,dummyProp\n";
             byte[] myByte3 = System.Text.Encoding.UTF8.GetBytes(msg3);
             fsWrite.Write(myByte3, 0, myByte3.Length);
             int id = 1;
@@ -368,7 +385,7 @@ public class DataManager
                 {
                     int group = (int)sub.Key;
                     string msg = id.ToString() + "," + sub.Value[i]  + "," + sub.Value[i] + "," + GetSex(sub.Value[i]).ToString() +"," + group.ToString() +
-                        "," + GetPart(sub.Value[i]).ToString() + "\n";
+                        "," + GetPart(sub.Value[i]).ToString() + "," + GetDummyProp(sub.Value[i]).ToString() + "\n";
                     //if (sub.Value.Count-1 != i)
                     //{
                     //    msg += "\n";
@@ -384,7 +401,7 @@ public class DataManager
                 {
                     int group = (int)sub.Key;
                     string msg = id.ToString() + "," + sub.Value[k] + "," + sub.Value[k] + "," + GetSex(sub.Value[k]).ToString() + ",-1"+
-                        "," + GetPart(sub.Value[k]).ToString() + "\n";
+                        "," + GetPart(sub.Value[k]).ToString() + "," + GetDummyProp(sub.Value[k]).ToString()+ "\n";
                     //if (sub.Value.Count-1 != i)
                     //{
                     //    msg += "\n";
@@ -423,6 +440,18 @@ public class DataManager
         if (name.Contains("Hair"))
         {
             return 0;
+        }
+        return -1;
+    }
+    public int GetDummyProp(string name)
+    {
+        if (name.Contains("Beard"))
+        {
+            return (int)DummyProp.Head;
+        }
+        if (name.Contains("Hair"))
+        {
+            return (int)DummyProp.Head;
         }
         return -1;
     }
@@ -667,6 +696,7 @@ public class DataManager
                 sex = int.Parse(arr[3]),
                 job = int.Parse(arr[4]),
                 part = int.Parse(arr[5]),
+                dummyProp = int.Parse(arr[6])
             };
             DIYTableDataDic[id] = tableData;
         }
@@ -757,17 +787,17 @@ public class DataManager
     }
     public HeroTableData GetHeroTableDataByHero(Hero hero)
     {
-        if (HeroTableDataDic.ContainsKey(hero.heroId))
-        {
-            return HeroTableDataDic[hero.heroId];
-        }
+        //if (HeroTableDataDic.ContainsKey(hero.heroId))
+        //{
+        //    return HeroTableDataDic[hero.heroId];
+        //}
         return null;
     }
     public HeroTableData NewHeroByHeroTableData(HeroTableData heroTableData)
     {
         Hero hero = new Hero
         {
-            heroId = heroTableData.id,
+            //heroId = heroTableData.id,
             teamPosition = -1,
             heroLevel = 1
 
@@ -787,6 +817,14 @@ public class DataManager
         if (AnimationTableDataDic.ContainsKey(id))
         {
             return AnimationTableDataDic[id];
+        }
+        return null;
+    }
+    public DIYTableData GetDIYTableDatasById(int diyId)
+    {
+        if (DIYTableDataDic.ContainsKey(diyId))
+        {
+            return DIYTableDataDic[diyId];
         }
         return null;
     }

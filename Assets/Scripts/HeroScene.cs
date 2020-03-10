@@ -19,7 +19,7 @@ public class HeroScene : MonoBehaviour
     public GameObject Prefab;
     public GameObject HeroPanel;
     public ChangeEquipPanel ChangeEquipPanel;
-    public int HeroIndex = 78;
+    public long HeroIndex = 78;
     public ScrollRect HeroHeadScrollView;
     public Button[] EquipsSlot;//装备槽
     private List<ItemIcon> Equips = new List<ItemIcon>();//装备图标
@@ -131,8 +131,8 @@ public class HeroScene : MonoBehaviour
     {
         if(HeroHeadScrollView != null)
         {
-            Dictionary<int,Hero> heroes = DataManager.GetInstance().GetGameData().Heroes;
-            foreach (KeyValuePair<int,Hero> heroPair in heroes)
+            Dictionary<long,Hero> heroes = DataManager.GetInstance().GetGameData().Heroes;
+            foreach (KeyValuePair<long,Hero> heroPair in heroes)
             {
                 if (heroPair.Value.teamPosition > -1)
                 {
@@ -170,7 +170,7 @@ public class HeroScene : MonoBehaviour
     }
     private void SetCuurentHero()
     {
-        Dictionary<int,Hero> heroes = DataManager.GetInstance().GetGameData().Heroes;
+        Dictionary<long,Hero> heroes = DataManager.GetInstance().GetGameData().Heroes;
         if (heroes.ContainsKey(HeroIndex))
         {
             if (CurrentHero != null)
@@ -181,7 +181,7 @@ public class HeroScene : MonoBehaviour
             Hero hero = heroes[HeroIndex];
             if (HeroChair != null && hero != null)
             {
-                HeroTableData data = DataManager.GetInstance().GetHeroTableDataByHeroId(hero.heroId);
+                HeroTableData data = DataManager.GetInstance().GetHeroTableDataByHeroId(0);
                 GameObject heroPrefab = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", data.heroPrefab);
                 if (heroPrefab != null)
                 {
@@ -205,9 +205,9 @@ public class HeroScene : MonoBehaviour
             Destroy(Equips[i].gameObject);
         }
         Equips.Clear();
-        foreach (KeyValuePair<DummyProp, int> dummyPropPair in CurrentHero.hero.dummyPropDic)
+        foreach (KeyValuePair<DummyProp, long> dummyPropPair in CurrentHero.hero.dummyPropDic)
         {
-            int equipid = dummyPropPair.Value;
+            long equipid = dummyPropPair.Value;
             int equipindex = (int)dummyPropPair.Key;
             if (equipid > 0 && EquipsSlot.Length > equipindex)
             {

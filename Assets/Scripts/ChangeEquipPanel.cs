@@ -78,7 +78,7 @@ public class ChangeEquipPanel : MonoBehaviour
         this.enity = enity;
         this.dummyProp = dummyProp;
         bool isSetDefault = false;
-        int enityitemid = 0;
+        long enityitemid = 0;
         if (this.enity != null)
         {
             if (this.enity.hero.dummyPropDic.ContainsKey(dummyProp))
@@ -93,7 +93,7 @@ public class ChangeEquipPanel : MonoBehaviour
                 }
             }
         }
-        foreach (KeyValuePair<int,Item> item in DataManager.GetInstance().GetGameData().Items)
+        foreach (KeyValuePair<long,Item> item in DataManager.GetInstance().GetGameData().Items)
         {
             ItemTableData itemTableData = DataManager.GetInstance().GetItemTableDataByItemId(item.Value.itemId);
             if(itemTableData.group == (int)dummyProp && enityitemid != item.Key)

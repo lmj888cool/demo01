@@ -12,71 +12,68 @@ public class RandomHeroManager
     public GameObject OnRandomOneHero()
     {
         Enity enity = null;
+
         HeroJob heroJob = (HeroJob)Random.Range((int)HeroJob.Archer, (int)HeroJob.NULL);
         HeroSex sex = Random.Range(0, 100) > 50 ? HeroSex.Female : HeroSex.Male;
-        List<DIYTableData> dIYTableDatas = DataManager.GetInstance().GetDIYTableDatasByHeroJobAndSex(heroJob, sex);
-
+        HeroQuality heroQuality = (HeroQuality)Random.Range((int)HeroQuality.C, (int)HeroQuality.NULL);
+        Hero hero = new Hero
+        {
+            id = GetRandomId(),
+            heroLevel = 1,
+            heroJob = heroJob,
+            heroQuality = heroQuality,
+            heroSex = sex
+        };
         ///////获取身体/////////////////////////////////////////////
-        int bodyIndex = Random.Range(0, dIYTableDatas.Count);
-        DIYTableData body = dIYTableDatas[bodyIndex];
-        string body_prefab_name = DataManager.instance.GetConfigValueToString(heroJob.ToString() + "_body" + "_" + sex.ToString());
+        List<DIYTableData> dIYTableDatas = DataManager.GetInstance().GetDIYTableDatasByHeroJobAndSex(heroJob, sex);
+        if (dIYTableDatas.Count > 0)
+        {
+            int bodyIndex = Random.Range(0, dIYTableDatas.Count);
+            DIYTableData body = dIYTableDatas[bodyIndex];
+            hero.heroPartDic[HeroPart.Body] = body.id;
+        }
+        List<DIYTableData> dIYTableDataHairs = DataManager.GetInstance().GetDIYTableDatasByHeroPartAndSex(HeroPart.Hair, sex);
+        if (dIYTableDataHairs.Count > 0)
+        {
+            int hairIndex = Random.Range(0, dIYTableDataHairs.Count);
+            DIYTableData hairdata = dIYTableDataHairs[hairIndex];
+            hero.heroPartDic[HeroPart.Hair] = hairdata.id;
+        }
+        int min_age = DataManager.instance.GetConfigValueToInt("min_age");
+        int max_age = DataManager.instance.GetConfigValueToInt("max_age");
+        int have_beard_age = DataManager.instance.GetConfigValueToInt("have_beard_age");
+        int age = Random.Range(min_age, max_age);//随机年龄
+        if (age < have_beard_age && sex == HeroSex.Male)//xx岁以下不添加胡子
+        {
+            List<DIYTableData> dIYTableDataBeards = DataManager.GetInstance().GetDIYTableDatasByHeroPartAndSex(HeroPart.Beard, sex);
+            if (dIYTableDataBeards.Count > 0)
+            {
+                int beardIndex = Random.Range(0, dIYTableDataBeards.Count);
+                DIYTableData bearddata = dIYTableDataBeards[beardIndex];
+                hero.heroPartDic[HeroPart.Beard] = bearddata.id;
+            }
+        }
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        string body_prefab_name = DataManager.instance.GetConfigValueToString(hero.heroJob.ToString() + "_body" + "_" + hero.heroSex.ToString());
         GameObject bodyPrefab = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("enemy", body_prefab_name);
-        Material material = DataManager.GetInstance().CreateMaterialFromAssetsBundle("enemy", body.prefab);
         if (bodyPrefab != null)
         {
             enity = bodyPrefab.GetComponent<Enity>();
-            SkinnedMeshRenderer skinnedMeshRenderer = bodyPrefab.GetComponentInChildren<SkinnedMeshRenderer>();
-            if (skinnedMeshRenderer != null && material != null)
-            {
-                skinnedMeshRenderer.material = material;
-            }
             if (enity != null)
             {
-
-                #region 添加随机发型
-                List<DIYTableData> dIYTableDataHairs = DataManager.GetInstance().GetDIYTableDatasByHeroPartAndSex(HeroPart.Hair, sex);
-                if (dIYTableDataHairs.Count > 0)
-                {
-                    int hairIndex = Random.Range(0, dIYTableDataHairs.Count);
-                    DIYTableData hairdata = dIYTableDataHairs[hairIndex];
-                    GameObject hairPrefab = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("enemy", hairdata.prefab);
-                    if (hairPrefab != null)
-                    {
-                        hairPrefab.transform.SetParent(enity.dummyProp_Parent[(int)DummyProp.Head], false);
-                    }
-                }
-                #endregion
-
-                #region 男性根据年龄添加随机胡子
-                int min_age = DataManager.instance.GetConfigValueToInt("min_age");
-                int max_age = DataManager.instance.GetConfigValueToInt("max_age");
-                int have_beard_age = DataManager.instance.GetConfigValueToInt("have_beard_age");
-                int age = Random.Range(min_age, max_age);//随机年龄
-                if (age < have_beard_age && sex == HeroSex.Male)//xx岁以下不添加胡子
-                {
-                    List<DIYTableData> dIYTableDataBeards = DataManager.GetInstance().GetDIYTableDatasByHeroPartAndSex(HeroPart.Beard, sex);
-                    if (dIYTableDataBeards.Count > 0)
-                    {
-                        int beardIndex = Random.Range(0, dIYTableDataBeards.Count);
-                        DIYTableData bearddata = dIYTableDataBeards[beardIndex];
-                        GameObject beardPrefab = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("enemy", bearddata.prefab);
-                        if (beardPrefab != null)
-                        {
-                            beardPrefab.transform.SetParent(enity.dummyProp_Parent[(int)DummyProp.Head], false);
-                        }
-                    }
-                }
-                #endregion
-                #region 根据职业添加初始武器
-                //是否需要配置初始武器呢？
-                //待定
-                #endregion
-
-
-
+                /////初始化Enity////////////
+                enity.InitEnityByHero(hero);
             }
             return bodyPrefab;
         }
         return null;
+    }
+    public long GetRandomId()
+    {
+        Random rnd = new Random();
+        string rndid = Random.Range(100, 999).ToString();
+        string strdatetime = System.DateTime.Now.ToString("yyyyMMddhhmmss");
+        string rndstr = strdatetime + rndid;
+        return long.Parse(rndstr);
     }
 }

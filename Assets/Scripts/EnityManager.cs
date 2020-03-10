@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 //对象枚举
+[Serializable]
 public enum EnityType
 {
     Enemy,

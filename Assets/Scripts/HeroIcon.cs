@@ -22,7 +22,7 @@ public class HeroIcon : MonoBehaviour
     public void InitData(Hero hero)
     {
         mHero = hero;
-        HeroTableData data = DataManager.GetInstance().GetHeroTableDataByHeroId(hero.heroId);
+        HeroTableData data = DataManager.GetInstance().GetHeroTableDataByHeroId(0);
         if(data != null)
         {
             AddIcon(data.icon);

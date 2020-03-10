@@ -56,9 +56,9 @@ public class FightScene : MonoBehaviour
     }
     public void InitFightingHero()
     {
-        Dictionary<int, Hero> heroes = DataManager.GetInstance().GetGameData().Heroes;
+        Dictionary<long, Hero> heroes = DataManager.GetInstance().GetGameData().Heroes;
 
-        foreach (KeyValuePair<int,Hero> heropair in heroes)
+        foreach (KeyValuePair<long,Hero> heropair in heroes)
         {
             if(heropair.Value.teamPosition > -1)//必须在阵容
             {

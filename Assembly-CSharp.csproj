@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\ItemIcon.cs" />
     <Compile Include="Assets\Scripts\MenuBtns.cs" />
+    <Compile Include="Assets\Scripts\Monster.cs" />
     <Compile Include="Assets\Scripts\RandomHeroManager.cs" />
     <Compile Include="Assets\Scripts\RolateObject.cs" />
     <Compile Include="Assets\Scripts\ScreenScene.cs" />
