@@ -27,6 +27,7 @@ public class HeroScene : MonoBehaviour
     private AnimatorAction currentAnimatorAction;
     public GameObject panels;
     private RolateObject rolateObject;
+    private List<GameObject> heroIconList = new List<GameObject>();
     void Start()
     {
         //LCustomizedCharacterSamples = DataManager.GetInstance().GetGameObjectsByPath("Prefabs/Customized Character Samples", ".prefab");
@@ -131,9 +132,14 @@ public class HeroScene : MonoBehaviour
     {
         if(HeroHeadScrollView != null)
         {
+            for (int i = 0; i < heroIconList.Count; i++)
+            {
+                Destroy(heroIconList[i]);
+            }
             Dictionary<long,Hero> heroes = DataManager.GetInstance().GetGameData().Heroes;
             foreach (KeyValuePair<long,Hero> heroPair in heroes)
             {
+                //显示所有拥有的佣兵，在战斗界面进行部署上阵，并且上阵的优先显示
                 if (heroPair.Value.teamPosition > -1)
                 {
                     GameObject gameObject = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", "HeroIcon");
@@ -142,10 +148,26 @@ public class HeroScene : MonoBehaviour
                         gameObject.transform.SetParent(HeroHeadScrollView.content, false);
                         HeroIcon head = gameObject.GetComponent<HeroIcon>();
                         head.InitData(heroPair.Value);
+                        heroIconList.Add(gameObject);
                     }
                     if(heroPair.Value.teamPosition == 0)
                     {
                         HeroIndex = heroPair.Key;
+                    }
+                }
+            }
+            foreach (KeyValuePair<long, Hero> heroPair in heroes)
+            {
+                //显示所有拥有的佣兵，在战斗界面进行部署上阵，并且上阵的优先显示
+                if (heroPair.Value.teamPosition <= -1)
+                {
+                    GameObject gameObject = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", "HeroIcon");
+                    if (gameObject != null)
+                    {
+                        gameObject.transform.SetParent(HeroHeadScrollView.content, false);
+                        HeroIcon head = gameObject.GetComponent<HeroIcon>();
+                        head.InitData(heroPair.Value);
+                        heroIconList.Add(gameObject);
                     }
                 }
             }
@@ -180,20 +202,19 @@ public class HeroScene : MonoBehaviour
             }
             Hero hero = heroes[HeroIndex];
             if (HeroChair != null && hero != null)
-            {
-                HeroTableData data = DataManager.GetInstance().GetHeroTableDataByHeroId(0);
-                GameObject heroPrefab = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", data.heroPrefab);
-                if (heroPrefab != null)
-                {
-                    CurrentHero = heroPrefab.GetComponent<Enity>();
-                    CurrentHero.transform.SetParent(HeroChair.transform, false);
-                    CurrentHero.animatorAction = currentAnimatorAction;
-                    CurrentHero.InitEnityByHero(hero);
-                    
-                    UpdateEquipShow();
+            {              
+                    string body_prefab_name = DataManager.instance.GetConfigValueToString(hero.heroJob.ToString() + "_body" + "_" + hero.heroSex.ToString());
+                    GameObject bodyPrefab = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("enemy", body_prefab_name);
+                    if (bodyPrefab != null)
+                    {
+                        CurrentHero = bodyPrefab.GetComponent<Enity>();
+                        CurrentHero.transform.SetParent(HeroChair.transform, false);
+                        CurrentHero.animatorAction = currentAnimatorAction;
+                        CurrentHero.InitEnityByHero(hero);
 
-                }
+                        UpdateEquipShow();
 
+                    }
             }
         }
     }
@@ -236,7 +257,7 @@ public class HeroScene : MonoBehaviour
         }
         
     }
-    public void ChangeCurrentHero(int heroindex)
+    public void ChangeCurrentHero(long heroindex)
     {
         HeroIndex = heroindex;
         SetCuurentHero();
@@ -347,5 +368,9 @@ public class HeroScene : MonoBehaviour
             return;
         CurrentHero.OnPlayAnimation((AnimatorAction)v);
         currentAnimatorAction = (AnimatorAction)v;
-    }	
+    }
+    private void OnEnable()
+    {
+        InitHeroHead();
+    }
 }

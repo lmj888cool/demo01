@@ -8,6 +8,7 @@ public class HeroIcon : MonoBehaviour
     public Image Icon;
     private Hero mHero;
     private int mTeamPostion = 0;
+    public Text[] qualityTxtArr;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +28,9 @@ public class HeroIcon : MonoBehaviour
         {
             AddIcon(data.icon);
         }
-       
+        Text text = qualityTxtArr[(int)hero.heroQuality];
+        text.gameObject.SetActive(true);
+        GetComponent<Image>().color = text.color;
         //GameObject obj = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", "Sword 01 Black");
         //if (obj != null && Camera.main != null)
         //{

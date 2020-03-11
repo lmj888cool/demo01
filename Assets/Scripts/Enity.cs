@@ -50,24 +50,28 @@ public class Enity : MonoBehaviour
         foreach (KeyValuePair<HeroPart,int> part in hero.heroPartDic)
         {
             DIYTableData dIYTableData = DataManager.instance.GetDIYTableDatasById(part.Value);
-            if (dIYTableData.dummyProp != -1)
+            if(dIYTableData != null)
             {
-                GameObject diyPrefab = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("enemy", dIYTableData.prefab);
-                if (diyPrefab != null)
+                if (dIYTableData.dummyProp != -1)
                 {
-                    diyPrefab.transform.SetParent(dummyProp_Parent[(int)dIYTableData.dummyProp], false);
+                    GameObject diyPrefab = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("enemy", dIYTableData.prefab);
+                    if (diyPrefab != null)
+                    {
+                        diyPrefab.transform.SetParent(dummyProp_Parent[(int)dIYTableData.dummyProp], false);
+                    }
                 }
-            }
-            else
-            {
-                Material material = DataManager.GetInstance().CreateMaterialFromAssetsBundle("enemy", dIYTableData.prefab);
-                SkinnedMeshRenderer skinnedMeshRenderer = materialBody.GetComponent<SkinnedMeshRenderer>();
-                if (skinnedMeshRenderer != null && material != null)
+                else
                 {
-                    skinnedMeshRenderer.material = material;
+                    Material material = DataManager.GetInstance().CreateMaterialFromAssetsBundle("enemy", dIYTableData.prefab);
+                    SkinnedMeshRenderer skinnedMeshRenderer = materialBody.GetComponent<SkinnedMeshRenderer>();
+                    if (skinnedMeshRenderer != null && material != null)
+                    {
+                        skinnedMeshRenderer.material = material;
 
+                    }
                 }
             }
+
             
         }
         Animator animator = gameObject.GetComponent<Animator>();

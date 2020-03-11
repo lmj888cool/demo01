@@ -24,3 +24,5 @@ Priest_init_equip_Female,6,女牧师初始携带的武器
 Priest_init_equip_Male,7,男牧师初始携带的武器
 Assassin_init_equip_Female,8,女刺客初始携带的武器
 Assassin_init_equip_Male,9,男刺客初始携带的武器
+fight_move_speed,1,战斗中，佣兵前进速度
+fight_search_radius,20,战斗中，搜索半径

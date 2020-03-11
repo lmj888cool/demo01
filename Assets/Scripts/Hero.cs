@@ -12,7 +12,7 @@ public class Hero
     public HeroSex heroSex;
     public Dictionary<HeroPart, int> heroPartDic = new Dictionary<HeroPart, int>();
     public Dictionary<DummyProp, long> dummyPropDic = new Dictionary<DummyProp, long>();//道具
-    public int teamPosition;//在阵容那个位置，-1表示没有上阵
-    public int heroLevel;
+    public int teamPosition = -1;//在阵容那个位置，-1表示没有上阵
+    public int heroLevel = 1;
 
 }

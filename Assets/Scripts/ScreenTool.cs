@@ -81,7 +81,7 @@ public class ScreenTool
     /// <param name="height">截取的图片高度</param>
     /// <param name="fileName">文件名</param>
     /// <returns>返回Texture2D对象</returns>
-    public Texture2D CameraCapture(Camera camera, Rect rect, string fileName)
+    public Texture2D CameraCapture(Camera camera, Rect rect, string fileName,int destX = 0,int destY=0)
     {
         RenderTexture render = new RenderTexture((int)rect.width, (int)rect.height, -1);//创建一个RenderTexture对象 
 

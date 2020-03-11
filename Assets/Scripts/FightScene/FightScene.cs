@@ -62,8 +62,9 @@ public class FightScene : MonoBehaviour
         {
             if(heropair.Value.teamPosition > -1)//必须在阵容
             {
-                HeroTableData heroTableData = DataManager.GetInstance().GetHeroTableDataByHero(heropair.Value);
-                if (heroTableData != null)
+                //HeroTableData heroTableData = DataManager.GetInstance().GetHeroTableDataByHero(heropair.Value);
+                DIYTableData dIYTableData = DataManager.instance.GetDIYTableDatasById(heropair.Value.heroPartDic[HeroPart.Body]);
+                if (dIYTableData != null)
                 {
                     GameObject fighthero = EnityManager.GetInstance().CreateFightHero(heropair.Value);
                     fighthero.transform.SetParent(transform, false);

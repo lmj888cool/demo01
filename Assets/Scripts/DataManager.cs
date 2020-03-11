@@ -31,7 +31,13 @@ public class HeroTableData
     public float searchRadius;//攻击敌人的搜索半径
     public float attackSpeed;//攻击频率
     public float moveSpeed;//移动速度
-    public int skillid;//自带技能
+    public int skillid;
+    public int heroJob;//职业
+    public int heroQuality;//资质
+    public int heroSex;//性别
+    public int heroHair;//头发
+    public int heroBeard;//胡子
+    public int heroBody;//形象
 };
 public class EnemyTableData
 {
@@ -168,7 +174,6 @@ public enum HeroPart
 [Serializable]
 public enum HeroQuality
 {
-    C,
     B,
     A,
     S,
@@ -207,7 +212,7 @@ public class DataManager
     public DataManager()
     {
         //CreateItemTableData();
-        CreateDIYTableData("Assets/Little Heroes Mega Pack/Prefabs/01 Choose Costume", ".prefab");
+        //CreateDIYTableData("Assets/Little Heroes Mega Pack/Prefabs/01 Choose Costume", ".prefab");
         assetBundlePrefabs = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/prefab");
         assetBundleStatic = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/staticdata");
         assetBundleUI = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/ui");
@@ -249,11 +254,17 @@ public class DataManager
                         HeroTableData heroTableData = HeroTableDataDic[pair.Value.itemid];
                         Hero hero = new Hero
                         {
-                            id = startid + pair.Key,
-                            //heroId = pair.Value.itemid,
-                            teamPosition = teamposition,
-                            heroLevel = 1
+                            id = RandomHeroManager.instance.GetRandomId(),
+                            teamPosition = 0,
+                            heroLevel = 1,
+                            heroJob = (HeroJob)heroTableData.heroJob,
+                            heroQuality = (HeroQuality)heroTableData.heroQuality,
+                            heroSex = (HeroSex)heroTableData.heroSex
+
                         };
+                        hero.heroPartDic[HeroPart.Body] = heroTableData.heroBody;
+                        hero.heroPartDic[HeroPart.Hair] = heroTableData.heroHair;
+                        hero.heroPartDic[HeroPart.Beard] = heroTableData.heroBeard;
                         teamposition++;
                         GD.Heroes.Add(hero.id, hero);
                     }
@@ -605,7 +616,13 @@ public class DataManager
                 searchRadius = float.Parse(arr[14]),
                 attackSpeed = float.Parse(arr[15]),
                 moveSpeed = float.Parse(arr[16]),
-                skillid = int.Parse(arr[17])
+                skillid = int.Parse(arr[17]),
+                heroJob = int.Parse(arr[18]),//职业
+                heroQuality = int.Parse(arr[19]),//资质
+                heroSex = int.Parse(arr[20]),//性别
+                heroHair = int.Parse(arr[21]),//头发
+                heroBeard = int.Parse(arr[22]),//胡子
+                heroBody = int.Parse(arr[23])//形象
             };
             HeroTableDataDic[id] = tableData;
         }

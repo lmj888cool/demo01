@@ -9,13 +9,12 @@ public class RandomHeroManager
     {
 
     }
-    public GameObject OnRandomOneHero()
+    public Hero OnRandomOneHero()
     {
-        Enity enity = null;
 
         HeroJob heroJob = (HeroJob)Random.Range((int)HeroJob.Archer, (int)HeroJob.NULL);
         HeroSex sex = Random.Range(0, 100) > 50 ? HeroSex.Female : HeroSex.Male;
-        HeroQuality heroQuality = (HeroQuality)Random.Range((int)HeroQuality.C, (int)HeroQuality.NULL);
+        HeroQuality heroQuality = (HeroQuality)Random.Range((int)HeroQuality.B, (int)HeroQuality.NULL);
         Hero hero = new Hero
         {
             id = GetRandomId(),
@@ -53,20 +52,7 @@ public class RandomHeroManager
                 hero.heroPartDic[HeroPart.Beard] = bearddata.id;
             }
         }
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        string body_prefab_name = DataManager.instance.GetConfigValueToString(hero.heroJob.ToString() + "_body" + "_" + hero.heroSex.ToString());
-        GameObject bodyPrefab = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("enemy", body_prefab_name);
-        if (bodyPrefab != null)
-        {
-            enity = bodyPrefab.GetComponent<Enity>();
-            if (enity != null)
-            {
-                /////初始化Enity////////////
-                enity.InitEnityByHero(hero);
-            }
-            return bodyPrefab;
-        }
-        return null;
+        return hero;
     }
     public long GetRandomId()
     {

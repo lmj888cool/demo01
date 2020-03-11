@@ -1,7 +1,4 @@
 int,int,int,int
 ID,物品id,类型，1为英雄，需要读HeroTableData；2为道具，需要读ItemTableData,如果是装备，这个值填写英雄id(唯一标识)
 id,itemid,type,masterId
-20000,1,1,0
-20001,2,1,0
-20002,5,1,0
-20003,6,1,0
+1,1,1,0

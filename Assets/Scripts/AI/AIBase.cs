@@ -330,9 +330,9 @@ public class AIBase : MonoBehaviour
 
         selfType = enity.enityType;
         attackType = EnityManager.GetInstance().GetAttackEnityType(selfType);
-        isCanMove = enity.heroTableData.isCanMove == 1;
-        searchRadius = enity.heroTableData.searchRadius;
-        moveSpeed = enity.heroTableData.moveSpeed;
+        isCanMove = enity.enityType == EnityType.Hero;
+        searchRadius = DataManager.instance.GetConfigValueToFloat("fight_search_radius");
+        moveSpeed = DataManager.instance.GetConfigValueToFloat("fight_move_speed");
         moveAnimatorType = AnimatorAction.Run;
         animator = enity.gameObject.GetComponent<Animator>();
         //////////////////////////判断是否装备武器///////////////////////////////////

@@ -15,6 +15,8 @@ public class TavernScene : MonoBehaviour
 
     public GameObject heroInfoPanel;
 
+    private int currentShowId = -1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,9 +54,10 @@ public class TavernScene : MonoBehaviour
                     {
                         if (Camera.main != null)
                         {
-                            iTween.MoveTo(Camera.main.gameObject, new Vector3(obj.transform.position.x, obj.transform.position.y + 0.12f, 7f), 0.5f);
+                            iTween.MoveTo(Camera.main.gameObject, new Vector3(obj.transform.position.x, obj.transform.position.y + 0.32f, 5.88f), 0.5f);
                             heroInfoPanel.gameObject.SetActive(true);
                         }
+                        currentShowId = i;
                     }
                     else
                     {
@@ -80,6 +83,7 @@ public class TavernScene : MonoBehaviour
             }
             
         }
+        currentShowId = -1;
     }
     
     public void ClearRandomHeroes()
@@ -95,9 +99,46 @@ public class TavernScene : MonoBehaviour
         ClearRandomHeroes();
         for (int i = 0; i < RandomHeroesPosArr.Length; i++)
         {
-            GameObject gameObject = RandomHeroManager.instance.OnRandomOneHero();
-            RandomHeroes.Add(gameObject);
-            gameObject.transform.SetParent(RandomHeroesPosArr[i].transform, false);
+            Hero hero = RandomHeroManager.instance.OnRandomOneHero();
+            
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            string body_prefab_name = DataManager.instance.GetConfigValueToString(hero.heroJob.ToString() + "_body" + "_" + hero.heroSex.ToString());
+            GameObject bodyPrefab = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("enemy", body_prefab_name);
+            if (bodyPrefab != null)
+            {
+                Enity enity = bodyPrefab.GetComponent<Enity>();
+                if (enity != null)
+                {
+                    /////初始化Enity////////////
+                    enity.InitEnityByHero(hero);
+                }
+                RandomHeroes.Add(bodyPrefab);
+                bodyPrefab.transform.SetParent(RandomHeroesPosArr[i].transform, false);
+            }
+            
+        }
+    }
+    public void OnGetHero()
+    {
+        if(currentShowId >= 0 && RandomHeroes.Count > currentShowId)
+        {
+            GameObject bodyPrefab = RandomHeroes[currentShowId];
+            if (bodyPrefab != null)
+            {
+                Enity enity = bodyPrefab.GetComponent<Enity>();
+                if (enity != null)
+                {
+                    Vector3 worldPos = enity.dummyProp_Parent[(int)DummyProp.Head].TransformPoint(Vector3.zero);
+                    Vector3 screenPos = Camera.main.WorldToScreenPoint(worldPos);
+                    ScreenTool.Instance.CameraCapture(Camera.main, new Rect(0, 0, 120, 120), enity.hero.id.ToString() + ".png", (int)screenPos.x, (int)screenPos.y);
+                    DataManager.instance.GetGameData().Heroes.Add(enity.hero.id,enity.hero);
+                    DataManager.instance.SaveByBin();
+                    Destroy(bodyPrefab);
+                    RandomHeroes[currentShowId] = null;
+                    
+                    OnClickBack();
+                }
+            }
         }
     }
 

@@ -75,22 +75,24 @@ public class EnityManager
     public GameObject CreateFightHero(Hero hero)
     {
         GameObject AI = null;
-        HeroTableData heroTableData = DataManager.GetInstance().GetHeroTableDataByHero(hero);
-        if (heroTableData != null)
-        {
-            GameObject obj = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", heroTableData.heroPrefab);
-            Enity enity = obj.GetComponent<Enity>();
-            if(enity != null)
+
+            string body_prefab_name = DataManager.instance.GetConfigValueToString(hero.heroJob.ToString() + "_body" + "_" + hero.heroSex.ToString());
+            GameObject bodyPrefab = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("enemy", body_prefab_name);
+            if(bodyPrefab != null)
             {
-                enity.InitEnityByHero(hero);
+                Enity enity = bodyPrefab.GetComponent<Enity>();
+                if (enity != null)
+                {
+                    enity.InitEnityByHero(hero);
+                }
+                AI = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", "AI");
+                bodyPrefab.transform.SetParent(AI.transform, false);
+                AIBase AIScript = AI.GetComponent<AIBase>();
+                AIScript.InitAIBaseByEnity(enity);
+                AI.name = hero.id.ToString();
+                createEnityIndex++;
             }
-            AI = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", "AI");
-            obj.transform.SetParent(AI.transform, false);
-            AIBase AIScript = AI.GetComponent<AIBase>();
-            AIScript.InitAIBaseByEnity(enity);
-            AI.name = heroTableData.name + createEnityIndex;
-            createEnityIndex++;
-        }
+
         return AI;
     }
     public EnityType GetAttackEnityType(EnityType enityType)
