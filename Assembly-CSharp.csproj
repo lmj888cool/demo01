@@ -84,6 +84,8 @@
     <Compile Include="Assets\Scripts\HeroIcon.cs" />
     <Compile Include="Assets\Scripts\HeroManager.cs" />
     <Compile Include="Assets\Scripts\HeroScene.cs" />
+    <Compile Include="Assets\Scripts\HeroScene\Attribute.cs" />
+    <Compile Include="Assets\Scripts\HeroScene\EquipSmallInfo.cs" />
     <Compile Include="Assets\Scripts\HP.cs" />
     <Compile Include="Assets\Scripts\HPManager.cs" />
     <Compile Include="Assets\Scripts\HyperbitBeamScript.cs" />

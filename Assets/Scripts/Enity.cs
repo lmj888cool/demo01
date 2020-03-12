@@ -7,14 +7,24 @@ using System;
 [Serializable]
 public enum DummyProp
 {
-    Head,//背部装饰，比如翅膀，背包等等
-    Back,//头部装饰，比如头盔，胡子，面具，发带等等
-    Chest,//胸部装饰，比如护甲等等
-    Left,//左手道具，比如武器
+    Head,//头部装饰，比如头盔，胡子，面具，发带等等
     Right,//右手道具，比如武器
+    Left,//左手道具，比如盾牌
+    Back,//背部装饰，比如翅膀，背包等等
+    Chest,//胸部装饰，比如护甲等等
     Effect,//实体周边特效
     NULL
 }
+//public enum DummyProp
+//{
+//    Head,//背部装饰，比如翅膀，背包等等
+//    Back,//头部装饰，比如头盔，胡子，面具，发带等等
+//    Chest,//胸部装饰，比如护甲等等
+//    Left,//左手道具，比如武器
+//    Right,//右手道具，比如武器
+//    Effect,//实体周边特效
+//    NULL
+//}
 //实体基础类，英雄或怪物继承此类
 public class Enity : MonoBehaviour
 {

@@ -21,13 +21,16 @@ public class HeroScene : MonoBehaviour
     public ChangeEquipPanel ChangeEquipPanel;
     public long HeroIndex = 78;
     public ScrollRect HeroHeadScrollView;
-    public Button[] EquipsSlot;//装备槽
-    private List<ItemIcon> Equips = new List<ItemIcon>();//装备图标
+    public EquipSmallInfo[] EquipsSlot;//装备槽
+    //private List<ItemIcon> Equips = new List<ItemIcon>();//装备图标
     public Dropdown dropDown;
     private AnimatorAction currentAnimatorAction;
     public GameObject panels;
     private RolateObject rolateObject;
     private List<GameObject> heroIconList = new List<GameObject>();
+    public Button[] buttonsArr;//功能按钮列表
+    public GameObject[] gameObjectsArr;//面板按钮列表
+    public Image selectBg;
     void Start()
     {
         //LCustomizedCharacterSamples = DataManager.GetInstance().GetGameObjectsByPath("Prefabs/Customized Character Samples", ".prefab");
@@ -130,7 +133,8 @@ public class HeroScene : MonoBehaviour
     }
     private void InitHeroHead()
     {
-        if(HeroHeadScrollView != null)
+        OnClickButton(0);
+        if (HeroHeadScrollView != null)
         {
             for (int i = 0; i < heroIconList.Count; i++)
             {
@@ -221,11 +225,10 @@ public class HeroScene : MonoBehaviour
     //显示佣兵装备
     public void UpdateEquipShow()
     {
-        for (int i = 0; i < Equips.Count; i++)
+        for (int i = 0; i < EquipsSlot.Length; i++)
         {
-            Destroy(Equips[i].gameObject);
+            EquipsSlot[i].SetState();
         }
-        Equips.Clear();
         foreach (KeyValuePair<DummyProp, long> dummyPropPair in CurrentHero.hero.dummyPropDic)
         {
             long equipid = dummyPropPair.Value;
@@ -233,21 +236,22 @@ public class HeroScene : MonoBehaviour
             if (equipid > 0 && EquipsSlot.Length > equipindex)
             {
                 Item item = DataManager.GetInstance().GetGameData().GetItemById(equipid);
-                Button equipKuang = EquipsSlot[equipindex];
+                EquipSmallInfo equipKuang = EquipsSlot[equipindex];
                 if (item != null && equipKuang != null)
                 {
-                    GameObject gameObject = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", "ItemIcon");
-                    if (gameObject != null)
-                    {
-                        gameObject.transform.SetParent(equipKuang.transform,false);
-                        gameObject.transform.localScale = gameObject.transform.localScale * 0.7f;
-                        ItemIcon equip = gameObject.GetComponent<ItemIcon>();
-                        if (equip != null)
-                        {
-                            equip.InitData(item,ItemIconType.HeroPanel_EquipsSlot);
-                        }
-                        Equips.Add(equip);
-                    }
+                    equipKuang.InitData(item, ItemIconType.HeroPanel_EquipsSlot);
+                    //GameObject gameObject = DataManager.GetInstance().CreateGameObjectFromAssetsBundle("", "ItemIcon");
+                    //if (gameObject != null)
+                    //{
+                    //    gameObject.transform.SetParent(equipKuang.transform,false);
+                    //    gameObject.transform.localScale = gameObject.transform.localScale * 0.7f;
+                    //    ItemIcon equip = gameObject.GetComponent<ItemIcon>();
+                    //    if (equip != null)
+                    //    {
+                    //        equip.InitData(item,ItemIconType.HeroPanel_EquipsSlot);
+                    //    }
+                    //    Equips.Add(equip);
+                    //}
                 }
             }
             else
@@ -372,5 +376,17 @@ public class HeroScene : MonoBehaviour
     private void OnEnable()
     {
         InitHeroHead();
+    }
+    public void OnClickButton(int index)
+    {
+        for (int i = 0; i < gameObjectsArr.Length; i++)
+        {
+            gameObjectsArr[i].SetActive(i == index);
+        }
+        selectBg.transform.position = buttonsArr[index].transform.position;
+        if(index == 1)
+        {
+            UpdateEquipShow();
+        }
     }
 }

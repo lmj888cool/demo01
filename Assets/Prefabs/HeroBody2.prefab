@@ -915,18 +915,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dummyProp_Parent:
   - {fileID: 4300784909449946}
+  - {fileID: 4875329574543848}
+  - {fileID: 4170652534093858}
   - {fileID: 4047362836621346}
   - {fileID: 4588869167232278}
-  - {fileID: 4170652534093858}
-  - {fileID: 4875329574543848}
   - {fileID: 4588869167232278}
   materialBody: {fileID: 1417685907100712}
   _LoadObj_Pre: {fileID: 0}
   hero:
     id: 0
-    heroId: 0
+    heroJob: 0
+    heroQuality: 0
+    heroSex: 0
     teamPosition: 0
     heroLevel: 0
+  monster:
+    id: 0
+    isBoss: 0
+    heroQuality: 0
+    teamPosition: 0
+    monsterLevel: 0
   enityType: 1
   animatorAction: 0
 --- !u!1 &1692080840970646

@@ -270,18 +270,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dummyProp_Parent:
   - {fileID: 411166}
+  - {fileID: 448934}
+  - {fileID: 429002}
   - {fileID: 410836}
   - {fileID: 484426}
-  - {fileID: 429002}
-  - {fileID: 411166}
   - {fileID: 484426}
   materialBody: {fileID: 102310}
   _LoadObj_Pre: {fileID: 0}
   hero:
     id: 0
-    heroId: 0
+    heroJob: 0
+    heroQuality: 0
+    heroSex: 0
     teamPosition: 0
     heroLevel: 0
+  monster:
+    id: 0
+    isBoss: 0
+    heroQuality: 0
+    teamPosition: 0
+    monsterLevel: 0
   enityType: 1
   animatorAction: 0
 --- !u!1 &116024

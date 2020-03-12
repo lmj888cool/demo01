@@ -981,8 +981,12 @@ public class DataManager
                         }
                         if (format == NextFile.Extension)
                         {
-                            string name = NextFile.Name.Replace(format, "");
-                            names[keyname].Add(name);
+                            string name = NextFile.Name.Replace(format, "").Trim();
+                            if (!name.Contains("Beard") && !name.Contains("FX") && !name.Contains("Hand Aura"))
+                            {
+                                names[keyname].Add(name);
+                            }
+                            
                         }
                     }
 

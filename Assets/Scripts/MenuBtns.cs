@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MenuBtns : MonoBehaviour
 {
@@ -8,12 +9,15 @@ public class MenuBtns : MonoBehaviour
     GameObject lastClickBtn;//最后点击的按钮
     public Transform[] sceneList;//场景摄像机们儿
     public int showSceneIndex=1;//进游戏后默认显示那个场景
+    public Image selectBg;
+    public Button[] menuBtnsArr;
     Transform currentScene;
     void Start()
     {
-        if(sceneList.Length > showSceneIndex)
+        //if(menuBtnsArr.Length > showSceneIndex)
         {
-            ShowSceneBySceneName(sceneList[showSceneIndex].gameObject.name);
+            OnClickBtn(showSceneIndex);
+            //ShowSceneBySceneName(sceneList[showSceneIndex].gameObject.name);
         }
         
     }
@@ -23,23 +27,11 @@ public class MenuBtns : MonoBehaviour
     {
         
     }
-    public void OnClickBtn(GameObject gameObject)
+    public void OnClickBtn(int index)
     {
-        lastClickBtn = gameObject;
-        switch (gameObject.name)
-        {
-            case "home":
-                break;
-            case "hero":
-                break;
-            case "fight":
-                break;
-            case "shop":
-                break;
-            default:
-                break;
-        }
-        string needChangeToSceneName = gameObject.name + "Scene";//需要切换到的场景名
+        lastClickBtn = menuBtnsArr[index].gameObject;
+        selectBg.transform.position = lastClickBtn.transform.position;
+        string needChangeToSceneName = lastClickBtn.name + "Scene";//需要切换到的场景名
         ShowSceneBySceneName(needChangeToSceneName);
     }
     void ShowSceneBySceneName(string sceneName)
