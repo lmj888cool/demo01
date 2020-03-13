@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-
+public enum BackType
+{
+    BackToMain,
+    BackToTavern,
+}
 public class TavernScene : MonoBehaviour
 {
     Ray ray;
@@ -12,16 +16,21 @@ public class TavernScene : MonoBehaviour
     private Vector3 CameraDefaultPos;//摄像机初始的位置
     public Transform[] RandomHeroesPosArr;
     public List<GameObject> RandomHeroes;
+    public GameObject TavernPanel;
 
     public GameObject heroInfoPanel;
-
+    private Vector3 defaultCameraAllPos = new Vector3(500f +10f, 32f,-58f);
+    private Vector3 defaultCameraTavernPos = new Vector3(500f +12.8f, 5.14f, -17.42f);
+    private Vector3 defaultCameraTavernLootAtOnePos = new Vector3(500f + 12.22f, 3.26f, -13.44f);
     private int currentShowId = -1;
+    private BackType currentBackType;
 
     // Start is called before the first frame update
     void Start()
     {
-        CameraDefaultPos = Camera.main.transform.position;
-        OnClickBack();
+        //iTween.MoveTo(Camera.main.gameObject, defaultCameraAllPos, 0.5f);
+        CameraDefaultPos = defaultCameraAllPos;// Camera.main.transform.position;
+        OnClickBack((int)BackType.BackToMain);
 
         OnFleshRandomHeroes();
     }
@@ -48,20 +57,38 @@ public class TavernScene : MonoBehaviour
                 {
                     Debug.Log("点中" + obj.name);
                 }
-                for (int i = 0; i < RandomHeroesPosArr.Length; i++)
+                if (obj.name == "SM_Tile_Hex_Hill_02" && currentBackType == BackType.BackToMain)
                 {
-                    if(RandomHeroesPosArr[i].gameObject.name == obj.name)
+                    iTween.MoveTo(Camera.main.gameObject, defaultCameraTavernPos, 0.5f);
+                    OnClickBack((int)BackType.BackToTavern);
+                }
+                else
+                {
+                    int iClickHeroIndex = -1;
+                    for (int i = 0; i < RandomHeroesPosArr.Length; i++)
                     {
-                        if (Camera.main != null)
+                        if (RandomHeroesPosArr[i].gameObject.name == obj.name)
                         {
-                            iTween.MoveTo(Camera.main.gameObject, new Vector3(obj.transform.position.x, obj.transform.position.y + 0.32f, 5.88f), 0.5f);
-                            heroInfoPanel.gameObject.SetActive(true);
+                            iClickHeroIndex = i;
+                            if (Camera.main != null)
+                            {
+                                TavernPanel.SetActive(false);
+                                iTween.MoveTo(Camera.main.gameObject, new Vector3(defaultCameraTavernLootAtOnePos.x + i * 0.40f, defaultCameraTavernLootAtOnePos.y, defaultCameraTavernLootAtOnePos.z), 0.5f);
+                                heroInfoPanel.gameObject.SetActive(true);
+                            }
+                            currentShowId = i;
                         }
-                        currentShowId = i;
+
                     }
-                    else
+                    if (iClickHeroIndex > -1)
                     {
-                        RandomHeroesPosArr[i].gameObject.SetActive(false);
+                        for (int i = 0; i < RandomHeroesPosArr.Length; i++)
+                        {
+                            if (i != iClickHeroIndex)
+                            {
+                                RandomHeroesPosArr[i].gameObject.SetActive(false);
+                            }
+                        }
                     }
                 }
                 
@@ -69,12 +96,24 @@ public class TavernScene : MonoBehaviour
         }
 
     }
-    public void OnClickBack()
+    public void OnClickBack(int backType )
     {
+        TavernPanel.SetActive((BackType)backType == BackType.BackToTavern);
+        
         if (Camera.main != null)
         {
-            iTween.MoveTo(Camera.main.gameObject, CameraDefaultPos, 0.5f);
-            heroInfoPanel.gameObject.SetActive(false);
+            switch ((BackType)backType)
+            {
+                case BackType.BackToMain:
+                    iTween.MoveTo(Camera.main.gameObject, defaultCameraAllPos, 0.5f);
+                    break;
+                case BackType.BackToTavern:
+                    iTween.MoveTo(Camera.main.gameObject, defaultCameraTavernPos, 0.5f);
+                    break;
+                default:
+                    break;
+            }    
+            heroInfoPanel.SetActive(false);
             for (int i = 0; i < RandomHeroesPosArr.Length; i++)
             {
                 {
@@ -84,6 +123,7 @@ public class TavernScene : MonoBehaviour
             
         }
         currentShowId = -1;
+        currentBackType = (BackType)backType;
     }
     
     public void ClearRandomHeroes()
@@ -136,7 +176,7 @@ public class TavernScene : MonoBehaviour
                     Destroy(bodyPrefab);
                     RandomHeroes[currentShowId] = null;
                     
-                    OnClickBack();
+                    OnClickBack((int)BackType.BackToTavern);
                 }
             }
         }
