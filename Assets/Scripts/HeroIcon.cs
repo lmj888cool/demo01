@@ -2,13 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+public enum HeroIconType
+{
+    HeroScene,
+    FgihtScene,
+    ChangeHeroPanel,
+    NULL
+}
 
 public class HeroIcon : MonoBehaviour
 {
-    public Image Icon;
+    public Image icon;
+    public Image noteam;
     private Hero mHero;
-    private int mTeamPostion = 0;
+    private int mTeamPostion = -1;
     public Text[] qualityTxtArr;
+    private HeroIconType heroIconType = HeroIconType.NULL;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,14 +29,18 @@ public class HeroIcon : MonoBehaviour
     {
 
     }
-    public void InitData(Hero hero)
+    public void InitData(Hero hero,HeroIconType heroicontype = HeroIconType.HeroScene)
     {
+        //Reset();
+        heroIconType = heroicontype;
         mHero = hero;
         HeroTableData data = DataManager.GetInstance().GetHeroTableDataByHeroId(0);
         if(data != null)
         {
             AddIcon(data.icon);
         }
+        icon.gameObject.SetActive(true);
+        noteam.gameObject.SetActive(false);
         Text text = qualityTxtArr[(int)hero.heroQuality];
         text.gameObject.SetActive(true);
         GetComponent<Image>().color = text.color;
@@ -49,11 +62,49 @@ public class HeroIcon : MonoBehaviour
         Sprite sprite = DataManager.GetInstance().CreateSpriteFromAssetsBundle("", iconname);
         if (sprite != null)
         {
-            Icon.sprite = sprite;
+            icon.sprite = sprite;
         }
     }
     public void OnClickBtn()
     {
-        GameObject.Find("HeroScene").SendMessage("ChangeCurrentHero", mHero.id);
+        //判断是否装备
+        if (heroIconType == HeroIconType.NULL)
+        {
+            GameObject.Find("FightScene").SendMessage("OpenChangeHeroPanel", mTeamPostion);
+        }
+        else
+        {
+            switch (heroIconType)
+            {
+                case HeroIconType.HeroScene:
+                    GameObject.Find("HeroScene").SendMessage("ChangeCurrentHero", mHero.id);
+                    break;
+                case HeroIconType.FgihtScene:
+                    GameObject.Find("FightScene").SendMessage("OpenChangeHeroPanel", mTeamPostion);
+                    break;
+                case HeroIconType.ChangeHeroPanel:
+                    GameObject.Find("changeHeroPanel").SendMessage("UpdateSelectHero", mHero);
+                    break;
+                default:
+                    break;
+            }
+        }
+        
+    }
+    public void SetTeamPosition(int teamPostion)
+    {
+        mTeamPostion = teamPostion;
+    }
+    public void Reset()
+    {
+        icon.gameObject.SetActive(false);
+        noteam.gameObject.SetActive(true);
+        for (int i = 0; i < qualityTxtArr.Length; i++)
+        {
+            qualityTxtArr[i].gameObject.SetActive(false);
+        }
+        GetComponent<Image>().color = Color.white;
+        heroIconType = HeroIconType.NULL;
+        mTeamPostion = -1;
     }
 }

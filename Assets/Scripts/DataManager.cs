@@ -4,6 +4,7 @@ using System;
 using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Linq;
 
 public class DefaultItemTableData
 {
@@ -1216,6 +1217,40 @@ public class DataManager
     public GameData GetGameData()
     {
         return GD;
+    }
+    public Dictionary<long,Hero> GetHeroes(bool isSort = true)
+    {
+        if (isSort)
+        {
+            GD.Heroes = GD.Heroes.OrderBy(p => p.Value.heroQuality).ToDictionary(p => p.Key, p => p.Value);
+            GD.Heroes = GD.Heroes.OrderBy(p => p.Value.teamPosition).ToDictionary(p => p.Key, p => p.Value);
+        }
+        return GD.Heroes;
+    }
+    public Hero GetHeroById(long heroid)
+    {
+        if (GD.Heroes.ContainsKey(heroid))
+        {
+            return GD.Heroes[heroid];
+        }
+        return null;
+    }
+    public Hero GetHeroByTeamPosition(int teamPosition)
+    {
+        Hero hero = null;
+        foreach (KeyValuePair< long,Hero > item in GD.Heroes)
+        {
+            if(item.Value.teamPosition == teamPosition)
+            {
+                return item.Value;
+            }
+        }
+        return null;
+    }
+    public void AddHeroToGameData(Hero hero)
+    {
+        GD.Heroes.Add(hero.id,hero);
+        SaveByBin();
     }
 }
 

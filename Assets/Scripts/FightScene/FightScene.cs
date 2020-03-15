@@ -19,6 +19,9 @@ public class FightScene : MonoBehaviour
     private Transform[] heroStartPos = null;
     public IndexBtn[] indexBtns;
     public ChangeMap changeMap;
+    public TeamListPanel teamListPanel;
+    public ChangeHeroPanel changeHeroPanel;
+    public GameObject fightPanel;
     void Start()
     {
 
@@ -42,6 +45,7 @@ public class FightScene : MonoBehaviour
         {
             followHeroPos = followHero.position;
         }
+
     }
 
     // Update is called once per frame
@@ -50,12 +54,27 @@ public class FightScene : MonoBehaviour
         if (SceneCamera != null && followHero!= null)
         {
             Vector3 movePos = followHero.position - followHeroPos;
-            SceneCamera.position += new Vector3(0, movePos.y, movePos.z);
+            Vector3 offset = new Vector3(0, movePos.y, movePos.z);
+            SceneCamera.position += offset;
             followHeroPos = followHero.position;
+
+            for (int i = 0; i < heroStartPos.Length; i++)
+            {
+                heroStartPos[i].position += offset;
+            }
         }
     }
-    public void InitFightingHero()
+    public void ClearFightHero()
     {
+        for (int i = 0; i < FightHeros.Count; i++)
+        {
+            Destroy(FightHeros[i]);
+        }
+        FightHeros.Clear();
+    }
+    public void InitFightingHero(bool isInitPos = true)
+    {
+        ClearFightHero();
         Dictionary<long, Hero> heroes = DataManager.GetInstance().GetGameData().Heroes;
 
         foreach (KeyValuePair<long,Hero> heropair in heroes)
@@ -81,6 +100,7 @@ public class FightScene : MonoBehaviour
             }
            
         }
+        teamListPanel.InitTeamList();
     }
     public void InitIndexBtns()
     {
@@ -120,6 +140,37 @@ public class FightScene : MonoBehaviour
             }
         }
         
+    }
+    public void CloseChangeHeroPanel()
+    {
+        fightPanel.SetActive(true);
+        changeHeroPanel.gameObject.SetActive(false);
+    }
+    public void OpenChangeHeroPanel(int teamPosition)
+    {
+        fightPanel.SetActive(false);
+        changeHeroPanel.gameObject.SetActive(true);
+        changeHeroPanel.InitData(teamPosition);
+            
+    }
+    public void ChangeHero(ChangeHeroInfo changeHeroInfo)
+    {
+        fightPanel.SetActive(true);
+        changeHeroPanel.gameObject.SetActive(false);
+        Hero hero = DataManager.instance.GetHeroByTeamPosition(changeHeroInfo.teamPosition);
+        if (hero != null)
+        {
+            hero.teamPosition = -1;
+            //DataManager.instance.GetGameData().Heroes[hero.id] = hero;
+        }
+        Hero battlehero = DataManager.instance.GetHeroById(changeHeroInfo.battleHeroId);
+        if(battlehero != null)
+        {
+            battlehero.teamPosition = changeHeroInfo.teamPosition;
+        }        
+        teamListPanel.InitTeamList();
+        InitFightingHero(false);
+        DataManager.instance.SaveByBin();
     }
     private void OnEnable()
     {

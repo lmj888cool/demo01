@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3672126557
+CRC: 1454124566
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: edb7c8a8025bb4c77bc2105ad6ae51f5
+    Hash: 63bdcd5709408a04d405b7ff8dbcbee3
   TypeTreeHash:
     serializedVersion: 2
-    Hash: a94bebbb18c089ec77a3a9f22c0d8869
+    Hash: 12f5ae74a7b8ac152d3c0d634ff43f02
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -2197,4 +2197,4 @@ Assets:
 - Assets/Little Heroes Mega Pack/Prefabs/04 Attach Weapons/Shields (L Arm)/Shield
   09 Blue.prefab
 Dependencies:
-- E:/GitHub/demo01/Assets/StreamingAssets/material
+- F:/GitHub/demo01/Assets/StreamingAssets/material

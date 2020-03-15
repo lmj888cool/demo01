@@ -171,8 +171,7 @@ public class TavernScene : MonoBehaviour
                     Vector3 worldPos = enity.dummyProp_Parent[(int)DummyProp.Head].TransformPoint(Vector3.zero);
                     Vector3 screenPos = Camera.main.WorldToScreenPoint(worldPos);
                     ScreenTool.Instance.CameraCapture(Camera.main, new Rect(0, 0, 120, 120), enity.hero.id.ToString() + ".png", (int)screenPos.x, (int)screenPos.y);
-                    DataManager.instance.GetGameData().Heroes.Add(enity.hero.id,enity.hero);
-                    DataManager.instance.SaveByBin();
+                    DataManager.instance.AddHeroToGameData(enity.hero);
                     Destroy(bodyPrefab);
                     RandomHeroes[currentShowId] = null;
                     

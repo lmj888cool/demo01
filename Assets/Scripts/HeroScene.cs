@@ -140,7 +140,8 @@ public class HeroScene : MonoBehaviour
             {
                 Destroy(heroIconList[i]);
             }
-            Dictionary<long,Hero> heroes = DataManager.GetInstance().GetGameData().Heroes;
+            Dictionary<long,Hero> heroes = DataManager.GetInstance().GetHeroes();
+            int index = 0;
             foreach (KeyValuePair<long,Hero> heroPair in heroes)
             {
                 //显示所有拥有的佣兵，在战斗界面进行部署上阵，并且上阵的优先显示
@@ -154,10 +155,11 @@ public class HeroScene : MonoBehaviour
                         head.InitData(heroPair.Value);
                         heroIconList.Add(gameObject);
                     }
-                    if(heroPair.Value.teamPosition == 0)
+                    if(index == 0)
                     {
                         HeroIndex = heroPair.Key;
                     }
+                    index++;
                 }
             }
             foreach (KeyValuePair<long, Hero> heroPair in heroes)

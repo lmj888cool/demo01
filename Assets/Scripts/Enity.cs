@@ -313,7 +313,7 @@ public class Enity : MonoBehaviour
                             break;
                         case ActionParamtersType.Bool:
                             if (animator.GetBool(_animatorParameterName) != _intValue > 0)
-                                animator.SetBool(_animatorParameterName, _intValue > 0);
+                                animator.SetBool(_animatorParameterName, (bool)(_intValue > 0));
                             break;
                         case ActionParamtersType.Trigger:
                             animator.SetTrigger(_animatorParameterName);
