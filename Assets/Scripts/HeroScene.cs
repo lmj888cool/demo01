@@ -34,10 +34,10 @@ public class HeroScene : MonoBehaviour
     void Start()
     {
         //LCustomizedCharacterSamples = DataManager.GetInstance().GetGameObjectsByPath("Prefabs/Customized Character Samples", ".prefab");
-        if(Prefab != null)
-        {
-            LCustomizedCharacterSamples = GameObject.FindGameObjectsWithTag("Prefab_Hero");
-        }
+        //if(Prefab != null)
+        //{
+        //    LCustomizedCharacterSamples = GameObject.FindGameObjectsWithTag("Prefab_Hero");
+        //}
         rolateObject = GetComponentInChildren<RolateObject>();
         // SetCuurentHero();
         currentAnimatorAction = AnimatorAction.Idle;

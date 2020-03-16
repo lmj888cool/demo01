@@ -16,7 +16,7 @@ public class FightScene : MonoBehaviour
     private int ChapterId;
     private int MapId;
     private ChapterTableData mChapterTableData;
-    private Transform[] heroStartPos = null;
+    private Vector3[] heroStartPos = new Vector3[4];
     public IndexBtn[] indexBtns;
     public ChangeMap changeMap;
     public TeamListPanel teamListPanel;
@@ -60,7 +60,7 @@ public class FightScene : MonoBehaviour
 
             for (int i = 0; i < heroStartPos.Length; i++)
             {
-                heroStartPos[i].position += offset;
+                heroStartPos[i] += offset;
             }
         }
     }
@@ -89,7 +89,7 @@ public class FightScene : MonoBehaviour
                     fighthero.transform.SetParent(transform, false);
                     if(heroStartPos != null && heroStartPos.Length > heropair.Value.teamPosition)
                     {
-                        fighthero.transform.position = heroStartPos[heropair.Value.teamPosition].position;
+                        fighthero.transform.position = heroStartPos[heropair.Value.teamPosition];
                     }                      
                     //if (heropair.Value.teamPosition == 2)
                     {
@@ -132,7 +132,11 @@ public class FightScene : MonoBehaviour
             Way wayScript = CreateWay(i);
             if (i == 0)
             {
-                heroStartPos = wayScript.heroPosArr;
+                for (int s = 0; s < wayScript.heroPosArr.Length; s++)
+                {
+                    heroStartPos[s] = wayScript.heroPosArr[s].position;
+                }
+                
                 if (SceneCamera != null && isSetCameraPos)
                 {
                     SceneCamera.position = wayScript.cameraPos.position;
@@ -252,8 +256,8 @@ public class FightScene : MonoBehaviour
                 for (int i = 0; i < FightHeros.Count; i++)
                 {
                     Vector3 pos = FightHeros[i].transform.position;
-                    pos.z = heroStartPos[i].position.z;
-                    pos.x = heroStartPos[i].position.x;
+                    pos.z = heroStartPos[i].z;
+                    pos.x = heroStartPos[i].x;
                     FightHeros[i].transform.position = pos;
                 }
             }
